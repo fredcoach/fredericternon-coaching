@@ -1,11 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-const badges = [
-  "20 ans d'expérience",
-  "Neurosciences appliquées",
-  "Méthode 3R",
-];
+const badges = ["20 ans d'expérience", "Neurosciences appliquées", "Méthode 3R"];
 
 export function HeroSection() {
   const scrollToFinalCTA = () => {
@@ -40,25 +36,32 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in-up">
-            Reprends la main sur tes{" "}
-            <span className="text-gradient">décisions</span>, ton{" "}
-            <span className="text-gradient">énergie</span> et ton{" "}
-            <span className="text-gradient">focus</span>
+            Reprends la main sur tes <span className="text-gradient">décisions</span>, ton{" "}
+            <span className="text-gradient">énergie</span> et ton <span className="text-gradient">focus</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Quand le décideur reprend la main, l'entreprise avance. Si ça patine, c'est souvent ici que ça coince : décisions, pression, énergie… et leadership.
+          <p
+            className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Tes décisions. Ton énergie. Ton focus. C'est là que tout se joue. Quand le décideur est bloqué, l'entreprise
+            patine. Quand il retrouve sa puissance, tout se remet en mouvement.
           </p>
 
           {/* Baseline */}
-          <p className="text-base md:text-lg font-medium text-foreground mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Pas une méthode de plus.{" "}
-            <span className="text-primary">Un système interne qui tient dans le réel.</span>
+          <p
+            className="text-base md:text-lg font-medium text-foreground mb-10 animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Pas une méthode de plus. <span className="text-primary">Un système interne qui tient dans le réel.</span>
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <Button
               size="lg"
               onClick={scrollToFinalCTA}
@@ -67,9 +70,7 @@ export function HeroSection() {
               Session CADRAGE (30 min)
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <p className="text-sm text-muted-foreground">
-              Sur sélection — places limitées
-            </p>
+            <p className="text-sm text-muted-foreground">Sur sélection — places limitées</p>
           </div>
 
           {/* Scroll indicator */}
