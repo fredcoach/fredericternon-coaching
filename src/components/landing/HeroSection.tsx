@@ -36,8 +36,7 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in-up">
-            Reprends la main sur tes <span className="text-gradient">décisions</span>, ton{" "}
-            <span className="text-gradient">énergie</span> et ton <span className="text-gradient">focus</span>
+            Tes décisions. Ton énergie. Ton focus. <span className="text-gradient"> C'est là que tout se joue.</span>
           </h1>
 
           {/* Subtitle */}
@@ -45,8 +44,8 @@ export function HeroSection() {
             className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Tes décisions. Ton énergie. Ton focus. C'est là que tout se joue. Quand le décideur est bloqué, l'entreprise
-            patine. Quand il retrouve sa puissance, tout se remet en mouvement.
+            Quand le décideur est bloqué, l'entreprise patine. Quand il retrouve sa puissance, tout se remet en
+            mouvement.
           </p>
 
           {/* Baseline */}
