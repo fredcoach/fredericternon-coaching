@@ -34,9 +34,7 @@ export function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
-          : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -67,7 +65,7 @@ export function Navigation() {
               onClick={() => scrollToSection("#final-cta")}
               className="gradient-primary text-primary-foreground hover:opacity-90"
             >
-              Session CADRAGE
+              Planifie un échange
             </Button>
           </div>
 
@@ -77,11 +75,7 @@ export function Navigation() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </nav>
 
@@ -102,7 +96,7 @@ export function Navigation() {
                 onClick={() => scrollToSection("#final-cta")}
                 className="mt-2 gradient-primary text-primary-foreground"
               >
-                Session CADRAGE
+                Réserve ton bilan initial
               </Button>
             </div>
           </div>

@@ -63,7 +63,7 @@ export function HeroSection() {
               onClick={scrollToFinalCTA}
               className="gradient-primary text-primary-foreground text-lg px-8 py-6 hover:opacity-90 hover:shadow-lg transition-all group"
             >
-              Session CADRAGE (30 min)
+              On s'appelle — 30 min pour échanger
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <p className="text-sm text-muted-foreground">Sur sélection — places limitées</p>
