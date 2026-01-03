@@ -33,12 +33,11 @@ export function HeroSection() {
               </span>
             ))}
           </div>
-
           {/* Main Headline */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in-up">
-            Tes décisions. Ton énergie. Ton focus. <span className="text-gradient"> C'est là que tout se joue.</span>
+            Tes décisions. Ton énergie. Ton focus. <span className="text-gradient"> </span>
           </h1>
-
+          C'est là que tout se joue.
           {/* Subtitle */}
           <p
             className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in-up"
@@ -47,7 +46,6 @@ export function HeroSection() {
             Quand le décideur est bloqué, l'entreprise patine. Quand il retrouve sa puissance, tout se remet en
             mouvement.
           </p>
-
           {/* Baseline */}
           <p
             className="text-base md:text-lg font-medium text-foreground mb-10 animate-fade-in-up"
@@ -55,7 +53,6 @@ export function HeroSection() {
           >
             Pas une méthode de plus. <span className="text-primary">Un système interne qui tient dans le réel.</span>
           </p>
-
           {/* CTA */}
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
@@ -71,7 +68,6 @@ export function HeroSection() {
             </Button>
             <p className="text-sm text-muted-foreground">Sur sélection — places limitées</p>
           </div>
-
           {/* Scroll indicator */}
           <div className="mt-16 md:mt-24 animate-bounce">
             <div className="w-8 h-12 mx-auto border-2 border-muted-foreground/30 rounded-full flex justify-center">

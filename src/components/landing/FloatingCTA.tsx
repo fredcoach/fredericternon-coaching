@@ -31,7 +31,7 @@ export function FloatingCTA() {
           className="inline-flex items-center gap-2"
         >
           <Calendar className="w-5 h-5" />
-          <span className="hidden sm:inline">Session CADRAGE</span>
+          <span className="hidden sm:inline">30 min : tu me dis où tu en es, je te dis si je peux aider</span>
           <span className="sm:hidden">Réserver</span>
         </a>
       </Button>
