@@ -17,16 +17,21 @@ export function AboutSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="grid md:grid-cols-[300px,1fr] gap-8 md:gap-12 items-start">
-            {/* Photo */}
-            <div className="flex flex-col items-center md:items-start">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl scale-105" />
+          <div className="grid md:grid-cols-1 gap-8 items-start">
+            {/* Photo de conférence */}
+            <div className="md:col-span-2 mb-6">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-10" />
                 <img 
                   src={fredericConference} 
-                  alt="Frédéric Ternon en conférence" 
-                  className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl border-4 border-background"
+                  alt="Frédéric Ternon en conférence à TheCamp" 
+                  className="w-full h-48 md:h-64 object-cover object-center"
                 />
+                <div className="absolute bottom-4 left-4 z-20">
+                  <span className="bg-primary/90 text-primary-foreground text-sm font-medium px-3 py-1 rounded-full">
+                    Conférence @ TheCamp
+                  </span>
+                </div>
               </div>
             </div>
 
