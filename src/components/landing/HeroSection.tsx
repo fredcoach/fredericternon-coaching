@@ -1,10 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import fredericPhoto from "@/assets/frederic-ternon.png";
 
 const badges = ["20 ans d'expérience", "Neurosciences appliquées", "Méthode 3R"];
 
 export function HeroSection() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToFinalCTA = () => {
     const element = document.querySelector("#final-cta");
     if (element) {
@@ -14,11 +25,20 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 gradient-hero overflow-hidden">
-      {/* Background decoration */}
+      {/* Background decoration with parallax */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] rounded-full bg-secondary/5 blur-3xl" />
-        <div className="absolute top-1/4 left-1/2 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+        <div 
+          className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl transition-transform duration-100"
+          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+        />
+        <div 
+          className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] rounded-full bg-secondary/5 blur-3xl transition-transform duration-100"
+          style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+        />
+        <div 
+          className="absolute top-1/4 left-1/2 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl transition-transform duration-100"
+          style={{ transform: `translateY(${scrollY * 0.15}px) translateX(-50%)` }}
+        />
       </div>
 
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">

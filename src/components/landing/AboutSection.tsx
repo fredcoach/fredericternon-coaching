@@ -1,5 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { User, Award, Brain, Target } from "lucide-react";
+import { Award, Brain, Target } from "lucide-react";
+import fredericPhoto from "@/assets/frederic-ternon.png";
 
 export function AboutSection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
@@ -17,14 +18,16 @@ export function AboutSection() {
           }`}
         >
           <div className="grid md:grid-cols-[300px,1fr] gap-8 md:gap-12 items-start">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="flex flex-col items-center md:items-start">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl gradient-primary flex items-center justify-center shadow-lg">
-                <User className="w-24 h-24 text-primary-foreground/80" />
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl scale-105" />
+                <img 
+                  src={fredericPhoto} 
+                  alt="Frédéric Ternon - Coach en performance mentale" 
+                  className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl border-4 border-background"
+                />
               </div>
-              <p className="mt-4 text-sm text-muted-foreground text-center md:text-left">
-                Photo à venir
-              </p>
             </div>
 
             {/* Content */}
