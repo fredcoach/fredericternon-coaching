@@ -26,16 +26,16 @@ export function HeroSection() {
       {/* Animated background elements with parallax */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Main glow */}
-        <div 
+        <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-primary/10 blur-[120px] transition-transform duration-100"
           style={{ transform: `translate(-50%, calc(-50% + ${scrollY * 0.2}px))` }}
         />
         {/* Secondary glows */}
-        <div 
+        <div
           className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px] transition-transform duration-100"
           style={{ transform: `translateY(${scrollY * 0.3}px)` }}
         />
-        <div 
+        <div
           className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] rounded-full bg-secondary/10 blur-[80px] transition-transform duration-100"
           style={{ transform: `translateY(${scrollY * -0.15}px)` }}
         />
@@ -69,10 +69,7 @@ export function HeroSection() {
               </h1>
 
               {/* Accent line */}
-              <div 
-                className="mt-6 mb-8 animate-fade-in-up"
-                style={{ animationDelay: "0.15s" }}
-              >
+              <div className="mt-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
                 <span className="inline-block font-serif text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
                   C'est là que tout se joue.
                 </span>
@@ -85,15 +82,15 @@ export function HeroSection() {
               >
                 Quand le décideur est bloqué, l'entreprise patine.
                 <br />
-                <span className="text-white/90 font-medium">Quand il retrouve sa puissance, tout se remet en mouvement.</span>
+                <span className="text-white/90 font-medium">
+                  Quand il retrouve sa puissance, tout se remet en mouvement.
+                </span>
               </p>
 
               {/* Baseline */}
-              <p
-                className="text-base text-white/50 mb-10 animate-fade-in-up"
-                style={{ animationDelay: "0.25s" }}
-              >
-                Pas une méthode de plus. <span className="text-accent font-semibold">Un système interne qui tient dans le réel.</span>
+              <p className="text-base text-white/50 mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+                Pas une méthode de plus.{" "}
+                <span className="text-accent font-semibold">Un système interne qui tient dans le réel.</span>
               </p>
 
               {/* CTA */}
@@ -106,7 +103,7 @@ export function HeroSection() {
                   onClick={scrollToFinalCTA}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
-                  On s'appelle — 30 min
+                  30 min: Tu me dis où tu en es. Je te dis si je peux t'aider
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <span className="text-sm text-white/40">Sur sélection • Places limitées</span>
@@ -119,14 +116,14 @@ export function HeroSection() {
                 {/* Glow behind photo */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
-                
+
                 {/* Photo */}
-                <img 
-                  src={fredericPhoto} 
-                  alt="Frédéric Ternon - Coach en performance mentale" 
+                <img
+                  src={fredericPhoto}
+                  alt="Frédéric Ternon - Coach en performance mentale"
                   className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl"
                 />
-                
+
                 {/* Badges around photo */}
                 <div className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl">
                   <span className="text-sm font-semibold text-white">20 ans d'expérience</span>
