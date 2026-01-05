@@ -1,15 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { 
-  Video, 
-  FileText, 
-  Headphones, 
-  MessageCircle, 
-  Bot, 
-  CheckCircle2,
-  ArrowRight,
-  ExternalLink
-} from "lucide-react";
+import { Video, FileText, Headphones, MessageCircle, Bot, CheckCircle2, ArrowRight, ExternalLink } from "lucide-react";
 
 const offerItems = [
   {
@@ -53,11 +44,7 @@ export function OfferSection() {
   };
 
   return (
-    <section
-      id="offer"
-      ref={ref}
-      className="py-20 md:py-28 bg-card"
-    >
+    <section id="offer" ref={ref} className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
         <div
           className={`text-center mb-12 md:mb-16 transition-all duration-700 ${
@@ -67,9 +54,7 @@ export function OfferSection() {
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             L'accompagnement <span className="text-gradient">(tout-en-un)</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Une seule formule. Tout dedans. Adaptée à ton contexte.
-          </p>
+          <p className="text-lg text-muted-foreground">Une seule formule. Tout dedans. Adaptée à ton contexte.</p>
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -80,10 +65,8 @@ export function OfferSection() {
                 isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
               }`}
             >
-              <h3 className="text-xl font-semibold text-foreground mb-6">
-                Le cadre (structuré, sobre, efficace)
-              </h3>
-              
+              <h3 className="text-xl font-semibold text-foreground mb-6">Le cadre (structuré, sobre, efficace)</h3>
+
               {offerItems.map((item, index) => (
                 <div
                   key={item.title}
@@ -107,11 +90,10 @@ export function OfferSection() {
                     <Bot className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-foreground mb-2">
-                      Alpha — ton pocket coach (disponible 24/7)
-                    </h4>
+                    <h4 className="font-semibold text-foreground mb-2">Alpha — ton pocket coach (disponible 24/7)</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Alpha t'aide en 2–5 minutes à retrouver du calme, clarifier ton prochain choix, appliquer 3R sur une situation concrète, préparer un message ou une réunion, sortir de la rumination.
+                      Alpha t'aide en 2–5 minutes à retrouver du calme, clarifier ton prochain choix, appliquer 3R sur
+                      une situation concrète, préparer un message ou une réunion, sortir de la rumination.
                     </p>
                     <a
                       href="https://alpha-ia.lovable.app"
@@ -135,11 +117,11 @@ export function OfferSection() {
             >
               <div className="sticky top-24 p-6 md:p-8 gradient-primary rounded-2xl text-primary-foreground shadow-xl">
                 <h3 className="text-xl font-semibold mb-4">Investissement</h3>
-                
+
                 <p className="text-primary-foreground/90 mb-4">
                   L'accompagnement est entièrement sur-mesure, jamais standardisé.
                 </p>
-                
+
                 <p className="text-primary-foreground/90 mb-3">Le montant dépend de plusieurs facteurs :</p>
                 <ul className="space-y-2 text-sm text-primary-foreground/90 mb-6">
                   <li>• La complexité de ta situation</li>
@@ -149,10 +131,12 @@ export function OfferSection() {
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
                   <p className="font-semibold mb-3">
-                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément tes enjeux.
+                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément tes
+                    enjeux.
                   </p>
                   <p className="text-sm text-primary-foreground/80 mb-4">
-                    Pourquoi ? Parce qu'un dirigeant qui gère 10 personnes avec une décision stratégique bloquée n'a pas les mêmes besoins qu'un fondateur solo en surcharge mentale.
+                    Pourquoi ? Parce qu'un dirigeant qui gère 10 personnes avec une décision stratégique bloquée n'a pas
+                    les mêmes besoins qu'un fondateur solo en surcharge mentale.
                   </p>
                   <p className="text-sm text-primary-foreground/80">
                     Le tarif reflète la valeur créée, pas des heures facturées.
@@ -183,18 +167,13 @@ export function OfferSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
-              Garantie / engagement (sans bullshit)
-            </h3>
+            <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Garantie & exigences mutuelles</h3>
             <p className="text-center text-muted-foreground mb-6">
               Je ne te promets pas une transformation magique. Je m'engage sur du sérieux :
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {guarantees.map((guarantee, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-3"
-                >
+                <div key={index} className="flex items-start gap-3 p-3">
                   <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-foreground">{guarantee}</span>
                 </div>
