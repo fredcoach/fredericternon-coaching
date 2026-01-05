@@ -41,6 +41,21 @@ export function HeroSection() {
         />
         {/* Subtle grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        
+        {/* Animated floating light particles */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-accent/60 animate-[float_8s_ease-in-out_infinite] shadow-[0_0_20px_5px_hsl(var(--accent)/0.4)]" />
+        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-primary/50 animate-[float_6s_ease-in-out_infinite_1s] shadow-[0_0_15px_4px_hsl(var(--primary)/0.3)]" />
+        <div className="absolute top-2/3 left-1/5 w-1 h-1 rounded-full bg-white/40 animate-[float_7s_ease-in-out_infinite_2s] shadow-[0_0_10px_3px_rgba(255,255,255,0.2)]" />
+        <div className="absolute bottom-1/4 right-1/4 w-2.5 h-2.5 rounded-full bg-accent/40 animate-[float_9s_ease-in-out_infinite_0.5s] shadow-[0_0_25px_6px_hsl(var(--accent)/0.3)]" />
+        <div className="absolute top-1/2 left-1/3 w-1 h-1 rounded-full bg-primary/60 animate-[float_5s_ease-in-out_infinite_3s] shadow-[0_0_12px_3px_hsl(var(--primary)/0.4)]" />
+        <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-white/30 animate-[float_10s_ease-in-out_infinite_1.5s] shadow-[0_0_15px_4px_rgba(255,255,255,0.15)]" />
+        <div className="absolute top-1/5 right-1/5 w-1 h-1 rounded-full bg-accent/50 animate-[float_7s_ease-in-out_infinite_4s] shadow-[0_0_10px_3px_hsl(var(--accent)/0.25)]" />
+        <div className="absolute bottom-1/2 right-1/6 w-2 h-2 rounded-full bg-primary/40 animate-[float_8s_ease-in-out_infinite_2.5s] shadow-[0_0_20px_5px_hsl(var(--primary)/0.25)]" />
+        
+        {/* Animated light beams */}
+        <div className="absolute top-0 left-1/3 w-px h-1/3 bg-gradient-to-b from-accent/20 via-accent/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
+        <div className="absolute top-0 right-1/4 w-px h-1/4 bg-gradient-to-b from-primary/15 via-primary/5 to-transparent animate-[shimmer_5s_ease-in-out_infinite_1s]" />
+        <div className="absolute top-0 left-2/3 w-px h-1/5 bg-gradient-to-b from-white/10 via-white/3 to-transparent animate-[shimmer_6s_ease-in-out_infinite_2s]" />
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
