@@ -103,7 +103,7 @@ export function HeroSection() {
                   onClick={scrollToFinalCTA}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
-                  30 min: Tu me dis où tu en es. Je te dis si je peux t'aider
+                  30 min. pour voir si je peux t'aider
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <span className="text-sm text-white/40">Sur sélection • Places limitées</span>
