@@ -6,8 +6,16 @@ export function FinalCTASection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
 
   return (
-    <section id="final-cta" ref={ref} className="py-20 md:py-28 gradient-dark text-primary-foreground">
-      <div className="container mx-auto px-4">
+    <section id="final-cta" ref={ref} className="py-20 md:py-28 gradient-dark text-primary-foreground relative overflow-hidden">
+      {/* Background texture elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full bg-accent/10 blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[120px]" />
+        {/* Subtle grid overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div
           className={`max-w-3xl mx-auto text-center transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
