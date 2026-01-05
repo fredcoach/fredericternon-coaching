@@ -134,29 +134,34 @@ export function OfferSection() {
               }`}
             >
               <div className="sticky top-24 p-6 md:p-8 gradient-primary rounded-2xl text-primary-foreground shadow-xl">
-                <h3 className="text-xl font-semibold mb-2">Investissement</h3>
-                <div className="mb-6">
-                  <p className="text-4xl font-bold mb-1">2 400 € <span className="text-lg font-normal opacity-80">HT</span></p>
-                  <p className="text-primary-foreground/80">pour 2 mois (1 200 €/mois)</p>
-                  <p className="mt-2 text-accent font-medium">ou 2 000 € comptant (-400 €)</p>
-                </div>
+                <h3 className="text-xl font-semibold mb-4">Investissement</h3>
+                
+                <p className="text-primary-foreground/90 mb-4">
+                  L'accompagnement est entièrement sur-mesure, jamais standardisé.
+                </p>
+                
+                <p className="text-primary-foreground/90 mb-3">Le montant dépend de plusieurs facteurs :</p>
+                <ul className="space-y-2 text-sm text-primary-foreground/90 mb-6">
+                  <li>• La complexité de ta situation</li>
+                  <li>• Tes objectifs et le délai pour les atteindre</li>
+                  <li>• Le niveau d'accompagnement nécessaire (coaching + ressources + disponibilité)</li>
+                </ul>
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
-                  <h4 className="font-semibold mb-3">Pourquoi ce prix ?</h4>
-                  <p className="text-sm text-primary-foreground/80 mb-4">
-                    Tu ne paies pas des séances. Tu paies une transformation de ton système de décision.
+                  <p className="font-semibold mb-3">
+                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément tes enjeux.
                   </p>
-                  <ul className="space-y-2 text-sm text-primary-foreground/90">
-                    <li>→ Cadre exigeant avec peu de personnes en parallèle</li>
-                    <li>→ Accompagnement complet : 1:1 + ressources + disponibilité + IA 24/7</li>
-                    <li>→ Méthode qui reste après (ton "OS" de décideur)</li>
-                    <li>→ Intensité sur 2 mois : zéro dilution</li>
-                  </ul>
+                  <p className="text-sm text-primary-foreground/80 mb-4">
+                    Pourquoi ? Parce qu'un dirigeant qui gère 10 personnes avec une décision stratégique bloquée n'a pas les mêmes besoins qu'un fondateur solo en surcharge mentale.
+                  </p>
+                  <p className="text-sm text-primary-foreground/80">
+                    Le tarif reflète la valeur créée, pas des heures facturées.
+                  </p>
                 </div>
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
                   <p className="text-sm italic text-primary-foreground/80">
-                    Question simple : combien te coûte une décision que tu retardes de 2 mois par manque de clarté ?
+                    Tu sauras exactement ce que tu paies et pourquoi avant de décider quoi que ce soit.
                   </p>
                 </div>
 
@@ -168,10 +173,6 @@ export function OfferSection() {
                   Session CADRAGE
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                
-                <p className="text-center text-sm text-primary-foreground/70 mt-3">
-                  Paiement : 2× sans frais ou comptant
-                </p>
               </div>
             </div>
           </div>

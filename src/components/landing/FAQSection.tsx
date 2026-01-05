@@ -76,24 +76,22 @@ Si tu ne t'impliques pas → je te le dirai et on arrête.
 Zéro complaisance. Zéro perte de temps mutuelle.`,
   },
   {
-    question: "2 400 €, c'est cher non ?",
-    answer: `Cher par rapport à quoi ? Comparons :
+    question: "Quel est l'investissement pour cet accompagnement ?",
+    answer: `L'accompagnement est sur-mesure, donc le montant varie selon :
 
-• Un consultant opérationnel : 800-1 500 €/jour → Il te dit QUOI faire, il repart
-• Un formateur LinkedIn : 2 000-5 000 € → Tu apprends des techniques, tu appliques seul
-• Un recrutement raté : 30-80K€ (salaire + coûts cachés) → Parce que tu as décidé depuis la tension
+• La complexité de ta situation
+• Tes objectifs et le délai pour les atteindre
+• Le niveau d'accompagnement nécessaire
 
-Moi : 2 400 € pour 2 mois →
-• Coaching 1:1 (8 séances)
-• Kit opérationnel (fiches + checklists)
-• Salle d'entraînement mentale (audios, mini-trainings)
-• Filet de sécurité entre séances (réponse jour même)
-• Alpha 24/7 (pocket coach IA)
-• Méthode 3R que tu gardes à vie
+Je te communique le tarif lors de l'appel de 30 min, une fois qu'on a identifié ensemble ce dont tu as vraiment besoin.
 
-Question reformulée : Est-ce que ça vaut 1 200 €/mois pour récupérer ta stabilité, ton pouvoir de décision, et ton énergie ?
+Pourquoi cette approche ?
 
-Si tu hésites sur le prix, c'est que tu n'as pas encore calculé le coût du problème.`,
+Parce qu'un dirigeant avec une décision stratégique bloquée n'a pas les mêmes besoins qu'un fondateur en surcharge mentale chronique.
+
+Le tarif reflète la valeur créée et la transformation visée, pas un nombre d'heures facturées.
+
+Tu sauras exactement ce que tu paies et pourquoi avant de décider.`,
   },
   {
     question: "Combien de temps par semaine je dois y consacrer ?",
