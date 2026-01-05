@@ -62,9 +62,17 @@ export function JourneySection() {
     <section
       id="journey"
       ref={ref}
-      className="py-20 md:py-28 bg-background"
+      className="py-20 md:py-28 bg-background relative overflow-hidden"
     >
-      <div className="container mx-auto px-4">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient orbs */}
+        <div className="absolute top-1/4 -left-1/3 w-[500px] h-[500px] rounded-full bg-secondary/5 blur-[100px]" />
+        <div className="absolute bottom-1/4 -right-1/3 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
+        {/* Subtle lines pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div
           className={`text-center mb-12 md:mb-16 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"

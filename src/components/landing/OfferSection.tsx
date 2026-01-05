@@ -44,8 +44,15 @@ export function OfferSection() {
   };
 
   return (
-    <section id="offer" ref={ref} className="py-20 md:py-28 bg-card">
-      <div className="container mx-auto px-4">
+    <section id="offer" ref={ref} className="py-20 md:py-28 bg-card relative overflow-hidden">
+      {/* Subtle background texture */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-primary/3 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent/3 blur-[80px]" />
+        {/* Subtle diagonal lines */}
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_40px,rgba(0,0,0,0.01)_40px,rgba(0,0,0,0.01)_41px)]" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div
           className={`text-center mb-12 md:mb-16 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"

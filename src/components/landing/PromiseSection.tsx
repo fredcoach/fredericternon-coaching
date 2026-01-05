@@ -38,9 +38,17 @@ export function PromiseSection() {
   return (
     <section
       ref={ref}
-      className="py-20 md:py-28 bg-background"
+      className="py-20 md:py-28 bg-background relative overflow-hidden"
     >
-      <div className="container mx-auto px-4">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Large gradient orb */}
+        <div className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
+        <div className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] rounded-full bg-accent/5 blur-[100px]" />
+        {/* Subtle dot pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.03)_1px,transparent_0)] bg-[size:24px_24px]" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div
           className={`text-center mb-12 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
