@@ -1,5 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { MessageCircle, ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +16,7 @@ import testimonialLaura from "@/assets/testimonial-laura.png";
 import testimonialFatima from "@/assets/testimonial-fatima.png";
 import testimonialLouis from "@/assets/testimonial-louis.png";
 import testimonialClara from "@/assets/testimonial-clara.png";
+import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
 
 const testimonials = [
   {
@@ -63,6 +65,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
     <section
@@ -81,16 +84,83 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <MessageCircle className="w-4 h-4" />
-            Témoignages WhatsApp authentiques
-          </div>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             Ce qu'ils <span className="text-gradient">en disent</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Des échanges réels avec mes clients, partagés avec leur accord
+            Des témoignages réels de clients accompagnés
           </p>
+        </div>
+
+        {/* Video Testimonial Section */}
+        <div
+          className={`mb-16 transition-all duration-700 delay-150 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="max-w-4xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20 bg-card">
+              {/* Video Player */}
+              <div className="relative aspect-video">
+                {isVideoPlaying ? (
+                  <video
+                    src="/videos/testimonial-mahel.mp4"
+                    autoPlay
+                    controls
+                    className="w-full h-full object-cover"
+                    onEnded={() => setIsVideoPlaying(false)}
+                  />
+                ) : (
+                  <div 
+                    className="relative cursor-pointer group"
+                    onClick={() => setIsVideoPlaying(true)}
+                  >
+                    <img
+                      src={videoThumbnail}
+                      alt="Témoignage vidéo de Mahel Boyer"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
+                    
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                        <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground fill-primary-foreground ml-1" />
+                      </div>
+                    </div>
+
+                    {/* Video label */}
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="bg-background/90 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                            <Play className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">Mahel Boyer — Joueur Pro d'Échec</h4>
+                            <p className="text-sm text-muted-foreground">D'amateur à Grand Maître International</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* WhatsApp Section Title */}
+        <div
+          className={`text-center mb-8 transition-all duration-700 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-600 px-4 py-2 rounded-full text-sm font-medium">
+            <MessageCircle className="w-4 h-4" />
+            Témoignages WhatsApp authentiques
+          </div>
         </div>
 
         <div
