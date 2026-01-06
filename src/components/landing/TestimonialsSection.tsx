@@ -13,6 +13,8 @@ import testimonialEstelle1 from "@/assets/testimonial-estelle-1.png";
 import testimonialEstelle2 from "@/assets/testimonial-estelle-2.png";
 import testimonialLaura from "@/assets/testimonial-laura.png";
 import testimonialFatima from "@/assets/testimonial-fatima.png";
+import testimonialLouis from "@/assets/testimonial-louis.png";
+import testimonialClara from "@/assets/testimonial-clara.png";
 
 const testimonials = [
   {
@@ -20,6 +22,18 @@ const testimonials = [
     duration: "15 jours",
     image: testimonialMarie,
     highlight: "Je me sens comme une autre personne. J'ai retrouvé un équilibre que je pensais perdu depuis des années.",
+  },
+  {
+    name: "Louis",
+    duration: "Programme terminé",
+    image: testimonialLouis,
+    highlight: "C'est une vraie révolution pour moi. J'ai un vrai système et je suis bien plus efficace.",
+  },
+  {
+    name: "Clara",
+    duration: "En cours",
+    image: testimonialClara,
+    highlight: "J'aurais aimé trouver ça plus tôt ! J'ai beaucoup moins de stress avant une séance.",
   },
   {
     name: "Estelle",
@@ -86,45 +100,52 @@ export function TestimonialsSection() {
         >
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full max-w-7xl mx-auto px-4"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-3 md:-ml-6">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
-                  <div className="group relative bg-card rounded-2xl border border-border overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                    {/* WhatsApp Header */}
-                    <div className="bg-[#075E54] text-white px-4 py-2 flex items-center gap-2">
-                      <MessageCircle className="w-4 h-4" />
-                      <span className="text-sm font-medium">{testimonial.name}</span>
-                      <span className="text-xs opacity-75">• {testimonial.duration}</span>
+                <CarouselItem key={index} className="pl-3 md:pl-6 basis-[85%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="group relative bg-card rounded-3xl border-2 border-border/50 overflow-hidden shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all duration-500 hover:-translate-y-2">
+                    {/* WhatsApp Header - More authentic */}
+                    <div className="bg-gradient-to-r from-[#075E54] to-[#128C7E] text-white px-4 py-3 flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                        <MessageCircle className="w-4 h-4" />
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-sm font-semibold">{testimonial.name}</span>
+                        <span className="text-xs opacity-80">{testimonial.duration}</span>
+                      </div>
                     </div>
                     
-                    {/* Screenshot */}
-                    <div className="relative aspect-[9/16] max-h-[400px] overflow-hidden">
+                    {/* Screenshot with phone frame effect */}
+                    <div className="relative bg-[#ECE5DD] overflow-hidden">
                       <img
                         src={testimonial.image}
                         alt={`Témoignage de ${testimonial.name}`}
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-auto max-h-[320px] md:max-h-[380px] lg:max-h-[400px] object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                       />
-                      {/* Gradient overlay for readability */}
-                      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-card to-transparent" />
+                      {/* Subtle gradient overlay */}
+                      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#ECE5DD] to-transparent" />
                     </div>
                     
-                    {/* Quote highlight */}
-                    <div className="p-4 bg-card">
-                      <p className="text-sm text-muted-foreground italic line-clamp-2">
+                    {/* Quote highlight - Enhanced */}
+                    <div className="p-4 bg-gradient-to-b from-card to-card/80 border-t border-border/30">
+                      <p className="text-sm text-foreground/80 italic line-clamp-2 leading-relaxed">
                         "{testimonial.highlight}"
                       </p>
                     </div>
+                    
+                    {/* Decorative corner */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-12" />
-            <CarouselNext className="hidden md:flex -right-12" />
+            <CarouselPrevious className="hidden md:flex -left-4 lg:-left-6 bg-background/90 backdrop-blur-sm border-2 hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="hidden md:flex -right-4 lg:-right-6 bg-background/90 backdrop-blur-sm border-2 hover:bg-primary hover:text-primary-foreground" />
           </Carousel>
 
           {/* Mobile navigation hint */}
