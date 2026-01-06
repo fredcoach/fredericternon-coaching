@@ -98,10 +98,10 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-sm mx-auto">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20 bg-card">
               {/* Video Player */}
-              <div className="relative aspect-video">
+              <div className="relative aspect-[9/16]">
                 {isVideoPlaying ? (
                   <video
                     src="/videos/testimonial-mahel.mp4"
