@@ -129,23 +129,21 @@ export function TestimonialsSection() {
                         <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground fill-primary-foreground ml-1" />
                       </div>
                     </div>
-
-                    {/* Video label */}
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="bg-background/90 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-                        <div className="flex items-center gap-3">
-                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                            <Play className="w-5 h-5 text-primary" />
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-foreground">Mahel Boyer — Joueur Pro d'Échec</h4>
-                            <p className="text-sm text-muted-foreground">D'amateur à Grand Maître International</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 )}
+              </div>
+              
+              {/* Video label - Below thumbnail */}
+              <div className="p-4 bg-card">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Play className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Mahel Boyer — Joueur Pro d'Échec</h4>
+                    <p className="text-sm text-muted-foreground">D'amateur à Grand Maître International</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
