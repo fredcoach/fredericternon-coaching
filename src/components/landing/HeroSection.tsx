@@ -22,7 +22,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-primary/20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-primary/30">
       {/* Animated background elements with parallax */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Main glow */}
@@ -61,9 +61,33 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Two-column layout on desktop */}
-          <div className="grid lg:grid-cols-[1fr,auto] gap-12 lg:gap-16 items-center">
-            {/* Left: Text content */}
-            <div className="text-center lg:text-left order-2 lg:order-1">
+          <div className="flex flex-col items-center gap-12 lg:gap-16">
+            {/* Photo */}
+            <div className="animate-fade-in">
+              <div className="relative">
+                {/* Glow behind photo */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
+
+                {/* Photo */}
+                <img
+                  src={fredericPhoto}
+                  alt="Frédéric Ternon - Coach en performance mentale"
+                  className="relative w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/20 shadow-2xl"
+                />
+
+                {/* Badges around photo */}
+                <div className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl">
+                  <span className="text-sm font-semibold text-white">20 ans d'expérience</span>
+                </div>
+                <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-accent/90 backdrop-blur-md rounded-full shadow-xl">
+                  <span className="text-xs font-bold text-white">Méthode 3R</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Text content - centered */}
+            <div className="text-center">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 animate-fade-in">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
@@ -92,7 +116,7 @@ export function HeroSection() {
 
               {/* Subtitle - Cleaner */}
               <p
-                className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up leading-relaxed"
+                className="text-lg md:text-xl text-white/70 mb-8 max-w-xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.2s" }}
               >
                 Quand le décideur est bloqué, l'entreprise patine.
@@ -110,7 +134,7 @@ export function HeroSection() {
 
               {/* CTA */}
               <div
-                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-up"
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
                 style={{ animationDelay: "0.3s" }}
               >
                 <Button
@@ -122,30 +146,6 @@ export function HeroSection() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <span className="text-sm text-white/40">Sur sélection • Places limitées</span>
-              </div>
-            </div>
-
-            {/* Right: Photo with dramatic effect */}
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
-              <div className="relative">
-                {/* Glow behind photo */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
-
-                {/* Photo */}
-                <img
-                  src={fredericPhoto}
-                  alt="Frédéric Ternon - Coach en performance mentale"
-                  className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl"
-                />
-
-                {/* Badges around photo */}
-                <div className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl">
-                  <span className="text-sm font-semibold text-white">20 ans d'expérience</span>
-                </div>
-                <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-accent/90 backdrop-blur-md rounded-full shadow-xl">
-                  <span className="text-xs font-bold text-white">Méthode 3R</span>
-                </div>
               </div>
             </div>
           </div>
