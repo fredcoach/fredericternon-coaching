@@ -63,9 +63,31 @@ const testimonials = [
   },
 ];
 
+const videoTestimonials = [
+  {
+    id: "marielle",
+    name: "Marielle",
+    subtitle: "Témoignage de transformation",
+    videoSrc: "/videos/testimonial-marielle.mp4",
+  },
+  {
+    id: "cecile",
+    name: "Cécile",
+    subtitle: "Témoignage de transformation",
+    videoSrc: "/videos/testimonial-cecile.mp4",
+  },
+  {
+    id: "mahel",
+    name: "Mahel Boyer — Joueur Pro d'Échec",
+    subtitle: "D'amateur à Grand Maître International",
+    videoSrc: "/videos/testimonial-mahel.mp4",
+    thumbnail: videoThumbnail,
+  },
+];
+
 export function TestimonialsSection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [playingVideoId, setPlayingVideoId] = useState<string | null>(null);
 
   return (
     <section
@@ -92,59 +114,91 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Video Testimonial Section */}
+        {/* Video Testimonials Carousel */}
         <div
           className={`mb-16 transition-all duration-700 delay-150 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="max-w-sm mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20 bg-card">
-              {/* Video Player */}
-              <div className="relative aspect-[9/16]">
-                {isVideoPlaying ? (
-                  <video
-                    src="/videos/testimonial-mahel.mp4"
-                    autoPlay
-                    controls
-                    className="w-full h-full object-cover"
-                    onEnded={() => setIsVideoPlaying(false)}
-                  />
-                ) : (
-                  <div 
-                    className="relative cursor-pointer group"
-                    onClick={() => setIsVideoPlaying(true)}
-                  >
-                    <img
-                      src={videoThumbnail}
-                      alt="Témoignage vidéo de Mahel Boyer"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            className="w-full max-w-4xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {videoTestimonials.map((video) => (
+                <CarouselItem key={video.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20 bg-card">
+                    {/* Video Player */}
+                    <div className="relative aspect-[9/16]">
+                      {playingVideoId === video.id ? (
+                        <video
+                          src={video.videoSrc}
+                          autoPlay
+                          controls
+                          className="w-full h-full object-cover"
+                          onEnded={() => setPlayingVideoId(null)}
+                        />
+                      ) : (
+                        <div 
+                          className="relative cursor-pointer group h-full"
+                          onClick={() => setPlayingVideoId(video.id)}
+                        >
+                          {video.thumbnail ? (
+                            <img
+                              src={video.thumbnail}
+                              alt={`Témoignage vidéo de ${video.name}`}
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                          ) : (
+                            <video
+                              src={video.videoSrc}
+                              className="w-full h-full object-cover"
+                              muted
+                              playsInline
+                            />
+                          )}
+                          {/* Dark overlay */}
+                          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
+                          
+                          {/* Play button */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                              <Play className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground fill-primary-foreground ml-1" />
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                     
-                    {/* Play button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                        <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground fill-primary-foreground ml-1" />
+                    {/* Video label - Below thumbnail */}
+                    <div className="p-4 bg-card">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                          <Play className="w-4 h-4 text-primary" />
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="font-semibold text-foreground text-sm truncate">{video.name}</h4>
+                          <p className="text-xs text-muted-foreground truncate">{video.subtitle}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                )}
-              </div>
-              
-              {/* Video label - Below thumbnail */}
-              <div className="p-4 bg-card">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Play className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Mahel Boyer — Joueur Pro d'Échec</h4>
-                    <p className="text-sm text-muted-foreground">D'amateur à Grand Maître International</p>
-                  </div>
-                </div>
-              </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-4 lg:-left-12 bg-background/90 backdrop-blur-sm border-2 hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="hidden md:flex -right-4 lg:-right-12 bg-background/90 backdrop-blur-sm border-2 hover:bg-primary hover:text-primary-foreground" />
+          </Carousel>
+          
+          {/* Mobile navigation hint for videos */}
+          <div className="flex justify-center gap-2 mt-4 md:hidden">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <ChevronLeft className="w-4 h-4" />
+              <span>Glissez pour voir plus</span>
+              <ChevronRight className="w-4 h-4" />
             </div>
           </div>
         </div>
