@@ -135,7 +135,7 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-start">
             {/* Featured Video - Mahel */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card">
               <div className="absolute top-4 left-4 z-10">
@@ -189,7 +189,7 @@ export function TestimonialsSection() {
               <h3 className="text-center text-lg font-medium text-foreground mb-4">
                 Autres témoignages vidéo
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 {videoTestimonials.map((video) => (
                   <div key={video.id} className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-primary/20 bg-card">
                     <div className="relative aspect-[9/16]">
