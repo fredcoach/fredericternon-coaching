@@ -138,8 +138,33 @@ export function TestimonialsSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl lg:max-w-5xl mx-auto items-start">
             {/* Featured Video - Mahel */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card max-w-sm md:max-w-xs lg:max-w-sm mx-auto w-full">
-              <div className="relative aspect-[9/16]">
-                {playingVideoId === featuredVideo.id ? (
+              {/* Thumbnail header in 16:9 */}
+              <div 
+                className="relative aspect-video cursor-pointer group"
+                onClick={() => setPlayingVideoId(featuredVideo.id)}
+              >
+                <img
+                  src={featuredVideo.thumbnail}
+                  alt={`Témoignage vidéo de ${featuredVideo.name}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 z-10">
+                  <h4 className="font-bold text-white text-sm md:text-xs lg:text-sm drop-shadow-lg">{featuredVideo.name}</h4>
+                  <p className="text-xs md:text-[10px] lg:text-xs text-white/90 drop-shadow-md">{featuredVideo.subtitle}</p>
+                </div>
+                {playingVideoId !== featuredVideo.id && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-14 h-14 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                      <Play className="w-5 h-5 md:w-4 md:h-4 lg:w-5 lg:h-5 text-primary-foreground fill-primary-foreground ml-0.5" />
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              {/* Video in 9:16 below */}
+              {playingVideoId === featuredVideo.id && (
+                <div className="relative aspect-[9/16]">
                   <video
                     src={featuredVideo.videoSrc}
                     autoPlay
@@ -147,41 +172,8 @@ export function TestimonialsSection() {
                     className="w-full h-full object-cover"
                     onEnded={() => setPlayingVideoId(null)}
                   />
-                ) : (
-                  <div 
-                    className="relative cursor-pointer group h-full"
-                    onClick={() => setPlayingVideoId(featuredVideo.id)}
-                  >
-                    <img
-                      src={featuredVideo.thumbnail}
-                      alt={`Témoignage vidéo de ${featuredVideo.name}`}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/60 transition-colors duration-300" />
-                    {/* Text overlay on thumbnail */}
-                    <div className="absolute bottom-4 left-3 right-3 z-10">
-                      <h4 className="font-bold text-white text-sm md:text-xs lg:text-sm drop-shadow-lg">{featuredVideo.name}</h4>
-                      <p className="text-xs md:text-[10px] lg:text-xs text-white/90 drop-shadow-md">{featuredVideo.subtitle}</p>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                        <Play className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 text-primary-foreground fill-primary-foreground ml-1" />
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div className="p-3 bg-card">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Play className="w-4 h-4 md:w-3 md:h-3 lg:w-4 lg:h-4 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm md:text-xs lg:text-sm">{featuredVideo.name}</h4>
-                    <p className="text-xs md:text-[10px] lg:text-xs text-muted-foreground">{featuredVideo.subtitle}</p>
-                  </div>
                 </div>
-              </div>
+              )}
             </div>
 
             {/* Video Testimonials Carousel */}
