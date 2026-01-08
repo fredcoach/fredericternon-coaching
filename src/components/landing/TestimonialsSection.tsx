@@ -138,11 +138,6 @@ export function TestimonialsSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl lg:max-w-5xl mx-auto items-start">
             {/* Featured Video - Mahel */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card max-w-sm md:max-w-xs lg:max-w-sm mx-auto w-full">
-              <div className="absolute top-3 left-3 z-10">
-                <span className="bg-primary text-primary-foreground text-xs font-semibold px-2.5 py-1 rounded-full">
-                  ⭐ Témoignage vedette
-                </span>
-              </div>
               <div className="relative aspect-[9/16]">
                 {playingVideoId === featuredVideo.id ? (
                   <video
@@ -162,7 +157,12 @@ export function TestimonialsSection() {
                       alt={`Témoignage vidéo de ${featuredVideo.name}`}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/60 transition-colors duration-300" />
+                    {/* Text overlay on thumbnail */}
+                    <div className="absolute bottom-4 left-3 right-3 z-10">
+                      <h4 className="font-bold text-white text-sm md:text-xs lg:text-sm drop-shadow-lg">{featuredVideo.name}</h4>
+                      <p className="text-xs md:text-[10px] lg:text-xs text-white/90 drop-shadow-md">{featuredVideo.subtitle}</p>
+                    </div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-16 h-16 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
                         <Play className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 text-primary-foreground fill-primary-foreground ml-1" />
