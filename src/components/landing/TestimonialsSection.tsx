@@ -77,6 +77,18 @@ const videoTestimonials = [
     subtitle: "Témoignage de transformation",
     videoSrc: "/videos/testimonial-cecile.mp4",
   },
+  {
+    id: "karine",
+    name: "Karine",
+    subtitle: "Témoignage de transformation",
+    videoSrc: "/videos/testimonial-karine.mp4",
+  },
+  {
+    id: "video4",
+    name: "Témoignage",
+    subtitle: "Témoignage de transformation",
+    videoSrc: "/videos/testimonial-video4.mp4",
+  },
 ];
 
 // Témoignage vedette avec vignette de qualité
