@@ -135,11 +135,11 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl lg:max-w-5xl mx-auto items-start">
             {/* Featured Video - Mahel */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card">
-              <div className="absolute top-4 left-4 z-10">
-                <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card max-w-sm md:max-w-xs lg:max-w-sm mx-auto w-full">
+              <div className="absolute top-3 left-3 z-10">
+                <span className="bg-primary text-primary-foreground text-xs font-semibold px-2.5 py-1 rounded-full">
                   ⭐ Témoignage vedette
                 </span>
               </div>
@@ -164,34 +164,34 @@ export function TestimonialsSection() {
                     />
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                        <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground fill-primary-foreground ml-1" />
+                      <div className="w-16 h-16 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                        <Play className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 text-primary-foreground fill-primary-foreground ml-1" />
                       </div>
                     </div>
                   </div>
                 )}
               </div>
-              <div className="p-4 bg-card">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Play className="w-5 h-5 text-primary" />
+              <div className="p-3 bg-card">
+                <div className="flex items-center gap-2">
+                  <div className="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Play className="w-4 h-4 md:w-3 md:h-3 lg:w-4 lg:h-4 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">{featuredVideo.name}</h4>
-                    <p className="text-sm text-muted-foreground">{featuredVideo.subtitle}</p>
+                    <h4 className="font-semibold text-foreground text-sm md:text-xs lg:text-sm">{featuredVideo.name}</h4>
+                    <p className="text-xs md:text-[10px] lg:text-xs text-muted-foreground">{featuredVideo.subtitle}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Video Testimonials Carousel */}
-            <div className="space-y-4">
-              <h3 className="text-center text-lg font-medium text-foreground mb-4">
+            <div className="space-y-3">
+              <h3 className="text-center text-base md:text-sm lg:text-base font-medium text-foreground mb-3">
                 Autres témoignages vidéo
               </h3>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-2 md:gap-2 lg:gap-3 max-w-sm md:max-w-xs lg:max-w-sm mx-auto">
                 {videoTestimonials.map((video) => (
-                  <div key={video.id} className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-primary/20 bg-card">
+                  <div key={video.id} className="relative rounded-xl overflow-hidden shadow-lg border border-primary/20 bg-card">
                     <div className="relative aspect-[9/16]">
                       {playingVideoId === video.id ? (
                         <video
@@ -214,21 +214,21 @@ export function TestimonialsSection() {
                           />
                           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                              <Play className="w-5 h-5 md:w-6 md:h-6 text-primary-foreground fill-primary-foreground ml-0.5" />
+                            <div className="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                              <Play className="w-4 h-4 md:w-3 md:h-3 lg:w-4 lg:h-4 text-primary-foreground fill-primary-foreground ml-0.5" />
                             </div>
                           </div>
                         </div>
                       )}
                     </div>
-                    <div className="p-3 bg-card">
-                      <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                          <Play className="w-3 h-3 text-primary" />
+                    <div className="p-2 bg-card">
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                          <Play className="w-2.5 h-2.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5 text-primary" />
                         </div>
                         <div className="min-w-0">
-                          <h4 className="font-semibold text-foreground text-sm truncate">{video.name}</h4>
-                          <p className="text-xs text-muted-foreground truncate">{video.subtitle}</p>
+                          <h4 className="font-semibold text-foreground text-xs md:text-[10px] lg:text-xs truncate">{video.name}</h4>
+                          <p className="text-[10px] md:text-[8px] lg:text-[10px] text-muted-foreground truncate">{video.subtitle}</p>
                         </div>
                       </div>
                     </div>
