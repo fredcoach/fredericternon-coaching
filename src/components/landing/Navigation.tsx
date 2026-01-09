@@ -41,7 +41,7 @@ export function Navigation() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className="font-serif text-lg md:text-xl font-bold text-foreground"
+            className="font-serif text-lg md:text-xl font-bold text-primary drop-shadow-sm"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -71,11 +71,11 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
           </button>
         </nav>
 
