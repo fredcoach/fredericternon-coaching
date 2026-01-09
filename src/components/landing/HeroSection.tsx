@@ -116,7 +116,7 @@ export function HeroSection() {
 
               {/* Subtitle - Cleaner */}
               <p
-                className="text-lg md:text-xl text-white/70 mb-8 max-w-xl mx-auto animate-fade-in-up leading-relaxed"
+                className="text-base md:text-xl text-white/70 mb-8 max-w-xs sm:max-w-md md:max-w-xl mx-auto animate-fade-in-up leading-relaxed px-2"
                 style={{ animationDelay: "0.2s" }}
               >
                 Quand le décideur est bloqué, l'entreprise patine.
@@ -127,7 +127,7 @@ export function HeroSection() {
               </p>
 
               {/* Baseline */}
-              <p className="text-base text-white/50 mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+              <p className="text-sm md:text-base text-white/50 mb-10 animate-fade-in-up max-w-xs sm:max-w-md md:max-w-xl mx-auto px-2" style={{ animationDelay: "0.25s" }}>
                 Pas une méthode de plus.{" "}
                 <span className="text-accent font-semibold">Un système interne qui tient dans le réel.</span>
               </p>
