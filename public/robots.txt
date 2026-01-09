@@ -1,3 +1,21 @@
+# Robots.txt pour fredericternon.com
+# Coaching masculin - Frédéric Ternon
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fredericternon.com/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge (optionnel)
+Crawl-delay: 1
+
+# Bloquer les ressources inutiles pour le SEO
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Autoriser les bots sociaux
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +28,5 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
