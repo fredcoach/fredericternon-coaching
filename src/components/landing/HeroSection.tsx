@@ -58,7 +58,7 @@ export function HeroSection() {
         <div className="absolute top-0 left-2/3 w-px h-1/5 bg-gradient-to-b from-white/10 via-white/3 to-transparent animate-[shimmer_6s_ease-in-out_infinite_2s]" />
       </div>
 
-      <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+      <div className="container mx-auto px-6 sm:px-8 md:px-12 py-20 md:py-28 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Two-column layout on desktop */}
           <div className="flex flex-col items-center gap-12 lg:gap-16">
