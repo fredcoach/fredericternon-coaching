@@ -147,6 +147,8 @@ export function TestimonialsSection() {
                   src={featuredVideo.thumbnail}
                   alt={`Témoignage vidéo de ${featuredVideo.name}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 z-10">
@@ -169,6 +171,7 @@ export function TestimonialsSection() {
                     src={featuredVideo.videoSrc}
                     autoPlay
                     controls
+                    preload="metadata"
                     className="w-full h-full object-cover"
                     onEnded={() => setPlayingVideoId(null)}
                   />
@@ -190,6 +193,7 @@ export function TestimonialsSection() {
                           src={video.videoSrc}
                           autoPlay
                           controls
+                          preload="metadata"
                           className="w-full h-full object-cover"
                           onEnded={() => setPlayingVideoId(null)}
                         />
@@ -203,6 +207,7 @@ export function TestimonialsSection() {
                             className="w-full h-full object-cover"
                             muted
                             playsInline
+                            preload="none"
                           />
                           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
                           <div className="absolute inset-0 flex items-center justify-center">
@@ -276,6 +281,8 @@ export function TestimonialsSection() {
                         src={testimonial.image}
                         alt={`Témoignage de ${testimonial.name}`}
                         className="w-full h-auto max-h-[320px] md:max-h-[380px] lg:max-h-[400px] object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                        loading="lazy"
+                        decoding="async"
                       />
                       {/* Subtle gradient overlay */}
                       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#ECE5DD] to-transparent" />
