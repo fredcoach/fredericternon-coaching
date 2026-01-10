@@ -17,6 +17,10 @@ import testimonialFatima from "@/assets/testimonial-fatima.png";
 import testimonialLouis from "@/assets/testimonial-louis.png";
 import testimonialClara from "@/assets/testimonial-clara.png";
 import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
+import thumbnailMarielle from "@/assets/thumbnail-marielle.jpg";
+import thumbnailCecile from "@/assets/thumbnail-cecile.jpg";
+import thumbnailKarine from "@/assets/thumbnail-karine.jpg";
+import thumbnailVideo4 from "@/assets/thumbnail-video4.jpg";
 
 const testimonials = [
   {
@@ -70,24 +74,28 @@ const videoTestimonials = [
     name: "Marielle",
     subtitle: "Témoignage de transformation",
     videoSrc: "/videos/testimonial-marielle.mp4",
+    thumbnail: thumbnailMarielle,
   },
   {
     id: "cecile",
     name: "Cécile",
     subtitle: "Témoignage de transformation",
     videoSrc: "/videos/testimonial-cecile.mp4",
+    thumbnail: thumbnailCecile,
   },
   {
     id: "karine",
     name: "Karine",
     subtitle: "Témoignage de transformation",
     videoSrc: "/videos/testimonial-karine.mp4",
+    thumbnail: thumbnailKarine,
   },
   {
     id: "video4",
     name: "Témoignage",
     subtitle: "Témoignage de transformation",
     videoSrc: "/videos/testimonial-video4.mp4",
+    thumbnail: thumbnailVideo4,
   },
 ];
 
@@ -202,12 +210,12 @@ export function TestimonialsSection() {
                           className="relative cursor-pointer group h-full"
                           onClick={() => setPlayingVideoId(video.id)}
                         >
-                          <video
-                            src={video.videoSrc}
+                          <img
+                            src={video.thumbnail}
+                            alt={`Vignette témoignage ${video.name}`}
                             className="w-full h-full object-cover"
-                            muted
-                            playsInline
-                            preload="none"
+                            loading="lazy"
+                            decoding="async"
                           />
                           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
                           <div className="absolute inset-0 flex items-center justify-center">
