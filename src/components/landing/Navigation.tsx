@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 
 const navLinks = [
   { href: "#about", label: "À propos" },
@@ -9,6 +9,10 @@ const navLinks = [
   { href: "#journey", label: "Parcours" },
   { href: "#offer", label: "Offre" },
   { href: "#faq", label: "FAQ" },
+];
+
+const externalLinks = [
+  { href: "https://mentalpro.fr", label: "Espace Sportifs", external: true },
 ];
 
 export function Navigation() {
@@ -61,6 +65,18 @@ export function Navigation() {
                 {link.label}
               </button>
             ))}
+            {externalLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
+              >
+                {link.label}
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            ))}
             <Button
               onClick={() => scrollToSection("#final-cta")}
               className="gradient-primary text-primary-foreground hover:opacity-90"
@@ -91,6 +107,19 @@ export function Navigation() {
                 >
                   {link.label}
                 </button>
+              ))}
+              {externalLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-3 px-4 text-left text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors flex items-center gap-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                  <ExternalLink className="h-4 w-4" />
+                </a>
               ))}
               <Button
                 onClick={() => scrollToSection("#final-cta")}
