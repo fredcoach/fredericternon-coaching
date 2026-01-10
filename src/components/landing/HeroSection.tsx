@@ -69,11 +69,13 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
 
-                {/* Photo */}
+                {/* Photo - priorité haute car au-dessus du fold */}
                 <img
                   src={fredericPhoto}
                   alt="Frédéric Ternon - Coach en performance mentale"
                   className="relative w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/20 shadow-2xl"
+                  fetchPriority="high"
+                  decoding="async"
                 />
 
                 {/* Badges around photo */}

@@ -26,6 +26,8 @@ export function AboutSection() {
                   src={fredericConference} 
                   alt="Frédéric Ternon en conférence à TheCamp" 
                   className="w-full h-48 md:h-64 object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute bottom-4 left-4 z-20">
                   <span className="bg-primary/90 text-primary-foreground text-sm font-medium px-3 py-1 rounded-full">
