@@ -71,7 +71,7 @@ export function Navigation() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
+                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
               >
                 {link.label}
                 <ExternalLink className="h-3 w-3" />
@@ -114,7 +114,7 @@ export function Navigation() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-3 px-4 text-left text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors flex items-center gap-2"
+                  className="py-3 px-4 text-left font-medium text-primary hover:text-primary/80 hover:bg-muted rounded-lg transition-colors flex items-center gap-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
