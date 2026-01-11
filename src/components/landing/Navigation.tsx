@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ExternalLink } from "lucide-react";
 
@@ -23,6 +23,8 @@ const externalLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,11 +35,18 @@ export function Navigation() {
   }, []);
 
   const scrollToSection = (href: string) => {
+    setIsMobileMenuOpen(false);
+    
+    // If not on homepage, navigate there first
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: href } });
+      return;
+    }
+    
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (

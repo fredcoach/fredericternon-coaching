@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Navigation } from "@/components/landing/Navigation";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { AboutSection } from "@/components/landing/AboutSection";
@@ -16,6 +18,20 @@ import { Footer } from "@/components/landing/Footer";
 import { FloatingCTA } from "@/components/landing/FloatingCTA";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Handle scroll to section when navigating from another page
+    if (location.state?.scrollTo) {
+      setTimeout(() => {
+        const element = document.querySelector(location.state.scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location.state]);
+
   return (
     <div className="min-h-screen">
       <Navigation />
