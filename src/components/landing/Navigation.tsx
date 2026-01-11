@@ -50,7 +50,7 @@ export function Navigation() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className="font-serif text-lg md:text-xl font-bold text-primary drop-shadow-sm"
+            className="font-serif text-lg md:text-xl font-bold text-white drop-shadow-md"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -65,7 +65,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-white/90 hover:text-white transition-colors drop-shadow-sm"
               >
                 {link.label}
               </button>
@@ -74,7 +74,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-white/80 transition-colors drop-shadow-sm"
               >
                 {link.label}
               </Link>
@@ -85,7 +85,7 @@ export function Navigation() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+                className="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1 drop-shadow-sm"
               >
                 {link.label}
                 <ExternalLink className="h-3 w-3" />
@@ -101,7 +101,7 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-primary"
+            className="md:hidden p-2 text-white drop-shadow-md"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
