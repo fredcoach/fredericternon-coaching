@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ExternalLink } from "lucide-react";
 
@@ -9,6 +10,10 @@ const navLinks = [
   { href: "#journey", label: "Parcours" },
   { href: "#offer", label: "Offre" },
   { href: "#faq", label: "FAQ" },
+];
+
+const pageLinks = [
+  { href: "/blog", label: "Blog" },
 ];
 
 const externalLinks = [
@@ -65,6 +70,15 @@ export function Navigation() {
                 {link.label}
               </button>
             ))}
+            {pageLinks.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             {externalLinks.map((link) => (
               <a
                 key={link.href}
@@ -107,6 +121,16 @@ export function Navigation() {
                 >
                   {link.label}
                 </button>
+              ))}
+              {pageLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="py-3 px-4 text-left font-medium text-foreground hover:text-primary hover:bg-muted rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
               ))}
               {externalLinks.map((link) => (
                 <a
