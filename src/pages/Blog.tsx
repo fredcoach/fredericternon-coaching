@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { blogArticles } from "@/data/blogArticles";
 import { Clock, ArrowRight, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,8 +7,57 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 const Blog = () => {
+  // Structured data for blog listing (ItemList for SEO)
+  const blogListStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Blog Coaching Mental - Croyances Limitantes Entrepreneurs",
+    "description": "Articles et guides sur les croyances limitantes qui freinent la croissance des entrepreneurs. Syndrome de l'imposteur, peur de réussir, perfectionnisme...",
+    "url": "https://fredericternon.com/blog",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": blogArticles.map((article, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Article",
+          "@id": `https://fredericternon.com/blog/${article.slug}`,
+          "name": article.title,
+          "description": article.metaDescription,
+          "url": `https://fredericternon.com/blog/${article.slug}`
+        }
+      }))
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Blog Coaching Mental | Croyances Limitantes Entrepreneurs - Frédéric Ternon</title>
+        <meta name="title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs - Frédéric Ternon" />
+        <meta name="description" content="Découvrez les croyances limitantes qui freinent votre croissance entrepreneuriale. Syndrome de l'imposteur, peur de réussir, perfectionnisme : solutions concrètes pour entrepreneurs." />
+        <meta name="keywords" content="croyances limitantes entrepreneur, syndrome imposteur entrepreneur, peur réussir entrepreneur, coaching mental, développement personnel entrepreneur, blocages entrepreneurs" />
+        <link rel="canonical" href="https://fredericternon.com/blog" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fredericternon.com/blog" />
+        <meta property="og:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
+        <meta property="og:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
+        <meta property="og:site_name" content="Frédéric Ternon Coaching" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
+        <meta name="twitter:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(blogListStructuredData)}
+        </script>
+      </Helmet>
+
       <Navigation />
       
       {/* Hero Section */}
