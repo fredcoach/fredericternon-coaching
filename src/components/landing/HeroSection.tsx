@@ -99,20 +99,20 @@ export function HeroSection() {
               {/* Main Headline - More dramatic */}
               <h1 className="animate-fade-in-up">
                 <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight">
-                  Tes décisions.
+                  Ta clarté.
                 </span>
                 <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mt-1">
-                  Ton énergie.
+                  Ta puissance.
                 </span>
                 <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mt-1">
-                  Ton focus.
+                  Ta sérénité.
                 </span>
               </h1>
 
               {/* Accent line */}
               <div className="mt-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
                 <span className="inline-block font-serif text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-                  C'est là que tout se joue.
+                  Sans sacrifier qui tu es.
                 </span>
               </div>
 
@@ -121,17 +121,17 @@ export function HeroSection() {
                 className="text-base md:text-xl text-white/70 mb-8 max-w-xs sm:max-w-md md:max-w-xl mx-auto animate-fade-in-up leading-relaxed px-2"
                 style={{ animationDelay: "0.2s" }}
               >
-                Quand le décideur est bloqué, l'entreprise patine.
+                Tu portes beaucoup. Peut-être trop. Et pourtant, tu avances.
                 <br />
                 <span className="text-white/90 font-medium">
-                  Quand il retrouve sa puissance, tout se remet en mouvement.
+                  Il est temps de retrouver ta légitimité intérieure.
                 </span>
               </p>
 
               {/* Baseline */}
               <p className="text-sm md:text-base text-white/50 mb-10 animate-fade-in-up max-w-xs sm:max-w-md md:max-w-xl mx-auto px-2" style={{ animationDelay: "0.25s" }}>
                 Pas une méthode de plus.{" "}
-                <span className="text-accent font-semibold">Un système interne qui tient dans le réel.</span>
+                <span className="text-accent font-semibold">Une transformation qui t'appartient.</span>
               </p>
 
               {/* CTA */}

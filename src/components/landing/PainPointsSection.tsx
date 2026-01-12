@@ -2,10 +2,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertCircle } from "lucide-react";
 
 const impostorPoints = [
-  "Tu minimises tes victoires",
-  "Tu te mets une pression énorme pour ne pas 'être démasqué'",
-  "Tu surcontrôles parce que lâcher prise te fait peur",
-  "Plus tu montes en niveau… plus tu doutes",
+  "Tu minimises tes réussites, comme si elles ne comptaient pas vraiment",
+  "Tu portes un masque — et tu as peur qu'on découvre que tu doutes",
+  "Tu surcontrôles parce que lâcher prise, c'est risquer de décevoir",
+  "Plus tu grandis… plus tu te demandes si tu mérites ta place",
 ];
 
 export function PainPointsSection() {
@@ -23,27 +23,27 @@ export function PainPointsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-6">
-            Ce que tu vis est courant — mais <span className="text-accent">limite ta puissance</span>
+            Ce que tu vis est courant — mais <span className="text-accent">t'épuise en silence</span>
           </h2>
 
           <div className="space-y-6 mt-10">
             <p className="text-lg text-primary-foreground/90 text-center">
-              Tu portes une mission. Tu tiens la barre. Et tu encaisses.
+              Tu portes tout. L'entreprise, les décisions, les autres. Et tu tiens. Toujours.
             </p>
 
             <p className="text-primary-foreground/80 text-center max-w-3xl mx-auto">
-              Entre la stratégie, l'opérationnel, les messages, les urgences, les demandes… tu finis par vivre des journées où tu n'as même plus le temps de penser.
+              Entre la stratégie, l'opérationnel, les urgences et les attentes de tout le monde… tu n'as plus de temps pour toi. Plus de temps pour penser. Plus de temps pour respirer.
             </p>
 
             {/* Quote */}
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 my-10 border border-primary-foreground/20">
               <blockquote className="text-xl md:text-2xl font-serif italic text-center text-primary-foreground">
-                "Je suis censé être celui qui décide… mais j'ai l'impression de courir derrière le système."
+                "Je réussis, mais quelque chose sonne faux. Comme si je jouais un rôle."
               </blockquote>
             </div>
 
             <p className="text-primary-foreground/80 text-center">
-              Et parfois, le signal le plus visible, c'est ton équipe : elle exécute… mais sans adhérer. Elle attend. Elle contourne. Elle s'éteint. Et toi, tu portes encore plus.
+              Et le plus dur ? Tu ne peux pas en parler. Tu dois rester forte. Tu dois avoir les réponses. Alors tu portes ton masque. Et tu continues. Seule.
             </p>
 
             {/* Impostor syndrome */}
@@ -71,19 +71,19 @@ export function PainPointsSection() {
               </div>
 
               <p className="text-center mt-8 text-primary-foreground/70 text-sm">
-                Ce n'est pas un défaut de caractère. C'est un schéma mental + une physiologie sous tension.
+                Ce n'est pas toi qui es "trop". C'est ton système intérieur qui refuse de continuer à se trahir.
               </p>
             </div>
 
             {/* Key message */}
             <div className="text-center mt-12 space-y-4">
               <p className="text-lg text-accent font-medium">
-                Ce schéma te coûte cher : il ralentit tes décisions et t'enferme dans le contrôle.
+                Cette charge invisible te coûte cher : elle t'éloigne de qui tu es vraiment.
               </p>
               <p className="text-xl font-semibold text-primary-foreground">
-                Tu n'as pas besoin d'une nouvelle méthode.{" "}
+                Tu n'as pas besoin d'en faire plus.{" "}
                 <span className="underline decoration-accent decoration-2 underline-offset-4">
-                  Tu as besoin d'un fonctionnement qui t'appartient.
+                  Tu as besoin de retrouver ta légitimité intérieure.
                 </span>
               </p>
             </div>

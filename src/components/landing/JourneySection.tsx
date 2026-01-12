@@ -5,53 +5,53 @@ const steps = [
   {
     icon: MessageCircle,
     phase: "Session CADRAGE",
-    title: "Diagnostic net (30 min)",
+    title: "Diagnostic profond (30 min)",
     points: [
-      "Où tu perds ton énergie",
+      "Ce qui te pèse vraiment",
       "Ce qui te disperse",
-      "Ce qui te fait hésiter",
-      "Quoi ajuster en premier",
+      "Ce qui t'empêche de souffler",
+      "Par où commencer",
     ],
-    note: "Si c'est un match, je te propose un plan.",
+    note: "Si c'est un match, je te propose un accompagnement sur-mesure.",
   },
   {
     icon: Anchor,
     phase: "Étape 1",
-    title: "Stabiliser ton système",
-    subtitle: "urgence → contrôle",
+    title: "Retrouver ton espace intérieur",
+    subtitle: "surcharge → clarté",
     points: [
-      "Déclencheurs",
-      "Surcharge",
-      "Limites",
-      "Cadre minimal",
+      "Identifier les sources d'épuisement",
+      "Poser des limites saines",
+      "Créer de l'espace pour toi",
+      "Respirer à nouveau",
     ],
-    result: "Tu récupères de la bande passante mentale, tu redeviens stable.",
+    result: "Tu récupères de la bande passante mentale. Tu souffles enfin.",
   },
   {
     icon: TrendingUp,
     phase: "Étape 2",
-    title: "Renforcer ta posture",
-    subtitle: "posture → décisions",
+    title: "Incarner ta légitimité",
+    subtitle: "doutes → affirmation",
     points: [
-      "Critères",
-      "Biais émotionnels",
-      "Arbitrages",
-      "Délégation",
+      "Travailler les croyances limitantes",
+      "Clarifier tes valeurs profondes",
+      "Décider avec confiance",
+      "Assumer ta place",
     ],
-    result: "Décisions plus rapides, moins de rumination.",
+    result: "Tu incarnes qui tu es vraiment. Sans te justifier.",
   },
   {
     icon: Rocket,
     phase: "Étape 3",
-    title: "Installer un système durable",
-    subtitle: "exécution → performance",
+    title: "Installer un équilibre durable",
+    subtitle: "épuisement → sérénité",
     points: [
-      "Focus",
-      "Pilotage hebdo",
-      "Hygiène mentale",
       "Rythme soutenable",
+      "Pilotage serein",
+      "Impact préservé",
+      "Énergie protégée",
     ],
-    result: "Une mécanique qui tient, même quand ça accélère.",
+    result: "Un fonctionnement qui te ressemble et qui tient dans la durée.",
   },
 ];
 
@@ -165,10 +165,10 @@ export function JourneySection() {
           }`}
         >
           <p className="text-muted-foreground">
-            <strong className="text-foreground">Important — ce n'est pas figé :</strong> Ce cadre n'est pas une cage. On ajuste selon ta réalité (pics d'activité, urgences, équipe, décisions du moment, énergie).
+            <strong className="text-foreground">Important — ce parcours s'adapte à toi :</strong> On ajuste selon ta réalité, ton rythme, tes enjeux du moment. Pas de cadre rigide.
           </p>
           <p className="text-foreground font-medium mt-2">
-            Le but n'est pas de te faire rentrer dans une méthode. Le but, c'est que la méthode rentre dans ta vie.
+            Le but n'est pas de te faire rentrer dans une méthode. Le but, c'est que tu retrouves qui tu es vraiment.
           </p>
         </div>
       </div>

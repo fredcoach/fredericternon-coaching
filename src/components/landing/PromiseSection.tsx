@@ -5,23 +5,23 @@ import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
 const promises = [
   {
     icon: Shield,
-    title: "Stabilité mentale",
-    description: "Calme + focus, même sous pression",
+    title: "Légitimité retrouvée",
+    description: "Incarner ta place sans te justifier",
   },
   {
     icon: Gauge,
-    title: "Méthode d'arbitrage",
-    description: "Décider plus vite, plus juste",
+    title: "Clarté décisionnelle",
+    description: "Décider avec confiance et sérénité",
   },
   {
     icon: Compass,
-    title: "Agenda réaligné",
-    description: "Moins d'urgence, plus d'essentiel",
+    title: "Espace pour toi",
+    description: "Moins de charge, plus de recul",
   },
   {
     icon: RotateCcw,
-    title: "Routines fiables",
-    description: "Pas 'motivantes'… fiables",
+    title: "Énergie préservée",
+    description: "Avancer sans t'épuiser",
   },
 ];
 
@@ -58,7 +58,7 @@ export function PromiseSection() {
             La promesse <span className="text-gradient">(concrète)</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            En quelques semaines, tu récupères :
+            En quelques semaines, tu retrouves :
           </p>
         </div>
 
@@ -91,13 +91,13 @@ export function PromiseSection() {
           }`}
         >
           <div className="flex flex-wrap items-center justify-center gap-2 text-lg font-medium text-foreground mb-8">
-            <span className="px-4 py-2 bg-muted rounded-full">moins d'urgence</span>
+            <span className="px-4 py-2 bg-muted rounded-full">moins de charge</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">plus d'essentiel</span>
+            <span className="px-4 py-2 bg-muted rounded-full">plus de clarté</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">décisions nettes</span>
+            <span className="px-4 py-2 bg-muted rounded-full">décisions sereines</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">exécution fluide</span>
+            <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">impact durable</span>
           </div>
 
           <div className="text-center">

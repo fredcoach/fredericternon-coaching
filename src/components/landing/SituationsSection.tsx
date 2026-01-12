@@ -12,38 +12,38 @@ import {
 const situations = [
   {
     icon: Scale,
-    title: "Décision sensible",
-    description: "Associé, recrutement, pivot, investissement → tu tournes en boucle, tu n'arrives pas à trancher.",
+    title: "Décisions qui pèsent",
+    description: "Recrutement, pivot, partenariat → tu tournes en boucle, tu n'arrives pas à trancher avec clarté.",
   },
   {
     icon: BrainCog,
-    title: "Surcharge mentale",
-    description: "Trop de sujets, trop d'urgence → tu avances, mais tu t'épuises.",
+    title: "Charge mentale invisible",
+    description: "Tu penses à tout, tu anticipes tout, même la nuit. Ton cerveau ne s'arrête jamais.",
   },
   {
     icon: Calendar,
-    title: "Agenda incontrôlable",
-    description: "Journée hachée, interruptions → zéro temps pour penser, tu subis.",
+    title: "Agenda dicté par les autres",
+    description: "Journées hachées, urgences des autres → zéro temps pour toi, tu subis au lieu de piloter.",
   },
   {
     icon: Home,
-    title: "Équilibre vie pro/perso",
-    description: "Tu 'déconnectes' physiquement, mais ton cerveau reste au boulot (culpabilité, rumination).",
+    title: "Impossible de déconnecter",
+    description: "Tu es là physiquement, mais ta tête reste au travail. Culpabilité, rumination, jamais vraiment présente.",
   },
   {
     icon: MessageSquareWarning,
-    title: "Conflits / recadrages",
-    description: "Tu évites ou tu montes trop vite → tu veux une posture claire, calme, ferme.",
+    title: "Difficulté à poser un cadre",
+    description: "Tu évites les confrontations ou tu réagis trop vite → tu veux une posture sereine et affirmée.",
   },
   {
     icon: GitBranch,
-    title: "Délégation / lâcher-prise",
-    description: "Tu reprends tout, tu surcontrôles → ça limite la performance collective et ça te vide.",
+    title: "Tout repose sur toi",
+    description: "Tu reprends tout, tu surcontrôles → impossible de déléguer vraiment, ça t'épuise.",
   },
   {
     icon: Users,
-    title: "Équipe qui n'adhère pas",
-    description: "Moins d'engagement, plus de résistances → retrouver une posture de leader claire et mobilisatrice.",
+    title: "Solitude du leadership",
+    description: "Tu portes tout. Seule. Personne à qui vraiment parler. Peur de montrer que tu doutes.",
   },
 ];
 
@@ -99,10 +99,10 @@ export function SituationsSection() {
           }`}
         >
           <p className="text-lg text-foreground">
-            <strong>Mon job :</strong> te rendre ton calme, ta posture et ton pouvoir d'arbitrage — sans t'user.
+            <strong>Mon rôle :</strong> t'accompagner à retrouver ta clarté, ta sérénité et ton impact — sans t'user.
           </p>
           <p className="text-muted-foreground mt-2">
-            Parce que quand tu redeviens stable, tout le système se remet à avancer.
+            Parce que quand tu retrouves ton alignement, tout se remet en mouvement.
           </p>
         </div>
       </div>
