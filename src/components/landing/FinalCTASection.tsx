@@ -21,15 +21,15 @@ export function FinalCTASection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Dernière question</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Une dernière chose</h2>
 
           <p className="text-xl text-primary-foreground/90 mb-4">Tu n'as pas besoin d'en faire plus.</p>
           <p className="text-2xl font-semibold mb-8">
-            Tu as besoin de décider mieux — depuis un <span className="text-accent">état stable</span>.
+            Tu mérites de te sentir <span className="text-accent">légitime, sereine et puissante</span>.
           </p>
 
           <p className="text-primary-foreground/80 mb-10">
-            Parce que si le décideur reste bloqué, l'entreprise finit toujours par patiner.
+            Sans sacrifier qui tu es. Sans porter tout. Sans t'épuiser en silence.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -45,7 +45,7 @@ export function FinalCTASection() {
                 className="inline-flex items-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Appel 30 min — on voit si ça match
+                30 min — on voit si c'est pour toi
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

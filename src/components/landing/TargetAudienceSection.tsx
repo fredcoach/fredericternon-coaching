@@ -2,19 +2,19 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Tu es décideur (fondateur, dirigeant, manager clé) dans une structure 0–50 personnes",
-  "Tu veux décider plus vite sans t'épuiser",
-  "Tu sens une surcharge mentale ou un surcontrôle qui te coûte cher",
-  "Tu veux une posture stable (calme, claire, ferme)",
-  "Tu veux moins de rumination, plus d'exécution",
-  "Tu es prêt à être coaché : lucidité, action, ajustements",
+  "Tu diriges une structure (0–50 personnes) et tu portes beaucoup sur tes épaules",
+  "Tu veux décider avec clarté — sans t'épuiser",
+  "Tu ressens une charge mentale permanente qui t'empêche de souffler",
+  "Tu veux incarner ta place sans avoir à te justifier",
+  "Tu veux moins de rumination, plus de sérénité",
+  "Tu es prête à un vrai travail sur toi — en profondeur",
 ];
 
 const notForYou = [
-  "Tu cherches une solution magique sans implication",
-  "Tu veux 'parler' sans passer à l'action",
-  "Tu veux un support illimité et des échanges permanents",
-  "Tu veux uniquement des outils d'organisation sans travailler l'état interne",
+  "Tu cherches une solution rapide sans implication",
+  "Tu veux parler sans passer à l'action",
+  "Tu veux uniquement des outils sans travailler ce qui se passe à l'intérieur",
+  "Tu n'es pas prête à remettre en question certaines de tes croyances",
 ];
 
 export function TargetAudienceSection() {
