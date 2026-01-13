@@ -151,12 +151,12 @@ export function TestimonialsSection() {
                 className="relative aspect-video cursor-pointer group"
                 onClick={() => setPlayingVideoId(featuredVideo.id)}
               >
-                <video
-                  src={featuredVideo.videoSrc}
-                  preload="metadata"
-                  muted
-                  playsInline
+                <img
+                  src={featuredVideo.thumbnail}
+                  alt={`Témoignage vidéo de ${featuredVideo.name}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 z-10">
