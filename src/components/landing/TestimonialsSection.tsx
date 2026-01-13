@@ -247,17 +247,6 @@ export function TestimonialsSection() {
           </div>
         </div>
 
-        {/* WhatsApp Section Title */}
-        <div
-          className={`text-center mb-8 transition-all duration-700 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-600 px-4 py-2 rounded-full text-sm font-medium">
-            <MessageCircle className="w-4 h-4" />
-            Témoignages WhatsApp authentiques
-          </div>
-        </div>
 
         <div
           className={`transition-all duration-700 delay-200 ${
