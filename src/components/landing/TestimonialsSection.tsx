@@ -195,51 +195,26 @@ export function TestimonialsSection() {
               <div className="grid grid-cols-2 gap-2 md:gap-2 lg:gap-3 max-w-sm md:max-w-xs lg:max-w-sm mx-auto">
                 {videoTestimonials.map((video) => (
                   <div key={video.id} className="relative rounded-xl overflow-hidden shadow-lg border border-primary/20 bg-card">
-                    {playingVideoId === video.id ? (
-                      <div className="relative aspect-[9/16]">
-                        <video
-                          src={video.videoSrc}
-                          autoPlay
-                          controls
-                          preload="metadata"
-                          className="w-full h-full object-cover"
-                          onEnded={() => setPlayingVideoId(null)}
-                        />
+                    <div className="relative aspect-[9/16]">
+                      <video
+                        src={video.videoSrc}
+                        controls
+                        preload="metadata"
+                        playsInline
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-2 bg-card">
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                          <Play className="w-2.5 h-2.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5 text-primary" />
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="font-semibold text-foreground text-xs md:text-[10px] lg:text-xs truncate">{video.name}</h4>
+                          <p className="text-[10px] md:text-[8px] lg:text-[10px] text-muted-foreground truncate">{video.subtitle}</p>
+                        </div>
                       </div>
-                    ) : (
-                      <>
-                        {/* Thumbnail from video first frame */}
-                        <div 
-                          className="relative aspect-video cursor-pointer group"
-                          onClick={() => setPlayingVideoId(video.id)}
-                        >
-                          <video
-                            src={video.videoSrc}
-                            preload="metadata"
-                            muted
-                            playsInline
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                              <Play className="w-4 h-4 md:w-3 md:h-3 lg:w-4 lg:h-4 text-primary-foreground fill-primary-foreground ml-0.5" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-2 bg-card">
-                          <div className="flex items-center gap-1.5">
-                            <div className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                              <Play className="w-2.5 h-2.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5 text-primary" />
-                            </div>
-                            <div className="min-w-0">
-                              <h4 className="font-semibold text-foreground text-xs md:text-[10px] lg:text-xs truncate">{video.name}</h4>
-                              <p className="text-[10px] md:text-[8px] lg:text-[10px] text-muted-foreground truncate">{video.subtitle}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </>
-                    )}
+                    </div>
                   </div>
                 ))}
               </div>
