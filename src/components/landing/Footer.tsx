@@ -12,6 +12,14 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               Coach en performance mentale & leadership
             </p>
+            <a 
+              href="https://mental-pro.fr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:text-primary/80 transition-colors"
+            >
+              mental-pro.fr
+            </a>
           </div>
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
