@@ -1,18 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import fredericPhoto from "@/assets/frederic-ternon.png";
 
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const rafRef = useRef<number>();
 
   useEffect(() => {
+    // Delay parallax until after LCP
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+    
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      if (!isLoaded) return;
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+      });
     };
+    
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [isLoaded]);
 
   const scrollToFinalCTA = () => {
     const element = document.querySelector("#final-cta");
@@ -23,39 +37,43 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-primary/30">
-      {/* Animated background elements with parallax */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Main glow */}
+      {/* Animated background elements with parallax - deferred for LCP */}
+      <div className="absolute inset-0 overflow-hidden" style={{ contentVisibility: 'auto' }}>
+        {/* Main glow - simplified with will-change for GPU acceleration */}
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-primary/10 blur-[120px] transition-transform duration-100"
-          style={{ transform: `translate(-50%, calc(-50% + ${scrollY * 0.2}px))` }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-primary/10 blur-[120px] will-change-transform"
+          style={{ transform: isLoaded ? `translate(-50%, calc(-50% + ${scrollY * 0.2}px))` : 'translate(-50%, -50%)' }}
         />
         {/* Secondary glows */}
         <div
-          className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px] transition-transform duration-100"
-          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+          className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px] will-change-transform"
+          style={{ transform: isLoaded ? `translateY(${scrollY * 0.3}px)` : 'none' }}
         />
         <div
-          className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] rounded-full bg-secondary/10 blur-[80px] transition-transform duration-100"
-          style={{ transform: `translateY(${scrollY * -0.15}px)` }}
+          className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] rounded-full bg-secondary/10 blur-[80px] will-change-transform"
+          style={{ transform: isLoaded ? `translateY(${scrollY * -0.15}px)` : 'none' }}
         />
         {/* Subtle grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
         
-        {/* Animated floating light particles */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-accent/60 animate-[float_8s_ease-in-out_infinite] shadow-[0_0_20px_5px_hsl(var(--accent)/0.4)]" />
-        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-primary/50 animate-[float_6s_ease-in-out_infinite_1s] shadow-[0_0_15px_4px_hsl(var(--primary)/0.3)]" />
-        <div className="absolute top-2/3 left-1/5 w-1 h-1 rounded-full bg-white/40 animate-[float_7s_ease-in-out_infinite_2s] shadow-[0_0_10px_3px_rgba(255,255,255,0.2)]" />
-        <div className="absolute bottom-1/4 right-1/4 w-2.5 h-2.5 rounded-full bg-accent/40 animate-[float_9s_ease-in-out_infinite_0.5s] shadow-[0_0_25px_6px_hsl(var(--accent)/0.3)]" />
-        <div className="absolute top-1/2 left-1/3 w-1 h-1 rounded-full bg-primary/60 animate-[float_5s_ease-in-out_infinite_3s] shadow-[0_0_12px_3px_hsl(var(--primary)/0.4)]" />
-        <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-white/30 animate-[float_10s_ease-in-out_infinite_1.5s] shadow-[0_0_15px_4px_rgba(255,255,255,0.15)]" />
-        <div className="absolute top-1/5 right-1/5 w-1 h-1 rounded-full bg-accent/50 animate-[float_7s_ease-in-out_infinite_4s] shadow-[0_0_10px_3px_hsl(var(--accent)/0.25)]" />
-        <div className="absolute bottom-1/2 right-1/6 w-2 h-2 rounded-full bg-primary/40 animate-[float_8s_ease-in-out_infinite_2.5s] shadow-[0_0_20px_5px_hsl(var(--primary)/0.25)]" />
-        
-        {/* Animated light beams */}
-        <div className="absolute top-0 left-1/3 w-px h-1/3 bg-gradient-to-b from-accent/20 via-accent/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
-        <div className="absolute top-0 right-1/4 w-px h-1/4 bg-gradient-to-b from-primary/15 via-primary/5 to-transparent animate-[shimmer_5s_ease-in-out_infinite_1s]" />
-        <div className="absolute top-0 left-2/3 w-px h-1/5 bg-gradient-to-b from-white/10 via-white/3 to-transparent animate-[shimmer_6s_ease-in-out_infinite_2s]" />
+        {/* Animated floating light particles - deferred */}
+        {isLoaded && (
+          <>
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-accent/60 animate-[float_8s_ease-in-out_infinite] shadow-[0_0_20px_5px_hsl(var(--accent)/0.4)]" />
+            <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-primary/50 animate-[float_6s_ease-in-out_infinite_1s] shadow-[0_0_15px_4px_hsl(var(--primary)/0.3)]" />
+            <div className="absolute top-2/3 left-1/5 w-1 h-1 rounded-full bg-white/40 animate-[float_7s_ease-in-out_infinite_2s] shadow-[0_0_10px_3px_rgba(255,255,255,0.2)]" />
+            <div className="absolute bottom-1/4 right-1/4 w-2.5 h-2.5 rounded-full bg-accent/40 animate-[float_9s_ease-in-out_infinite_0.5s] shadow-[0_0_25px_6px_hsl(var(--accent)/0.3)]" />
+            <div className="absolute top-1/2 left-1/3 w-1 h-1 rounded-full bg-primary/60 animate-[float_5s_ease-in-out_infinite_3s] shadow-[0_0_12px_3px_hsl(var(--primary)/0.4)]" />
+            <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-white/30 animate-[float_10s_ease-in-out_infinite_1.5s] shadow-[0_0_15px_4px_rgba(255,255,255,0.15)]" />
+            <div className="absolute top-1/5 right-1/5 w-1 h-1 rounded-full bg-accent/50 animate-[float_7s_ease-in-out_infinite_4s] shadow-[0_0_10px_3px_hsl(var(--accent)/0.25)]" />
+            <div className="absolute bottom-1/2 right-1/6 w-2 h-2 rounded-full bg-primary/40 animate-[float_8s_ease-in-out_infinite_2.5s] shadow-[0_0_20px_5px_hsl(var(--primary)/0.25)]" />
+            
+            {/* Animated light beams */}
+            <div className="absolute top-0 left-1/3 w-px h-1/3 bg-gradient-to-b from-accent/20 via-accent/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
+            <div className="absolute top-0 right-1/4 w-px h-1/4 bg-gradient-to-b from-primary/15 via-primary/5 to-transparent animate-[shimmer_5s_ease-in-out_infinite_1s]" />
+            <div className="absolute top-0 left-2/3 w-px h-1/5 bg-gradient-to-b from-white/10 via-white/3 to-transparent animate-[shimmer_6s_ease-in-out_infinite_2s]" />
+          </>
+        )}
       </div>
 
       <div className="container mx-auto px-8 sm:px-10 md:px-12 py-20 md:py-28 relative z-10">
@@ -75,7 +93,10 @@ export function HeroSection() {
                   alt="Frédéric Ternon - Coach en performance mentale"
                   className="relative w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/20 shadow-2xl"
                   fetchPriority="high"
-                  decoding="async"
+                  loading="eager"
+                  decoding="sync"
+                  width="256"
+                  height="256"
                 />
 
                 {/* Badges around photo */}
