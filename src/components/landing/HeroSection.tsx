@@ -117,10 +117,24 @@ export function HeroSection() {
                 <span className="text-sm text-white/70 font-medium">Coach en performance mentale & leadership</span>
               </div>
 
-              {/* Tagline - Au-dessus du titre */}
-              <p className="text-lg md:text-xl font-semibold text-white/80 mb-6 animate-fade-in tracking-wide">
-                Leadership intérieur. Décisions nettes. Résultats qui montent.
-              </p>
+              {/* Tagline - Au-dessus du titre avec effet lumineux */}
+              <div className="mb-8 animate-fade-in">
+                <p className="relative inline-block text-lg md:text-xl lg:text-2xl font-bold tracking-wider uppercase">
+                  <span className="bg-gradient-to-r from-accent via-white to-primary bg-clip-text text-transparent drop-shadow-[0_0_25px_hsl(var(--accent)/0.6)]">
+                    Leadership intérieur
+                  </span>
+                  <span className="mx-2 md:mx-3 text-accent">•</span>
+                  <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_hsl(var(--accent)/0.6)]">
+                    Décisions nettes
+                  </span>
+                  <span className="mx-2 md:mx-3 text-accent">•</span>
+                  <span className="bg-gradient-to-r from-primary via-white to-accent bg-clip-text text-transparent drop-shadow-[0_0_25px_hsl(var(--accent)/0.6)]">
+                    Résultats qui montent
+                  </span>
+                </p>
+                {/* Ligne lumineuse sous la devise */}
+                <div className="mt-4 mx-auto w-32 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent opacity-60" />
+              </div>
 
               {/* Main Headline - More dramatic */}
               <h1 className="animate-fade-in-up">
