@@ -112,10 +112,15 @@ export function HeroSection() {
             {/* Text content - centered */}
             <div className="text-center">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 animate-fade-in">
+              <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 animate-fade-in">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="text-sm text-white/70 font-medium">Coach en performance mentale & leadership</span>
               </div>
+
+              {/* Tagline - Au-dessus du titre */}
+              <p className="text-lg md:text-xl font-semibold text-white/80 mb-6 animate-fade-in tracking-wide">
+                Leadership intérieur. Décisions nettes. Résultats qui montent.
+              </p>
 
               {/* Main Headline - More dramatic */}
               <h1 className="animate-fade-in-up">
@@ -147,11 +152,6 @@ export function HeroSection() {
                 <span className="text-white/90 font-medium">
                   Il est temps de retrouver ta légitimité intérieure.
                 </span>
-              </p>
-
-              {/* Tagline */}
-              <p className="text-lg md:text-xl font-semibold text-white/90 mb-6 animate-fade-in-up tracking-wide" style={{ animationDelay: "0.25s" }}>
-                Leadership intérieur. Décisions nettes. Résultats qui montent.
               </p>
 
               {/* Baseline */}
