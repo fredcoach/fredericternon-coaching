@@ -25,7 +25,7 @@ export function FinalCTASection() {
 
           <p className="text-xl text-primary-foreground/90 mb-4">Tu n'as pas besoin d'en faire plus.</p>
           <p className="text-2xl font-semibold mb-8">
-            Tu mérites de te sentir <span className="text-accent">légitime, sereine et puissante</span>.
+            Tu mérites de te sentir <span className="text-accent">légitime, serein et puissant</span>.
           </p>
 
           <p className="text-primary-foreground/80 mb-10">

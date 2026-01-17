@@ -43,7 +43,7 @@ export function PainPointsSection() {
             </div>
 
             <p className="text-primary-foreground/80 text-center">
-              Et le plus dur ? Tu ne peux pas en parler. Tu dois rester forte. Tu dois avoir les réponses. Alors tu portes ton masque. Et tu continues. Seule.
+              Et le plus dur ? Tu ne peux pas en parler. Tu dois rester fort. Tu dois avoir les réponses. Alors tu portes ton masque. Et tu continues. Seul.
             </p>
 
             {/* Impostor syndrome */}
