@@ -149,8 +149,13 @@ export function HeroSection() {
                 </span>
               </p>
 
+              {/* Tagline */}
+              <p className="text-lg md:text-xl font-semibold text-white/90 mb-6 animate-fade-in-up tracking-wide" style={{ animationDelay: "0.25s" }}>
+                Leadership intérieur. Décisions nettes. Résultats qui montent.
+              </p>
+
               {/* Baseline */}
-              <p className="text-sm md:text-base text-white/50 mb-10 animate-fade-in-up max-w-xs sm:max-w-md md:max-w-xl mx-auto px-2" style={{ animationDelay: "0.25s" }}>
+              <p className="text-sm md:text-base text-white/50 mb-10 animate-fade-in-up max-w-xs sm:max-w-md md:max-w-xl mx-auto px-2" style={{ animationDelay: "0.3s" }}>
                 Pas une méthode de plus.{" "}
                 <span className="text-accent font-semibold">Une transformation qui t'appartient.</span>
               </p>
