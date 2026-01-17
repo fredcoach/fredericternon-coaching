@@ -6,52 +6,53 @@ const steps = [
     icon: MessageCircle,
     phase: "Session CADRAGE",
     title: "Diagnostic profond (30 min)",
+    intro: "On clarifie en direct :",
     points: [
-      "Ce qui te pèse vraiment",
-      "Ce qui te disperse",
-      "Ce qui t'empêche de souffler",
-      "Par où commencer",
+      "ce qui te pèse vraiment (mental, charge, pression)",
+      "ce qui te disperse (trop de sujets, trop de \"oui\")",
+      "ce qui t'empêche de souffler (tension, culpabilité, contrôle)",
+      "par où commencer pour retrouver de l'espace rapidement",
     ],
-    note: "Si c'est un match, je te propose un accompagnement sur-mesure.",
+    note: "➡️ Si c'est un match, je te propose un accompagnement sur-mesure, avec un cap clair et des actions concrètes.",
   },
   {
     icon: Anchor,
-    phase: "Étape 1",
+    phase: "Repère 1",
     title: "Retrouver ton espace intérieur",
     subtitle: "surcharge → clarté",
     points: [
-      "Identifier les sources d'épuisement",
-      "Poser des limites saines",
-      "Créer de l'espace pour toi",
-      "Respirer à nouveau",
+      "Identifier ce qui te vide (et ce qui te \"mange\" en arrière-plan)",
+      "Poser des limites nettes, sans te justifier",
+      "Recréer de la place mentale (et émotionnelle)",
+      "Revenir à un état interne stable",
     ],
-    result: "Tu récupères de la bande passante mentale. Tu souffles enfin.",
+    result: "Tu récupères de la bande passante. Tu respires à nouveau.",
   },
   {
     icon: TrendingUp,
-    phase: "Étape 2",
+    phase: "Repère 2",
     title: "Incarner ta légitimité",
     subtitle: "doutes → affirmation",
     points: [
-      "Travailler les croyances limitantes",
-      "Clarifier tes valeurs profondes",
-      "Décider avec confiance",
-      "Assumer ta place",
+      "Déminer les croyances qui te freinent (syndrome de l'imposteur, perfectionnisme, peur du jugement)",
+      "Clarifier tes valeurs et tes standards",
+      "Décider plus vite, plus juste, plus sereinement",
+      "Assumer ta place et ton style de leadership",
     ],
-    result: "Tu incarnes qui tu es vraiment. Sans te justifier.",
+    result: "Tu avances avec une colonne vertébrale. Sans te justifier.",
   },
   {
     icon: Rocket,
-    phase: "Étape 3",
+    phase: "Repère 3",
     title: "Installer un équilibre durable",
     subtitle: "épuisement → sérénité",
     points: [
-      "Rythme soutenable",
-      "Pilotage serein",
-      "Impact préservé",
-      "Énergie protégée",
+      "Mettre en place un rythme soutenable (sans perdre l'impact)",
+      "Piloter sous pression sans partir en mode survie",
+      "Protéger ton énergie et ton attention",
+      "Stabiliser un fonctionnement qui tient dans le temps",
     ],
-    result: "Un fonctionnement qui te ressemble et qui tient dans la durée.",
+    result: "Un système qui te ressemble. Et qui dure.",
   },
 ];
 
@@ -79,10 +80,13 @@ export function JourneySection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Le parcours <span className="text-gradient">(3 étapes)</span>
+            3 repères. <span className="text-gradient">Pas un programme.</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Structuré… mais vivant : on avance sur une trajectoire claire, en s'adaptant à ta réalité.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
+            Structuré… mais vivant : on avance sur une trajectoire claire, mais on part de ta réalité.
+          </p>
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+            L'ordre n'est pas imposé. Le rythme non plus. On commence là où ça coince aujourd'hui.
           </p>
         </div>
 
@@ -93,7 +97,7 @@ export function JourneySection() {
           }`}
         >
           <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">Important :</strong> Je travaille avec peu de personnes en parallèle. La session CADRAGE nous permet de vérifier qu'on peut travailler ensemble — c'est un match mutuel, pas une vente.
+            <strong className="text-foreground">Important :</strong> je travaille avec peu de personnes en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
           </p>
         </div>
 
@@ -133,6 +137,11 @@ export function JourneySection() {
                           {step.subtitle}
                         </p>
                       )}
+                      {step.intro && (
+                        <p className="text-sm text-foreground mb-2">
+                          {step.intro}
+                        </p>
+                      )}
                       <ul className={`space-y-1 mb-4 ${index % 2 === 0 ? "md:text-right" : ""}`}>
                         {step.points.map((point) => (
                           <li key={point} className="text-sm text-muted-foreground">
@@ -141,7 +150,7 @@ export function JourneySection() {
                         ))}
                       </ul>
                       {step.note && (
-                        <p className="text-sm italic text-muted-foreground">
+                        <p className="text-sm font-medium text-primary">
                           {step.note}
                         </p>
                       )}
@@ -158,17 +167,22 @@ export function JourneySection() {
           </div>
         </div>
 
-        {/* Sur-mesure note */}
+        {/* À retenir note */}
         <div
-          className={`max-w-3xl mx-auto mt-12 text-center transition-all duration-700 delay-700 ${
+          className={`max-w-3xl mx-auto mt-12 p-6 bg-card border border-border rounded-2xl transition-all duration-700 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-muted-foreground">
-            <strong className="text-foreground">Important — ce parcours s'adapte à toi :</strong> On ajuste selon ta réalité, ton rythme, tes enjeux du moment. Pas de cadre rigide.
+          <p className="text-foreground font-semibold mb-2">À retenir</p>
+          <p className="text-muted-foreground mb-3">
+            Ces 3 repères sont un cadre de progression, pas une trajectoire rigide.
+            <br />
+            On ajuste selon ton contexte, ton niveau de charge, tes enjeux du moment.
           </p>
-          <p className="text-foreground font-medium mt-2">
-            Le but n'est pas de te faire rentrer dans une méthode. Le but, c'est que tu retrouves qui tu es vraiment.
+          <p className="text-foreground font-medium">
+            Le but n'est pas de te faire rentrer dans une méthode.
+            <br />
+            <span className="text-primary">Le but, c'est que tu récupères ta clarté, ta puissance, et ta sérénité — sans te perdre en route.</span>
           </p>
         </div>
       </div>
