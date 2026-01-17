@@ -43,7 +43,7 @@ const situations = [
   {
     icon: Users,
     title: "Solitude du leadership",
-    description: "Tu portes tout. Seule. Personne à qui vraiment parler. Peur de montrer que tu doutes.",
+    description: "Tu portes tout. Seul. Personne à qui vraiment parler. Peur de montrer que tu doutes.",
   },
 ];
 

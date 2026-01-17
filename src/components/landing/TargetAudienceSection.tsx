@@ -7,14 +7,14 @@ const forYou = [
   "Tu ressens une charge mentale permanente qui t'empêche de souffler",
   "Tu veux incarner ta place sans avoir à te justifier",
   "Tu veux moins de rumination, plus de sérénité",
-  "Tu es prête à un vrai travail sur toi — en profondeur",
+  "Tu es prêt à un vrai travail sur toi — en profondeur",
 ];
 
 const notForYou = [
   "Tu cherches une solution rapide sans implication",
   "Tu veux parler sans passer à l'action",
   "Tu veux uniquement des outils sans travailler ce qui se passe à l'intérieur",
-  "Tu n'es pas prête à remettre en question certaines de tes croyances",
+  "Tu n'es pas prêt à remettre en question certaines de tes croyances",
 ];
 
 export function TargetAudienceSection() {
