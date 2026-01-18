@@ -45,12 +45,16 @@ const Blog = () => {
         <meta property="og:url" content="https://fredericternon.com/blog" />
         <meta property="og:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
         <meta property="og:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
+        <meta property="og:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon Coaching" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
         <meta name="twitter:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
+        <meta name="twitter:image" content="https://fredericternon.com/images/blog-og.jpg" />
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
