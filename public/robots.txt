@@ -7,15 +7,7 @@ Allow: /
 # Sitemap
 Sitemap: https://fredericternon.com/sitemap.xml
 
-# Crawl-delay pour éviter la surcharge (optionnel)
-Crawl-delay: 1
-
-# Bloquer les ressources inutiles pour le SEO
-Disallow: /assets/
-Disallow: /*.js$
-Disallow: /*.css$
-
-# Autoriser les bots sociaux
+# Autoriser tous les bots à indexer correctement
 User-agent: Googlebot
 Allow: /
 
