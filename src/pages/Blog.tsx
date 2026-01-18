@@ -52,6 +52,11 @@ const Blog = () => {
         <meta name="twitter:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
         <meta name="twitter:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
         
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="author" content="Frédéric Ternon" />
+        <meta name="language" content="French" />
+        
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(blogListStructuredData)}
