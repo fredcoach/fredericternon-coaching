@@ -82,7 +82,22 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Frédéric Ternon Coaching" />
+        <meta property="og:locale" content="fr_FR" />
         <link rel="canonical" href={`https://fredericternon.com/blog/${article.slug}`} />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.metaTitle} />
+        <meta name="twitter:description" content={article.metaDescription} />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="author" content="Frédéric Ternon" />
+        <meta name="language" content="French" />
+        <meta name="article:published_time" content={article.publishedAt} />
+        <meta name="article:modified_time" content={article.updatedAt} />
+        <meta name="article:author" content="Frédéric Ternon" />
         <script type="application/ld+json">
           {JSON.stringify(productStructuredData)}
         </script>
