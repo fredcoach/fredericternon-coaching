@@ -21,7 +21,7 @@ const BlogArticle = () => {
     "@type": "Product",
     "name": article.productName,
     "description": article.productDescription,
-    "image": `https://fredericternon.com/images/blog-og.jpg`,
+    "image": `https://fredericternon.com${article.ogImage}`,
     "sku": `COACHING-${article.id}`,
     "mpn": `FT-${article.slug}`,
     "brand": {
@@ -124,7 +124,7 @@ const BlogArticle = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "image": "https://fredericternon.com/images/blog-og.jpg",
+    "image": `https://fredericternon.com${article.ogImage}`,
     "author": {
       "@type": "Person",
       "name": "Frédéric Ternon",
@@ -211,7 +211,7 @@ const BlogArticle = () => {
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://fredericternon.com/blog/${article.slug}`} />
-        <meta property="og:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta property="og:image" content={`https://fredericternon.com${article.ogImage}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon Coaching" />
@@ -237,7 +237,7 @@ const BlogArticle = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
         <meta name="twitter:description" content={article.metaDescription} />
-        <meta name="twitter:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta name="twitter:image" content={`https://fredericternon.com${article.ogImage}`} />
         <meta name="twitter:creator" content="@fredericternon" />
         
         {/* Additional SEO */}
