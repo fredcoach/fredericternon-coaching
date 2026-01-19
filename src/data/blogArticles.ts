@@ -11,6 +11,7 @@ export interface BlogArticle {
   publishedAt: string;
   updatedAt: string;
   image: string;
+  ogImage: string; // Image OG personnalisée pour le partage social
   // Product-like attributes for SEO
   productName: string;
   productDescription: string;
@@ -70,6 +71,7 @@ Cette croyance n'est pas la réalité. C'est une programmation héritée de ton 
     publishedAt: "2024-01-15",
     updatedAt: "2024-01-15",
     image: "/placeholder.svg",
+    ogImage: "/images/og-syndrome-imposteur.jpg",
     productName: "Accompagnement Syndrome de l'Imposteur",
     productDescription: "Programme de coaching mental pour dépasser le syndrome de l'imposteur et assumer pleinement votre réussite entrepreneuriale.",
     benefits: [
@@ -134,6 +136,7 @@ Tu arrêtes de saboter inconsciemment ce que tu construis consciemment. Tu avanc
     publishedAt: "2024-01-22",
     updatedAt: "2024-01-22",
     image: "/placeholder.svg",
+    ogImage: "/images/og-peur-reussite.jpg",
     productName: "Accompagnement Peur de Réussir",
     productDescription: "Programme de coaching mental pour identifier et dépasser la peur de réussir qui sabote votre croissance entrepreneuriale.",
     benefits: [
@@ -201,6 +204,7 @@ Spoiler : ils critiqueront quand même. Et tu auras juste perdu du temps.
     publishedAt: "2024-01-29",
     updatedAt: "2024-01-29",
     image: "/placeholder.svg",
+    ogImage: "/images/og-perfectionnisme.jpg",
     productName: "Accompagnement Anti-Perfectionnisme",
     productDescription: "Programme de coaching mental pour transformer le perfectionnisme paralysant en excellence productive.",
     benefits: [
@@ -269,6 +273,7 @@ J'ai vu des entrepreneurs doubler leurs tarifs en quelques semaines. Pas parce q
     publishedAt: "2024-02-05",
     updatedAt: "2024-02-05",
     image: "/placeholder.svg",
+    ogImage: "/images/og-peur-argent.jpg",
     productName: "Accompagnement Relation à l'Argent",
     productDescription: "Programme de coaching mental pour transformer votre rapport à l'argent et débloquer votre croissance financière.",
     benefits: [
@@ -339,6 +344,7 @@ Les gens qui ont besoin de toi ne peuvent pas te trouver si tu te caches. **Ton 
     publishedAt: "2024-02-12",
     updatedAt: "2024-02-12",
     image: "/placeholder.svg",
+    ogImage: "/images/og-peur-visibilite.jpg",
     productName: "Accompagnement Visibilité Authentique",
     productDescription: "Programme de coaching mental pour dépasser la peur de la visibilité et rayonner avec authenticité.",
     benefits: [
@@ -413,6 +419,7 @@ Tu ne te fixes plus d'objectifs "réalistes" basés sur ton passé. Tu vises ce 
     publishedAt: "2024-02-19",
     updatedAt: "2024-02-19",
     image: "/placeholder.svg",
+    ogImage: "/images/og-identite-evolution.jpg",
     productName: "Accompagnement Évolution Identitaire",
     productDescription: "Programme de coaching mental pour transformer votre identité et débloquer le prochain niveau de votre croissance.",
     benefits: [
