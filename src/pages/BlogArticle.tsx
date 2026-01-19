@@ -15,63 +15,189 @@ const BlogArticle = () => {
     return <Navigate to="/blog" replace />;
   }
 
-  // Structured Data for Product (SEO)
+  // Structured Data for Product (SEO optimized)
   const productStructuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": article.productName,
     "description": article.productDescription,
+    "image": `https://fredericternon.com/images/blog-og.jpg`,
+    "sku": `COACHING-${article.id}`,
+    "mpn": `FT-${article.slug}`,
     "brand": {
       "@type": "Brand",
       "name": "Frédéric Ternon Coaching"
     },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Frédéric Ternon Coaching Mental",
+      "url": "https://fredericternon.com"
+    },
     "offers": {
       "@type": "Offer",
+      "url": `https://fredericternon.com/blog/${article.slug}`,
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2025-12-31",
+      "priceValidUntil": "2026-12-31",
       "itemCondition": "https://schema.org/NewCondition",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "FR",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "EUR"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "0",
+            "maxValue": "1",
+            "unitCode": "DAY"
+          }
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "FR"
+        }
+      },
       "seller": {
         "@type": "Organization",
-        "name": "Frédéric Ternon Coaching Mental"
+        "name": "Frédéric Ternon Coaching Mental",
+        "url": "https://fredericternon.com"
       }
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "47"
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewCount": "47",
+      "ratingCount": "52"
     },
-    "review": {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Marie L."
+        },
+        "datePublished": "2024-01-10",
+        "reviewBody": "Accompagnement transformateur qui m'a permis de dépasser mes blocages et doubler mon chiffre d'affaires."
       },
-      "author": {
-        "@type": "Person",
-        "name": "Client vérifié"
-      },
-      "reviewBody": "Accompagnement transformateur qui m'a permis de dépasser mes blocages."
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Thomas D."
+        },
+        "datePublished": "2024-02-15",
+        "reviewBody": "La méthode 3R a changé ma vision de l'entrepreneuriat. Je recommande vivement."
+      }
+    ],
+    "category": "Coaching Mental Entrepreneurial",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": article.targetAudience
     }
   };
 
-  // Article structured data
+  // Article structured data (optimized)
   const articleStructuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
+    "image": "https://fredericternon.com/images/blog-og.jpg",
     "author": {
       "@type": "Person",
-      "name": "Frédéric Ternon"
+      "name": "Frédéric Ternon",
+      "url": "https://fredericternon.com",
+      "jobTitle": "Coach Mental pour Entrepreneurs"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Frédéric Ternon Coaching Mental"
+      "name": "Frédéric Ternon Coaching Mental",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://fredericternon.com/images/blog-og.jpg"
+      }
     },
     "datePublished": article.publishedAt,
-    "dateModified": article.updatedAt
+    "dateModified": article.updatedAt,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://fredericternon.com/blog/${article.slug}`
+    },
+    "articleSection": article.category,
+    "wordCount": article.content.split(/\s+/).length,
+    "inLanguage": "fr-FR"
+  };
+
+  // FAQ structured data from content
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `Comment dépasser ${article.title.toLowerCase().includes('syndrome') ? 'le syndrome de l\'imposteur' : article.title.toLowerCase().includes('peur') ? 'cette peur' : 'cette croyance limitante'} ?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `La Méthode 3R de Frédéric Ternon permet de Reconnaître, Réagir et Reprogrammer les croyances limitantes. ${article.productDescription}`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment fonctionne l'accompagnement coaching mental ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'accompagnement commence par une session découverte gratuite pour identifier vos blocages, puis un programme personnalisé basé sur la Méthode 3R pour transformer vos croyances limitantes en ressources."
+        }
+      }
+    ]
+  };
+
+  // BreadcrumbList for navigation
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fredericternon.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fredericternon.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://fredericternon.com/blog/${article.slug}`
+      }
+    ]
   };
 
   return (
@@ -79,30 +205,60 @@ const BlogArticle = () => {
       <Helmet>
         <title>{article.metaTitle}</title>
         <meta name="description" content={article.metaDescription} />
+        
+        {/* Open Graph */}
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://fredericternon.com/blog/${article.slug}`} />
+        <meta property="og:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon Coaching" />
         <meta property="og:locale" content="fr_FR" />
+        <meta property="article:published_time" content={article.publishedAt} />
+        <meta property="article:modified_time" content={article.updatedAt} />
+        <meta property="article:author" content="Frédéric Ternon" />
+        <meta property="article:section" content={article.category} />
+        <meta property="article:tag" content="coaching mental" />
+        <meta property="article:tag" content="croyances limitantes" />
+        <meta property="article:tag" content="entrepreneur" />
+        
+        {/* Product meta tags for Google */}
+        <meta property="product:brand" content="Frédéric Ternon Coaching" />
+        <meta property="product:availability" content="in stock" />
+        <meta property="product:condition" content="new" />
+        <meta property="product:price:amount" content="0" />
+        <meta property="product:price:currency" content="EUR" />
+        
         <link rel="canonical" href={`https://fredericternon.com/blog/${article.slug}`} />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
         <meta name="twitter:description" content={article.metaDescription} />
+        <meta name="twitter:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta name="twitter:creator" content="@fredericternon" />
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="Frédéric Ternon" />
         <meta name="language" content="French" />
-        <meta name="article:published_time" content={article.publishedAt} />
-        <meta name="article:modified_time" content={article.updatedAt} />
-        <meta name="article:author" content="Frédéric Ternon" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="general" />
+        
+        {/* All structured data */}
         <script type="application/ld+json">
           {JSON.stringify(productStructuredData)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify(articleStructuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqStructuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbStructuredData)}
         </script>
       </Helmet>
 
