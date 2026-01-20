@@ -59,7 +59,9 @@ export function Navigation() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className="font-serif text-lg md:text-xl font-bold text-white drop-shadow-md"
+            className={`font-serif text-lg md:text-xl font-bold transition-colors ${
+              isScrolled ? "text-foreground" : "text-white drop-shadow-md"
+            }`}
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -74,7 +76,11 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm text-white/90 hover:text-white transition-colors drop-shadow-sm"
+                className={`text-sm transition-colors ${
+                  isScrolled 
+                    ? "text-muted-foreground hover:text-foreground" 
+                    : "text-white/90 hover:text-white drop-shadow-sm"
+                }`}
               >
                 {link.label}
               </button>
@@ -83,7 +89,11 @@ export function Navigation() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-medium text-white hover:text-white/80 transition-colors drop-shadow-sm"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled 
+                    ? "text-foreground hover:text-primary" 
+                    : "text-white hover:text-white/80 drop-shadow-sm"
+                }`}
               >
                 {link.label}
               </Link>
@@ -94,7 +104,11 @@ export function Navigation() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1 drop-shadow-sm"
+                className={`text-sm font-medium transition-colors flex items-center gap-1 ${
+                  isScrolled 
+                    ? "text-primary hover:text-primary/80" 
+                    : "text-amber-400 hover:text-amber-300 drop-shadow-sm"
+                }`}
               >
                 {link.label}
                 <ExternalLink className="h-3 w-3" />
@@ -110,7 +124,9 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-white drop-shadow-md"
+            className={`md:hidden p-2 transition-colors ${
+              isScrolled ? "text-foreground" : "text-white drop-shadow-md"
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
