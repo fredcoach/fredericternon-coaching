@@ -5,6 +5,25 @@ import { Clock, ArrowRight, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
+
+// Import blog images
+import blogSyndromeImposteur from "@/assets/blog-syndrome-imposteur.jpg";
+import blogPeurReussite from "@/assets/blog-peur-reussite.jpg";
+import blogPerfectionnisme from "@/assets/blog-perfectionnisme.jpg";
+import blogPeurArgent from "@/assets/blog-peur-argent.jpg";
+import blogPeurVisibilite from "@/assets/blog-peur-visibilite.jpg";
+import blogIdentiteEvolution from "@/assets/blog-identite-evolution.jpg";
+
+// Map slug to imported image
+const blogImages: Record<string, string> = {
+  "syndrome-imposteur-entrepreneur": blogSyndromeImposteur,
+  "peur-reussite-entrepreneur": blogPeurReussite,
+  "perfectionnisme-entrepreneur": blogPerfectionnisme,
+  "peur-argent-entrepreneur": blogPeurArgent,
+  "peur-visibilite-entrepreneur": blogPeurVisibilite,
+  "identite-entrepreneur-evolution": blogIdentiteEvolution,
+};
 
 const Blog = () => {
   // Structured data for blog listing (ItemList for SEO)
@@ -97,8 +116,12 @@ const Blog = () => {
                 key={article.id}
                 className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-primary/20 transition-all duration-300"
               >
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <Brain className="w-16 h-16 text-primary/40" />
+                <div className="aspect-video overflow-hidden">
+                  <LazyImage 
+                    src={blogImages[article.slug] || article.image} 
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 
                 <div className="p-6">
