@@ -49,6 +49,10 @@ export function Navigation() {
     }
   };
 
+  // Check if we're on a page with a dark hero (homepage) or light background (blog, etc.)
+  const isHomePage = location.pathname === "/";
+  const shouldUseWhiteText = !isScrolled && isHomePage;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -60,7 +64,7 @@ export function Navigation() {
           <a
             href="#"
             className={`font-serif text-lg md:text-xl font-bold transition-colors ${
-              isScrolled ? "text-foreground" : "text-white drop-shadow-md"
+              shouldUseWhiteText ? "text-white drop-shadow-md" : "text-foreground"
             }`}
             onClick={(e) => {
               e.preventDefault();
@@ -77,9 +81,9 @@ export function Navigation() {
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
                 className={`text-sm transition-colors ${
-                  isScrolled 
-                    ? "text-muted-foreground hover:text-foreground" 
-                    : "text-white/90 hover:text-white drop-shadow-sm"
+                  shouldUseWhiteText 
+                    ? "text-white/90 hover:text-white drop-shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.label}
@@ -90,9 +94,9 @@ export function Navigation() {
                 key={link.href}
                 to={link.href}
                 className={`text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? "text-foreground hover:text-primary" 
-                    : "text-white hover:text-white/80 drop-shadow-sm"
+                  shouldUseWhiteText 
+                    ? "text-white hover:text-white/80 drop-shadow-sm" 
+                    : "text-foreground hover:text-primary"
                 }`}
               >
                 {link.label}
@@ -105,9 +109,9 @@ export function Navigation() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                  isScrolled 
-                    ? "text-primary hover:text-primary/80" 
-                    : "text-amber-400 hover:text-amber-300 drop-shadow-sm"
+                  shouldUseWhiteText 
+                    ? "text-amber-400 hover:text-amber-300 drop-shadow-sm" 
+                    : "text-primary hover:text-primary/80"
                 }`}
               >
                 {link.label}
@@ -125,7 +129,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             className={`md:hidden p-2 transition-colors ${
-              isScrolled ? "text-foreground" : "text-white drop-shadow-md"
+              shouldUseWhiteText ? "text-white drop-shadow-md" : "text-foreground"
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
