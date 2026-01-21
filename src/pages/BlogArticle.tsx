@@ -1,19 +1,46 @@
 import { useParams, Link, Navigate } from "react-router-dom";
+import { useEffect } from "react";
 import { getArticleBySlug, getRelatedArticles } from "@/data/blogArticles";
 import { Clock, ArrowLeft, ArrowRight, Brain, CheckCircle2, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Helmet } from "react-helmet-async";
+import { LazyImage } from "@/components/ui/LazyImage";
 
+// Import blog images
+import blogSyndromeImposteur from "@/assets/blog-syndrome-imposteur.jpg";
+import blogPeurReussite from "@/assets/blog-peur-reussite.jpg";
+import blogPerfectionnisme from "@/assets/blog-perfectionnisme.jpg";
+import blogPeurArgent from "@/assets/blog-peur-argent.jpg";
+import blogPeurVisibilite from "@/assets/blog-peur-visibilite.jpg";
+import blogIdentiteEvolution from "@/assets/blog-identite-evolution.jpg";
+
+// Map slugs to images
+const blogImages: Record<string, string> = {
+  "syndrome-imposteur-entrepreneur": blogSyndromeImposteur,
+  "peur-reussite-entrepreneur": blogPeurReussite,
+  "perfectionnisme-entrepreneuriat": blogPerfectionnisme,
+  "peur-argent-entrepreneur": blogPeurArgent,
+  "peur-visibilite-entrepreneur": blogPeurVisibilite,
+  "identite-evolution-entrepreneur": blogIdentiteEvolution,
+};
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
   const relatedArticles = slug ? getRelatedArticles(slug, 3) : [];
 
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   if (!article) {
     return <Navigate to="/blog" replace />;
   }
+
+  // Get the image for this article
+  const articleImage = slug ? blogImages[slug] : undefined;
 
   // Structured Data for Product (SEO optimized)
   const productStructuredData = {
@@ -295,18 +322,30 @@ const BlogArticle = () => {
               {article.title}
             </h1>
           </div>
-        </section>
+        {/* Article Banner Image */}
+        {articleImage && (
+          <div className="container mx-auto max-w-4xl mt-8">
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <LazyImage
+                src={articleImage}
+                alt={article.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        )}
+      </section>
 
-        {/* Article Content + Sidebar */}
-        <section className="py-12 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid lg:grid-cols-3 gap-12">
-              {/* Main Content */}
-              <article className="lg:col-span-2 prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
-                <div 
-                  className="[&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:mb-4 [&>ul]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul>li]:mb-2"
-                  dangerouslySetInnerHTML={{ __html: article.content }}
-                />
+      {/* Article Content + Sidebar */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <article className="lg:col-span-2 prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
+              <div 
+                className="[&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:mb-4 [&>ul]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul>li]:mb-2"
+                dangerouslySetInnerHTML={{ __html: article.content }}
+              />
               </article>
 
               {/* Product-like Sidebar */}
