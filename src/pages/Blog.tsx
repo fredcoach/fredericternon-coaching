@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { blogArticles } from "@/data/blogArticles";
@@ -26,6 +27,11 @@ const blogImages: Record<string, string> = {
 };
 
 const Blog = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Structured data for blog listing (ItemList for SEO)
   const blogListStructuredData = {
     "@context": "https://schema.org",
