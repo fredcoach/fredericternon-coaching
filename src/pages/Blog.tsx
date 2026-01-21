@@ -141,9 +141,11 @@ const Blog = () => {
                     </span>
                   </div>
                   
-                  <h2 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors line-clamp-2">
-                    {article.title}
-                  </h2>
+                  <Link to={`/blog/${article.slug}`}>
+                    <h2 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                      {article.title}
+                    </h2>
+                  </Link>
                   
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                     {article.excerpt}
