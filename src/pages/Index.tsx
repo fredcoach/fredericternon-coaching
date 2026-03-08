@@ -13,6 +13,7 @@ import { JourneySection } from "@/components/landing/JourneySection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
 import { OfferSection } from "@/components/landing/OfferSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
+import { LinkedInRecommendationsSection } from "@/components/landing/LinkedInRecommendationsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
 import { Footer } from "@/components/landing/Footer";
@@ -100,6 +101,7 @@ const Index = () => {
         <Method3RSection />
         <OfferSection />
         <TestimonialsSection />
+        <LinkedInRecommendationsSection />
         <FAQSection />
         <FinalCTASection />
       </main>
