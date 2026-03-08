@@ -196,12 +196,12 @@ export function TestimonialsSection() {
                 {videoTestimonials.map((video) => (
                   <div key={video.id} className="relative rounded-xl overflow-hidden shadow-lg border border-primary/20 bg-card">
                     {playingVideoId === video.id ? (
-                      <div className="relative aspect-[9/16]">
+                    <div className="relative aspect-[9/16]">
                         <video
                           src={video.videoSrc}
                           autoPlay
                           controls
-                          preload="metadata"
+                          preload="none"
                           className="w-full h-full object-cover"
                           onEnded={() => setPlayingVideoId(null)}
                         />
