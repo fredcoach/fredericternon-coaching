@@ -179,7 +179,7 @@ export function TestimonialsSection() {
                     src={featuredVideo.videoSrc}
                     autoPlay
                     controls
-                    preload="metadata"
+                    preload="none"
                     className="w-full h-full object-cover"
                     onEnded={() => setPlayingVideoId(null)}
                   />
