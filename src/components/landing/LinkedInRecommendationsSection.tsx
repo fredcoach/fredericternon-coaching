@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Linkedin, Quote } from "lucide-react";
+import { Linkedin, Quote, ExternalLink } from "lucide-react";
 
 const linkedinRecommendations = [
   {
