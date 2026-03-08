@@ -101,6 +101,7 @@ const Index = () => {
         <Method3RSection />
         <OfferSection />
         <TestimonialsSection />
+        <LinkedInRecommendationsSection />
         <FAQSection />
         <FinalCTASection />
       </main>
