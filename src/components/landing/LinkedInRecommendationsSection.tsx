@@ -66,9 +66,19 @@ export function LinkedInRecommendationsSection() {
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             Ce que disent les <span className="text-gradient">dirigeants</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
             Recommandations publiques de clients accompagnés
           </p>
+          <a
+            href="https://www.linkedin.com/in/frederic-ternon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0A66C2] text-white text-sm font-medium hover:bg-[#004182] transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            Voir le profil LinkedIn
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
