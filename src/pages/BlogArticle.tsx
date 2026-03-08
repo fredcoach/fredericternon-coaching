@@ -20,10 +20,10 @@ import blogIdentiteEvolution from "@/assets/blog-identite-evolution.jpg";
 const blogImages: Record<string, string> = {
   "syndrome-imposteur-entrepreneur": blogSyndromeImposteur,
   "peur-reussite-entrepreneur": blogPeurReussite,
-  "perfectionnisme-entrepreneuriat": blogPerfectionnisme,
+  "perfectionnisme-entrepreneur": blogPerfectionnisme,
   "peur-argent-entrepreneur": blogPeurArgent,
   "peur-visibilite-entrepreneur": blogPeurVisibilite,
-  "identite-evolution-entrepreneur": blogIdentiteEvolution,
+  "identite-entrepreneur-evolution": blogIdentiteEvolution,
 };
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();

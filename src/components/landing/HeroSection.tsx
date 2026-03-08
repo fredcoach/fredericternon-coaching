@@ -36,7 +36,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-primary/30">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-dark">
       {/* Animated background elements with parallax - deferred for LCP */}
       <div className="absolute inset-0 overflow-hidden" style={{ contentVisibility: 'auto' }}>
         {/* Main glow - simplified with will-change for GPU acceleration */}
