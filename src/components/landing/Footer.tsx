@@ -99,12 +99,12 @@ export function Footer() {
               Réserver un entretien
             </a>
             <div className="flex flex-col gap-1 pt-2 border-t border-border">
-              <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/mentions-legales" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
                 Mentions légales
-              </a>
-              <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link to="/politique-confidentialite" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
                 Politique de confidentialité
-              </a>
+              </Link>
             </div>
           </div>
         </div>
