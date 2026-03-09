@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import { getArticleBySlug, getRelatedArticles } from "@/data/blogArticles";
 import { Clock, ArrowLeft, ArrowRight, Brain, CheckCircle2, Calendar } from "lucide-react";
+import DOMPurify from "dompurify";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
