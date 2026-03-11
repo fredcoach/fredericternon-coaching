@@ -176,7 +176,7 @@ const DiagnosticPopup = () => {
                   "0 4px 20px -4px rgba(200,170,110,0.4)";
               }}
             >
-              Accéder au diagnostic — 27 €
+              Accéder au diagnostic
             </button>
 
             <p
