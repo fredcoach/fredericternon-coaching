@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import DiagnosticPopup from "./components/DiagnosticPopup";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <DiagnosticPopup />
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
