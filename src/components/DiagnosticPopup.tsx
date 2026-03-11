@@ -10,7 +10,7 @@ const DiagnosticPopup = () => {
   useEffect(() => {
     const dismissed = sessionStorage.getItem("diag_popup_dismissed");
     if (dismissed) return;
-    const timer = setTimeout(() => setIsOpen(true), 12000);
+    const timer = setTimeout(() => setIsOpen(true), 8000);
     return () => clearTimeout(timer);
   }, []);
 
