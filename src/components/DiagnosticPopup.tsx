@@ -196,6 +196,7 @@ const DiagnosticPopup = () => {
             >
               8 min · Résultats immédiats · Satisfait ou remboursé
             </p>
+            </div>
           </motion.div>
         </>
       )}
