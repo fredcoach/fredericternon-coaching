@@ -48,21 +48,29 @@ const DiagnosticPopup = () => {
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             style={{
               position: "fixed",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
+              inset: 0,
               zIndex: 9999,
-              width: "90%",
-              maxWidth: "480px",
-              backgroundColor: "#0c0c0f",
-              border: "1px solid rgba(200, 170, 110, 0.25)",
-              borderRadius: "16px",
-              padding: "40px 32px",
-              textAlign: "center",
-              boxShadow:
-                "0 25px 60px -12px rgba(0,0,0,0.7), 0 0 40px -8px rgba(200,170,110,0.15)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              pointerEvents: "none",
             }}
           >
+            <div
+              style={{
+                width: "90%",
+                maxWidth: "480px",
+                backgroundColor: "#0c0c0f",
+                border: "1px solid rgba(200, 170, 110, 0.25)",
+                borderRadius: "16px",
+                padding: "40px 32px",
+                textAlign: "center",
+                boxShadow:
+                  "0 25px 60px -12px rgba(0,0,0,0.7), 0 0 40px -8px rgba(200,170,110,0.15)",
+                pointerEvents: "auto",
+                position: "relative",
+              }}
+            >
             <button
               onClick={handleDismiss}
               style={{
@@ -188,6 +196,7 @@ const DiagnosticPopup = () => {
             >
               8 min · Résultats immédiats · Satisfait ou remboursé
             </p>
+            </div>
           </motion.div>
         </>
       )}
