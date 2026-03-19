@@ -94,12 +94,17 @@ export function Navigation() {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  shouldUseWhiteText 
-                    ? "text-white hover:text-white/80 drop-shadow-sm" 
-                    : "text-foreground hover:text-primary"
+                className={`text-sm font-medium transition-colors flex items-center gap-1.5 ${
+                  (link as any).highlight
+                    ? shouldUseWhiteText
+                      ? "text-amber-400 hover:text-amber-300 drop-shadow-sm"
+                      : "text-warning hover:text-warning/80"
+                    : shouldUseWhiteText 
+                      ? "text-white hover:text-white/80 drop-shadow-sm" 
+                      : "text-foreground hover:text-primary"
                 }`}
               >
+                {(link as any).highlight && <span className="text-xs">⚡</span>}
                 {link.label}
               </Link>
             ))}
