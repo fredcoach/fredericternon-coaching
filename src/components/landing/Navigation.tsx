@@ -13,6 +13,7 @@ const navLinks = [
 ];
 
 const pageLinks = [
+  { href: "/flash-decision", label: "Flash Decision", highlight: true },
   { href: "/blog", label: "Blog" },
 ];
 
