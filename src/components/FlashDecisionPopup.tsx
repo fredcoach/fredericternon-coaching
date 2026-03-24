@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import { X, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,13 +9,36 @@ const FlashDecisionPopup = () => {
 
   const isHomepage = location.pathname === "/";
 
+  const showPopup = useCallback(() => {
+    const dismissed = sessionStorage.getItem("flash_popup_dismissed");
+    if (dismissed) return;
+    setIsOpen(true);
+  }, []);
+
   useEffect(() => {
     if (!isHomepage) return;
     const dismissed = sessionStorage.getItem("flash_popup_dismissed");
     if (dismissed) return;
-    const timer = setTimeout(() => setIsOpen(true), 15000);
-    return () => clearTimeout(timer);
-  }, [isHomepage]);
+
+    const handleMouseLeave = (e: MouseEvent) => {
+      // Déclenche uniquement quand la souris sort par le haut de la page
+      if (e.clientY <= 0) {
+        showPopup();
+      }
+    };
+
+    // Fallback mobile/tablette : déclenche si l'utilisateur reste inactif 45s
+    const fallbackTimer = setTimeout(() => {
+      showPopup();
+    }, 45000);
+
+    document.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      clearTimeout(fallbackTimer);
+    };
+  }, [isHomepage, showPopup]);
 
   const handleDismiss = () => {
     setIsOpen(false);
@@ -59,28 +82,28 @@ const FlashDecisionPopup = () => {
               <div className="flex items-center justify-center gap-2 mb-6">
                 <Zap className="w-5 h-5 text-warning" />
                 <span className="text-xs tracking-[2px] uppercase text-warning font-medium">
-                  Flash Decision
+                  Avant de partir…
                 </span>
                 <Zap className="w-5 h-5 text-warning" />
               </div>
 
               <h2 className="text-[22px] font-bold text-[#f0ece4] leading-tight mb-4 font-serif">
-                Une décision vous bloque ?
+                Pas le temps pour un
                 <br />
-                Débloquez-la en 1 heure.
+                accompagnement long ?
               </h2>
 
               <p className="text-sm text-[rgba(240,236,228,0.65)] leading-relaxed mb-2">
-                Vous tournez en boucle sur un choix stratégique ?
+                Une seule décision peut tout changer.
                 <br />
-                Chaque jour d'hésitation a un coût.
+                Débloquez-la en <strong className="text-warning">1 heure</strong>.
               </p>
 
               <p className="text-sm text-[rgba(240,236,228,0.5)] leading-relaxed mb-7">
-                Une session de{" "}
-                <strong className="text-warning">questionnement puissant</strong>{" "}
-                pour transformer l'indécision en{" "}
-                <strong className="text-warning">action claire</strong>.
+                Flash Decision : une session de{" "}
+                <strong className="text-warning">questionnement stratégique</strong>{" "}
+                pour passer de l'hésitation à{" "}
+                <strong className="text-warning">l'action claire</strong>.
               </p>
 
               <button
@@ -92,7 +115,7 @@ const FlashDecisionPopup = () => {
               </button>
 
               <p className="text-[11px] text-white/30 mt-4">
-                1h · 350€ · Résultats immédiats
+                1h · Résultats immédiats
               </p>
             </div>
           </motion.div>
