@@ -19,7 +19,6 @@ import { FinalCTASection } from "@/components/landing/FinalCTASection";
 import { DiagnosticTeaser } from "@/components/landing/DiagnosticTeaser";
 import { Footer } from "@/components/landing/Footer";
 import { FloatingCTA } from "@/components/landing/FloatingCTA";
-import { FloatingCTA } from "@/components/landing/FloatingCTA";
 
 const Index = () => {
   const location = useLocation();
