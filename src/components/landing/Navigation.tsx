@@ -105,7 +105,8 @@ export function Navigation() {
                       : "text-foreground hover:text-primary"
                 }`}
               >
-                {(link as any).highlight && <span className="text-xs">⚡</span>}
+                {link.label === "Flash Decision" && <span className="text-xs">⚡</span>}
+                {link.label === "Diagnostic" && <span className="text-xs">🧠</span>}
                 {link.label}
               </Link>
             ))}
