@@ -105,6 +105,7 @@ const Index = () => {
         <TestimonialsSection />
         <LinkedInRecommendationsSection />
         <FAQSection />
+        <DiagnosticTeaser />
         <FinalCTASection />
       </main>
         <Footer />
