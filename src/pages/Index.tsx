@@ -16,7 +16,9 @@ import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { LinkedInRecommendationsSection } from "@/components/landing/LinkedInRecommendationsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
+import { DiagnosticTeaser } from "@/components/landing/DiagnosticTeaser";
 import { Footer } from "@/components/landing/Footer";
+import { FloatingCTA } from "@/components/landing/FloatingCTA";
 import { FloatingCTA } from "@/components/landing/FloatingCTA";
 
 const Index = () => {
