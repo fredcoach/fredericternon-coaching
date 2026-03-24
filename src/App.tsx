@@ -12,6 +12,7 @@ import BlogArticle from "./pages/BlogArticle";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import DiagnosticPopup from "./components/DiagnosticPopup";
+import FlashDecisionPopup from "./components/FlashDecisionPopup";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -31,8 +32,9 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <DiagnosticPopup />
+          <FlashDecisionPopup />
         </BrowserRouter>
-        <DiagnosticPopup />
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

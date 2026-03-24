@@ -7,13 +7,19 @@ const DIAGNOSTIC_URL = "https://pilotage-mental-diagnostic.lovable.app";
 
 const DiagnosticPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const isFlashDecision = location.pathname === "/flash-decision";
 
   useEffect(() => {
+    if (isFlashDecision) return;
     const dismissed = sessionStorage.getItem("diag_popup_dismissed");
     if (dismissed) return;
     const timer = setTimeout(() => setIsOpen(true), 8000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [isFlashDecision]);
+
+  if (isFlashDecision) return null;
 
   const handleDismiss = () => {
     setIsOpen(false);
