@@ -427,6 +427,385 @@ export const blogArticles: BlogArticle[] = [
     price: "Sur mesure",
     availability: "Disponible"
   }
+  {
+    id: "7",
+    slug: "lucidite-dirigeant-sous-pression",
+    title: "Dirigeant sous pression : pourquoi la lucidité baisse",
+    metaTitle: "Lucidité dirigeant sous pression | Coaching Mental Frédéric Ternon",
+    metaDescription: "Découvrez pourquoi la pression chronique détruit votre lucidité de dirigeant et comment restaurer votre clarté décisionnelle durablement.",
+    excerpt: "Plus la pression monte, plus tu devrais être lucide. C'est exactement l'inverse qui se passe. Et ça te coûte cher.",
+    content: `<p>Tu le sais instinctivement : <strong>tes meilleures décisions, tu les prends quand tu es calme, reposé, aligné</strong>. Et pourtant, tu diriges sous pression permanente. Résultat : tu décides en mode survie.</p>
+
+<p>Ce que j'observe chez les dirigeants que j'accompagne :</p>
+<ul>
+<li>Des décisions prises dans l'urgence qui nécessitent des corrections coûteuses</li>
+<li>Une difficulté croissante à distinguer l'urgent de l'important</li>
+<li>Des réactions émotionnelles là où il faudrait de l'analyse froide</li>
+<li>Un brouillard mental persistant en fin de journée — voire dès le matin</li>
+</ul>
+
+<h2>Le mécanisme neurologique en jeu</h2>
+
+<p>Sous pression chronique, ton cortex préfrontal — le siège de la prise de décision rationnelle — perd du terrain au profit de ton système limbique. <strong>Ton cerveau bascule en mode réactif</strong> : il cherche à survivre, pas à piloter.</p>
+
+<p>Concrètement, ça veut dire :</p>
+<ul>
+<li>Tu interprètes les signaux faibles comme des menaces</li>
+<li>Tu perds ta capacité d'anticipation stratégique</li>
+<li>Tu deviens rigide dans tes positions au lieu de rester agile</li>
+<li>Tu confonds vitesse de réaction et qualité de décision</li>
+</ul>
+
+<h2>Ce que la pression coûte vraiment à ton entreprise</h2>
+
+<p>Un dirigeant qui perd sa lucidité, ce n'est pas qu'un problème personnel. C'est un problème stratégique :</p>
+<ul>
+<li>Des opportunités manquées parce que tu n'avais pas le recul nécessaire</li>
+<li>Des conflits d'équipe mal gérés parce que tu réagissais sous tension</li>
+<li>Des investissements retardés par excès de prudence anxieuse</li>
+<li>Une fatigue qui se transmet à toute l'organisation</li>
+</ul>
+
+<h2>Mon approche avec la Méthode 3R</h2>
+
+<p><strong>Reconnaître</strong> — On identifie tes déclencheurs de pression : quels contextes, quelles personnes, quels enjeux font chuter ta lucidité ?</p>
+
+<p><strong>Réagir</strong> — On met en place des protocoles de récupération mentale rapide. Pas de la méditation abstraite : des outils concrets utilisés par les sportifs de haut niveau.</p>
+
+<p><strong>Reprogrammer</strong> — On entraîne ton cerveau à maintenir la clarté sous pression intense, comme un athlète mental.</p>
+
+<h2>Ce qui change concrètement</h2>
+
+<ul>
+<li>Tu retrouves ta capacité à prendre du recul, même sous feu</li>
+<li>Tu distingues à nouveau l'essentiel du bruit</li>
+<li>Tu décides avec calme et précision</li>
+<li>Tu protèges ton énergie au lieu de la brûler</li>
+</ul>
+
+<p><strong>La lucidité n'est pas un luxe pour un dirigeant. C'est ton avantage compétitif numéro un.</strong></p>`,
+    category: "Performance mentale",
+    readTime: "6 min",
+    publishedAt: "2024-03-04",
+    updatedAt: "2024-03-04",
+    image: "/assets/blog-lucidite-pression.jpg",
+    ogImage: "/images/og-lucidite-pression.jpg",
+    productName: "Accompagnement Lucidité Sous Pression",
+    productDescription: "Programme de coaching mental pour dirigeants : restaurer et maintenir votre lucidité décisionnelle sous pression intense.",
+    benefits: [
+      "Identifier vos déclencheurs de perte de lucidité",
+      "Installer des protocoles de récupération mentale rapide",
+      "Maintenir la clarté même sous pression intense",
+      "Transformer la pression en carburant décisionnel"
+    ],
+    targetAudience: "Dirigeants sous pression chronique qui sentent leur lucidité baisser",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
+  {
+    id: "8",
+    slug: "repousser-decisions-cles",
+    title: "Pourquoi vous repoussez certaines décisions clés",
+    metaTitle: "Procrastination décisionnelle dirigeant | Coaching Mental Frédéric Ternon",
+    metaDescription: "Vous repoussez des décisions stratégiques depuis des semaines ? Découvrez le mécanisme caché derrière cette procrastination et comment en sortir.",
+    excerpt: "Ce n'est pas un manque de temps. Ce n'est pas un manque de données. C'est quelque chose de bien plus profond qui bloque ta capacité à trancher.",
+    content: `<p>Tu as toutes les informations. Tu as analysé les scénarios. Tu connais la bonne option. <strong>Et pourtant, tu repousses.</strong></p>
+
+<p>Depuis des jours. Des semaines. Parfois des mois.</p>
+
+<p>Ce n'est pas de la procrastination ordinaire. C'est de la <strong>procrastination décisionnelle</strong> — et c'est l'un des problèmes les plus fréquents que je rencontre chez les dirigeants.</p>
+
+<p>Les symptômes sont clairs :</p>
+<ul>
+<li>Tu demandes encore une réunion, encore un rapport, encore un avis avant de trancher</li>
+<li>Tu te dis "je déciderai lundi" — et lundi passe</li>
+<li>Tu occupes ton agenda avec des urgences pour éviter de faire face à LA décision</li>
+<li>Tu ressens un malaise physique quand tu y penses (nœud à l'estomac, tension dans la nuque)</li>
+</ul>
+
+<h2>Ce qui se joue vraiment</h2>
+
+<p>Derrière chaque décision repoussée, il y a une peur non identifiée :</p>
+
+<p><strong>La peur de se tromper</strong> — "Si je fais le mauvais choix, c'est moi qui suis responsable." Le poids de la responsabilité te paralyse.</p>
+
+<p><strong>La peur de la confrontation</strong> — Certaines décisions impliquent un conflit : licencier, dire non à un associé, rompre un partenariat. Tu repousses la décision pour éviter l'inconfort relationnel.</p>
+
+<p><strong>La peur de l'irréversibilité</strong> — Ton cerveau traite chaque décision comme définitive, alors que la plupart sont ajustables.</p>
+
+<p><strong>La peur de perdre le contrôle</strong> — Décider, c'est engager l'entreprise dans une direction. Et ça signifie renoncer à d'autres options.</p>
+
+<h2>Le coût caché de l'indécision</h2>
+
+<p>Ne pas décider, <strong>c'est déjà une décision</strong>. Et c'est souvent la pire :</p>
+<ul>
+<li>Les talents que tu hésitais à recruter sont partis ailleurs</li>
+<li>Le concurrent a pris le marché pendant que tu "réfléchissais"</li>
+<li>Ton équipe a perdu confiance en ta capacité à piloter</li>
+<li>Ta charge mentale a explosé à force de porter des décisions non prises</li>
+</ul>
+
+<h2>Mon approche avec la Méthode 3R</h2>
+
+<p><strong>Reconnaître</strong> — On nomme la peur exacte derrière chaque décision en suspens. C'est souvent suffisant pour débloquer.</p>
+
+<p><strong>Réagir</strong> — On met en place un protocole de décision rapide : cadre temporel, critères clairs, seuil de confiance suffisant.</p>
+
+<p><strong>Reprogrammer</strong> — On associe la prise de décision à un acte de leadership courageux, pas à un risque de catastrophe.</p>
+
+<h2>Ce qui change</h2>
+
+<ul>
+<li>Tu tranches en heures, plus en semaines</li>
+<li>Tu assumes tes choix sans rumination</li>
+<li>Tu retrouves le respect et la confiance de ton équipe</li>
+<li>Tu libères une énergie mentale considérable</li>
+</ul>
+
+<p><strong>Un dirigeant qui ne décide pas est un dirigeant qui ne dirige pas. Point.</strong></p>`,
+    category: "Prise de décision",
+    readTime: "7 min",
+    publishedAt: "2024-03-11",
+    updatedAt: "2024-03-11",
+    image: "/assets/blog-repousser-decisions.jpg",
+    ogImage: "/images/og-repousser-decisions.jpg",
+    productName: "Accompagnement Décision Rapide",
+    productDescription: "Programme de coaching mental pour dirigeants : débloquer votre capacité à trancher sur les décisions stratégiques.",
+    benefits: [
+      "Identifier la peur qui bloque chaque décision en suspens",
+      "Installer un protocole de décision rapide et fiable",
+      "Assumer vos choix sans rumination ni regret",
+      "Retrouver votre fluidité décisionnelle"
+    ],
+    targetAudience: "Dirigeants qui repoussent des décisions stratégiques depuis trop longtemps",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
+  {
+    id: "9",
+    slug: "pilotage-interieur-dirigeant",
+    title: "Pilotage intérieur : ce que ça change concrètement",
+    metaTitle: "Pilotage intérieur dirigeant | Coaching Mental Frédéric Ternon",
+    metaDescription: "Le pilotage intérieur est la compétence cachée des dirigeants qui performent sans s'épuiser. Découvrez ce que ça change concrètement.",
+    excerpt: "Tu pilotes ton entreprise. Mais qui pilote ton état intérieur ? Ta clarté, ton énergie, ta capacité à encaisser — ça se travaille.",
+    content: `<p>Tu as appris à piloter une entreprise. À lire un P&L. À manager des équipes. À négocier des contrats. <strong>Mais personne ne t'a appris à piloter ce qui pilote tout le reste : ton état intérieur.</strong></p>
+
+<p>Le pilotage intérieur, c'est la capacité à :</p>
+<ul>
+<li>Réguler ton état émotionnel en temps réel</li>
+<li>Maintenir ta lucidité quelle que soit la pression externe</li>
+<li>Choisir ta réponse au lieu de réagir automatiquement</li>
+<li>Préserver ton énergie mentale sur la durée</li>
+</ul>
+
+<h2>Le dirigeant "piloté" vs le dirigeant "pilote"</h2>
+
+<p><strong>Le dirigeant piloté</strong> subit ses émotions. Il réagit au stress, à la frustration, à la peur. Son humeur dicte la qualité de ses décisions. Son équipe marche sur des œufs.</p>
+
+<p><strong>Le dirigeant pilote</strong> observe ses émotions sans les subir. Il utilise le stress comme un signal, pas comme un maître. Il reste stable quand tout bouge autour de lui.</p>
+
+<p>La différence ? Ce n'est pas du caractère. C'est de l'entraînement.</p>
+
+<h2>Ce que le pilotage intérieur change concrètement</h2>
+
+<p><strong>En réunion stratégique :</strong> Tu ne te laisses plus embarquer par l'émotion d'un associé ou l'urgence artificielle d'un collaborateur. Tu gardes le cap.</p>
+
+<p><strong>En période de crise :</strong> Tu absorbes le choc sans le transmettre à ton équipe. Tu deviens le point de stabilité dont ton organisation a besoin.</p>
+
+<p><strong>Dans les négociations :</strong> Tu restes lucide quand l'autre joue sur tes émotions. Tu ne cèdes pas sous la pression, tu décides avec clarté.</p>
+
+<p><strong>Le soir, chez toi :</strong> Tu arrives présent. Tu ne rumines pas les problèmes du bureau. Tu es disponible pour ta vie personnelle.</p>
+
+<h2>Comment je travaille le pilotage intérieur</h2>
+
+<p><strong>Reconnaître</strong> — On cartographie tes réactions automatiques. Quand tu es sous pression, qu'est-ce qui se déclenche ? Colère ? Repli ? Suractivité ?</p>
+
+<p><strong>Réagir</strong> — On installe des "micro-protocoles" : 90 secondes pour retrouver ta lucidité avant une décision importante.</p>
+
+<p><strong>Reprogrammer</strong> — On entraîne ton système nerveux à rester dans la zone de performance optimale, même sous pression intense.</p>
+
+<h2>Les résultats observés</h2>
+
+<ul>
+<li>Décisions plus rapides et plus justes</li>
+<li>Relations d'équipe transformées (moins de tensions, plus de confiance)</li>
+<li>Énergie préservée sur la durée (plus de burn-out silencieux)</li>
+<li>Présence retrouvée dans la vie personnelle</li>
+</ul>
+
+<p><strong>Le pilotage intérieur n'est pas du développement personnel. C'est la compétence la plus stratégique qu'un dirigeant puisse développer.</strong></p>`,
+    category: "Performance mentale",
+    readTime: "6 min",
+    publishedAt: "2024-03-18",
+    updatedAt: "2024-03-18",
+    image: "/assets/blog-pilotage-interieur.jpg",
+    ogImage: "/images/og-pilotage-interieur.jpg",
+    productName: "Accompagnement Pilotage Intérieur",
+    productDescription: "Programme de coaching mental pour dirigeants : développer votre capacité à piloter votre état intérieur pour des performances durables.",
+    benefits: [
+      "Réguler vos émotions en temps réel sous pression",
+      "Maintenir votre lucidité dans toutes les situations",
+      "Préserver votre énergie mentale sur la durée",
+      "Devenir le point de stabilité de votre organisation"
+    ],
+    targetAudience: "Dirigeants qui veulent performer sans s'épuiser",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
+  {
+    id: "10",
+    slug: "decision-fatigue-mentale-performance",
+    title: "Décision, fatigue mentale et performance business",
+    metaTitle: "Fatigue décisionnelle dirigeant | Coaching Mental Frédéric Ternon",
+    metaDescription: "La fatigue décisionnelle coûte des millions aux entreprises. Découvrez comment protéger votre énergie mentale pour des décisions de meilleure qualité.",
+    excerpt: "Chaque décision consomme de l'énergie. En fin de journée, tu prends des décisions à 200M€ avec un cerveau à 30% de capacité.",
+    content: `<p>Une étude célèbre sur les juges montre que les décisions de libération conditionnelle passent de 65% le matin à quasi 0% en fin de journée. <strong>Le cerveau fatigué dit non par défaut.</strong></p>
+
+<p>Toi, dirigeant, tu prends entre 50 et 100 décisions par jour. Certaines triviales, d'autres stratégiques. <strong>Et ton cerveau ne fait pas la différence : chaque décision consomme la même énergie mentale.</strong></p>
+
+<h2>Les signes de la fatigue décisionnelle</h2>
+
+<ul>
+<li>Tu repousses les décisions importantes en fin de journée — et elles s'accumulent</li>
+<li>Tu choisis l'option la plus sûre plutôt que la meilleure</li>
+<li>Tu délègues impulsivement pour "ne plus y penser"</li>
+<li>Tu deviens irritable face aux sollicitations de ton équipe</li>
+<li>Tu simplifies excessivement des problèmes complexes</li>
+</ul>
+
+<h2>Ce que ça coûte à ton entreprise</h2>
+
+<p>La fatigue décisionnelle n'est pas juste un inconfort personnel. C'est un <strong>risque business direct</strong> :</p>
+
+<p><strong>Décisions conservatrices :</strong> Un cerveau fatigué privilégie le statu quo. Tu rates des opportunités de croissance.</p>
+
+<p><strong>Micro-management réactif :</strong> Au lieu de déléguer intelligemment, tu interviens sur des détails par anxiété.</p>
+
+<p><strong>Conflits mal gérés :</strong> Ta patience et ton discernement s'effondrent. Des tensions mineures deviennent des crises.</p>
+
+<p><strong>Erreurs stratégiques :</strong> Les décisions à fort enjeu prises en état de fatigue mentale ont un taux d'erreur significativement plus élevé.</p>
+
+<h2>Ce que font les dirigeants qui performent sur la durée</h2>
+
+<p>Ils ne travaillent pas plus. Ils <strong>protègent leur énergie décisionnelle</strong> :</p>
+<ul>
+<li>Décisions stratégiques le matin, quand le cortex préfrontal est au maximum</li>
+<li>Routines qui éliminent les micro-décisions inutiles</li>
+<li>Pauses de récupération mentale entre les blocs de décision</li>
+<li>Délégation structurée — pas par fatigue, mais par design</li>
+</ul>
+
+<h2>Mon approche avec la Méthode 3R</h2>
+
+<p><strong>Reconnaître</strong> — On audite ta journée type : où gaspilles-tu de l'énergie décisionnelle ? Quelles décisions peuvent être automatisées ou déléguées ?</p>
+
+<p><strong>Réagir</strong> — On restructure ton agenda autour de tes pics cognitifs. On installe des rituels de récupération.</p>
+
+<p><strong>Reprogrammer</strong> — On développe ta capacité à maintenir la qualité décisionnelle sur toute la journée.</p>
+
+<h2>Les résultats</h2>
+
+<ul>
+<li>Décisions stratégiques de meilleure qualité</li>
+<li>Énergie stable du matin au soir</li>
+<li>Moins de décisions impulsives ou conservatrices</li>
+<li>Capacité retrouvée à trancher sur les enjeux majeurs</li>
+</ul>
+
+<p><strong>Ta performance business est directement proportionnelle à la qualité de tes décisions. Et la qualité de tes décisions dépend de ton énergie mentale. Protège-la.</strong></p>`,
+    category: "Prise de décision",
+    readTime: "7 min",
+    publishedAt: "2024-03-25",
+    updatedAt: "2024-03-25",
+    image: "/assets/blog-fatigue-decisionnelle.jpg",
+    ogImage: "/images/og-fatigue-decisionnelle.jpg",
+    productName: "Accompagnement Anti-Fatigue Décisionnelle",
+    productDescription: "Programme de coaching mental pour dirigeants : optimiser votre énergie mentale pour des décisions business de haute qualité.",
+    benefits: [
+      "Auditer et optimiser votre consommation d'énergie décisionnelle",
+      "Restructurer votre agenda autour de vos pics cognitifs",
+      "Maintenir la qualité décisionnelle sur toute la journée",
+      "Protéger votre performance sur la durée"
+    ],
+    targetAudience: "Dirigeants épuisés par le volume de décisions quotidiennes",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
+  {
+    id: "11",
+    slug: "sportif-haut-niveau-dirigeant",
+    title: "Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants",
+    metaTitle: "Mental sportif dirigeant | Coaching Mental Frédéric Ternon",
+    metaDescription: "Les sportifs de haut niveau entraînent leur mental autant que leur physique. Pourquoi les dirigeants ne font-ils pas la même chose ?",
+    excerpt: "Un athlète olympique n'imaginerait jamais performer sans préparation mentale. Pourtant, toi, tu diriges à 100% sans entraîner ton mental.",
+    content: `<p>J'ai eu le privilège d'accompagner des sportifs de haut niveau et des dirigeants d'entreprise. <strong>Les deux opèrent sous pression extrême. Un seul des deux entraîne systématiquement son mental.</strong></p>
+
+<p>Le sportif sait quelque chose que le dirigeant ignore souvent :</p>
+
+<p><strong>La performance technique ne suffit pas. C'est le mental qui fait la différence au moment décisif.</strong></p>
+
+<h2>Ce que le sport de haut niveau enseigne</h2>
+
+<p><strong>1. La récupération n'est pas optionnelle</strong></p>
+<p>Aucun athlète ne s'entraîne 7 jours sur 7. La récupération fait partie intégrante de la performance. Pourtant, combien de dirigeants enchaînent les semaines de 60-70 heures sans jamais récupérer vraiment ?</p>
+
+<p><strong>2. La préparation mentale précède la compétition</strong></p>
+<p>Un sprinter visualise sa course avant de se mettre en starting-blocks. Un tennisman a un rituel avant chaque point. Le dirigeant, lui, enchaîne les réunions sans aucune préparation mentale.</p>
+
+<p><strong>3. L'erreur fait partie du processus</strong></p>
+<p>Le sportif analyse ses erreurs froidement, sans se juger. Le dirigeant, souvent, rumine ses mauvaises décisions pendant des semaines.</p>
+
+<p><strong>4. Le coach est un accélérateur, pas un aveu de faiblesse</strong></p>
+<p>Federer avait un coach. Mbappé a un préparateur mental. Aucun d'eux ne considère que c'est un signe de faiblesse. En revanche, beaucoup de dirigeants pensent encore qu'être accompagné, c'est admettre qu'on ne gère pas.</p>
+
+<h2>Les parallèles entre sport et direction d'entreprise</h2>
+
+<p><strong>Le match important = la négociation stratégique.</strong> Même pression, mêmes enjeux, même besoin de lucidité absolue.</p>
+
+<p><strong>L'entraînement quotidien = le management opérationnel.</strong> La régularité, la discipline, les fondamentaux.</p>
+
+<p><strong>La blessure = le burn-out.</strong> Même mécanisme : trop de charge, pas assez de récupération, le corps (ou le mental) lâche.</p>
+
+<p><strong>La saison = le cycle business.</strong> Périodes intenses, moments creux, nécessité de périodiser l'effort.</p>
+
+<h2>Ce que j'apporte du monde sportif à mes clients dirigeants</h2>
+
+<p>Avec la Méthode 3R, j'adapte les protocoles de préparation mentale sportive au contexte du leadership :</p>
+
+<p><strong>Reconnaître</strong> — Comme le sportif qui analyse sa course, on décortique tes moments de performance et de contre-performance décisionnelle.</p>
+
+<p><strong>Réagir</strong> — On installe des rituels de préparation mentale avant tes moments clés : comités de direction, négociations, annonces difficiles.</p>
+
+<p><strong>Reprogrammer</strong> — On développe ta résilience mentale : la capacité à encaisser un revers et à rebondir sans perte de confiance.</p>
+
+<h2>Ce qui change quand tu t'entraînes comme un athlète</h2>
+
+<ul>
+<li>Tu arrives dans les moments importants avec une clarté chirurgicale</li>
+<li>Tu récupères plus vite après les périodes de haute intensité</li>
+<li>Tu gères la pression sans la subir</li>
+<li>Tu performes sur la durée au lieu de t'effondrer par cycles</li>
+</ul>
+
+<p><strong>Le dirigeant de demain ne sera pas celui qui travaille le plus. Ce sera celui qui pilote le mieux son mental. Comme un athlète.</strong></p>`,
+    category: "Performance mentale",
+    readTime: "7 min",
+    publishedAt: "2024-04-01",
+    updatedAt: "2024-04-01",
+    image: "/assets/blog-sportif-dirigeant.jpg",
+    ogImage: "/images/og-sportif-dirigeant.jpg",
+    productName: "Accompagnement Mental Athlète-Dirigeant",
+    productDescription: "Programme de coaching mental inspiré du sport de haut niveau pour dirigeants : entraînez votre mental comme un athlète.",
+    benefits: [
+      "Adopter les protocoles de préparation mentale des sportifs de haut niveau",
+      "Installer des rituels de performance avant les moments clés",
+      "Développer votre résilience et votre récupération mentale",
+      "Performer sur la durée sans cycles d'épuisement"
+    ],
+    targetAudience: "Dirigeants qui veulent entraîner leur mental comme un athlète de haut niveau",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
