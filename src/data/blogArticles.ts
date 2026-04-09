@@ -426,7 +426,7 @@ export const blogArticles: BlogArticle[] = [
     targetAudience: "Dirigeants dont l'entreprise plafonne malgré les efforts",
     price: "Sur mesure",
     availability: "Disponible"
-  }
+  },
   {
     id: "7",
     slug: "lucidite-dirigeant-sous-pression",
