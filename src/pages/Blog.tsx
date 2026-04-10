@@ -15,6 +15,11 @@ import blogPerfectionnisme from "@/assets/blog-perfectionnisme.jpg";
 import blogPeurArgent from "@/assets/blog-peur-argent.jpg";
 import blogPeurVisibilite from "@/assets/blog-peur-visibilite.jpg";
 import blogIdentiteEvolution from "@/assets/blog-identite-evolution.jpg";
+import blogLuciditeDirigeant from "@/assets/blog-lucidite-dirigeant.jpg";
+import blogRepoussserDecisions from "@/assets/blog-repousser-decisions.jpg";
+import blogPilotageInterieur from "@/assets/blog-pilotage-interieur.jpg";
+import blogFatigueMentale from "@/assets/blog-fatigue-mentale.jpg";
+import blogSportifDirigeant from "@/assets/blog-sportif-dirigeant.jpg";
 
 // Map slug to imported image
 const blogImages: Record<string, string> = {
@@ -24,6 +29,11 @@ const blogImages: Record<string, string> = {
   "peur-argent-entrepreneur": blogPeurArgent,
   "peur-visibilite-entrepreneur": blogPeurVisibilite,
   "identite-entrepreneur-evolution": blogIdentiteEvolution,
+  "lucidite-dirigeant-sous-pression": blogLuciditeDirigeant,
+  "repousser-decisions-cles": blogRepoussserDecisions,
+  "pilotage-interieur-dirigeant": blogPilotageInterieur,
+  "decision-fatigue-mentale-performance": blogFatigueMentale,
+  "sportif-haut-niveau-dirigeant": blogSportifDirigeant,
 };
 
 const Blog = () => {
