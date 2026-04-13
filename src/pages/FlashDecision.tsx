@@ -36,6 +36,11 @@ const FlashDecision = () => {
         <meta property="og:title" content="Flash Decision | Session Coaching Décisionnel 1h" />
         <meta property="og:description" content="Débloquez une décision stratégique en 1 heure. Session intensive pour dirigeants." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fredericternon.com/og-flash-decision.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="640" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://fredericternon.com/og-flash-decision.jpg" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
