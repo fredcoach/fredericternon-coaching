@@ -863,7 +863,12 @@ export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
 };
 
 export const getRelatedArticles = (currentSlug: string, limit: number = 3): BlogArticle[] => {
-  return blogArticles
-    .filter(article => article.slug !== currentSlug)
-    .slice(0, limit);
+  const current = blogArticles.find(a => a.slug === currentSlug);
+  if (!current) return blogArticles.slice(0, limit);
+  
+  const others = blogArticles.filter(a => a.slug !== currentSlug);
+  // Prioritize same category, then mix others
+  const sameCategory = others.filter(a => a.category === current.category);
+  const diffCategory = others.filter(a => a.category !== current.category);
+  return [...sameCategory, ...diffCategory].slice(0, limit);
 };
