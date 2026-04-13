@@ -35,9 +35,14 @@ const Diagnostic = () => {
         />
         <meta
           property="og:description"
-          content="Évaluez votre score de lucidité décisionnelle en 8 minutes."
+          content="Évaluez votre score de lucidité décisionnelle en 8 minutes. Identifiez vos zones fragiles et angles morts."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fredericternon.com/og-diagnostic.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="640" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://fredericternon.com/og-diagnostic.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
