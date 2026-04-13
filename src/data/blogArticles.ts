@@ -67,6 +67,10 @@ export const blogArticles: BlogArticle[] = [
 <li>Ils osent viser plus grand : acquisitions, nouveaux marchés, pivots stratégiques</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — comprends pourquoi ton identité bloque ta croissance.</p>
+
+<p>👉 Et si c'était plutôt <a href="/blog/peur-reussite-entrepreneur">la peur de réussir</a> qui te freinait ? Découvre l'ennemi invisible.</p>
+
 <p><strong>Le syndrome de l'imposteur n'est pas une fatalité. C'est un signal que ton identité de dirigeant n'a pas encore rattrapé tes compétences.</strong></p>`,
     category: "Croyances limitantes",
     readTime: "5 min",
@@ -129,6 +133,10 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Tu arrêtes de saboter inconsciemment ce que tu construis consciemment. Tu prends les décisions stratégiques sans frein à main.</p>
 
+<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a> — un mécanisme souvent lié à la peur de réussir.</p>
+
+<p>👉 Tu repousses aussi certaines décisions clés ? <a href="/blog/repousser-decisions-cles">Comprends pourquoi ici</a>.</p>
+
 <p><strong>La croissance de ton entreprise ne dépassera jamais la croissance de ton identité de dirigeant.</strong></p>`,
     category: "Croyances limitantes",
     readTime: "6 min",
@@ -162,7 +170,7 @@ export const blogArticles: BlogArticle[] = [
 <li>Des décisions stratégiques repoussées indéfiniment</li>
 <li>Des projets bloqués parce que "ce n'est pas encore prêt"</li>
 <li>Une difficulté à déléguer — personne ne fait "assez bien" à tes yeux</li>
-<li>Un épuisement mental constant qui impacte ta lucidité</li>
+<li>Un épuisement mental constant qui impacte ta lucidité — découvre <a href="/blog/decision-fatigue-mentale-performance">comment la fatigue mentale détruit ta performance</a></li>
 </ul>
 
 <h2>La croyance au cœur du perfectionnisme</h2>
@@ -264,6 +272,10 @@ export const blogArticles: BlogArticle[] = [
 <li>Ton chiffre d'affaires et tes marges augmentent naturellement</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/peur-reussite-entrepreneur">La peur de réussir</a> — souvent liée au rapport à l'argent.</p>
+
+<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — et si c'était ton identité qui limitait tes revenus ?</p>
+
 <p><strong>L'argent n'est pas le problème. Ta relation à l'argent en tant que dirigeant l'est.</strong></p>`,
     category: "Croyances limitantes",
     readTime: "6 min",
@@ -333,6 +345,10 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu deviens une référence dans ton secteur</li>
 <li>Tu ouvres des portes stratégiques (partenariats, médias, investisseurs)</li>
 </ul>
+
+<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a> — souvent lié à la peur de la visibilité.</p>
+
+<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — devenir un leader visible commence par une transformation identitaire.</p>
 
 <p><strong>Pour un dirigeant, la visibilité n'est pas optionnelle. C'est un levier stratégique de croissance.</strong></p>`,
     category: "Croyances limitantes",
@@ -408,6 +424,10 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Tu ne te fixes plus d'objectifs "réalistes" basés sur ton passé. Tu vises ce que ton entreprise mérite vraiment et tu deviens le dirigeant capable de l'y amener.</p>
 
+<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Le pilotage intérieur</a> — la compétence cachée pour accompagner cette évolution identitaire.</p>
+
+<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a> — une approche complémentaire.</p>
+
 <p><strong>La question n'est pas "comment faire croître mon entreprise ?" mais "quel dirigeant dois-je devenir ?"</strong></p>`,
     category: "Identité & Croissance",
     readTime: "7 min",
@@ -482,6 +502,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu décides avec calme et précision</li>
 <li>Tu protèges ton énergie au lieu de la brûler</li>
 </ul>
+
+<p>👉 Lire aussi : <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance business</a> — le lien direct entre lucidité et qualité décisionnelle.</p>
+
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> — apprends à piloter ton état interne sous pression.</p>
+
+<p>👉 Tu repousses certaines décisions ? <a href="/blog/repousser-decisions-cles">Découvre le mécanisme caché ici</a>.</p>
 
 <p><strong>La lucidité n'est pas un luxe pour un dirigeant. C'est ton avantage compétitif numéro un.</strong></p>`,
     category: "Performance mentale",
@@ -562,6 +588,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu libères une énergie mentale considérable</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — comprends le mécanisme neurologique derrière l'indécision.</p>
+
+<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> — la fatigue décisionnelle amplifie la procrastination.</p>
+
+<p>👉 Et si c'était <a href="/blog/peur-reussite-entrepreneur">la peur de réussir</a> qui bloquait tes décisions ?</p>
+
 <p><strong>Un dirigeant qui ne décide pas est un dirigeant qui ne dirige pas. Point.</strong></p>`,
     category: "Prise de décision",
     readTime: "7 min",
@@ -632,6 +664,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Énergie préservée sur la durée (plus de burn-out silencieux)</li>
 <li>Présence retrouvée dans la vie personnelle</li>
 </ul>
+
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — le lien entre pression et perte de contrôle intérieur.</p>
+
+<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a> — les protocoles mentaux du sport appliqués au leadership.</p>
+
+<p>👉 Le <a href="/blog/syndrome-imposteur-entrepreneur">syndrome de l'imposteur</a> est souvent un signe de pilotage intérieur défaillant.</p>
 
 <p><strong>Le pilotage intérieur n'est pas du développement personnel. C'est la compétence la plus stratégique qu'un dirigeant puisse développer.</strong></p>`,
     category: "Performance mentale",
@@ -712,6 +750,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Capacité retrouvée à trancher sur les enjeux majeurs</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — la fatigue mentale est la première cause de perte de lucidité.</p>
+
+<p>👉 <a href="/blog/repousser-decisions-cles">Pourquoi tu repousses certaines décisions clés</a> — la fatigue décisionnelle nourrit la procrastination.</p>
+
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur</a> — la solution pour préserver ton énergie mentale sur la durée.</p>
+
 <p><strong>Ta performance business est directement proportionnelle à la qualité de tes décisions. Et la qualité de tes décisions dépend de ton énergie mentale. Protège-la.</strong></p>`,
     category: "Prise de décision",
     readTime: "7 min",
@@ -787,6 +831,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu performes sur la durée au lieu de t'effondrer par cycles</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> — la version "dirigeant" de la préparation mentale sportive.</p>
+
+<p>👉 <a href="/blog/lucidite-dirigeant-sous-pression">Pourquoi la lucidité baisse sous pression</a> — et comment la restaurer comme un athlète.</p>
+
+<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> — protège ton énergie comme un sportif de haut niveau.</p>
+
 <p><strong>Le dirigeant de demain ne sera pas celui qui travaille le plus. Ce sera celui qui pilote le mieux son mental. Comme un athlète.</strong></p>`,
     category: "Performance mentale",
     readTime: "7 min",
@@ -813,7 +863,12 @@ export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
 };
 
 export const getRelatedArticles = (currentSlug: string, limit: number = 3): BlogArticle[] => {
-  return blogArticles
-    .filter(article => article.slug !== currentSlug)
-    .slice(0, limit);
+  const current = blogArticles.find(a => a.slug === currentSlug);
+  if (!current) return blogArticles.slice(0, limit);
+  
+  const others = blogArticles.filter(a => a.slug !== currentSlug);
+  // Prioritize same category, then mix others
+  const sameCategory = others.filter(a => a.category === current.category);
+  const diffCategory = others.filter(a => a.category !== current.category);
+  return [...sameCategory, ...diffCategory].slice(0, limit);
 };
