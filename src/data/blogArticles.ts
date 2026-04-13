@@ -67,6 +67,10 @@ export const blogArticles: BlogArticle[] = [
 <li>Ils osent viser plus grand : acquisitions, nouveaux marchés, pivots stratégiques</li>
 </ul>
 
+<p>👉 Lire aussi : <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — comprends pourquoi ton identité bloque ta croissance.</p>
+
+<p>👉 Et si c'était plutôt <a href="/blog/peur-reussite-entrepreneur">la peur de réussir</a> qui te freinait ? Découvre l'ennemi invisible.</p>
+
 <p><strong>Le syndrome de l'imposteur n'est pas une fatalité. C'est un signal que ton identité de dirigeant n'a pas encore rattrapé tes compétences.</strong></p>`,
     category: "Croyances limitantes",
     readTime: "5 min",
@@ -129,6 +133,10 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Tu arrêtes de saboter inconsciemment ce que tu construis consciemment. Tu prends les décisions stratégiques sans frein à main.</p>
 
+<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a> — un mécanisme souvent lié à la peur de réussir.</p>
+
+<p>👉 Tu repousses aussi certaines décisions clés ? <a href="/blog/repousser-decisions-cles">Comprends pourquoi ici</a>.</p>
+
 <p><strong>La croissance de ton entreprise ne dépassera jamais la croissance de ton identité de dirigeant.</strong></p>`,
     category: "Croyances limitantes",
     readTime: "6 min",
@@ -162,7 +170,7 @@ export const blogArticles: BlogArticle[] = [
 <li>Des décisions stratégiques repoussées indéfiniment</li>
 <li>Des projets bloqués parce que "ce n'est pas encore prêt"</li>
 <li>Une difficulté à déléguer — personne ne fait "assez bien" à tes yeux</li>
-<li>Un épuisement mental constant qui impacte ta lucidité</li>
+<li>Un épuisement mental constant qui impacte ta lucidité — découvre <a href="/blog/decision-fatigue-mentale-performance">comment la fatigue mentale détruit ta performance</a></li>
 </ul>
 
 <h2>La croyance au cœur du perfectionnisme</h2>
