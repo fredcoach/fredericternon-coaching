@@ -13,7 +13,7 @@ const Diagnostic = () => {
     "@type": "Service",
     name: "Diagnostic de Lucidité Décisionnelle",
     description:
-      "Auto-diagnostic en 8 minutes pour identifier vos zones fragiles, angles morts et le coût réel de vos hésitations sous pression.",
+      "Auto-diagnostic en 10 minutes pour identifier vos zones fragiles, angles morts et le coût réel de vos hésitations sous pression.",
     provider: {
       "@type": "Person",
       name: "Frédéric Ternon",
