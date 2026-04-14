@@ -26,7 +26,7 @@ const Diagnostic = () => {
         <title>Diagnostic Lucidité Décisionnelle | Frédéric Ternon</title>
         <meta
           name="description"
-          content="Évaluez votre score de lucidité décisionnelle en 8 minutes. Identifiez vos zones fragiles, angles morts et le coût réel de vos hésitations sous pression."
+          content="Évaluez votre score de lucidité décisionnelle en 10 minutes. Identifiez vos zones fragiles, angles morts et le coût réel de vos hésitations sous pression."
         />
         <link rel="canonical" href="https://fredericternon.com/diagnostic" />
         <meta
@@ -35,7 +35,7 @@ const Diagnostic = () => {
         />
         <meta
           property="og:description"
-          content="Évaluez votre score de lucidité décisionnelle en 8 minutes. Identifiez vos zones fragiles et angles morts."
+          content="Évaluez votre score de lucidité décisionnelle en 10 minutes. Identifiez vos zones fragiles et angles morts."
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fredericternon.com/og-diagnostic.jpg" />

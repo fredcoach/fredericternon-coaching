@@ -201,7 +201,7 @@ const DiagnosticPopup = () => {
                 marginTop: "16px",
               }}
             >
-              8 min · Résultats immédiats · Satisfait ou remboursé
+              10 min · Résultats immédiats · Satisfait ou remboursé
             </p>
             </div>
           </motion.div>
