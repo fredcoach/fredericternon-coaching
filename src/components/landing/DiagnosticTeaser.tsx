@@ -34,7 +34,7 @@ export function DiagnosticTeaser() {
                 <br />
                 lucidité décisionnelle
               </p>
-              <p className="text-sm text-white/40 mt-4">8 min · Résultats immédiats</p>
+              <p className="text-sm text-white/40 mt-4">10 min · Résultats immédiats</p>
             </div>
 
             {/* Right — copy + CTA */}

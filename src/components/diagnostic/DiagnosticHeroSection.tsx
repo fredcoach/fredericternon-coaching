@@ -61,7 +61,7 @@ export function DiagnosticHeroSection() {
           </Button>
 
           <p className="text-sm text-white/30 mt-6">
-            8 min · Résultats immédiats · Satisfait ou remboursé
+            10 min · Résultats immédiats · Satisfait ou remboursé
           </p>
         </div>
       </div>

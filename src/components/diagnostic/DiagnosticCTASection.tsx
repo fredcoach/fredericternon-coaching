@@ -20,7 +20,7 @@ export function DiagnosticCTASection() {
           </h2>
 
           <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
-            8 minutes pour découvrir ce que la pression vous cache.
+            10 minutes pour découvrir ce que la pression vous cache.
             <br />
             Résultats immédiats. Satisfait ou remboursé.
           </p>
