@@ -128,15 +128,26 @@ export function HeroSection() {
 
             {/* Text content */}
             <div className="text-center">
-              <h1 className="animate-fade-in-up mb-8">
-                <span className="block font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1] tracking-tight">
-                  Reprenez le contrôle
-                </span>
-                <span className="block font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1] tracking-tight mt-2">
-                  <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-                    de vos décisions
-                  </span>
-                </span>
+              <h1 className="animate-fade-in-up mb-8 relative h-[5rem] md:h-[6.5rem] lg:h-[8rem] xl:h-[9rem] overflow-hidden">
+                {heroHeadlines.map((headline, index) => (
+                  <div
+                    key={index}
+                    className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-in-out"
+                    style={{
+                      opacity: headlineIndex === index ? 1 : 0,
+                      transform: headlineIndex === index ? "translateY(0)" : "translateY(20px)",
+                    }}
+                  >
+                    <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] tracking-tight">
+                      {headline.bold}
+                    </span>
+                    <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight mt-1">
+                      <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
+                        — {headline.accent}
+                      </span>
+                    </span>
+                  </div>
+                ))}
               </h1>
 
               <p
