@@ -6,7 +6,7 @@ const offerItems = [
   {
     icon: Video,
     title: "Coaching 1:1 (visio)",
-    description: "Durée adaptée à ton rythme et tes objectifs",
+    description: "Durée adaptée à votre rythme et vos objectifs",
   },
   {
     icon: FileText,
@@ -26,11 +26,11 @@ const offerItems = [
 ];
 
 const guarantees = [
-  "Clarté d'action : tu repars avec une décision, une priorité, une action nette",
+  "Clarté d'action : vous repartez avec une décision, une priorité, une action nette",
   "Exigence + humanité : cadre ferme, zéro complaisance, zéro jugement",
-  "Sur-mesure réel : on ajuste selon tes contraintes et tes pics d'activité",
-  "Partenariat : si tu t'impliques, les résultats deviennent visibles",
-  "Tu peux arrêter à tout moment : on ne construit rien de solide sans engagement mutuel",
+  "Sur-mesure réel : on ajuste selon vos contraintes et vos pics d'activité",
+  "Partenariat : si vous vous impliquez, les résultats deviennent visibles",
+  "Vous pouvez arrêter à tout moment : on ne construit rien de solide sans engagement mutuel",
 ];
 
 export function OfferSection() {
@@ -61,7 +61,7 @@ export function OfferSection() {
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             L'accompagnement <span className="text-gradient">(tout-en-un)</span>
           </h2>
-          <p className="text-lg text-muted-foreground">Une seule formule. Tout dedans. Adaptée à ton contexte.</p>
+          <p className="text-lg text-muted-foreground">Une seule formule. Tout dedans. Adaptée à votre contexte.</p>
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -97,9 +97,9 @@ export function OfferSection() {
                     <Bot className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-foreground mb-2">Alpha — ton pocket coach (disponible 24/7)</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Alpha — votre pocket coach (disponible 24/7)</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Alpha t'aide en 2–5 minutes à retrouver du calme, clarifier ton prochain choix, appliquer 3R sur
+                      Alpha vous aide en 2–5 minutes à retrouver du calme, clarifier votre prochain choix, appliquer 3R sur
                       une situation concrète, préparer un message ou une réunion, sortir de la rumination.
                     </p>
                     <a
@@ -108,7 +108,7 @@ export function OfferSection() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
                     >
-                      Découvre Alpha en action
+                      Découvrez Alpha en action
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </div>
@@ -131,14 +131,14 @@ export function OfferSection() {
 
                 <p className="text-primary-foreground/90 mb-3">Le montant dépend de plusieurs facteurs :</p>
                 <ul className="space-y-2 text-sm text-primary-foreground/90 mb-6">
-                  <li>• La complexité de ta situation</li>
-                  <li>• Tes objectifs et le délai pour les atteindre</li>
+                  <li>• La complexité de votre situation</li>
+                  <li>• Vos objectifs et le délai pour les atteindre</li>
                   <li>• Le niveau d'accompagnement nécessaire (coaching + ressources + disponibilité)</li>
                 </ul>
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
                   <p className="font-semibold mb-3">
-                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément tes
+                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément vos
                     enjeux.
                   </p>
                   <p className="text-sm text-primary-foreground/80 mb-4">
@@ -152,7 +152,7 @@ export function OfferSection() {
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
                   <p className="text-sm italic text-primary-foreground/80">
-                    Tu sauras exactement ce que tu paies et pourquoi avant de décider quoi que ce soit.
+                    Vous saurez exactement ce que vous payez et pourquoi avant de décider quoi que ce soit.
                   </p>
                 </div>
 

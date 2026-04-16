@@ -8,38 +8,38 @@ const steps = [
     title: "Diagnostic profond (30 min)",
     intro: "On clarifie en direct :",
     points: [
-      "ce qui te pèse vraiment (mental, charge, pression)",
-      "ce qui te disperse (trop de sujets, trop de \"oui\")",
-      "ce qui t'empêche de souffler (tension, culpabilité, contrôle)",
+      "ce qui vous pèse vraiment (mental, charge, pression)",
+      "ce qui vous disperse (trop de sujets, trop de \"oui\")",
+      "ce qui vous empêche de souffler (tension, culpabilité, contrôle)",
       "par où commencer pour retrouver de l'espace rapidement",
     ],
-    note: "➡️ Si c'est un match, je te propose un accompagnement sur-mesure, avec un cap clair et des actions concrètes.",
+    note: "➡️ Si c'est un match, je vous propose un accompagnement sur-mesure, avec un cap clair et des actions concrètes.",
   },
   {
     icon: Anchor,
     phase: "Repère 1",
-    title: "Retrouver ton espace intérieur",
+    title: "Retrouver votre espace intérieur",
     subtitle: "surcharge → clarté",
     points: [
-      "Identifier ce qui te vide (et ce qui te \"mange\" en arrière-plan)",
-      "Poser des limites nettes, sans te justifier",
+      "Identifier ce qui vous vide (et ce qui vous \"mange\" en arrière-plan)",
+      "Poser des limites nettes, sans vous justifier",
       "Recréer de la place mentale (et émotionnelle)",
       "Revenir à un état interne stable",
     ],
-    result: "Tu récupères de la bande passante. Tu respires à nouveau.",
+    result: "Vous récupérez de la bande passante. Vous respirez à nouveau.",
   },
   {
     icon: TrendingUp,
     phase: "Repère 2",
-    title: "Incarner ta légitimité",
+    title: "Incarner votre légitimité",
     subtitle: "doutes → affirmation",
     points: [
-      "Déminer les croyances qui te freinent (syndrome de l'imposteur, perfectionnisme, peur du jugement)",
-      "Clarifier tes valeurs et tes standards",
+      "Déminer les croyances qui vous freinent (syndrome de l'imposteur, perfectionnisme, peur du jugement)",
+      "Clarifier vos valeurs et vos standards",
       "Décider plus vite, plus juste, plus sereinement",
-      "Assumer ta place et ton style de leadership",
+      "Assumer votre place et votre style de leadership",
     ],
-    result: "Tu avances avec une colonne vertébrale. Sans te justifier.",
+    result: "Vous avancez avec une colonne vertébrale. Sans vous justifier.",
   },
   {
     icon: Rocket,
@@ -49,10 +49,10 @@ const steps = [
     points: [
       "Mettre en place un rythme soutenable (sans perdre l'impact)",
       "Piloter sous pression sans partir en mode survie",
-      "Protéger ton énergie et ton attention",
+      "Protéger votre énergie et votre attention",
       "Stabiliser un fonctionnement qui tient dans le temps",
     ],
-    result: "Un système qui te ressemble. Et qui dure.",
+    result: "Un système qui vous ressemble. Et qui dure.",
   },
 ];
 
@@ -83,7 +83,7 @@ export function JourneySection() {
             3 repères. <span className="text-gradient">Pas un programme.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Structuré… mais vivant : on avance sur une trajectoire claire, mais on part de ta réalité.
+            Structuré… mais vivant : on avance sur une trajectoire claire, mais on part de votre réalité.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             L'ordre n'est pas imposé. Le rythme non plus. On commence là où ça coince aujourd'hui.
@@ -177,12 +177,12 @@ export function JourneySection() {
           <p className="text-muted-foreground mb-3">
             Ces 3 repères sont un cadre de progression, pas une trajectoire rigide.
             <br />
-            On ajuste selon ton contexte, ton niveau de charge, tes enjeux du moment.
+            On ajuste selon votre contexte, votre niveau de charge, vos enjeux du moment.
           </p>
           <p className="text-foreground font-medium">
-            Le but n'est pas de te faire rentrer dans une méthode.
+            Le but n'est pas de vous faire rentrer dans une méthode.
             <br />
-            <span className="text-primary">Le but, c'est que tu récupères ta clarté, ta puissance, et ta sérénité — sans te perdre en route.</span>
+            <span className="text-primary">Le but, c'est que vous récupériez votre clarté, votre puissance, et votre sérénité — sans vous perdre en route.</span>
           </p>
         </div>
       </div>

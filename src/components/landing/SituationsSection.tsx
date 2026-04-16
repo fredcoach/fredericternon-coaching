@@ -13,37 +13,37 @@ const situations = [
   {
     icon: Scale,
     title: "Décisions qui pèsent",
-    description: "Recrutement, pivot, partenariat → tu tournes en boucle, tu n'arrives pas à trancher avec clarté.",
+    description: "Recrutement, pivot, partenariat → vous tournez en boucle, vous n'arrivez pas à trancher avec clarté.",
   },
   {
     icon: BrainCog,
     title: "Charge mentale invisible",
-    description: "Tu penses à tout, tu anticipes tout, même la nuit. Ton cerveau ne s'arrête jamais.",
+    description: "Vous pensez à tout, vous anticipez tout, même la nuit. Votre cerveau ne s'arrête jamais.",
   },
   {
     icon: Calendar,
     title: "Agenda dicté par les autres",
-    description: "Journées hachées, urgences des autres → zéro temps pour toi, tu subis au lieu de piloter.",
+    description: "Journées hachées, urgences des autres → zéro temps pour vous, vous subissez au lieu de piloter.",
   },
   {
     icon: Home,
     title: "Impossible de déconnecter",
-    description: "Tu es là physiquement, mais ta tête reste au travail. Culpabilité, rumination, jamais vraiment présente.",
+    description: "Vous êtes là physiquement, mais votre tête reste au travail. Culpabilité, rumination, jamais vraiment présent.",
   },
   {
     icon: MessageSquareWarning,
     title: "Difficulté à poser un cadre",
-    description: "Tu évites les confrontations ou tu réagis trop vite → tu veux une posture sereine et affirmée.",
+    description: "Vous évitez les confrontations ou vous réagissez trop vite → vous voulez une posture sereine et affirmée.",
   },
   {
     icon: GitBranch,
-    title: "Tout repose sur toi",
-    description: "Tu reprends tout, tu surcontrôles → impossible de déléguer vraiment, ça t'épuise.",
+    title: "Tout repose sur vous",
+    description: "Vous reprenez tout, vous surcontrôlez → impossible de déléguer vraiment, ça vous épuise.",
   },
   {
     icon: Users,
     title: "Solitude du leadership",
-    description: "Tu portes tout. Seul. Personne à qui vraiment parler. Peur de montrer que tu doutes.",
+    description: "Vous portez tout. Seul. Personne à qui vraiment parler. Peur de montrer que vous doutez.",
   },
 ];
 
@@ -66,7 +66,7 @@ export function SituationsSection() {
             Exemples de <span className="text-gradient">situations traitées</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pour que tu te projettes immédiatement.
+            Pour que vous vous projetiez immédiatement.
           </p>
         </div>
 
@@ -99,10 +99,10 @@ export function SituationsSection() {
           }`}
         >
           <p className="text-lg text-foreground">
-            <strong>Mon rôle :</strong> t'accompagner à retrouver ta clarté, ta sérénité et ton impact — sans t'user.
+            <strong>Mon rôle :</strong> vous accompagner à retrouver votre clarté, votre sérénité et votre impact — sans vous user.
           </p>
           <p className="text-muted-foreground mt-2">
-            Parce que quand tu retrouves ton alignement, tout se remet en mouvement.
+            Parce que quand vous retrouvez votre alignement, tout se remet en mouvement.
           </p>
         </div>
       </div>
