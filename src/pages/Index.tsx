@@ -41,7 +41,7 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Frédéric Ternon Coaching",
-    "description": "Coaching premium en performance mentale et leadership pour dirigeants et décideurs",
+    "description": "Coaching stratégique pour dirigeants et décideurs sous pression. Lucidité décisionnelle, performance mentale et leadership.",
     "url": "https://fredericternon.com",
     "telephone": "",
     "address": {
