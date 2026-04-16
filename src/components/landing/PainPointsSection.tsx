@@ -2,10 +2,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertCircle } from "lucide-react";
 
 const impostorPoints = [
-  "Tu minimises tes réussites, comme si elles ne comptaient pas vraiment",
-  "Tu portes un masque — et tu as peur qu'on découvre que tu doutes",
-  "Tu surcontrôles parce que lâcher prise, c'est risquer de décevoir",
-  "Plus tu grandis… plus tu te demandes si tu mérites ta place",
+  "Vous minimisez vos réussites, comme si elles ne comptaient pas vraiment",
+  "Vous portez un masque — et vous avez peur qu'on découvre que vous doutez",
+  "Vous surcontrôlez parce que lâcher prise, c'est risquer de décevoir",
+  "Plus vous grandissez… plus vous vous demandez si vous méritez votre place",
 ];
 
 export function PainPointsSection() {
@@ -23,16 +23,16 @@ export function PainPointsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-6">
-            Ce que tu vis est courant — mais <span className="text-accent">t'épuise en silence</span>
+            Ce que vous vivez est courant — mais <span className="text-accent">vous épuise en silence</span>
           </h2>
 
           <div className="space-y-6 mt-10">
             <p className="text-lg text-primary-foreground/90 text-center">
-              Tu portes tout. L'entreprise, les décisions, les autres. Et tu tiens. Toujours.
+              Vous portez tout. L'entreprise, les décisions, les autres. Et vous tenez. Toujours.
             </p>
 
             <p className="text-primary-foreground/80 text-center max-w-3xl mx-auto">
-              Entre la stratégie, l'opérationnel, les urgences et les attentes de tout le monde… tu n'as plus de temps pour toi. Plus de temps pour penser. Plus de temps pour respirer.
+              Entre la stratégie, l'opérationnel, les urgences et les attentes de tout le monde… vous n'avez plus de temps pour vous. Plus de temps pour penser. Plus de temps pour respirer.
             </p>
 
             {/* Quote */}
@@ -43,7 +43,7 @@ export function PainPointsSection() {
             </div>
 
             <p className="text-primary-foreground/80 text-center">
-              Et le plus dur ? Tu ne peux pas en parler. Tu dois rester fort. Tu dois avoir les réponses. Alors tu portes ton masque. Et tu continues. Seul.
+              Et le plus dur ? Vous ne pouvez pas en parler. Vous devez rester fort. Vous devez avoir les réponses. Alors vous portez votre masque. Et vous continuez. Seul.
             </p>
 
             {/* Impostor syndrome */}
@@ -71,19 +71,19 @@ export function PainPointsSection() {
               </div>
 
               <p className="text-center mt-8 text-primary-foreground/70 text-sm">
-                Ce n'est pas toi qui es "trop". C'est ton système intérieur qui refuse de continuer à se trahir.
+                Ce n'est pas vous qui êtes "trop". C'est votre système intérieur qui refuse de continuer à se trahir.
               </p>
             </div>
 
             {/* Key message */}
             <div className="text-center mt-12 space-y-4">
               <p className="text-lg text-accent font-medium">
-                Cette charge invisible te coûte cher : elle t'éloigne de qui tu es vraiment.
+                Cette charge invisible vous coûte cher : elle vous éloigne de qui vous êtes vraiment.
               </p>
               <p className="text-xl font-semibold text-primary-foreground">
-                Tu n'as pas besoin d'en faire plus.{" "}
+                Vous n'avez pas besoin d'en faire plus.{" "}
                 <span className="underline decoration-accent decoration-2 underline-offset-4">
-                  Tu as besoin de retrouver ta légitimité intérieure.
+                  Vous avez besoin de retrouver votre légitimité intérieure.
                 </span>
               </p>
             </div>

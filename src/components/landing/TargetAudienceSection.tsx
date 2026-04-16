@@ -11,10 +11,10 @@ const forYou = [
 ];
 
 const notForYou = [
-  "Tu cherches une solution rapide sans implication",
-  "Tu veux parler sans passer à l'action",
-  "Tu veux uniquement des outils sans travailler ce qui se passe à l'intérieur",
-  "Tu n'es pas prêt à remettre en question certaines de tes croyances",
+  "Vous cherchez une solution rapide sans implication",
+  "Vous voulez parler sans passer à l'action",
+  "Vous voulez uniquement des outils sans travailler ce qui se passe à l'intérieur",
+  "Vous n'êtes pas prêt à remettre en question certaines de vos croyances",
 ];
 
 export function TargetAudienceSection() {
@@ -50,7 +50,7 @@ export function TargetAudienceSection() {
               <div className="w-8 h-8 rounded-full bg-success flex items-center justify-center">
                 <Check className="w-5 h-5 text-success-foreground" />
               </div>
-              Cet accompagnement est pour toi si :
+              Cet accompagnement est pour vous si :
             </h3>
             <ul className="space-y-4">
               {forYou.map((item, index) => (
@@ -75,7 +75,7 @@ export function TargetAudienceSection() {
               <div className="w-8 h-8 rounded-full bg-destructive flex items-center justify-center">
                 <X className="w-5 h-5 text-destructive-foreground" />
               </div>
-              Ce n'est pas pour toi si :
+              Ce n'est pas pour vous si :
             </h3>
             <ul className="space-y-4">
               {notForYou.map((item, index) => (
