@@ -130,10 +130,10 @@ export function TestimonialsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ce qu'ils <span className="text-gradient">en disent</span>
+            Histoires de <span className="text-gradient">transformation</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Des témoignages réels de clients accompagnés
+            Découvrez les résultats concrets de ceux qui ont fait le travail
           </p>
         </div>
 

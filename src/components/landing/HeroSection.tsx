@@ -1,7 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Brain, Target, Zap } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import fredericPhoto from "@/assets/frederic-ternon.png";
+
+const pillars = [
+  {
+    icon: Brain,
+    label: "Lucidité",
+    description: "Voir clair sous pression",
+  },
+  {
+    icon: Target,
+    label: "Décision",
+    description: "Trancher avec justesse",
+  },
+  {
+    icon: Zap,
+    label: "Impact",
+    description: "Agir sans s'épuiser",
+  },
+];
 
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -9,9 +27,8 @@ export function HeroSection() {
   const rafRef = useRef<number>();
 
   useEffect(() => {
-    // Delay parallax until after LCP
     const timer = setTimeout(() => setIsLoaded(true), 100);
-    
+
     const handleScroll = () => {
       if (!isLoaded) return;
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
@@ -19,7 +36,7 @@ export function HeroSection() {
         setScrollY(window.scrollY);
       });
     };
-    
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       clearTimeout(timer);
@@ -37,158 +54,122 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-dark">
-      {/* Animated background elements with parallax - deferred for LCP */}
-      <div className="absolute inset-0 overflow-hidden" style={{ contentVisibility: 'auto' }}>
-        {/* Main glow - simplified with will-change for GPU acceleration */}
+      {/* Background */}
+      <div className="absolute inset-0 overflow-hidden" style={{ contentVisibility: "auto" }}>
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-primary/10 blur-[120px] will-change-transform"
-          style={{ transform: isLoaded ? `translate(-50%, calc(-50% + ${scrollY * 0.2}px))` : 'translate(-50%, -50%)' }}
+          style={{
+            transform: isLoaded
+              ? `translate(-50%, calc(-50% + ${scrollY * 0.2}px))`
+              : "translate(-50%, -50%)",
+          }}
         />
-        {/* Secondary glows */}
         <div
           className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px] will-change-transform"
-          style={{ transform: isLoaded ? `translateY(${scrollY * 0.3}px)` : 'none' }}
+          style={{ transform: isLoaded ? `translateY(${scrollY * 0.3}px)` : "none" }}
         />
-        <div
-          className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] rounded-full bg-secondary/10 blur-[80px] will-change-transform"
-          style={{ transform: isLoaded ? `translateY(${scrollY * -0.15}px)` : 'none' }}
-        />
-        {/* Subtle grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-        
-        {/* Animated floating light particles - deferred */}
         {isLoaded && (
           <>
             <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-accent/60 animate-[float_8s_ease-in-out_infinite] shadow-[0_0_20px_5px_hsl(var(--accent)/0.4)]" />
             <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-primary/50 animate-[float_6s_ease-in-out_infinite_1s] shadow-[0_0_15px_4px_hsl(var(--primary)/0.3)]" />
-            <div className="absolute top-2/3 left-1/5 w-1 h-1 rounded-full bg-white/40 animate-[float_7s_ease-in-out_infinite_2s] shadow-[0_0_10px_3px_rgba(255,255,255,0.2)]" />
             <div className="absolute bottom-1/4 right-1/4 w-2.5 h-2.5 rounded-full bg-accent/40 animate-[float_9s_ease-in-out_infinite_0.5s] shadow-[0_0_25px_6px_hsl(var(--accent)/0.3)]" />
-            <div className="absolute top-1/2 left-1/3 w-1 h-1 rounded-full bg-primary/60 animate-[float_5s_ease-in-out_infinite_3s] shadow-[0_0_12px_3px_hsl(var(--primary)/0.4)]" />
-            <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-white/30 animate-[float_10s_ease-in-out_infinite_1.5s] shadow-[0_0_15px_4px_rgba(255,255,255,0.15)]" />
-            <div className="absolute top-1/5 right-1/5 w-1 h-1 rounded-full bg-accent/50 animate-[float_7s_ease-in-out_infinite_4s] shadow-[0_0_10px_3px_hsl(var(--accent)/0.25)]" />
-            <div className="absolute bottom-1/2 right-1/6 w-2 h-2 rounded-full bg-primary/40 animate-[float_8s_ease-in-out_infinite_2.5s] shadow-[0_0_20px_5px_hsl(var(--primary)/0.25)]" />
-            
-            {/* Animated light beams */}
             <div className="absolute top-0 left-1/3 w-px h-1/3 bg-gradient-to-b from-accent/20 via-accent/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
-            <div className="absolute top-0 right-1/4 w-px h-1/4 bg-gradient-to-b from-primary/15 via-primary/5 to-transparent animate-[shimmer_5s_ease-in-out_infinite_1s]" />
-            <div className="absolute top-0 left-2/3 w-px h-1/5 bg-gradient-to-b from-white/10 via-white/3 to-transparent animate-[shimmer_6s_ease-in-out_infinite_2s]" />
           </>
         )}
       </div>
 
       <div className="container mx-auto px-8 sm:px-10 md:px-12 py-20 md:py-28 relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Two-column layout on desktop */}
-          <div className="flex flex-col items-center gap-12 lg:gap-16">
+          <div className="flex flex-col items-center gap-10 lg:gap-14">
             {/* Photo */}
             <div className="animate-fade-in">
               <div className="relative">
-                {/* Glow behind photo */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
-
-                {/* Photo - priorité haute car au-dessus du fold */}
                 <img
                   src={fredericPhoto}
-                  alt="Frédéric Ternon - Coach en performance mentale"
-                  className="relative w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/20 shadow-2xl"
+                  alt="Frédéric Ternon - Coach stratégique en performance mentale"
+                  className="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-white/20 shadow-2xl"
                   fetchPriority="high"
                   loading="eager"
                   decoding="sync"
-                  width="256"
-                  height="256"
+                  width="208"
+                  height="208"
                 />
-
-                {/* Badges around photo */}
-                <div className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-xl">
-                  <span className="text-sm font-semibold text-white">20 ans d'expérience</span>
-                </div>
-                <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-accent/90 backdrop-blur-md rounded-full shadow-xl">
-                  <span className="text-xs font-bold text-white">Méthode 3R</span>
-                </div>
               </div>
             </div>
 
-            {/* Text content - centered */}
-            <div className="text-center">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 animate-fade-in">
+            {/* Badge */}
+            <div className="animate-fade-in">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <span className="text-sm text-white/70 font-medium">Coach en performance mentale & leadership</span>
-              </div>
-
-              {/* Tagline - Au-dessus du titre avec effet shimmer */}
-              <div className="mb-8 animate-fade-in relative overflow-hidden">
-                <p className="relative inline-block text-lg md:text-xl lg:text-2xl font-bold tracking-wider uppercase">
-                  {/* Texte de base avec dégradé */}
-                  <span className="bg-gradient-to-r from-accent via-white to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-text-shimmer">
-                    Leadership intérieur
-                  </span>
-                  <span className="mx-2 md:mx-3 text-accent">•</span>
-                  <span className="bg-gradient-to-r from-white via-accent to-white bg-[length:200%_100%] bg-clip-text text-transparent animate-text-shimmer" style={{ animationDelay: "0.5s" }}>
-                    Décisions nettes
-                  </span>
-                  <span className="mx-2 md:mx-3 text-accent">•</span>
-                  <span className="bg-gradient-to-r from-primary via-white to-accent bg-[length:200%_100%] bg-clip-text text-transparent animate-text-shimmer" style={{ animationDelay: "1s" }}>
-                    Résultats qui montent
-                  </span>
-                </p>
-                {/* Ligne lumineuse animée sous la devise */}
-                <div className="mt-4 mx-auto w-48 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent opacity-70 animate-pulse" />
-              </div>
-
-              {/* Main Headline - More dramatic */}
-              <h1 className="animate-fade-in-up">
-                <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight">
-                  Ta clarté.
+                <span className="text-sm text-white/70 font-medium tracking-wide">
+                  Coaching stratégique pour dirigeants
                 </span>
-                <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mt-1">
-                  Ta puissance.
+              </div>
+            </div>
+
+            {/* Text content */}
+            <div className="text-center">
+              <h1 className="animate-fade-in-up mb-8">
+                <span className="block font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1] tracking-tight">
+                  Reprenez le contrôle
                 </span>
-                <span className="block font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight mt-1">
-                  Ta sérénité.
+                <span className="block font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1] tracking-tight mt-2">
+                  <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
+                    de vos décisions
+                  </span>
                 </span>
               </h1>
 
-              {/* Accent line */}
-              <div className="mt-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-                <span className="inline-block font-serif text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-                  Sans sacrifier qui tu es.
-                </span>
-              </div>
-
-              {/* Subtitle - Cleaner */}
               <p
-                className="text-base md:text-xl text-white/70 mb-8 max-w-xs sm:max-w-md md:max-w-xl mx-auto animate-fade-in-up leading-relaxed px-2"
-                style={{ animationDelay: "0.2s" }}
+                className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto animate-fade-in-up leading-relaxed"
+                style={{ animationDelay: "0.15s" }}
               >
-                Tu portes beaucoup. Peut-être trop. Et pourtant, tu avances.
-                <br />
-                <span className="text-white/90 font-medium">
-                  Il est temps de retrouver ta légitimité intérieure.
+                Sous pression, votre système de pilotage se déforme.
+                <br className="hidden md:block" />
+                <span className="text-white/80 font-medium">
+                  Il est temps de retrouver votre lucidité.
                 </span>
               </p>
 
-              {/* Baseline */}
-              <p className="text-sm md:text-base text-white/50 mb-10 animate-fade-in-up max-w-xs sm:max-w-md md:max-w-xl mx-auto px-2" style={{ animationDelay: "0.3s" }}>
-                Pas une méthode de plus.{" "}
-                <span className="text-accent font-semibold">Une transformation qui t'appartient.</span>
-              </p>
+              {/* 3 Pillars — Inspired by Strategic Coach */}
+              <div
+                className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mb-14 animate-fade-in-up"
+                style={{ animationDelay: "0.25s" }}
+              >
+                {pillars.map((pillar) => (
+                  <div key={pillar.label} className="text-center group">
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/20 transition-colors">
+                      <pillar.icon className="w-5 h-5 md:w-6 md:h-6 text-accent" />
+                    </div>
+                    <h3 className="text-sm md:text-base font-bold text-white mb-1">
+                      {pillar.label}
+                    </h3>
+                    <p className="text-xs md:text-sm text-white/40">
+                      {pillar.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
 
               {/* CTA */}
               <div
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
-                style={{ animationDelay: "0.3s" }}
+                style={{ animationDelay: "0.35s" }}
               >
                 <Button
                   size="lg"
                   onClick={scrollToFinalCTA}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
-                  30 min. pour voir si je peux t'aider
+                  Réserver un appel découverte
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <span className="text-sm text-white/40">Sur sélection • Places limitées</span>
+                <span className="text-sm text-white/40">
+                  30 min · Gratuit · Sur sélection
+                </span>
               </div>
             </div>
           </div>

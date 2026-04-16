@@ -2,12 +2,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Tu diriges une structure (0–50 personnes) et tu portes beaucoup sur tes épaules",
-  "Tu veux décider avec clarté — sans t'épuiser",
-  "Tu ressens une charge mentale permanente qui t'empêche de souffler",
-  "Tu veux incarner ta place sans avoir à te justifier",
-  "Tu veux moins de rumination, plus de sérénité",
-  "Tu es prêt à un vrai travail sur toi — en profondeur",
+  "Vous dirigez une entreprise ou une équipe et vous portez beaucoup sur vos épaules",
+  "Vous devez prendre des décisions à fort enjeu — parfois seul",
+  "Vous ressentez une charge mentale qui vous empêche de prendre du recul",
+  "Vous voulez incarner votre leadership sans vous épuiser",
+  "Vous êtes prêt à investir dans un vrai travail de fond sur votre pilotage intérieur",
+  "Vous voulez des résultats concrets, pas juste de la théorie",
 ];
 
 const notForYou = [
@@ -31,9 +31,12 @@ export function TargetAudienceSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
-            Pour qui ?
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+            C'est fait pour vous si…
           </h2>
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            Ce coaching stratégique s'adresse aux dirigeants qui veulent aller plus loin.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
