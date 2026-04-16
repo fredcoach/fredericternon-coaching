@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, Target, Zap } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
+
+const heroHeadlines = [
+  { bold: "Pilotez votre entreprise", accent: "Sans burnout." },
+  { bold: "Accélérez votre croissance", accent: "Sans vous perdre." },
+  { bold: "Construisez votre avenir", accent: "Sans subir l'usure." },
+];
 import fredericPhoto from "@/assets/frederic-ternon.png";
 
 const pillars = [
