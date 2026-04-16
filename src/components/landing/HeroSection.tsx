@@ -53,6 +53,14 @@ export function HeroSection() {
     };
   }, [isLoaded]);
 
+  // Headline rotation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHeadlineIndex((prev) => (prev + 1) % heroHeadlines.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToFinalCTA = () => {
     const element = document.querySelector("#final-cta");
     if (element) {
