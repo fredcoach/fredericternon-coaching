@@ -14,8 +14,6 @@ import testimonialEstelle1 from "@/assets/testimonial-estelle-1.png";
 import testimonialEstelle2 from "@/assets/testimonial-estelle-2.png";
 import testimonialLaura from "@/assets/testimonial-laura.png";
 import testimonialFatima from "@/assets/testimonial-fatima.png";
-import testimonialLouis from "@/assets/testimonial-louis.png";
-import testimonialClara from "@/assets/testimonial-clara.png";
 import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
 import thumbnailMarielle from "@/assets/thumbnail-marielle.jpg";
 import thumbnailCecile from "@/assets/thumbnail-cecile.jpg";
@@ -28,18 +26,6 @@ const testimonials = [
     duration: "15 jours",
     image: testimonialMarie,
     highlight: "Je me sens comme une autre personne. J'ai retrouvé un équilibre que je pensais perdu depuis des années.",
-  },
-  {
-    name: "Louis",
-    duration: "Programme terminé",
-    image: testimonialLouis,
-    highlight: "C'est une vraie révolution pour moi. J'ai un vrai système et je suis bien plus efficace.",
-  },
-  {
-    name: "Clara",
-    duration: "En cours",
-    image: testimonialClara,
-    highlight: "J'aurais aimé trouver ça plus tôt ! J'ai beaucoup moins de stress avant une séance.",
   },
   {
     name: "Estelle",
