@@ -6,7 +6,7 @@ const promises = [
   {
     icon: Shield,
     title: "Légitimité retrouvée",
-    description: "Incarner ta place sans te justifier",
+    description: "Incarner votre place sans vous justifier",
   },
   {
     icon: Gauge,
@@ -15,13 +15,13 @@ const promises = [
   },
   {
     icon: Compass,
-    title: "Espace pour toi",
+    title: "Espace pour vous",
     description: "Moins de charge, plus de recul",
   },
   {
     icon: RotateCcw,
     title: "Énergie préservée",
-    description: "Avancer sans t'épuiser",
+    description: "Avancer sans vous épuiser",
   },
 ];
 
@@ -58,7 +58,7 @@ export function PromiseSection() {
             La promesse <span className="text-gradient">(concrète)</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            En quelques semaines, tu retrouves :
+            En quelques semaines, vous retrouvez :
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export function PromiseSection() {
               onClick={scrollToFinalCTA}
               className="gradient-primary text-primary-foreground hover:opacity-90"
             >
-              Demande ta session CADRAGE
+              Demandez votre session CADRAGE
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
