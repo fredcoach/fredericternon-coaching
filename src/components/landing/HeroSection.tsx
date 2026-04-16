@@ -98,23 +98,6 @@ export function HeroSection() {
       <div className="container mx-auto px-8 sm:px-10 md:px-12 py-20 md:py-28 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center gap-10 lg:gap-14">
-            {/* Photo */}
-            <div className="animate-fade-in">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-40 scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-accent/50 to-primary/50 rounded-full blur-2xl opacity-30 scale-105 animate-pulse" />
-                <img
-                  src={fredericPhoto}
-                  alt="Frédéric Ternon - Coach stratégique en performance mentale"
-                  className="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-white/20 shadow-2xl"
-                  fetchPriority="high"
-                  loading="eager"
-                  decoding="sync"
-                  width="208"
-                  height="208"
-                />
-              </div>
-            </div>
 
             {/* Badge */}
             <div className="animate-fade-in">
