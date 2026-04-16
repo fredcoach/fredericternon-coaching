@@ -111,7 +111,7 @@ export function HeroSection() {
 
             {/* Text content */}
             <div className="text-center">
-              <h1 className="animate-fade-in-up mb-8 relative h-[5rem] md:h-[6.5rem] lg:h-[8rem] xl:h-[9rem] overflow-hidden">
+              <h1 className="animate-fade-in-up mb-8 relative h-[7rem] md:h-[7rem] lg:h-[8.5rem] xl:h-[9.5rem] overflow-hidden">
                 {heroHeadlines.map((headline, index) => (
                   <div
                     key={index}
