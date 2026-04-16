@@ -32,6 +32,8 @@ export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
   const rafRef = useRef<number>();
 
+  const [headlineIndex, setHeadlineIndex] = useState(0);
+
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
 
