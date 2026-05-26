@@ -47,7 +47,7 @@ export function AboutSection() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants de PME — principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> — quand l'entreprise fonctionne mais{" "}
+                J'accompagne les dirigeants de PME, principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand l'entreprise fonctionne mais{" "}
                 <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle : apporter un regard extérieur pour identifier ce qui bloque, clarifier l'organisation, fluidifier les décisions et vous aider à reprendre la main sur le pilotage.
               </p>
 
@@ -80,7 +80,7 @@ export function AboutSection() {
               {/* Key insight */}
               <div className="border-l-4 border-primary pl-6 py-2">
                 <p className="text-foreground italic">
-                  "Quand tout remonte au dirigeant, ce n'est pas l'équipe qui plafonne — c'est l'organisation qui n'a pas suivi."
+                  "Quand tout remonte au dirigeant, ce n'est pas l'équipe qui plafonne, c'est l'organisation qui n'a pas suivi."
                 </p>
               </div>
 
@@ -100,7 +100,7 @@ export function AboutSection() {
               {/* Method 3R teaser */}
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Fil rouge :</strong> Méthode 3R (Repérer → Réagir → Reprogrammer) — un outil de pilotage du dirigeant, pas un programme de développement personnel.
+                  <strong className="text-foreground">Fil rouge :</strong> Méthode 3R (Repérer → Réagir → Reprogrammer), un outil de pilotage du dirigeant, pas un programme de développement personnel.
                 </p>
               </div>
             </div>

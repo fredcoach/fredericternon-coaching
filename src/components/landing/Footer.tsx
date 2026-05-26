@@ -112,7 +112,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Frédéric Ternon — Tous droits réservés
+            © {currentYear} Frédéric Ternon. Tous droits réservés
           </p>
           <p className="text-xs text-muted-foreground">
             Pilotage · Décision · Organisation

@@ -112,7 +112,7 @@ Le but : que ça rentre dans votre rythme de dirigeant, pas l'inverse.`,
   },
   {
     question: "Mon entreprise tourne déjà bien. Pourquoi j'aurais besoin de ça ?",
-    answer: `Justement. Quand une PME tourne, le vrai sujet n'est plus de survivre — c'est de ne plus dépendre du dirigeant pour tout.
+    answer: `Justement. Quand une PME tourne, le vrai sujet n'est plus de survivre, c'est de ne plus dépendre du dirigeant pour tout.
 
 Vous pouvez avoir :
 • Un chiffre d'affaires sain
@@ -133,7 +133,7 @@ C'est exactement à ce stade que ça change tout.`,
     answer: `Oui. Totalement.
 
 Mentor / comité / conseil : avis sur la stratégie, le marché, les chiffres.
-Cet accompagnement : votre pilotage de dirigeant — décisions, organisation, posture, énergie.
+Cet accompagnement : votre pilotage de dirigeant, décisions, organisation, posture, énergie.
 
 Deux rôles différents, complémentaires.
 
@@ -169,7 +169,7 @@ Le deal :
 
 Si l'un des deux décroche, on arrête.
 
-Pas de prison. Pas de culpabilité. Juste un cadre clair où on construit quelque chose de solide — ou pas.
+Pas de prison. Pas de culpabilité. Juste un cadre clair où on construit quelque chose de solide, ou pas.
 
 Si vous voulez juste parler sans changer le pilotage → ce n'est pas le bon accompagnement.`,
   },
@@ -177,16 +177,16 @@ Si vous voulez juste parler sans changer le pilotage → ce n'est pas le bon acc
     question: "Concrètement, l'appel de 30 min, ça se passe comment ?",
     answer: `30 min. 3 blocs.
 
-Bloc 1 (10 min) — Diagnostic net
+Bloc 1 (10 min) : Diagnostic net
 • Ce qui bloque aujourd'hui dans votre pilotage
 • Sur quoi repose encore trop l'entreprise (vous compris)
 • Vos vrais points de friction d'organisation et de décision
 
-Bloc 2 (10 min) — Priorité #1
+Bloc 2 (10 min) : Priorité #1
 • Si vous deviez débloquer UNE chose dans les 2 prochains mois, ce serait quoi ?
 • Qu'est-ce qui, résolu, débloque tout le reste ?
 
-Bloc 3 (10 min) — Vérification du match
+Bloc 3 (10 min) : Vérification du match
 • Je vous présente la Méthode 3R et l'accompagnement
 • On vérifie si l'approche correspond à votre mode de fonctionnement
 • Si c'est un match → plan sur-mesure

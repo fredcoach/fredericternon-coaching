@@ -77,9 +77,9 @@ const PolitiqueConfidentialite = () => {
                   Les données personnelles ne sont pas vendues ni cédées à des tiers. Elles peuvent être partagées avec :
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li><strong className="text-foreground">Calendly</strong> — pour la gestion des rendez-vous</li>
-                  <li><strong className="text-foreground">WhatsApp (Meta)</strong> — pour la messagerie</li>
-                  <li><strong className="text-foreground">Lovable Technologies</strong> — hébergeur du site</li>
+                  <li><strong className="text-foreground">Calendly</strong> : pour la gestion des rendez-vous</li>
+                  <li><strong className="text-foreground">WhatsApp (Meta)</strong> : pour la messagerie</li>
+                  <li><strong className="text-foreground">Lovable Technologies</strong> : hébergeur du site</li>
                 </ul>
               </section>
 
@@ -96,12 +96,12 @@ const PolitiqueConfidentialite = () => {
                   Conformément au RGPD, vous disposez des droits suivants :
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li><strong className="text-foreground">Droit d'accès</strong> — obtenir une copie de vos données</li>
-                  <li><strong className="text-foreground">Droit de rectification</strong> — corriger des données inexactes</li>
-                  <li><strong className="text-foreground">Droit à l'effacement</strong> — demander la suppression de vos données</li>
-                  <li><strong className="text-foreground">Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
-                  <li><strong className="text-foreground">Droit d'opposition</strong> — vous opposer au traitement de vos données</li>
-                  <li><strong className="text-foreground">Droit de retrait du consentement</strong> — retirer votre consentement à tout moment</li>
+                  <li><strong className="text-foreground">Droit d'accès</strong> : obtenir une copie de vos données</li>
+                  <li><strong className="text-foreground">Droit de rectification</strong> : corriger des données inexactes</li>
+                  <li><strong className="text-foreground">Droit à l'effacement</strong> : demander la suppression de vos données</li>
+                  <li><strong className="text-foreground">Droit à la portabilité</strong> : recevoir vos données dans un format structuré</li>
+                  <li><strong className="text-foreground">Droit d'opposition</strong> : vous opposer au traitement de vos données</li>
+                  <li><strong className="text-foreground">Droit de retrait du consentement</strong> : retirer votre consentement à tout moment</li>
                 </ul>
                 <p>
                   Pour exercer ces droits, contactez-nous via WhatsApp ou le formulaire de prise de rendez-vous.
@@ -111,7 +111,7 @@ const PolitiqueConfidentialite = () => {
               <section>
                 <h2 className="text-xl font-semibold text-foreground">9. Réclamation</h2>
                 <p>
-                  En cas de désaccord, vous pouvez introduire une réclamation auprès de la <strong className="text-foreground">CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) — <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">www.cnil.fr</a>.
+                  En cas de désaccord, vous pouvez introduire une réclamation auprès de la <strong className="text-foreground">CNIL</strong> (Commission Nationale de l'Informatique et des Libertés). <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">www.cnil.fr</a>.
                 </p>
               </section>
 

@@ -44,7 +44,7 @@ const Index = () => {
   const localBusinessData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Frédéric Ternon — Pilotage du Dirigeant",
+    "name": "Frédéric Ternon | Pilotage du Dirigeant",
     "description": "Regard extérieur pour dirigeants de PME jusqu'à 30 personnes : identifier ce qui bloque, clarifier l'organisation, améliorer les décisions.",
     "url": "https://www.mentalpro.biz",
     "telephone": "",
@@ -73,7 +73,7 @@ const Index = () => {
         <meta property="og:url" content="https://www.mentalpro.biz/" />
         <meta property="og:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
         <meta property="og:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider." />
-        <meta property="og:site_name" content="Frédéric Ternon — Pilotage du Dirigeant" />
+        <meta property="og:site_name" content="Frédéric Ternon | Pilotage du Dirigeant" />
         <meta property="og:locale" content="fr_FR" />
         
         {/* Twitter */}

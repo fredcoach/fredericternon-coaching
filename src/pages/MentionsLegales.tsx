@@ -9,7 +9,7 @@ const MentionsLegales = () => {
     <>
       <Helmet>
         <title>Mentions légales | Frédéric Ternon Coaching</title>
-        <meta name="description" content="Mentions légales du site fredericternon.com — Coaching en performance mentale et leadership pour dirigeants." />
+        <meta name="description" content="Mentions légales du site fredericternon.com | Coaching en performance mentale et leadership pour dirigeants." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://fredericternon.com/mentions-legales" />
       </Helmet>

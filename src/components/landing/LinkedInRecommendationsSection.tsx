@@ -13,7 +13,7 @@ J'ai particulièrement apprécié son approche basée sur l'écoute et l'adaptat
   },
   {
     name: "Thomas Roux",
-    title: "Directeur Général — CEO",
+    title: "Directeur Général, CEO",
     date: "Novembre 2025",
     relation: "Client de Frédéric",
     content: `Un grand merci à Frédéric Ternon pour son intervention lors de la journée du personnel de l'Udaf. Il a très vite compris notre manière de fonctionner et a ajusté son approche en conséquence et ça, ce n'est pas donné à tout le monde.

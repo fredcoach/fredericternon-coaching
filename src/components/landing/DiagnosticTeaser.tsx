@@ -15,7 +15,7 @@ export function DiagnosticTeaser() {
           }`}
         >
           <div className="grid md:grid-cols-2">
-            {/* Left — visual */}
+            {/* Left: visual */}
             <div
               className="flex flex-col items-center justify-center p-10 md:p-14 text-center"
               style={{
@@ -37,10 +37,10 @@ export function DiagnosticTeaser() {
               <p className="text-sm text-white/40 mt-4">10 min · Résultats immédiats</p>
             </div>
 
-            {/* Right — copy + CTA */}
+            {/* Right: copy + CTA */}
             <div className="flex flex-col justify-center p-10 md:p-14">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Votre entreprise tourne — mais tout repose encore sur vous
+                Votre entreprise tourne, mais tout repose encore sur vous
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Ce diagnostic identifie vos{" "}

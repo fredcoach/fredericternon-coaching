@@ -41,7 +41,7 @@ export function DiagnosticHeroSection() {
           <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl mx-auto mb-10">
             Sous pression, votre système de pilotage se déforme.
             <br className="hidden md:block" />
-            Vous ne le voyez pas — c'est le principe.
+            Vous ne le voyez pas, c'est le principe.
           </p>
 
           <Button

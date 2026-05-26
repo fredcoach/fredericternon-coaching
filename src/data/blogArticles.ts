@@ -51,11 +51,11 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Avec la Méthode 3R, on attaque le problème à la racine :</p>
 
-<p><strong>Reconnaître</strong> — On identifie les moments précis où cette croyance se manifeste. Avant une réunion stratégique ? Lors d'une négociation ? Quand tu dois trancher seul ?</p>
+<p><strong>Reconnaître</strong> : On identifie les moments précis où cette croyance se manifeste. Avant une réunion stratégique ? Lors d'une négociation ? Quand tu dois trancher seul ?</p>
 
-<p><strong>Réagir</strong> — On met en place des rituels de reconnexion à tes réussites concrètes, factuelles, indiscutables — les décisions qui ont fait avancer ton entreprise.</p>
+<p><strong>Réagir</strong> : On met en place des rituels de reconnexion à tes réussites concrètes, factuelles, indiscutables, les décisions qui ont fait avancer ton entreprise.</p>
 
-<p><strong>Reprogrammer</strong> — On installe une nouvelle identité de leader alignée avec tes résultats réels, pas avec tes peurs imaginées.</p>
+<p><strong>Reprogrammer</strong> : On installe une nouvelle identité de leader alignée avec tes résultats réels, pas avec tes peurs imaginées.</p>
 
 <h2>Ce qui change concrètement</h2>
 
@@ -67,7 +67,7 @@ export const blogArticles: BlogArticle[] = [
 <li>Ils osent viser plus grand : acquisitions, nouveaux marchés, pivots stratégiques</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — comprends pourquoi ton identité bloque ta croissance.</p>
+<p>👉 Lire aussi : <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a>, comprends pourquoi ton identité bloque ta croissance.</p>
 
 <p>👉 Et si c'était plutôt <a href="/blog/peur-reussite-entrepreneur">la peur de réussir</a> qui te freinait ? Découvre l'ennemi invisible.</p>
 
@@ -123,17 +123,17 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Avec la Méthode 3R, voici comment on travaille ensemble :</p>
 
-<p><strong>Reconnaître</strong> — On nomme précisément ce que tu crains vraiment dans la croissance de ton entreprise.</p>
+<p><strong>Reconnaître</strong> : On nomme précisément ce que tu crains vraiment dans la croissance de ton entreprise.</p>
 
-<p><strong>Réagir</strong> — On désactive les scénarios catastrophe que ton cerveau a construits autour du succès.</p>
+<p><strong>Réagir</strong> : On désactive les scénarios catastrophe que ton cerveau a construits autour du succès.</p>
 
-<p><strong>Reprogrammer</strong> — On associe la croissance à des émotions positives : impact, liberté, accomplissement.</p>
+<p><strong>Reprogrammer</strong> : On associe la croissance à des émotions positives : impact, liberté, accomplissement.</p>
 
 <h2>Le résultat</h2>
 
 <p>Tu arrêtes de saboter inconsciemment ce que tu construis consciemment. Tu prends les décisions stratégiques sans frein à main.</p>
 
-<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a> — un mécanisme souvent lié à la peur de réussir.</p>
+<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a>, un mécanisme souvent lié à la peur de réussir.</p>
 
 <p>👉 Tu repousses aussi certaines décisions clés ? <a href="/blog/repousser-decisions-cles">Comprends pourquoi ici</a>.</p>
 
@@ -163,14 +163,14 @@ export const blogArticles: BlogArticle[] = [
     metaTitle: "Perfectionnisme dirigeant | Coaching Mental Frédéric Ternon",
     metaDescription: "Comment le perfectionnisme détruit votre efficacité de dirigeant et les clés pour en sortir sans sacrifier la qualité.",
     excerpt: "Tu appelles ça de l'exigence. En réalité, c'est une peur déguisée qui te coûte du temps, de l'énergie et freine ta structure.",
-    content: `<p>On te l'a vendu comme une force. "Je suis perfectionniste" sonne comme un badge d'honneur. En réalité, <strong>c'est souvent une stratégie de protection contre la peur du jugement — de ton board, de tes équipes, de tes pairs</strong>.</p>
+    content: `<p>On te l'a vendu comme une force. "Je suis perfectionniste" sonne comme un badge d'honneur. En réalité, <strong>c'est souvent une stratégie de protection contre la peur du jugement, de ton board, de tes équipes, de tes pairs</strong>.</p>
 
 <p>Regarde ce que ça te coûte vraiment en tant que dirigeant :</p>
 <ul>
 <li>Des décisions stratégiques repoussées indéfiniment</li>
 <li>Des projets bloqués parce que "ce n'est pas encore prêt"</li>
-<li>Une difficulté à déléguer — personne ne fait "assez bien" à tes yeux</li>
-<li>Un épuisement mental constant qui impacte ta lucidité — découvre <a href="/blog/decision-fatigue-mentale-performance">comment la fatigue mentale détruit ta performance</a></li>
+<li>Une difficulté à déléguer, personne ne fait "assez bien" à tes yeux</li>
+<li>Un épuisement mental constant qui impacte ta lucidité, découvre <a href="/blog/decision-fatigue-mentale-performance">comment la fatigue mentale détruit ta performance</a></li>
 </ul>
 
 <h2>La croyance au cœur du perfectionnisme</h2>
@@ -189,16 +189,16 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Mon approche avec la Méthode 3R</h2>
 
-<p><strong>Reconnaître</strong> — On distingue l'exigence saine du perfectionnisme toxique. Où te situes-tu dans ton management ?</p>
+<p><strong>Reconnaître</strong> : On distingue l'exigence saine du perfectionnisme toxique. Où te situes-tu dans ton management ?</p>
 
-<p><strong>Réagir</strong> — On définit le "suffisamment bon" pour chaque type de décision. L'excellence, ce n'est pas la perfection.</p>
+<p><strong>Réagir</strong> : On définit le "suffisamment bon" pour chaque type de décision. L'excellence, ce n'est pas la perfection.</p>
 
-<p><strong>Reprogrammer</strong> — On associe la prise de décision rapide à du leadership, pas à de l'imprudence.</p>
+<p><strong>Reprogrammer</strong> : On associe la prise de décision rapide à du leadership, pas à de l'imprudence.</p>
 
 <h2>Ce que tu gagnes à lâcher le perfectionnisme</h2>
 
 <ul>
-<li>Tu décides plus vite — et ton entreprise avance plus vite</li>
+<li>Tu décides plus vite, et ton entreprise avance plus vite</li>
 <li>Tu délègues vraiment et tu développes l'autonomie de tes équipes</li>
 <li>Tu libères de l'énergie mentale pour la vision stratégique</li>
 <li>Tu réduis ta charge mentale et tu retrouves ta sérénité</li>
@@ -257,11 +257,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>La Méthode 3R appliquée à l'argent</h2>
 
-<p><strong>Reconnaître</strong> — D'où viennent tes croyances sur l'argent ? Famille ? Éducation ? Premières expériences d'entrepreneur ?</p>
+<p><strong>Reconnaître</strong> : D'où viennent tes croyances sur l'argent ? Famille ? Éducation ? Premières expériences d'entrepreneur ?</p>
 
-<p><strong>Réagir</strong> — On identifie les comportements concrets que ces croyances génèrent dans ta gestion : pricing, investissements, rémunération.</p>
+<p><strong>Réagir</strong> : On identifie les comportements concrets que ces croyances génèrent dans ta gestion : pricing, investissements, rémunération.</p>
 
-<p><strong>Reprogrammer</strong> — On installe de nouvelles croyances alignées avec la croissance saine et l'abondance.</p>
+<p><strong>Reprogrammer</strong> : On installe de nouvelles croyances alignées avec la croissance saine et l'abondance.</p>
 
 <h2>Les résultats concrets</h2>
 
@@ -272,9 +272,9 @@ export const blogArticles: BlogArticle[] = [
 <li>Ton chiffre d'affaires et tes marges augmentent naturellement</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/peur-reussite-entrepreneur">La peur de réussir</a> — souvent liée au rapport à l'argent.</p>
+<p>👉 Lire aussi : <a href="/blog/peur-reussite-entrepreneur">La peur de réussir</a>, souvent liée au rapport à l'argent.</p>
 
-<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — et si c'était ton identité qui limitait tes revenus ?</p>
+<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a>, et si c'était ton identité qui limitait tes revenus ?</p>
 
 <p><strong>L'argent n'est pas le problème. Ta relation à l'argent en tant que dirigeant l'est.</strong></p>`,
     category: "Croyances limitantes",
@@ -317,7 +317,7 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Les croyances qui nourrissent cette peur</h2>
 
-<p><strong>"Si je me montre trop, on va me juger — mes pairs, mes concurrents, mes anciens collègues."</strong> La peur du regard des autres dirigeants.</p>
+<p><strong>"Si je me montre trop, on va me juger, mes pairs, mes concurrents, mes anciens collègues."</strong> La peur du regard des autres dirigeants.</p>
 
 <p><strong>"Un bon dirigeant laisse parler ses résultats."</strong> C'est la croyance que la visibilité personnelle est de l'ego mal placé.</p>
 
@@ -331,11 +331,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Mon approche avec la Méthode 3R</h2>
 
-<p><strong>Reconnaître</strong> — Quelle peur précise se cache derrière ton évitement de la visibilité en tant que dirigeant ?</p>
+<p><strong>Reconnaître</strong> : Quelle peur précise se cache derrière ton évitement de la visibilité en tant que dirigeant ?</p>
 
-<p><strong>Réagir</strong> — On déconstruit les scénarios catastrophe. Qu'est-ce qui peut vraiment arriver si tu deviens un leader visible ?</p>
+<p><strong>Réagir</strong> : On déconstruit les scénarios catastrophe. Qu'est-ce qui peut vraiment arriver si tu deviens un leader visible ?</p>
 
-<p><strong>Reprogrammer</strong> — On associe la visibilité à l'impact, au leadership inspirant, pas à l'égo.</p>
+<p><strong>Reprogrammer</strong> : On associe la visibilité à l'impact, au leadership inspirant, pas à l'égo.</p>
 
 <h2>Le changement que tu vas vivre</h2>
 
@@ -346,9 +346,9 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu ouvres des portes stratégiques (partenariats, médias, investisseurs)</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a> — souvent lié à la peur de la visibilité.</p>
+<p>👉 Lire aussi : <a href="/blog/syndrome-imposteur-entrepreneur">Le syndrome de l'imposteur</a>, souvent lié à la peur de la visibilité.</p>
 
-<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a> — devenir un leader visible commence par une transformation identitaire.</p>
+<p>👉 <a href="/blog/identite-entrepreneur-evolution">Ton identité de dirigeant est ton plafond</a>, devenir un leader visible commence par une transformation identitaire.</p>
 
 <p><strong>Pour un dirigeant, la visibilité n'est pas optionnelle. C'est un levier stratégique de croissance.</strong></p>`,
     category: "Croyances limitantes",
@@ -404,11 +404,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>La Méthode 3R pour l'évolution identitaire du dirigeant</h2>
 
-<p><strong>Reconnaître</strong> — Quel type de dirigeant es-tu aujourd'hui ? Quelles croyances définissent ton style de leadership actuel ?</p>
+<p><strong>Reconnaître</strong> : Quel type de dirigeant es-tu aujourd'hui ? Quelles croyances définissent ton style de leadership actuel ?</p>
 
-<p><strong>Réagir</strong> — On identifie l'écart entre ton identité de leader actuelle et celle nécessaire pour le prochain palier de ton entreprise.</p>
+<p><strong>Réagir</strong> : On identifie l'écart entre ton identité de leader actuelle et celle nécessaire pour le prochain palier de ton entreprise.</p>
 
-<p><strong>Reprogrammer</strong> — On installe progressivement les croyances, les postures et les comportements du dirigeant que ta structure a besoin.</p>
+<p><strong>Reprogrammer</strong> : On installe progressivement les croyances, les postures et les comportements du dirigeant que ta structure a besoin.</p>
 
 <h2>Le processus de transformation</h2>
 
@@ -424,9 +424,9 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Tu ne te fixes plus d'objectifs "réalistes" basés sur ton passé. Tu vises ce que ton entreprise mérite vraiment et tu deviens le dirigeant capable de l'y amener.</p>
 
-<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Le pilotage intérieur</a> — la compétence cachée pour accompagner cette évolution identitaire.</p>
+<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Le pilotage intérieur</a>, la compétence cachée pour accompagner cette évolution identitaire.</p>
 
-<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a> — une approche complémentaire.</p>
+<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a>, une approche complémentaire.</p>
 
 <p><strong>La question n'est pas "comment faire croître mon entreprise ?" mais "quel dirigeant dois-je devenir ?"</strong></p>`,
     category: "Identité & Croissance",
@@ -461,12 +461,12 @@ export const blogArticles: BlogArticle[] = [
 <li>Des décisions prises dans l'urgence qui nécessitent des corrections coûteuses</li>
 <li>Une difficulté croissante à distinguer l'urgent de l'important</li>
 <li>Des réactions émotionnelles là où il faudrait de l'analyse froide</li>
-<li>Un brouillard mental persistant en fin de journée — voire dès le matin</li>
+<li>Un brouillard mental persistant en fin de journée, voire dès le matin</li>
 </ul>
 
 <h2>Le mécanisme neurologique en jeu</h2>
 
-<p>Sous pression chronique, ton cortex préfrontal — le siège de la prise de décision rationnelle — perd du terrain au profit de ton système limbique. <strong>Ton cerveau bascule en mode réactif</strong> : il cherche à survivre, pas à piloter.</p>
+<p>Sous pression chronique, ton cortex préfrontal, le siège de la prise de décision rationnelle, perd du terrain au profit de ton système limbique. <strong>Ton cerveau bascule en mode réactif</strong> : il cherche à survivre, pas à piloter.</p>
 
 <p>Concrètement, ça veut dire :</p>
 <ul>
@@ -488,11 +488,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Mon approche avec la Méthode 3R</h2>
 
-<p><strong>Reconnaître</strong> — On identifie tes déclencheurs de pression : quels contextes, quelles personnes, quels enjeux font chuter ta lucidité ?</p>
+<p><strong>Reconnaître</strong> : On identifie tes déclencheurs de pression : quels contextes, quelles personnes, quels enjeux font chuter ta lucidité ?</p>
 
-<p><strong>Réagir</strong> — On met en place des protocoles de récupération mentale rapide. Pas de la méditation abstraite : des outils concrets utilisés par les sportifs de haut niveau.</p>
+<p><strong>Réagir</strong> : On met en place des protocoles de récupération mentale rapide. Pas de la méditation abstraite : des outils concrets utilisés par les sportifs de haut niveau.</p>
 
-<p><strong>Reprogrammer</strong> — On entraîne ton cerveau à maintenir la clarté sous pression intense, comme un athlète mental.</p>
+<p><strong>Reprogrammer</strong> : On entraîne ton cerveau à maintenir la clarté sous pression intense, comme un athlète mental.</p>
 
 <h2>Ce qui change concrètement</h2>
 
@@ -503,9 +503,9 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu protèges ton énergie au lieu de la brûler</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance business</a> — le lien direct entre lucidité et qualité décisionnelle.</p>
+<p>👉 Lire aussi : <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance business</a>, le lien direct entre lucidité et qualité décisionnelle.</p>
 
-<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> — apprends à piloter ton état interne sous pression.</p>
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a>, apprends à piloter ton état interne sous pression.</p>
 
 <p>👉 Tu repousses certaines décisions ? <a href="/blog/repousser-decisions-cles">Découvre le mécanisme caché ici</a>.</p>
 
@@ -539,12 +539,12 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Depuis des jours. Des semaines. Parfois des mois.</p>
 
-<p>Ce n'est pas de la procrastination ordinaire. C'est de la <strong>procrastination décisionnelle</strong> — et c'est l'un des problèmes les plus fréquents que je rencontre chez les dirigeants.</p>
+<p>Ce n'est pas de la procrastination ordinaire. C'est de la <strong>procrastination décisionnelle</strong> : et c'est l'un des problèmes les plus fréquents que je rencontre chez les dirigeants.</p>
 
 <p>Les symptômes sont clairs :</p>
 <ul>
 <li>Tu demandes encore une réunion, encore un rapport, encore un avis avant de trancher</li>
-<li>Tu te dis "je déciderai lundi" — et lundi passe</li>
+<li>Tu te dis "je déciderai lundi", et lundi passe</li>
 <li>Tu occupes ton agenda avec des urgences pour éviter de faire face à LA décision</li>
 <li>Tu ressens un malaise physique quand tu y penses (nœud à l'estomac, tension dans la nuque)</li>
 </ul>
@@ -553,13 +553,13 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Derrière chaque décision repoussée, il y a une peur non identifiée :</p>
 
-<p><strong>La peur de se tromper</strong> — "Si je fais le mauvais choix, c'est moi qui suis responsable." Le poids de la responsabilité te paralyse.</p>
+<p><strong>La peur de se tromper</strong> : "Si je fais le mauvais choix, c'est moi qui suis responsable." Le poids de la responsabilité te paralyse.</p>
 
-<p><strong>La peur de la confrontation</strong> — Certaines décisions impliquent un conflit : licencier, dire non à un associé, rompre un partenariat. Tu repousses la décision pour éviter l'inconfort relationnel.</p>
+<p><strong>La peur de la confrontation</strong> : Certaines décisions impliquent un conflit : licencier, dire non à un associé, rompre un partenariat. Tu repousses la décision pour éviter l'inconfort relationnel.</p>
 
-<p><strong>La peur de l'irréversibilité</strong> — Ton cerveau traite chaque décision comme définitive, alors que la plupart sont ajustables.</p>
+<p><strong>La peur de l'irréversibilité</strong> : Ton cerveau traite chaque décision comme définitive, alors que la plupart sont ajustables.</p>
 
-<p><strong>La peur de perdre le contrôle</strong> — Décider, c'est engager l'entreprise dans une direction. Et ça signifie renoncer à d'autres options.</p>
+<p><strong>La peur de perdre le contrôle</strong> : Décider, c'est engager l'entreprise dans une direction. Et ça signifie renoncer à d'autres options.</p>
 
 <h2>Le coût caché de l'indécision</h2>
 
@@ -573,11 +573,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Mon approche avec la Méthode 3R</h2>
 
-<p><strong>Reconnaître</strong> — On nomme la peur exacte derrière chaque décision en suspens. C'est souvent suffisant pour débloquer.</p>
+<p><strong>Reconnaître</strong> : On nomme la peur exacte derrière chaque décision en suspens. C'est souvent suffisant pour débloquer.</p>
 
-<p><strong>Réagir</strong> — On met en place un protocole de décision rapide : cadre temporel, critères clairs, seuil de confiance suffisant.</p>
+<p><strong>Réagir</strong> : On met en place un protocole de décision rapide : cadre temporel, critères clairs, seuil de confiance suffisant.</p>
 
-<p><strong>Reprogrammer</strong> — On associe la prise de décision à un acte de leadership courageux, pas à un risque de catastrophe.</p>
+<p><strong>Reprogrammer</strong> : On associe la prise de décision à un acte de leadership courageux, pas à un risque de catastrophe.</p>
 
 <h2>Ce qui change</h2>
 
@@ -588,9 +588,9 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu libères une énergie mentale considérable</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — comprends le mécanisme neurologique derrière l'indécision.</p>
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a>, comprends le mécanisme neurologique derrière l'indécision.</p>
 
-<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> — la fatigue décisionnelle amplifie la procrastination.</p>
+<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a>, la fatigue décisionnelle amplifie la procrastination.</p>
 
 <p>👉 Et si c'était <a href="/blog/peur-reussite-entrepreneur">la peur de réussir</a> qui bloquait tes décisions ?</p>
 
@@ -619,7 +619,7 @@ export const blogArticles: BlogArticle[] = [
     title: "Pilotage intérieur : ce que ça change concrètement",
     metaTitle: "Pilotage intérieur dirigeant | Coaching Mental Frédéric Ternon",
     metaDescription: "Le pilotage intérieur est la compétence cachée des dirigeants qui performent sans s'épuiser. Découvrez ce que ça change concrètement.",
-    excerpt: "Tu pilotes ton entreprise. Mais qui pilote ton état intérieur ? Ta clarté, ton énergie, ta capacité à encaisser — ça se travaille.",
+    excerpt: "Tu pilotes ton entreprise. Mais qui pilote ton état intérieur ? Ta clarté, ton énergie, ta capacité à encaisser, ça se travaille.",
     content: `<p>Tu as appris à piloter une entreprise. À lire un P&L. À manager des équipes. À négocier des contrats. <strong>Mais personne ne t'a appris à piloter ce qui pilote tout le reste : ton état intérieur.</strong></p>
 
 <p>Le pilotage intérieur, c'est la capacité à :</p>
@@ -650,11 +650,11 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Comment je travaille le pilotage intérieur</h2>
 
-<p><strong>Reconnaître</strong> — On cartographie tes réactions automatiques. Quand tu es sous pression, qu'est-ce qui se déclenche ? Colère ? Repli ? Suractivité ?</p>
+<p><strong>Reconnaître</strong> : On cartographie tes réactions automatiques. Quand tu es sous pression, qu'est-ce qui se déclenche ? Colère ? Repli ? Suractivité ?</p>
 
-<p><strong>Réagir</strong> — On installe des "micro-protocoles" : 90 secondes pour retrouver ta lucidité avant une décision importante.</p>
+<p><strong>Réagir</strong> : On installe des "micro-protocoles" : 90 secondes pour retrouver ta lucidité avant une décision importante.</p>
 
-<p><strong>Reprogrammer</strong> — On entraîne ton système nerveux à rester dans la zone de performance optimale, même sous pression intense.</p>
+<p><strong>Reprogrammer</strong> : On entraîne ton système nerveux à rester dans la zone de performance optimale, même sous pression intense.</p>
 
 <h2>Les résultats observés</h2>
 
@@ -665,9 +665,9 @@ export const blogArticles: BlogArticle[] = [
 <li>Présence retrouvée dans la vie personnelle</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — le lien entre pression et perte de contrôle intérieur.</p>
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a>, le lien entre pression et perte de contrôle intérieur.</p>
 
-<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a> — les protocoles mentaux du sport appliqués au leadership.</p>
+<p>👉 <a href="/blog/sportif-haut-niveau-dirigeant">Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants</a>, les protocoles mentaux du sport appliqués au leadership.</p>
 
 <p>👉 Le <a href="/blog/syndrome-imposteur-entrepreneur">syndrome de l'imposteur</a> est souvent un signe de pilotage intérieur défaillant.</p>
 
@@ -704,7 +704,7 @@ export const blogArticles: BlogArticle[] = [
 <h2>Les signes de la fatigue décisionnelle</h2>
 
 <ul>
-<li>Tu repousses les décisions importantes en fin de journée — et elles s'accumulent</li>
+<li>Tu repousses les décisions importantes en fin de journée, et elles s'accumulent</li>
 <li>Tu choisis l'option la plus sûre plutôt que la meilleure</li>
 <li>Tu délègues impulsivement pour "ne plus y penser"</li>
 <li>Tu deviens irritable face aux sollicitations de ton équipe</li>
@@ -730,16 +730,16 @@ export const blogArticles: BlogArticle[] = [
 <li>Décisions stratégiques le matin, quand le cortex préfrontal est au maximum</li>
 <li>Routines qui éliminent les micro-décisions inutiles</li>
 <li>Pauses de récupération mentale entre les blocs de décision</li>
-<li>Délégation structurée — pas par fatigue, mais par design</li>
+<li>Délégation structurée, pas par fatigue, mais par design</li>
 </ul>
 
 <h2>Mon approche avec la Méthode 3R</h2>
 
-<p><strong>Reconnaître</strong> — On audite ta journée type : où gaspilles-tu de l'énergie décisionnelle ? Quelles décisions peuvent être automatisées ou déléguées ?</p>
+<p><strong>Reconnaître</strong> : On audite ta journée type : où gaspilles-tu de l'énergie décisionnelle ? Quelles décisions peuvent être automatisées ou déléguées ?</p>
 
-<p><strong>Réagir</strong> — On restructure ton agenda autour de tes pics cognitifs. On installe des rituels de récupération.</p>
+<p><strong>Réagir</strong> : On restructure ton agenda autour de tes pics cognitifs. On installe des rituels de récupération.</p>
 
-<p><strong>Reprogrammer</strong> — On développe ta capacité à maintenir la qualité décisionnelle sur toute la journée.</p>
+<p><strong>Reprogrammer</strong> : On développe ta capacité à maintenir la qualité décisionnelle sur toute la journée.</p>
 
 <h2>Les résultats</h2>
 
@@ -750,11 +750,11 @@ export const blogArticles: BlogArticle[] = [
 <li>Capacité retrouvée à trancher sur les enjeux majeurs</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a> — la fatigue mentale est la première cause de perte de lucidité.</p>
+<p>👉 Lire aussi : <a href="/blog/lucidite-dirigeant-sous-pression">Dirigeant sous pression : pourquoi la lucidité baisse</a>, la fatigue mentale est la première cause de perte de lucidité.</p>
 
-<p>👉 <a href="/blog/repousser-decisions-cles">Pourquoi tu repousses certaines décisions clés</a> — la fatigue décisionnelle nourrit la procrastination.</p>
+<p>👉 <a href="/blog/repousser-decisions-cles">Pourquoi tu repousses certaines décisions clés</a>, la fatigue décisionnelle nourrit la procrastination.</p>
 
-<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur</a> — la solution pour préserver ton énergie mentale sur la durée.</p>
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur</a>, la solution pour préserver ton énergie mentale sur la durée.</p>
 
 <p><strong>Ta performance business est directement proportionnelle à la qualité de tes décisions. Et la qualité de tes décisions dépend de ton énergie mentale. Protège-la.</strong></p>`,
     category: "Prise de décision",
@@ -816,11 +816,11 @@ export const blogArticles: BlogArticle[] = [
 
 <p>Avec la Méthode 3R, j'adapte les protocoles de préparation mentale sportive au contexte du leadership :</p>
 
-<p><strong>Reconnaître</strong> — Comme le sportif qui analyse sa course, on décortique tes moments de performance et de contre-performance décisionnelle.</p>
+<p><strong>Reconnaître</strong> : Comme le sportif qui analyse sa course, on décortique tes moments de performance et de contre-performance décisionnelle.</p>
 
-<p><strong>Réagir</strong> — On installe des rituels de préparation mentale avant tes moments clés : comités de direction, négociations, annonces difficiles.</p>
+<p><strong>Réagir</strong> : On installe des rituels de préparation mentale avant tes moments clés : comités de direction, négociations, annonces difficiles.</p>
 
-<p><strong>Reprogrammer</strong> — On développe ta résilience mentale : la capacité à encaisser un revers et à rebondir sans perte de confiance.</p>
+<p><strong>Reprogrammer</strong> : On développe ta résilience mentale : la capacité à encaisser un revers et à rebondir sans perte de confiance.</p>
 
 <h2>Ce qui change quand tu t'entraînes comme un athlète</h2>
 
@@ -831,11 +831,11 @@ export const blogArticles: BlogArticle[] = [
 <li>Tu performes sur la durée au lieu de t'effondrer par cycles</li>
 </ul>
 
-<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> — la version "dirigeant" de la préparation mentale sportive.</p>
+<p>👉 Lire aussi : <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a>, la version "dirigeant" de la préparation mentale sportive.</p>
 
-<p>👉 <a href="/blog/lucidite-dirigeant-sous-pression">Pourquoi la lucidité baisse sous pression</a> — et comment la restaurer comme un athlète.</p>
+<p>👉 <a href="/blog/lucidite-dirigeant-sous-pression">Pourquoi la lucidité baisse sous pression</a>, et comment la restaurer comme un athlète.</p>
 
-<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> — protège ton énergie comme un sportif de haut niveau.</p>
+<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a>, protège ton énergie comme un sportif de haut niveau.</p>
 
 <p><strong>Le dirigeant de demain ne sera pas celui qui travaille le plus. Ce sera celui qui pilote le mieux son mental. Comme un athlète.</strong></p>`,
     category: "Performance mentale",

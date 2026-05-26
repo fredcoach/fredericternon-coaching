@@ -13,14 +13,14 @@ const steps = [
     icon: Zap,
     number: "2",
     title: "Réagir autrement",
-    description: "Retrouver de la lucidité avant d'agir — sortir de la réaction sous pression.",
+    description: "Retrouver de la lucidité avant d'agir, sortir de la réaction sous pression.",
     color: "from-secondary to-secondary/80",
   },
   {
     icon: RefreshCw,
     number: "3",
     title: "Reprogrammer",
-    description: "Installer une manière plus claire de décider, déléguer et piloter — qui tient dans la durée.",
+    description: "Installer une manière plus claire de décider, déléguer et piloter, qui tient dans la durée.",
     color: "from-accent to-accent/80",
   },
 ];

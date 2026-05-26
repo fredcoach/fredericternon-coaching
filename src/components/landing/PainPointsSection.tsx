@@ -2,9 +2,9 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertCircle } from "lucide-react";
 
 const symptoms = [
-  "Vous êtes encore au cœur de chaque décision — même celles qui ne devraient plus passer par vous",
+  "Vous êtes encore au cœur de chaque décision, même celles qui ne devraient plus passer par vous",
   "Vous avez délégué… mais tout finit par revenir : validations, arbitrages, conflits",
-  "Votre agenda est saturé d'urgences — vous n'avez plus le temps de penser à 6 mois",
+  "Votre agenda est saturé d'urgences, vous n'avez plus le temps de penser à 6 mois",
   "Vous voyez bien que l'organisation craque, sans réussir à mettre le doigt sur ce qui coince",
 ];
 
@@ -23,7 +23,7 @@ export function PainPointsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-6">
-            L'entreprise tourne — <span className="text-accent">mais elle tourne autour de vous</span>
+            L'entreprise tourne. <span className="text-accent">mais elle tourne autour de vous</span>
           </h2>
 
           <div className="space-y-6 mt-10">
@@ -32,7 +32,7 @@ export function PainPointsSection() {
             </p>
 
             <p className="text-primary-foreground/80 text-center max-w-3xl mx-auto">
-              Les décisions remontent, les arbitrages traînent, les équipes attendent vos validations. Vous tenez la barre — mais vous n'avez plus le temps de regarder l'horizon.
+              Les décisions remontent, les arbitrages traînent, les équipes attendent vos validations. Vous tenez la barre, mais vous n'avez plus le temps de regarder l'horizon.
             </p>
 
             {/* Quote */}
@@ -78,7 +78,7 @@ export function PainPointsSection() {
             {/* Key message */}
             <div className="text-center mt-12 space-y-4">
               <p className="text-lg text-accent font-medium">
-                Tant que tout passe par vous, l'entreprise plafonne — et vous avec.
+                Tant que tout passe par vous, l'entreprise plafonne, et vous avec.
               </p>
               <p className="text-xl font-semibold text-primary-foreground">
                 Le sujet n'est pas de tenir.{" "}
