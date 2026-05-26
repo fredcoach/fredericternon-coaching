@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Brain, Target, Users, Zap, HeartHandshake, Bot } from "lucide-react";
+import { Eye, Target, Users, Zap, HeartHandshake, Bot } from "lucide-react";
 
 const differentiators = [
   {
