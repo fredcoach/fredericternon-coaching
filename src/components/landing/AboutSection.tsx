@@ -40,15 +40,15 @@ export function AboutSection() {
             {/* Content */}
             <div className="space-y-6">
               <div>
-                <p className="text-primary font-medium mb-2">Coach en performance mentale & leadership</p>
+                <p className="text-primary font-medium mb-2">Regard extérieur pour dirigeants de PME</p>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
                   Je suis Frédéric Ternon
                 </h2>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants, chefs d'entreprise et entrepreneurs de structures 0–50 personnes à retrouver{" "}
-                <strong className="text-foreground">clarté, stabilité émotionnelle et puissance de décision</strong> grâce à une approche qui allie neurosciences, coaching humain et intelligence artificielle au service du mental.
+                J'accompagne les dirigeants de PME — principalement <strong className="text-foreground">5 à 30 personnes</strong> — quand l'entreprise fonctionne mais{" "}
+                <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle : apporter un regard extérieur pour identifier ce qui bloque, clarifier l'organisation, fluidifier les décisions et vous aider à reprendre la main sur le pilotage.
               </p>
 
               {/* Experience blocks */}
@@ -60,7 +60,7 @@ export function AboutSection() {
                   <div>
                     <p className="font-semibold text-foreground">10 ans</p>
                     <p className="text-sm text-muted-foreground">
-                      Sport & communication (management, équipes, pression)
+                      Management, équipes et décision sous pression
                     </p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export function AboutSection() {
                   <div>
                     <p className="font-semibold text-foreground">10 ans</p>
                     <p className="text-sm text-muted-foreground">
-                      Coaching one-to-one (dirigeants, sportifs haut niveau)
+                      Accompagnement de dirigeants en one-to-one
                     </p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ export function AboutSection() {
               {/* Key insight */}
               <div className="border-l-4 border-primary pl-6 py-2">
                 <p className="text-foreground italic">
-                  "Ce n'est pas la charge de travail qui épuise, c'est la manière dont on la vit mentalement."
+                  "Quand tout remonte au dirigeant, ce n'est pas l'équipe qui plafonne — c'est l'organisation qui n'a pas suivi."
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export function AboutSection() {
                 <div>
                   <p className="font-semibold text-foreground mb-1">Ma conviction</p>
                   <p className="text-muted-foreground">
-                    La croissance d'une entreprise ne dépasse jamais la croissance intérieure de ses décideurs. Pas en théorie — dans la vraie vie, quand il faut trancher, tenir, déléguer, recadrer.
+                    Une PME ne plafonne presque jamais par manque de stratégie. Elle plafonne parce que les décisions remontent toutes au dirigeant, que la délégation est floue, et que l'organisation n'a pas suivi la croissance. C'est là qu'un regard extérieur change tout.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export function AboutSection() {
               {/* Method 3R teaser */}
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Fil rouge :</strong> Méthode 3R (Reconnaître → Réagir → Reprogrammer) — Simple. Actionnable. Zéro blabla.
+                  <strong className="text-foreground">Fil rouge :</strong> Méthode 3R (Repérer → Réagir → Reprogrammer) — un outil de pilotage du dirigeant, pas un programme de développement personnel.
                 </p>
               </div>
             </div>

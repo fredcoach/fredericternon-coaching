@@ -23,13 +23,13 @@ export function FinalCTASection() {
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Une dernière chose</h2>
 
-          <p className="text-xl text-primary-foreground/90 mb-4">Tu n'as pas besoin d'en faire plus.</p>
+          <p className="text-xl text-primary-foreground/90 mb-4">Vous n'avez pas besoin d'en faire plus.</p>
           <p className="text-2xl font-semibold mb-8">
-            Tu mérites de te sentir <span className="text-accent">légitime, serein et puissant</span>.
+            Vous avez besoin de <span className="text-accent">reprendre la main sur le pilotage</span>.
           </p>
 
           <p className="text-primary-foreground/80 mb-10">
-            Sans sacrifier qui tu es. Sans porter tout. Sans t'épuiser en silence.
+            30 min en visio. Un échange direct, confidentiel, sans engagement — pour identifier ce qui bloque dans votre PME.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -45,7 +45,7 @@ export function FinalCTASection() {
                 className="inline-flex items-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                30 min — on voit si c'est pour toi
+                30 min pour identifier ce qui bloque
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -54,7 +54,7 @@ export function FinalCTASection() {
           <div className="flex items-center justify-center gap-3 text-primary-foreground/70">
             <MessageCircle className="w-5 h-5" />
             <p className="text-sm">
-              ou envoie-moi <strong className="text-primary-foreground">"RDV"</strong> en DM
+              ou envoyez-moi <strong className="text-primary-foreground">"RDV"</strong> sur WhatsApp
             </p>
           </div>
 

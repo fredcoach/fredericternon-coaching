@@ -5,23 +5,23 @@ import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
 const promises = [
   {
     icon: Shield,
-    title: "Légitimité retrouvée",
-    description: "Incarner votre place sans vous justifier",
+    title: "Organisation clarifiée",
+    description: "Rôles, périmètres et décisions remis à plat",
   },
   {
     icon: Gauge,
-    title: "Clarté décisionnelle",
-    description: "Décider avec confiance et sérénité",
+    title: "Décisions fluidifiées",
+    description: "Arbitrages plus rapides, moins de remontées",
   },
   {
     icon: Compass,
-    title: "Espace pour vous",
-    description: "Moins de charge, plus de recul",
+    title: "Recul retrouvé",
+    description: "Du temps pour le stratégique, pas que l'urgent",
   },
   {
     icon: RotateCcw,
-    title: "Énergie préservée",
-    description: "Avancer sans vous épuiser",
+    title: "Pilotage tenu",
+    description: "Une PME qui avance — sans que tout passe par vous",
   },
 ];
 
@@ -58,7 +58,7 @@ export function PromiseSection() {
             La promesse <span className="text-gradient">(concrète)</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            En quelques semaines, vous retrouvez :
+            Pas de transformation magique. Quatre déplacements concrets :
           </p>
         </div>
 
@@ -91,13 +91,13 @@ export function PromiseSection() {
           }`}
         >
           <div className="flex flex-wrap items-center justify-center gap-2 text-lg font-medium text-foreground mb-8">
-            <span className="px-4 py-2 bg-muted rounded-full">moins de charge</span>
+            <span className="px-4 py-2 bg-muted rounded-full">identifier ce qui bloque</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">plus de clarté</span>
+            <span className="px-4 py-2 bg-muted rounded-full">clarifier l'organisation</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">décisions sereines</span>
+            <span className="px-4 py-2 bg-muted rounded-full">fluidifier les décisions</span>
             <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">impact durable</span>
+            <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">reprendre le pilotage</span>
           </div>
 
           <div className="text-center">
@@ -106,7 +106,7 @@ export function PromiseSection() {
               onClick={scrollToFinalCTA}
               className="gradient-primary text-primary-foreground hover:opacity-90"
             >
-              Demandez votre session CADRAGE
+              30 min pour identifier ce qui bloque
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

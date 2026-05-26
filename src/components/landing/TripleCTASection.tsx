@@ -7,9 +7,9 @@ const ctaCards = [
   {
     icon: Brain,
     title: "Diagnostic",
-    subtitle: "Évaluez votre lucidité décisionnelle",
+    subtitle: "10 min pour cartographier votre pilotage",
     description:
-      "10 min pour identifier vos zones fragiles, angles morts et le coût réel de vos hésitations.",
+      "Identifiez en 10 minutes ce qui freine vos décisions et le coût réel de vos hésitations de dirigeant.",
     cta: "Lancer le diagnostic",
     href: "/diagnostic",
     isExternal: false,
@@ -19,18 +19,18 @@ const ctaCards = [
     title: "Flash Decision",
     subtitle: "Débloquez une décision en 1h",
     description:
-      "Session intensive de questionnement puissant pour trancher une décision stratégique bloquée.",
+      "Session intensive pour trancher net sur une décision stratégique bloquée — sans y revenir.",
     cta: "Découvrir la session",
     href: "/flash-decision",
     isExternal: false,
   },
   {
     icon: Calendar,
-    title: "Appel découverte",
-    subtitle: "30 min pour faire le point",
+    title: "Session CADRAGE",
+    subtitle: "30 min pour identifier ce qui bloque",
     description:
-      "Un échange confidentiel pour comprendre votre situation et voir si un accompagnement fait sens.",
-    cta: "Réserver un créneau",
+      "Un échange direct et confidentiel pour cartographier ce qui bloque dans votre pilotage — et voir si un accompagnement fait sens.",
+    cta: "Réserver 30 min",
     href: "https://calendly.com/ternon/entretien-confidentiel",
     isExternal: true,
   },

@@ -11,11 +11,11 @@ const faqItems = [
     question: "C'est pour moi ou pas ?",
     answer: `Checklist rapide :
 
-✅ Structure 0–50 personnes, tu es fondateur/dirigeant/manager clé
-✅ Tu décides, mais ça prend trop de temps ou d'énergie
-✅ Tu sens que tu surcontrôles ou que tu rumines
-✅ Tu veux une posture plus stable (moins réactif, plus lucide)
-✅ Tu es prêt à bosser (pas juste à "en parler")
+✅ PME de 5 à 30 personnes, vous êtes dirigeant ou fondateur
+✅ Vous décidez, mais ça prend trop de temps ou d'énergie
+✅ Vous sentez que vous surcontrôles ou que vous rumines
+✅ Vous voulez une posture plus stable (moins réactif, plus lucide)
+✅ Vous êtes prêt à bosser (pas juste à "en parler")
 
 Si 4/5 = oui → session CADRAGE.
 Si 2/5 = non → ce n'est pas le bon moment.
@@ -24,32 +24,32 @@ On vérifie ensemble en 30 min.`,
   },
   {
     question: "Pourquoi maintenant et pas dans 6 mois ?",
-    answer: `Parce que dans 6 mois, tu auras pris 50 décisions depuis la tension au lieu de la clarté.
+    answer: `Parce que dans 6 mois, vous aurez pris 50 décisions depuis la tension au lieu de la clarté.
 
 Chaque décision floue coûte :
-• Du temps (tu reviens dessus, tu corriges, tu temporises)
+• Du temps (vous reviens dessus, vous corriges, vous temporises)
 • De l'énergie (rumination, charge mentale, nuits pourries)
-• De l'impact (ton équipe sent l'hésitation, ton exécution se dilue)
+• De l'impact (votre équipe sent l'hésitation, ton exécution se dilue)
 
-Question simple : Est-ce que tu peux te permettre 6 mois de plus à ce rythme ?
+Question simple : Est-ce que vous pouvez vous permettre 6 mois de plus à ce rythme ?
 
 Si la réponse est "non" → c'est maintenant.
-Si la réponse est "oui, ça va" → tu n'as pas besoin de moi.`,
+Si la réponse est "oui, ça va" → vous n'avez pas besoin de moi.`,
   },
   {
     question: "Je n'ai vraiment pas le temps pour ça.",
-    answer: `Si tu n'as pas le temps, c'est exactement pour ça que tu en as besoin.
+    answer: `Si vous n'avez pas le temps, c'est exactement pour ça que vous en as besoin.
 
 Voilà comment ça marche :
 
-Semaine 1-2 : tu investis du temps (séance 1h + ancrage des routines)
-→ Tu apprends à reconnaître tes déclencheurs, à couper la rumination
+Semaine 1-2 : vous investissez du temps (séance 1h + ancrage des routines)
+→ Vous apprenez à reconnaître vos déclencheurs, à couper la rumination
 
-Semaine 3-4 : tu récupères du temps
+Semaine 3-4 : vous récupérez du temps
 → Décisions plus rapides = -3h/semaine de tours de table mentaux
 → Moins de rumination = sommeil de meilleure qualité = énergie le matin
 
-Semaine 5-8 : tu as + de temps qu'avant
+Semaine 5-8 : vous avez + de temps qu'avant
 → Agenda réaligné, priorités nettes, exécution fluide
 
 Le vrai coût en temps, c'est de NE PAS le faire.
@@ -57,21 +57,21 @@ Parce que tourner en boucle sur une décision pendant 3 jours = combien d'heures
   },
   {
     question: "Comment je sais si ça va marcher pour moi ?",
-    answer: `Tu ne sais pas avant d'essayer. Mais voilà ce que je peux te garantir :
+    answer: `Vous ne savez pas avant d'essayer. Mais voilà ce que je peux vous garantir :
 
 Ce qui dépend de moi :
 • Un cadre structuré, exigeant, humain
 • Des outils concrets (pas du blabla)
 • Une disponibilité entre séances (filet de sécurité + Alpha)
-• Une méthode qui reste après l'accompagnement (3R = ton OS)
+• Une méthode qui reste après l'accompagnement (3R = votre OS)
 
 Ce qui dépend de toi :
-• Ton implication (tu appliques ou tu écoutes gentiment ?)
-• Ta lucidité (tu acceptes les feedbacks directs ?)
-• Ton engagement (tu fais le taf entre les séances ?)
+• Ton implication (vous appliques ou vous écoutes gentiment ?)
+• Ta lucidité (vous acceptez les feedbacks directs ?)
+• Ton engagement (vous faites le taf entre les séances ?)
 
-Si tu t'impliques → résultats visibles en 3-4 semaines.
-Si tu ne t'impliques pas → je te le dirai et on arrête.
+Si vous vous impliquez → résultats visibles en 3-4 semaines.
+Si vous ne t'impliques pas → je vous le dirai et on arrête.
 
 Zéro complaisance. Zéro perte de temps mutuelle.`,
   },
@@ -79,30 +79,30 @@ Zéro complaisance. Zéro perte de temps mutuelle.`,
     question: "Quel est l'investissement pour cet accompagnement ?",
     answer: `L'accompagnement est sur-mesure, donc le montant varie selon :
 
-• La complexité de ta situation
-• Tes objectifs et le délai pour les atteindre
+• La complexité de votre situation
+• Vos objectifs et le délai pour les atteindre
 • Le niveau d'accompagnement nécessaire
 
-Je te communique le tarif lors de l'appel de 30 min, une fois qu'on a identifié ensemble ce dont tu as vraiment besoin.
+Je vous communique le tarif lors de l'appel de 30 min, une fois qu'on a identifié ensemble ce dont vous avez vraiment besoin.
 
 Pourquoi cette approche ?
 
 Parce qu'un dirigeant avec une décision stratégique bloquée n'a pas les mêmes besoins qu'un fondateur en surcharge mentale chronique.
 
-Le tarif reflète la valeur créée et la transformation visée, pas un nombre d'heures facturées.
+Le tarif reflèvous la valeur créée et la transformation visée, pas un nombre d'heures facturées.
 
-Tu sauras exactement ce que tu paies et pourquoi avant de décider.`,
+Vous saurez exactement ce que vous paies et pourquoi avant de décider.`,
   },
   {
     question: "Combien de temps par semaine je dois y consacrer ?",
     answer: `Minimum viable :
 • 1h de séance/semaine
 • 10 min/jour de routines (respiration, recadrage, micro-protocole)
-• Accès à Alpha quand tu en as besoin (2-5 min)
+• Accès à Alpha quand vous en as besoin (2-5 min)
 
 Total : 1h30-2h/semaine
 
-Si tu veux aller plus loin :
+Si vous voulez aller plus loin :
 • 15-20 min/jour de consolidation (audios, exercices)
 • Travail sur des situations concrètes entre séances
 
@@ -112,35 +112,35 @@ Semaine chargée ? On ajuste.
 Pic d'activité ? On se concentre sur l'essentiel.
 Urgence stratégique ? On bosse dessus en séance.
 
-Le but : que ça rentre dans ta vie, pas que tu rentres dans un planning.`,
+Le but : que ça rentre dans votre vie, pas que vous rentres dans un planning.`,
   },
   {
     question: "Je suis déjà organisé, performant, efficace. Pourquoi j'aurais besoin de ça ?",
-    answer: `Parce que tu confonds organisation et stabilité interne.
+    answer: `Parce que vous confondez organisation et stabilité interne.
 
-Tu peux avoir :
+Vous pouvez avoir :
 • Un agenda carré
 • Des process au point
 • Une équipe qui exécute
 
 Et quand même :
 • Décider depuis la tension (stress, urgence, peur)
-• Surcontrôler parce que déléguer te stresse
+• Surcontrôler parce que déléguer vous stresse
 • Ruminer le soir sur des décisions déjà prises
 • Porter seul parce que personne ne comprend vraiment
 
-L'organisation gère ton agenda. Cet accompagnement gère ton système de décision.
+L'organisation gère votre agenda. Cet accompagnement gère votre système de décision.
 C'est pas la même catégorie.
 
-Si tu es organisé ET stable mentalement → tu n'as pas besoin de moi.
-Si tu es organisé MAIS que tu sens que quelque chose te coûte de l'énergie en interne → on bosse ensemble.`,
+Si vous êtes organisé ET stable mentalement → vous n'avez pas besoin de moi.
+Si vous êtes organisé MAIS que vous sentez que quelque chose vous coûvous de l'énergie en interne → on bosse ensemble.`,
   },
   {
     question: "Je suis déjà suivi par un psy/thérapeute. C'est compatible ?",
     answer: `Oui. Totalement.
 
-Thérapie : pourquoi tu fonctionnes comme ça (passé, schémas profonds, blessures)
-Coaching : comment tu fonctionnes maintenant et comment tu veux fonctionner demain (posture, décisions, exécution)
+Thérapie : pourquoi vous fonctionnes comme ça (passé, schémas profonds, blessures)
+Coaching : comment vous fonctionnes maintenant et comment vous voulez fonctionner demain (posture, décisions, exécution)
 
 Deux rôles différents, complémentaires.
 
@@ -148,61 +148,61 @@ Exemple concret :
 • Thérapie : "Pourquoi j'ai peur de déléguer ?" (lien avec enfance, contrôle, peur de l'abandon)
 • Coaching : "Comment je délègue cette semaine sans me pourrir mentalement ?" (protocole, critères, posture)
 
-Si tu es en thérapie, ça aide même souvent le coaching. Parce que tu comprends tes patterns + tu sais comment les reprogrammer.
+Si vous êtes en thérapie, ça aide même souvent le coaching. Parce que vous comprends vos patterns + vous sais comment les reprogrammer.
 
 Tant que les rôles sont clairs, zéro problème.`,
   },
   {
-    question: "Qu'est-ce qui te différencie d'un autre coach ?",
+    question: "Qu'est-ce qui vous différencie d'un autre coach ?",
     answer: `1. Background performance mentale (pas dev perso)
 20 ans au contact de la haute performance : 10 ans sport + management, 10 ans coaching one-to-one. Je viens des environnements où l'erreur mentale se paie cash.
 
 2. Méthode 3R (pas du "parlons-en")
-Reconnaître → Réagir → Reprogrammer. C'est ton OS de décideur, la mécanique que tu gardes après l'accompagnement.
+Reconnaître → Réagir → Reprogrammer. C'est votre OS de décideur, la mécanique que vous gardes après l'accompagnement.
 
 3. Coaching augmenté humain + IA
-Entre deux séances : filet de sécurité (WhatsApp, réponse jour même) + Alpha 24/7 (pocket coach IA). Tu n'es jamais bloqué seul avec ton mental.
+Entre deux séances : filet de sécurité (WhatsApp, réponse jour même) + Alpha 24/7 (pocket coach IA). Vous n'es jamais bloqué seul avec votre mental.
 
 4. Zéro bullshit
-Si je sens qu'on ne peut pas travailler ensemble → je te le dis. Si tu ne t'impliques pas → je te le dis. Si un outil ne marche pas pour toi → on ajuste.
+Si je sens qu'on ne peut pas travailler ensemble → je vous le dis. Si vous ne t'impliques pas → je vous le dis. Si un outil ne marche pas pour toi → on ajuste.
 
 Pas de langue de bois. Pas de méthode dogmatique. Juste des résultats ou on arrête.`,
   },
   {
     question: "Si je veux arrêter en cours de route ?",
-    answer: `Tu peux arrêter quand tu veux.
+    answer: `Vous pouvez arrêter quand vous voulez.
 
 Le deal :
 • Je m'implique à fond (présence, exigence, disponibilité)
-• Tu t'impliques à fond (action, lucidité, ajustements)
+• Vous vous impliquez à fond (action, lucidité, ajustements)
 
 Si l'un des deux décroche, on arrête.
 
 Pas de prison. Pas de culpabilité. Juste un cadre libre où on construit quelque chose de solide — ou pas.
 
-Note importante : Si tu t'engages puis que tu lâches systématiquement entre les séances, je te le signale direct.
+Note importante : Si vous vous engagez puis que vous lâches systématiquement entre les séances, je vous le signale direct.
 
-Parce que mon job, c'est pas de te rassurer en boucle. Mon job, c'est de te faire avancer.
-Si tu veux juste parler sans bouger → ce n'est pas le bon accompagnement.`,
+Parce que mon job, c'est pas de vous rassurer en boucle. Mon job, c'est de vous faire avancer.
+Si vous voulez juste parler sans bouger → ce n'est pas le bon accompagnement.`,
   },
   {
     question: "Concrètement, la session CADRAGE, ça se passe comment ?",
     answer: `30 min. 3 blocs.
 
 Bloc 1 (10 min) — Diagnostic net
-• Où tu perds ton énergie (rumination, surcharge, dispersion)
+• Où vous perds ton énergie (rumination, surcharge, dispersion)
 • Ce qui bloque tes décisions (peur, manque de critères, trop d'options)
 • Ton niveau de contrôle vs délégation
 
 Bloc 2 (10 min) — Priorité #1
-• Si tu devais régler UN truc dans les 2 prochains mois, ce serait quoi ?
+• Si vous devais régler UN truc dans les 2 prochains mois, ce serait quoi ?
 • Qu'est-ce qui, résolu, débloque tout le reste ?
 
 Bloc 3 (10 min) — Vérification du match
-• Je te présente la Méthode 3R et l'accompagnement
-• On vérifie si ça résonne avec ton mode de fonctionnement
+• Je vous présente la Méthode 3R et l'accompagnement
+• On vérifie si ça résonne avec votre mode de fonctionnement
 • Si c'est un match → plan sur-mesure
-• Si ce n'est pas un match → je te le dis directement
+• Si ce n'est pas un match → je vous le dis directement
 
 Zéro vente forcée. Zéro langue de bois. Juste de la clarté.`,
   },

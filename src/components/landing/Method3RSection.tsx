@@ -5,22 +5,22 @@ const steps = [
   {
     icon: Eye,
     number: "1",
-    title: "Reconnaître",
-    description: "Repérer le moment exact où ça part (stress, dispersion, réaction automatique)",
+    title: "Repérer",
+    description: "Identifier précisément ce qui bloque dans l'organisation, la délégation et les décisions",
     color: "from-primary to-primary/80",
   },
   {
     icon: Zap,
     number: "2",
     title: "Réagir",
-    description: "Reprendre le contrôle rapidement (physio + attention + décision)",
+    description: "Reprendre la main, décider net, trancher au bon niveau — sans subir la pression",
     color: "from-secondary to-secondary/80",
   },
   {
     icon: RefreshCw,
     number: "3",
     title: "Reprogrammer",
-    description: "Installer un nouveau schéma (habitude, posture, décision) qui se répète",
+    description: "Installer des réflexes de pilotage qui tiennent — et qui restent après l'accompagnement",
     color: "from-accent to-accent/80",
   },
 ];
@@ -41,10 +41,10 @@ export function Method3RSection() {
         >
           <p className="text-accent font-medium mb-2">Le fil rouge</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            La Méthode 3R — ton "OS" de décideur
+            La Méthode 3R — votre outil de pilotage
           </h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Simple. Actionnable. Zéro blabla.
+            Un cadre simple, actionnable, au service du dirigeant. Pas un programme de développement personnel.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export function Method3RSection() {
         >
           <div className="inline-block px-6 py-3 bg-primary-foreground/10 rounded-full">
             <p className="text-lg font-medium">
-              👉 3R n'est pas un module. C'est la mécanique que tu gardes <span className="text-accent">après</span> l'accompagnement.
+              👉 3R n'est pas un module. C'est la mécanique de pilotage que vous gardez <span className="text-accent">après</span> l'accompagnement.
             </p>
           </div>
         </div>

@@ -3,27 +3,26 @@ import { ArrowRight, Brain, Target, Zap } from "lucide-react";
 import { useEffect, useState, useRef, useCallback } from "react";
 
 const heroHeadlines = [
-  { bold: "Pilotez votre entreprise", accent: "Sans burnout." },
-  { bold: "Accélérez votre croissance", accent: "Sans vous perdre." },
-  { bold: "Construisez votre avenir", accent: "Sans subir l'usure." },
+  { bold: "Votre entreprise tourne", accent: "Mais tout repose sur vous." },
+  { bold: "Vous décidez sur tout", accent: "Vous n'avez plus de recul." },
+  { bold: "Vos équipes avancent", accent: "L'organisation ne suit plus." },
 ];
-import fredericPhoto from "@/assets/frederic-ternon.png";
 
 const pillars = [
   {
     icon: Brain,
-    label: "Lucidité",
-    description: "Voir clair sous pression",
+    label: "Recul",
+    description: "Sortir la tête du guidon",
   },
   {
     icon: Target,
     label: "Décision",
-    description: "Trancher avec justesse",
+    description: "Trancher net, sans rumination",
   },
   {
     icon: Zap,
-    label: "Impact",
-    description: "Agir sans s'épuiser",
+    label: "Pilotage",
+    description: "Reprendre la main sur l'agenda",
   },
 ];
 
@@ -104,7 +103,7 @@ export function HeroSection() {
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="text-sm text-white/70 font-medium tracking-wide">
-                  Coaching stratégique pour dirigeants
+                  Regard extérieur pour dirigeants de PME (5 à 30 personnes)
                 </span>
               </div>
             </div>
@@ -137,14 +136,14 @@ export function HeroSection() {
                 className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Sous pression, votre système de pilotage se déforme.
+                Un regard extérieur pour identifier ce qui bloque, clarifier l'organisation
                 <br className="hidden md:block" />
                 <span className="text-white/80 font-medium">
-                  Il est temps de retrouver votre lucidité.
+                  et vous aider à mieux piloter sous pression.
                 </span>
               </p>
 
-              {/* 3 Pillars — Inspired by Strategic Coach */}
+              {/* 3 Pillars */}
               <div
                 className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mb-14 animate-fade-in-up"
                 style={{ animationDelay: "0.25s" }}
@@ -174,11 +173,11 @@ export function HeroSection() {
                   onClick={scrollToFinalCTA}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
-                  Réserver un appel découverte
+                  30 min pour identifier ce qui bloque
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <span className="text-sm text-white/40">
-                  30 min · Gratuit · Sur sélection
+                  Échange confidentiel · Sans engagement
                 </span>
               </div>
             </div>

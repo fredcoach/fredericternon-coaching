@@ -130,7 +130,7 @@ export function Navigation() {
               onClick={() => scrollToSection("#final-cta")}
               className="gradient-primary text-primary-foreground hover:opacity-90"
             >
-              Planifie un échange
+              30 min pour échanger
             </Button>
           </div>
 
@@ -186,7 +186,7 @@ export function Navigation() {
                 onClick={() => scrollToSection("#final-cta")}
                 className="mt-2 gradient-primary text-primary-foreground"
               >
-                Réserve ton bilan initial
+                30 min pour identifier ce qui bloque
               </Button>
             </div>
           </div>

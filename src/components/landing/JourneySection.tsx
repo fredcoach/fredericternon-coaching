@@ -5,54 +5,54 @@ const steps = [
   {
     icon: MessageCircle,
     phase: "Session CADRAGE",
-    title: "Diagnostic profond (30 min)",
+    title: "30 min pour identifier ce qui bloque",
     intro: "On clarifie en direct :",
     points: [
-      "ce qui vous pèse vraiment (mental, charge, pression)",
-      "ce qui vous disperse (trop de sujets, trop de \"oui\")",
-      "ce qui vous empêche de souffler (tension, culpabilité, contrôle)",
-      "par où commencer pour retrouver de l'espace rapidement",
+      "ce qui remonte encore au dirigeant (et ne devrait plus)",
+      "ce qui ralentit les décisions et fait traîner les arbitrages",
+      "ce qui flotte dans l'organisation (rôles, délégation, process)",
+      "par où commencer pour récupérer du pilotage rapidement",
     ],
     note: "➡️ Si c'est un match, je vous propose un accompagnement sur-mesure, avec un cap clair et des actions concrètes.",
   },
   {
     icon: Anchor,
     phase: "Repère 1",
-    title: "Retrouver votre espace intérieur",
-    subtitle: "surcharge → clarté",
+    title: "Cartographier ce qui bloque",
+    subtitle: "flou → lucidité",
     points: [
-      "Identifier ce qui vous vide (et ce qui vous \"mange\" en arrière-plan)",
-      "Poser des limites nettes, sans vous justifier",
-      "Recréer de la place mentale (et émotionnelle)",
-      "Revenir à un état interne stable",
+      "Identifier précisément où s'enlisent les décisions et la délégation",
+      "Repérer les goulots d'étranglement autour du dirigeant",
+      "Mettre à plat les rôles, les périmètres, les zones grises",
+      "Sortir de l'urgence pour reprendre une vision d'ensemble",
     ],
-    result: "Vous récupérez de la bande passante. Vous respirez à nouveau.",
+    result: "Vous savez ce qui doit bouger en priorité — et pourquoi.",
   },
   {
     icon: TrendingUp,
     phase: "Repère 2",
-    title: "Incarner votre légitimité",
-    subtitle: "doutes → affirmation",
+    title: "Clarifier l'organisation et la décision",
+    subtitle: "tout remonte → ça circule",
     points: [
-      "Déminer les croyances qui vous freinent (syndrome de l'imposteur, perfectionnisme, peur du jugement)",
-      "Clarifier vos valeurs et vos standards",
-      "Décider plus vite, plus juste, plus sereinement",
-      "Assumer votre place et votre style de leadership",
+      "Redéfinir qui décide quoi, à quel niveau, avec quels critères",
+      "Cadrer une délégation tenue (et non plus floue)",
+      "Installer des points de pilotage courts et utiles",
+      "Réduire le nombre de sujets qui finissent sur votre bureau",
     ],
-    result: "Vous avancez avec une colonne vertébrale. Sans vous justifier.",
+    result: "Les décisions se prennent au bon niveau. Vous reprenez du recul.",
   },
   {
     icon: Rocket,
     phase: "Repère 3",
-    title: "Installer un équilibre durable",
-    subtitle: "épuisement → sérénité",
+    title: "Piloter sous pression dans la durée",
+    subtitle: "subir → tenir le cap",
     points: [
-      "Mettre en place un rythme soutenable (sans perdre l'impact)",
-      "Piloter sous pression sans partir en mode survie",
-      "Protéger votre énergie et votre attention",
-      "Stabiliser un fonctionnement qui tient dans le temps",
+      "Tenir un rythme de pilotage soutenable, même en pic d'activité",
+      "Décider net dans l'incertitude, sans rumination",
+      "Protéger les temps de recul et les sujets stratégiques",
+      "Ancrer des réflexes de pilotage qui restent après l'accompagnement",
     ],
-    result: "Un système qui vous ressemble. Et qui dure.",
+    result: "Une PME qui peut grandir — sans que tout repose encore sur vous.",
   },
 ];
 
@@ -83,10 +83,10 @@ export function JourneySection() {
             3 repères. <span className="text-gradient">Pas un programme.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Structuré… mais vivant : on avance sur une trajectoire claire, mais on part de votre réalité.
+            Un cadre structuré, mais vivant : on avance sur une trajectoire claire, à partir de votre réalité de PME.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            L'ordre n'est pas imposé. Le rythme non plus. On commence là où ça coince aujourd'hui.
+            L'ordre n'est pas imposé. Le rythme non plus. On commence par ce qui coince le plus aujourd'hui dans votre pilotage.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export function JourneySection() {
           }`}
         >
           <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">Important :</strong> je travaille avec peu de personnes en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
+            <strong className="text-foreground">Important :</strong> je travaille avec peu de dirigeants en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
           </p>
         </div>
 
@@ -177,12 +177,12 @@ export function JourneySection() {
           <p className="text-muted-foreground mb-3">
             Ces 3 repères sont un cadre de progression, pas une trajectoire rigide.
             <br />
-            On ajuste selon votre contexte, votre niveau de charge, vos enjeux du moment.
+            On ajuste selon votre contexte PME, vos enjeux du moment et le niveau de pression.
           </p>
           <p className="text-foreground font-medium">
             Le but n'est pas de vous faire rentrer dans une méthode.
             <br />
-            <span className="text-primary">Le but, c'est que vous récupériez votre clarté, votre puissance, et votre sérénité — sans vous perdre en route.</span>
+            <span className="text-primary">Le but, c'est que vous reprendiez la main sur le pilotage — pour que l'entreprise puisse continuer à grandir sans rester suspendue à vous.</span>
           </p>
         </div>
       </div>
