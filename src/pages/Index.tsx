@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { HeroSection } from "@/components/landing/HeroSection";
+import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
 import { AboutSection } from "@/components/landing/AboutSection";
 import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
 import { PainPointsSection } from "@/components/landing/PainPointsSection";
