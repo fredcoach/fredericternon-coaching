@@ -176,7 +176,7 @@ export function OfferSection() {
           >
             <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Garantie & exigences mutuelles</h3>
             <p className="text-center text-muted-foreground mb-6">
-              Je ne te promets pas une transformation magique. Je m'engage sur du sérieux :
+              Je ne vous promets pas de transformation magique. Je m'engage sur du sérieux :
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {guarantees.map((guarantee, index) => (
