@@ -3,27 +3,26 @@ import { ArrowRight, Brain, Target, Zap } from "lucide-react";
 import { useEffect, useState, useRef, useCallback } from "react";
 
 const heroHeadlines = [
-  { bold: "Pilotez votre entreprise", accent: "Sans burnout." },
-  { bold: "Accélérez votre croissance", accent: "Sans vous perdre." },
-  { bold: "Construisez votre avenir", accent: "Sans subir l'usure." },
+  { bold: "Votre entreprise tourne", accent: "Mais tout repose sur vous." },
+  { bold: "Vous décidez sur tout", accent: "Vous n'avez plus de recul." },
+  { bold: "Vos équipes avancent", accent: "L'organisation ne suit plus." },
 ];
-import fredericPhoto from "@/assets/frederic-ternon.png";
 
 const pillars = [
   {
     icon: Brain,
-    label: "Lucidité",
-    description: "Voir clair sous pression",
+    label: "Recul",
+    description: "Sortir la tête du guidon",
   },
   {
     icon: Target,
     label: "Décision",
-    description: "Trancher avec justesse",
+    description: "Trancher net, sans rumination",
   },
   {
     icon: Zap,
-    label: "Impact",
-    description: "Agir sans s'épuiser",
+    label: "Pilotage",
+    description: "Reprendre la main sur l'agenda",
   },
 ];
 
