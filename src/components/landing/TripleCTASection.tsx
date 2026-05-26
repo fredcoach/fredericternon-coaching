@@ -7,9 +7,9 @@ const ctaCards = [
   {
     icon: Brain,
     title: "Diagnostic",
-    subtitle: "Évaluez votre lucidité décisionnelle",
+    subtitle: "10 min pour cartographier votre pilotage",
     description:
-      "10 min pour identifier vos zones fragiles, angles morts et le coût réel de vos hésitations.",
+      "Identifiez en 10 minutes ce qui freine vos décisions et le coût réel de vos hésitations de dirigeant.",
     cta: "Lancer le diagnostic",
     href: "/diagnostic",
     isExternal: false,
@@ -19,7 +19,7 @@ const ctaCards = [
     title: "Flash Decision",
     subtitle: "Débloquez une décision en 1h",
     description:
-      "Session intensive de questionnement puissant pour trancher une décision stratégique bloquée.",
+      "Session intensive pour trancher net sur une décision stratégique bloquée — sans y revenir.",
     cta: "Découvrir la session",
     href: "/flash-decision",
     isExternal: false,
