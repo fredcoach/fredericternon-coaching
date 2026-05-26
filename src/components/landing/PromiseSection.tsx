@@ -5,23 +5,23 @@ import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
 const promises = [
   {
     icon: Shield,
-    title: "Légitimité retrouvée",
-    description: "Incarner votre place sans vous justifier",
+    title: "Organisation clarifiée",
+    description: "Rôles, périmètres et décisions remis à plat",
   },
   {
     icon: Gauge,
-    title: "Clarté décisionnelle",
-    description: "Décider avec confiance et sérénité",
+    title: "Décisions fluidifiées",
+    description: "Arbitrages plus rapides, moins de remontées",
   },
   {
     icon: Compass,
-    title: "Espace pour vous",
-    description: "Moins de charge, plus de recul",
+    title: "Recul retrouvé",
+    description: "Du temps pour le stratégique, pas que l'urgent",
   },
   {
     icon: RotateCcw,
-    title: "Énergie préservée",
-    description: "Avancer sans vous épuiser",
+    title: "Pilotage tenu",
+    description: "Une PME qui avance — sans que tout passe par vous",
   },
 ];
 
