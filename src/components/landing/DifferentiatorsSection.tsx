@@ -3,34 +3,34 @@ import { Brain, Target, Users, Zap, HeartHandshake, Bot } from "lucide-react";
 
 const differentiators = [
   {
-    icon: Brain,
-    title: "Neurosciences appliquées",
-    description: "Une approche performance mentale + neurosciences traduite en routines concrètes (pas des concepts).",
+    icon: Eye,
+    title: "Regard extérieur opérationnel",
+    description: "Quelqu'un qui voit ce que vous ne voyez plus : les goulots, les angles morts, les décisions qui traînent.",
   },
   {
     icon: Target,
-    title: "Cadre décideur",
-    description: "Arbitrages, charge mentale, pression, posture, exécution. Pensé pour ton quotidien de dirigeant.",
+    title: "Focus pilotage & décision",
+    description: "On travaille votre quotidien de dirigeant : arbitrages, délégation, agenda, posture face aux équipes.",
   },
   {
     icon: Users,
-    title: "Leadership réel",
-    description: "Tenir le cadre, faire adhérer, même quand ça chauffe. Pas du management théorique.",
+    title: "Spécifique PME 5–30",
+    description: "Pensé pour les structures qui ne sont plus une TPE et pas encore un grand groupe. Ni théorie, ni recettes corporate.",
   },
   {
     icon: Zap,
-    title: "Méthode actionnable",
-    description: "Utilisable en réunion, en conflit, en décision — pas 'quand tu es en vacances'.",
+    title: "Outils actionnables",
+    description: "Méthode 3R, Diagnostic, Flash Decision : des leviers concrets, utilisables en réunion, en arbitrage, en conflit.",
   },
   {
     icon: HeartHandshake,
-    title: "Accompagnement humain",
-    description: "Structuré + humain : exigeant, clair, sans rigidité. Un vrai partenariat.",
+    title: "Sobre et exigeant",
+    description: "Ni consultant froid, ni coach motivation. Un partenariat direct, humain, sans promesse miracle.",
   },
   {
     icon: Bot,
-    title: "Coaching augmenté",
-    description: "1:1 + pocket coach IA + ressources → tu avances aussi entre les séances.",
+    title: "Suivi entre les séances",
+    description: "Pocket coach IA + filet de sécurité : vous avancez aussi entre deux rendez-vous, jamais bloqué seul.",
   },
 ];
 
@@ -50,10 +50,10 @@ export function DifferentiatorsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ce que tu ne trouveras <span className="text-gradient">pas ailleurs</span>
+            Ce que vous ne trouverez <span className="text-gradient">pas ailleurs</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une méthode conçue pour le terrain, pas pour les livres.
+            Un accompagnement pensé pour le pilotage d'une PME, pas pour les livres.
           </p>
         </div>
 
