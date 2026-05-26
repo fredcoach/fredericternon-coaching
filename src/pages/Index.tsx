@@ -94,6 +94,7 @@ const Index = () => {
         <Navigation />
       <main>
         <HeroSection />
+        <RealityCheckSection />
         <AboutSection />
         <DifferentiatorsSection />
         <PainPointsSection />
