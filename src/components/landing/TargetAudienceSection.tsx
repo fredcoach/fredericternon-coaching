@@ -2,19 +2,19 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Vous dirigez une entreprise ou une équipe et vous portez beaucoup sur vos épaules",
-  "Vous devez prendre des décisions à fort enjeu — parfois seul",
-  "Vous ressentez une charge mentale qui vous empêche de prendre du recul",
-  "Vous voulez incarner votre leadership sans vous épuiser",
-  "Vous êtes prêt à investir dans un vrai travail de fond sur votre pilotage intérieur",
-  "Vous voulez des résultats concrets, pas juste de la théorie",
+  "Vous dirigez une PME de 5 à 30 personnes — l'entreprise tourne, mais elle tourne autour de vous",
+  "Les décisions remontent toutes au dirigeant et votre agenda est saturé d'urgences",
+  "La délégation est floue : vous avez délégué, mais vous repassez derrière",
+  "Vous sentez que l'organisation n'a pas suivi la croissance et que vous plafonnez",
+  "Vous voulez un regard extérieur direct, pas un consultant qui pond un PowerPoint",
+  "Vous êtes prêt à remettre votre fonctionnement à plat — pour piloter, pas pour subir",
 ];
 
 const notForYou = [
-  "Vous cherchez une solution rapide sans implication",
-  "Vous voulez parler sans passer à l'action",
-  "Vous voulez uniquement des outils sans travailler ce qui se passe à l'intérieur",
-  "Vous n'êtes pas prêt à remettre en question certaines de vos croyances",
+  "Vous cherchez un coach motivation ou un programme de développement personnel",
+  "Vous voulez un consultant qui livre un rapport sans toucher à votre quotidien",
+  "Vous voulez parler de votre situation sans rien changer derrière",
+  "Vous n'êtes pas prêt à interroger votre propre fonctionnement de dirigeant",
 ];
 
 export function TargetAudienceSection() {
@@ -35,7 +35,7 @@ export function TargetAudienceSection() {
             C'est fait pour vous si…
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Ce coaching stratégique s'adresse aux dirigeants qui veulent aller plus loin.
+            Cet accompagnement s'adresse aux dirigeants de PME jusqu'à 30 personnes qui veulent reprendre la main sur le pilotage.
           </p>
         </div>
 
