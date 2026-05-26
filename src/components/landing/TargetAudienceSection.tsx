@@ -2,12 +2,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Vous dirigez une PME jusqu'à 30 personnes — l'entreprise tourne, mais elle tourne autour de vous",
+  "Vous dirigez une PME jusqu'à 30 personnes, l'entreprise tourne, mais elle tourne autour de vous",
   "Les décisions remontent toutes au dirigeant et votre agenda est saturé d'urgences",
   "La délégation est floue : vous avez délégué, mais vous repassez derrière",
   "Vous sentez que l'organisation n'a pas suivi la croissance et que vous plafonnez",
   "Vous voulez un regard extérieur direct, pas un consultant qui pond un PowerPoint",
-  "Vous êtes prêt à remettre votre fonctionnement à plat — pour piloter, pas pour subir",
+  "Vous êtes prêt à remettre votre fonctionnement à plat, pour piloter, pas pour subir",
 ];
 
 const notForYou = [

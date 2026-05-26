@@ -141,7 +141,7 @@ const DiagnosticPopup = () => {
                 marginBottom: "8px",
               }}
             >
-              Votre entreprise tourne — mais tout repose encore sur vous.
+              Votre entreprise tourne, mais tout repose encore sur vous.
               <br />
               Vous ne voyez plus ce qui bloque depuis l'intérieur.
             </p>

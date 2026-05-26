@@ -74,7 +74,7 @@ export function DiagnosticPreviewSection() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground italic">
-                  Aperçu illustratif — vos résultats seront personnalisés.
+                  Aperçu illustratif, vos résultats seront personnalisés.
                 </p>
               </div>
             </div>

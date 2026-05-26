@@ -19,7 +19,7 @@ const ctaCards = [
     title: "Flash Decision",
     subtitle: "Débloquez une décision en 1h",
     description:
-      "Session intensive pour trancher net sur une décision stratégique bloquée — sans y revenir.",
+      "Session intensive pour trancher net sur une décision stratégique bloquée, sans y revenir.",
     cta: "Découvrir la session",
     href: "/flash-decision",
     isExternal: false,
@@ -29,7 +29,7 @@ const ctaCards = [
     title: "Session CADRAGE",
     subtitle: "30 min pour identifier ce qui bloque",
     description:
-      "Un échange direct et confidentiel pour cartographier ce qui bloque dans votre pilotage — et voir si un accompagnement fait sens.",
+      "Un échange direct et confidentiel pour cartographier ce qui bloque dans votre pilotage, et voir si un accompagnement fait sens.",
     cta: "Réserver 30 min",
     href: "https://calendly.com/ternon/entretien-confidentiel",
     isExternal: true,

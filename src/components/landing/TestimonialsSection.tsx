@@ -88,7 +88,7 @@ const videoTestimonials = [
 // Témoignage vedette avec vignette de qualité
 const featuredVideo = {
   id: "mahel",
-  name: "Mahel Boyer — Joueur Pro d'Échec",
+  name: "Mahel Boyer, Joueur Pro d'Échec",
   subtitle: "D'amateur à Grand Maître International",
   videoSrc: "/videos/testimonial-mahel.mp4",
   thumbnail: videoThumbnail,

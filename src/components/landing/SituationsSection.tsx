@@ -102,7 +102,7 @@ export function SituationsSection() {
             <strong>Mon rôle :</strong> apporter le regard extérieur qui permet d'identifier ce qui bloque, de clarifier l'organisation et de fluidifier les décisions.
           </p>
           <p className="text-muted-foreground mt-2">
-            Pour que l'entreprise puisse continuer à grandir — sans que tout repose encore sur vous.
+            Pour que l'entreprise puisse continuer à grandir, sans que tout repose encore sur vous.
           </p>
         </div>
       </div>

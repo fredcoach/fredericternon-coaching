@@ -26,7 +26,7 @@ const steps = [
       "Mettre à plat les rôles, les périmètres, les zones grises",
       "Sortir de l'urgence pour reprendre une vision d'ensemble",
     ],
-    result: "Vous savez ce qui doit bouger en priorité — et pourquoi.",
+    result: "Vous savez ce qui doit bouger en priorité, et pourquoi.",
   },
   {
     icon: TrendingUp,
@@ -52,7 +52,7 @@ const steps = [
       "Protéger les temps de recul et les sujets stratégiques",
       "Ancrer des réflexes de pilotage qui restent après l'accompagnement",
     ],
-    result: "Une PME qui peut grandir — sans que tout repose encore sur vous.",
+    result: "Une PME qui peut grandir, sans que tout repose encore sur vous.",
   },
 ];
 
@@ -97,7 +97,7 @@ export function JourneySection() {
           }`}
         >
           <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">Important :</strong> je travaille avec peu de dirigeants en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
+            <strong className="text-foreground">Important :</strong> je travaille avec peu de dirigeants en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble, c'est un match mutuel, pas une vente.
           </p>
         </div>
 
@@ -182,7 +182,7 @@ export function JourneySection() {
           <p className="text-foreground font-medium">
             Le but n'est pas de vous faire rentrer dans une méthode.
             <br />
-            <span className="text-primary">Le but, c'est que vous reprendiez la main sur le pilotage — pour que l'entreprise puisse continuer à grandir sans rester suspendue à vous.</span>
+            <span className="text-primary">Le but, c'est que vous reprendiez la main sur le pilotage, pour que l'entreprise puisse continuer à grandir sans rester suspendue à vous.</span>
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ const reasons = [
     icon: AlertTriangle,
     title: "Zones fragiles",
     description:
-      "Identifiez les contextes précis où votre jugement se déforme sans que vous le sachiez — fatigue, enjeux émotionnels, pression du temps.",
+      "Identifiez les contextes précis où votre jugement se déforme sans que vous le sachiez, fatigue, enjeux émotionnels, pression du temps.",
   },
   {
     icon: Eye,
