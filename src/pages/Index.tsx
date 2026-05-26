@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/landing/HeroSection";
 import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
 import { AboutSection } from "@/components/landing/AboutSection";
 import { MyRoleSection } from "@/components/landing/MyRoleSection";
+import { JulienTestimonialSection } from "@/components/landing/JulienTestimonialSection";
 import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
 import { PainPointsSection } from "@/components/landing/PainPointsSection";
 import { SituationsSection } from "@/components/landing/SituationsSection";
