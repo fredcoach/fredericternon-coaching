@@ -41,10 +41,10 @@ export function Method3RSection() {
         >
           <p className="text-accent font-medium mb-2">Le fil rouge</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            La Méthode 3R — ton "OS" de décideur
+            La Méthode 3R — votre outil de pilotage
           </h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Simple. Actionnable. Zéro blabla.
+            Un cadre simple, actionnable, au service du dirigeant. Pas un programme de développement personnel.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export function Method3RSection() {
         >
           <div className="inline-block px-6 py-3 bg-primary-foreground/10 rounded-full">
             <p className="text-lg font-medium">
-              👉 3R n'est pas un module. C'est la mécanique que tu gardes <span className="text-accent">après</span> l'accompagnement.
+              👉 3R n'est pas un module. C'est la mécanique de pilotage que vous gardez <span className="text-accent">après</span> l'accompagnement.
             </p>
           </div>
         </div>
