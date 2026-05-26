@@ -1,14 +1,14 @@
-## Contexte
-Remplacer toutes les occurrences de "24/7" par "24h/24" dans le site, pour un ton plus naturel et moins corporate.
+## Changements
 
-## Fichiers concernés (2)
-1. `src/components/landing/FAQSection.tsx` — ligne 155, dans la réponse FAQ "Qu'est-ce qui vous différencie d'un autre coach ?"  
-   Remplacer : `+ Alpha 24/7 (pocket coach IA)`  
-   Par : `+ Alpha 24h/24 (pocket coach IA)`
+### 1. `src/components/landing/TestimonialsSection.tsx`
+Supprimer deux entrées du tableau `testimonials` :
+- Estelle "Suite" (lignes 36-41, image `testimonialEstelle2`)
+- Laura (lignes 42-47, image `testimonialLaura`)
 
-2. `src/components/landing/OfferSection.tsx` — ligne 100, dans le titre du bloc Alpha  
-   Remplacer : `Alpha : votre pocket coach (disponible 24/7)`  
-   Par : `Alpha : votre pocket coach (disponible 24h/24)`
+Nettoyer aussi les imports inutilisés `testimonialEstelle2` et `testimonialLaura` (lignes 14-15).
+
+### 2. `src/assets/testimonial-marie.png`
+Éditer l'image avec `imagegen--edit_image` pour flouter la 3ème bulle verte (celle commençant par "Déjà, une légèreté mentale incroyable..." jusqu'à "Merci pour ce déclic !"), en gardant le reste intact (header, premières bulles, "Parfait ! On se voit...", "Merci. À mercredi"). Sauvegarder en remplaçant le fichier d'origine.
 
 ## Vérification
-- Recherche globale post-modification pour s'assurer qu'aucune occurrence de "24/7" ne subsiste.
+Confirmer visuellement après édition que seule la bulle ciblée est floutée et que les autres éléments restent nets.

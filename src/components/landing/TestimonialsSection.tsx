@@ -11,8 +11,6 @@ import {
 
 import testimonialMarie from "@/assets/testimonial-marie.png";
 import testimonialEstelle1 from "@/assets/testimonial-estelle-1.png";
-import testimonialEstelle2 from "@/assets/testimonial-estelle-2.png";
-import testimonialLaura from "@/assets/testimonial-laura.png";
 import testimonialFatima from "@/assets/testimonial-fatima.png";
 import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
 import thumbnailMarielle from "@/assets/thumbnail-marielle.jpg";
@@ -32,18 +30,6 @@ const testimonials = [
     duration: "8 semaines",
     image: testimonialEstelle1,
     highlight: "Je suis beaucoup plus alignée avec moi-même et je ressens un calme intérieur.",
-  },
-  {
-    name: "Estelle",
-    duration: "Suite",
-    image: testimonialEstelle2,
-    highlight: "Ton programme m'a permis de me retrouver. J'ai hâte de voir les prochaines étapes !",
-  },
-  {
-    name: "Laura",
-    duration: "3 mois",
-    image: testimonialLaura,
-    highlight: "Pour la première fois, j'ai l'impression que c'est vraiment la vraie MOI qui commande ma vie !",
   },
   {
     name: "Fatima",
