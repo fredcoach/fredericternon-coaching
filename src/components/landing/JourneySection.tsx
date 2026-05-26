@@ -177,12 +177,12 @@ export function JourneySection() {
           <p className="text-muted-foreground mb-3">
             Ces 3 repères sont un cadre de progression, pas une trajectoire rigide.
             <br />
-            On ajuste selon votre contexte, votre niveau de charge, vos enjeux du moment.
+            On ajuste selon votre contexte PME, vos enjeux du moment et le niveau de pression.
           </p>
           <p className="text-foreground font-medium">
             Le but n'est pas de vous faire rentrer dans une méthode.
             <br />
-            <span className="text-primary">Le but, c'est que vous récupériez votre clarté, votre puissance, et votre sérénité — sans vous perdre en route.</span>
+            <span className="text-primary">Le but, c'est que vous reprendiez la main sur le pilotage — pour que l'entreprise puisse continuer à grandir sans rester suspendue à vous.</span>
           </p>
         </div>
       </div>
