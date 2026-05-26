@@ -5,10 +5,12 @@ import { Navigation } from "@/components/landing/Navigation";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
 import { AboutSection } from "@/components/landing/AboutSection";
+import { MyRoleSection } from "@/components/landing/MyRoleSection";
 import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
 import { PainPointsSection } from "@/components/landing/PainPointsSection";
 import { SituationsSection } from "@/components/landing/SituationsSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
+import { BenefitsSection } from "@/components/landing/BenefitsSection";
 import { TargetAudienceSection } from "@/components/landing/TargetAudienceSection";
 import { JourneySection } from "@/components/landing/JourneySection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
@@ -96,10 +98,12 @@ const Index = () => {
         <HeroSection />
         <RealityCheckSection />
         <AboutSection />
+        <MyRoleSection />
         <DifferentiatorsSection />
         <PainPointsSection />
         <SituationsSection />
         <PromiseSection />
+        <BenefitsSection />
         <TargetAudienceSection />
         <JourneySection />
         <Method3RSection />
