@@ -77,11 +77,35 @@ export function TestimonialsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Histoires de <span className="text-gradient">transformation</span>
+            Clarté, recul, énergie <span className="text-gradient">retrouvée</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les résultats concrets de ceux qui ont fait le travail
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+            Des retours bruts, issus de conversations WhatsApp, partagés avec accord. Ils montrent ce qui revient souvent après l'accompagnement&nbsp;: moins de charge mentale, plus de recul, une posture plus stable et une meilleure capacité à avancer.
           </p>
+          <p className="text-sm md:text-base text-foreground/75 italic max-w-3xl mx-auto mt-6 leading-relaxed">
+            « Avant de mieux piloter son entreprise, il faut souvent retrouver de l'espace mental. Ces retours montrent une chose simple&nbsp;: quand la charge intérieure baisse, la clarté revient. Et avec elle, la capacité à décider, poser un cadre, dire non et avancer avec plus de stabilité. »
+          </p>
+        </div>
+
+        {/* Insights block */}
+        <div
+          className={`max-w-4xl mx-auto mb-14 transition-all duration-700 delay-100 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="bg-card border border-border/60 rounded-2xl p-6 md:p-8 shadow-sm">
+            <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-5 text-center">
+              Ce que ces retours illustrent
+            </h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+              {insights.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-foreground/85">
+                  <span className="text-primary font-semibold mt-0.5">→</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Featured Video */}
@@ -90,6 +114,7 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
+
           <div className="max-w-sm mx-auto">
             {/* Featured Video - Mahel */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card mx-auto w-full">
