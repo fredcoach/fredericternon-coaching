@@ -14,7 +14,7 @@ const differentiators = [
   },
   {
     icon: Users,
-    title: "Spécifique PME 5–30",
+    title: "Spécifique PME jusqu'à 30",
     description: "Pensé pour les structures qui ne sont plus une TPE et pas encore un grand groupe. Ni théorie, ni recettes corporate.",
   },
   {

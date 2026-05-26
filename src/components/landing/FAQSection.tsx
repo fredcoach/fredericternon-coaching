@@ -11,7 +11,7 @@ const faqItems = [
     question: "C'est pour moi ou pas ?",
     answer: `Checklist rapide :
 
-✅ Vous dirigez une PME de 5 à 30 personnes
+✅ Vous dirigez une PME jusqu'à 30 personnes
 ✅ L'entreprise tourne, mais tout repose encore sur vous
 ✅ Les décisions importantes finissent toutes sur votre bureau
 ✅ Vous sentez que l'organisation a atteint un plafond

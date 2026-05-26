@@ -33,7 +33,7 @@ export function Footer() {
               Regard extérieur pour dirigeants de PME
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Dirigeants de PME · 5 à 30 personnes
+              Dirigeants de PME · jusqu'à 30 personnes
             </p>
             <div className="flex items-center gap-4">
               <a

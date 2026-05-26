@@ -45,7 +45,7 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Frédéric Ternon — Pilotage du Dirigeant",
-    "description": "Regard extérieur pour dirigeants de PME de 5 à 30 personnes : identifier ce qui bloque, clarifier l'organisation, améliorer les décisions.",
+    "description": "Regard extérieur pour dirigeants de PME jusqu'à 30 personnes : identifier ce qui bloque, clarifier l'organisation, améliorer les décisions.",
     "url": "https://www.mentalpro.biz",
     "telephone": "",
     "address": {
@@ -63,8 +63,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME (5-30)</title>
-        <meta name="description" content="Regard extérieur pour dirigeants de PME de 5 à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider. Méthode 3R. 30 min pour identifier ce qui bloque." />
+        <title>Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME jusqu'à 30</title>
+        <meta name="description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider. Méthode 3R. 30 min pour identifier ce qui bloque." />
         <meta name="keywords" content="dirigeant PME, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME, délégation dirigeant, décision stratégique, coach dirigeant PME" />
         <link rel="canonical" href="https://www.mentalpro.biz/" />
         
@@ -72,14 +72,14 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mentalpro.biz/" />
         <meta property="og:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
-        <meta property="og:description" content="Regard extérieur pour dirigeants de PME de 5 à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider." />
+        <meta property="og:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider." />
         <meta property="og:site_name" content="Frédéric Ternon — Pilotage du Dirigeant" />
         <meta property="og:locale" content="fr_FR" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
-        <meta name="twitter:description" content="Regard extérieur pour dirigeants de PME de 5 à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider." />
+        <meta name="twitter:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider." />
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
