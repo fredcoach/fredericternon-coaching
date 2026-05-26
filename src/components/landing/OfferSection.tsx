@@ -100,7 +100,7 @@ export function OfferSection() {
                     <h4 className="font-semibold text-foreground mb-2">Alpha — votre pocket coach (disponible 24/7)</h4>
                     <p className="text-sm text-muted-foreground mb-3">
                       Alpha vous aide en 2–5 minutes à retrouver du calme, clarifier votre prochain choix, appliquer 3R sur
-                      une situation concrète, préparer un message ou une réunion, sortir de la rumination.
+                      une situation concrète, préparer un message ou une réunion, trancher sans y revenir trois fois.
                     </p>
                     <a
                       href="https://alpha-ia.lovable.app"

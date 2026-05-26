@@ -48,7 +48,7 @@ const steps = [
     subtitle: "subir → tenir le cap",
     points: [
       "Tenir un rythme de pilotage soutenable, même en pic d'activité",
-      "Décider net dans l'incertitude, sans rumination",
+      "Décider net dans l'incertitude, sans y revenir indéfiniment",
       "Protéger les temps de recul et les sujets stratégiques",
       "Ancrer des réflexes de pilotage qui restent après l'accompagnement",
     ],
