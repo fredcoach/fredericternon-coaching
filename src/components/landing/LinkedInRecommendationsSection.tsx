@@ -3,21 +3,6 @@ import { Linkedin, Quote, ExternalLink } from "lucide-react";
 
 const linkedinRecommendations = [
   {
-    name: "Julien Laudy",
-    title: "Co-fondateur | Directeur Général chez Dokles.io",
-    date: "Février 2026",
-    relation: "Client de Frédéric",
-    content: `Dirigeant, entrepreneur et père de famille, j'ai fait appel à Frédéric avec un besoin clair : remettre de l'ordre, de l'énergie et de l'efficacité dans un quotidien très exigeant.
-
-Son accompagnement se distingue par sa capacité à transformer rapidement les prises de conscience en actions concrètes.
-
-Frédéric ne se contente pas d'écouter : il aide à mettre en place des solutions simples, applicables immédiatement, tant sur l'organisation, la gestion de l'énergie que sur la posture de leader. Chaque séance débouche sur des ajustements précis et mesurables.
-
-Grâce à son coaching, j'ai retrouvé un rythme plus soutenable, une meilleure clarté dans mes décisions et une présence plus forte, au travail comme en famille. Les résultats sont visibles, durables et profondément alignés.
-
-Je recommande Frédéric à tout dirigeant cherchant un accompagnement exigeant, humain et orienté solutions, avec un réel impact sur le quotidien.`,
-  },
-  {
     name: "Henry Simpson",
     title: "Entraîneur de Golf | Golf de Montpellier Fontcaude | GolfPlus Montpellier & Druids Golf",
     date: "Janvier 2026",
