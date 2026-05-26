@@ -13,10 +13,6 @@ import testimonialMarie from "@/assets/testimonial-marie.png";
 import testimonialEstelle1 from "@/assets/testimonial-estelle-1.png";
 import testimonialFatima from "@/assets/testimonial-fatima.png";
 import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
-import thumbnailMarielle from "@/assets/thumbnail-marielle.jpg";
-import thumbnailCecile from "@/assets/thumbnail-cecile.jpg";
-import thumbnailKarine from "@/assets/thumbnail-karine.jpg";
-import thumbnailVideo4 from "@/assets/thumbnail-video4.jpg";
 
 const testimonials = [
   {
@@ -36,38 +32,6 @@ const testimonials = [
     duration: "6 semaines",
     image: testimonialFatima,
     highlight: "J'ai beaucoup moins de pensées parasites, et j'arrive à dire « non » sans culpabiliser.",
-  },
-];
-
-// Carrousel vidéos (facilement extensible pour ajouter d'autres témoignages)
-const videoTestimonials = [
-  {
-    id: "marielle",
-    name: "Marielle",
-    subtitle: "Témoignage de transformation",
-    videoSrc: "/videos/testimonial-marielle.mp4",
-    thumbnail: thumbnailMarielle,
-  },
-  {
-    id: "cecile",
-    name: "Cécile",
-    subtitle: "Témoignage de transformation",
-    videoSrc: "/videos/testimonial-cecile.mp4",
-    thumbnail: thumbnailCecile,
-  },
-  {
-    id: "karine",
-    name: "Karine",
-    subtitle: "Témoignage de transformation",
-    videoSrc: "/videos/testimonial-karine.mp4",
-    thumbnail: thumbnailKarine,
-  },
-  {
-    id: "video4",
-    name: "Témoignage",
-    subtitle: "Témoignage de transformation",
-    videoSrc: "/videos/testimonial-video4.mp4",
-    thumbnail: thumbnailVideo4,
   },
 ];
 
@@ -109,15 +73,15 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Featured Video + Carousel Layout */}
+        {/* Featured Video */}
         <div
           className={`mb-16 transition-all duration-700 delay-150 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl lg:max-w-5xl mx-auto items-start">
+          <div className="max-w-sm mx-auto">
             {/* Featured Video - Mahel */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card max-w-sm md:max-w-xs lg:max-w-sm mx-auto w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card mx-auto w-full">
               {/* Thumbnail header in 16:9 */}
               <div 
                 className="relative aspect-video cursor-pointer group"
@@ -157,64 +121,6 @@ export function TestimonialsSection() {
                   />
                 </div>
               )}
-            </div>
-
-            {/* Video Testimonials Carousel */}
-            <div className="space-y-3">
-              <h3 className="text-center text-base md:text-sm lg:text-base font-medium text-foreground mb-3">
-                Autres témoignages vidéo
-              </h3>
-              <div className="grid grid-cols-2 gap-2 md:gap-2 lg:gap-3 max-w-sm md:max-w-xs lg:max-w-sm mx-auto">
-                {videoTestimonials.map((video) => (
-                  <div key={video.id} className="relative rounded-xl overflow-hidden shadow-lg border border-primary/20 bg-card">
-                    {playingVideoId === video.id ? (
-                    <div className="relative aspect-[9/16]">
-                        <video
-                          src={video.videoSrc}
-                          autoPlay
-                          controls
-                          preload="none"
-                          className="w-full h-full object-cover"
-                          onEnded={() => setPlayingVideoId(null)}
-                        />
-                      </div>
-                    ) : (
-                      <>
-                        {/* Thumbnail cliquable */}
-                        <div 
-                          className="relative aspect-[9/16] cursor-pointer group"
-                          onClick={() => setPlayingVideoId(video.id)}
-                        >
-                          <img
-                            src={video.thumbnail}
-                            alt={`Témoignage de ${video.name}`}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                              <Play className="w-4 h-4 md:w-3 md:h-3 lg:w-4 lg:h-4 text-primary-foreground fill-primary-foreground ml-0.5" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-2 bg-card">
-                          <div className="flex items-center gap-1.5">
-                            <div className="w-6 h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                              <Play className="w-2.5 h-2.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5 text-primary" />
-                            </div>
-                            <div className="min-w-0">
-                              <h4 className="font-semibold text-foreground text-xs md:text-[10px] lg:text-xs truncate">{video.name}</h4>
-                              <p className="text-[10px] md:text-[8px] lg:text-[10px] text-muted-foreground truncate">{video.subtitle}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
