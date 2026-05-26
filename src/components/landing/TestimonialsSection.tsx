@@ -16,24 +16,35 @@ import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
 
 const testimonials = [
   {
+    name: "Fatima",
+    duration: "6 semaines",
+    image: testimonialFatima,
+    caption: "Moins de pensées parasites. Plus de capacité à poser un cadre.",
+  },
+  {
     name: "Marie",
     duration: "15 jours",
     image: testimonialMarie,
-    highlight: "Je me sens comme une autre personne. J'ai retrouvé un équilibre que je pensais perdu depuis des années.",
+    caption: "Retour d'équilibre et regain d'énergie en quelques semaines.",
   },
   {
     name: "Estelle",
     duration: "8 semaines",
     image: testimonialEstelle1,
-    highlight: "Je suis beaucoup plus alignée avec moi-même et je ressens un calme intérieur.",
-  },
-  {
-    name: "Fatima",
-    duration: "6 semaines",
-    image: testimonialFatima,
-    highlight: "J'ai beaucoup moins de pensées parasites, et j'arrive à dire « non » sans culpabiliser.",
+    caption: "Plus de calme intérieur, moins d'anciens automatismes, plus d'alignement.",
   },
 ];
+
+const insights = [
+  "moins de pensées parasites",
+  "plus de clarté intérieure",
+  "meilleure capacité à dire non sans culpabiliser",
+  "retour d'un équilibre personnel",
+  "plus de calme sous pression",
+  "énergie plus disponible",
+  "posture plus stable dans le quotidien",
+];
+
 
 // Témoignage vedette avec vignette de qualité
 const featuredVideo = {
