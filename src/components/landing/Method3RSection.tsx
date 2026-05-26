@@ -5,22 +5,22 @@ const steps = [
   {
     icon: Eye,
     number: "1",
-    title: "Reconnaître",
-    description: "Repérer le moment exact où ça part (stress, dispersion, réaction automatique)",
+    title: "Repérer",
+    description: "Identifier précisément ce qui bloque dans l'organisation, la délégation et les décisions",
     color: "from-primary to-primary/80",
   },
   {
     icon: Zap,
     number: "2",
     title: "Réagir",
-    description: "Reprendre le contrôle rapidement (physio + attention + décision)",
+    description: "Reprendre la main, décider net, trancher au bon niveau — sans subir la pression",
     color: "from-secondary to-secondary/80",
   },
   {
     icon: RefreshCw,
     number: "3",
     title: "Reprogrammer",
-    description: "Installer un nouveau schéma (habitude, posture, décision) qui se répète",
+    description: "Installer des réflexes de pilotage qui tiennent — et qui restent après l'accompagnement",
     color: "from-accent to-accent/80",
   },
 ];
