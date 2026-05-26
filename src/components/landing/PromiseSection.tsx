@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
+import { Shield, Gauge, Compass, RotateCcw, ArrowRight, ArrowDown } from "lucide-react";
 
 const promises = [
   {
@@ -90,14 +90,16 @@ export function PromiseSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="flex flex-wrap items-center justify-center gap-2 text-lg font-medium text-foreground mb-8">
-            <span className="px-4 py-2 bg-muted rounded-full">identifier ce qui bloque</span>
-            <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">clarifier l'organisation</span>
-            <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-muted rounded-full">fluidifier les décisions</span>
-            <ArrowRight className="w-5 h-5 text-primary" />
-            <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full">reprendre le pilotage</span>
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <div className="flex flex-wrap items-center justify-center gap-2 text-lg font-medium text-foreground">
+              <span className="px-4 py-2 bg-muted rounded-full">identifier ce qui bloque</span>
+              <ArrowRight className="w-5 h-5 text-primary" />
+              <span className="px-4 py-2 bg-muted rounded-full">clarifier l'organisation</span>
+              <ArrowRight className="w-5 h-5 text-primary" />
+              <span className="px-4 py-2 bg-muted rounded-full">fluidifier les décisions</span>
+            </div>
+            <ArrowDown className="w-6 h-6 text-primary" />
+            <span className="px-5 py-2.5 bg-primary text-primary-foreground rounded-full text-lg font-medium shadow-md">reprendre le pilotage</span>
           </div>
 
           <div className="text-center">
