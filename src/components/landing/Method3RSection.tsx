@@ -5,22 +5,22 @@ const steps = [
   {
     icon: Eye,
     number: "1",
-    title: "Repérer",
-    description: "Identifier précisément ce qui bloque dans l'organisation, la délégation et les décisions",
+    title: "Reconnaître",
+    description: "Identifier les schémas qui se répètent : surcharge, évitement, surcontrôle, décisions repoussées.",
     color: "from-primary to-primary/80",
   },
   {
     icon: Zap,
     number: "2",
-    title: "Réagir",
-    description: "Reprendre la main, décider net, trancher au bon niveau — sans subir la pression",
+    title: "Réagir autrement",
+    description: "Retrouver de la lucidité avant d'agir — sortir de la réaction sous pression.",
     color: "from-secondary to-secondary/80",
   },
   {
     icon: RefreshCw,
     number: "3",
     title: "Reprogrammer",
-    description: "Installer des réflexes de pilotage qui tiennent — et qui restent après l'accompagnement",
+    description: "Installer une manière plus claire de décider, déléguer et piloter — qui tient dans la durée.",
     color: "from-accent to-accent/80",
   },
 ];
@@ -41,10 +41,10 @@ export function Method3RSection() {
         >
           <p className="text-accent font-medium mb-2">Le fil rouge</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            La Méthode 3R — votre outil de pilotage
+            Méthode 3R appliquée au <span className="text-accent">pilotage PME</span>
           </h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Un cadre simple, actionnable, au service du dirigeant. Pas un programme de développement personnel.
+            Un cadre concret pour reprendre la main sur l'organisation, la délégation et les décisions. Pas un programme de développement personnel.
           </p>
         </div>
 
