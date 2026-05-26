@@ -66,7 +66,7 @@ export function SituationsSection() {
             Exemples de <span className="text-gradient">situations traitées</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pour que vous vous projetiez immédiatement.
+            Si vous vous reconnaissez, on a probablement de quoi parler.
           </p>
         </div>
 
@@ -99,10 +99,10 @@ export function SituationsSection() {
           }`}
         >
           <p className="text-lg text-foreground">
-            <strong>Mon rôle :</strong> vous accompagner à retrouver votre clarté, votre sérénité et votre impact — sans vous user.
+            <strong>Mon rôle :</strong> apporter le regard extérieur qui permet d'identifier ce qui bloque, de clarifier l'organisation et de fluidifier les décisions.
           </p>
           <p className="text-muted-foreground mt-2">
-            Parce que quand vous retrouvez votre alignement, tout se remet en mouvement.
+            Pour que l'entreprise puisse continuer à grandir — sans que tout repose encore sur vous.
           </p>
         </div>
       </div>
