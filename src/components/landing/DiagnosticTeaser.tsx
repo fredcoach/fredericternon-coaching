@@ -27,12 +27,12 @@ export function DiagnosticTeaser() {
                 <Brain className="w-10 h-10 text-warning" />
               </div>
               <p className="text-xs tracking-widest uppercase text-warning font-medium mb-3">
-                Auto-diagnostic
+                Diagnostic de pilotage
               </p>
               <p className="text-2xl font-serif font-bold text-white leading-snug">
-                Votre score de
+                Ce qui bloque
                 <br />
-                lucidité décisionnelle
+                dans votre pilotage
               </p>
               <p className="text-sm text-white/40 mt-4">10 min · Résultats immédiats</p>
             </div>
@@ -40,14 +40,14 @@ export function DiagnosticTeaser() {
             {/* Right — copy + CTA */}
             <div className="flex flex-col justify-center p-10 md:p-14">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Sous pression, votre jugement se déforme
+                Votre entreprise tourne — mais tout repose encore sur vous
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Ce diagnostic identifie vos{" "}
-                <strong className="text-warning">zones fragiles</strong>, vos{" "}
+                <strong className="text-warning">points de friction</strong>, vos{" "}
                 <strong className="text-warning">angles morts</strong> et le{" "}
-                <strong className="text-warning">coût réel</strong> de vos
-                hésitations.
+                <strong className="text-warning">coût réel</strong> de ce qui
+                repose encore sur vous.
               </p>
               <Button
                 asChild

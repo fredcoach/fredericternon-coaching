@@ -115,7 +115,7 @@ const DiagnosticPopup = () => {
                 fontWeight: 500,
               }}
             >
-              Outil de pilotage
+              Diagnostic de pilotage
             </p>
 
             <h2
@@ -128,9 +128,9 @@ const DiagnosticPopup = () => {
                 fontFamily: "'Playfair Display', Georgia, serif",
               }}
             >
-              Quel est votre score
+              Qu'est-ce qui bloque
               <br />
-              de lucidité décisionnelle ?
+              dans votre pilotage ?
             </h2>
 
             <p
@@ -141,9 +141,9 @@ const DiagnosticPopup = () => {
                 marginBottom: "8px",
               }}
             >
-              Sous pression, votre système de pilotage se déforme.
+              Votre entreprise tourne — mais tout repose encore sur vous.
               <br />
-              Vous ne le voyez pas — c'est le principe.
+              Vous ne voyez plus ce qui bloque depuis l'intérieur.
             </p>
 
             <p
@@ -155,10 +155,9 @@ const DiagnosticPopup = () => {
               }}
             >
               Ce diagnostic identifie vos{" "}
-              <strong style={{ color: "#c8aa6e" }}>zones fragiles</strong>, vos{" "}
+              <strong style={{ color: "#c8aa6e" }}>points de friction</strong>, vos{" "}
               <strong style={{ color: "#c8aa6e" }}>angles morts</strong> et le{" "}
-              <strong style={{ color: "#c8aa6e" }}>coût réel</strong> de vos
-              hésitations.
+              <strong style={{ color: "#c8aa6e" }}>coût réel</strong> de ce qui repose encore sur vous.
             </p>
 
             <button
