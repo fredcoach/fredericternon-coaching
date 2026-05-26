@@ -11,7 +11,7 @@ const offerItems = [
   {
     icon: FileText,
     title: "Kit Opérationnel du Dirigeant",
-    description: "20+ fiches & checklists opérationnelles",
+    description: "20+ fiches & checklists de pilotage (décision, délégation, organisation)",
   },
   {
     icon: Headphones,
