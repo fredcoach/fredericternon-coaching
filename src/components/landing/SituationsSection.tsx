@@ -12,38 +12,38 @@ import {
 const situations = [
   {
     icon: Scale,
-    title: "Décisions qui pèsent",
-    description: "Recrutement, pivot, partenariat → vous tournez en boucle, vous n'arrivez pas à trancher avec clarté.",
+    title: "Décisions qui remontent",
+    description: "Recrutement, investissement, désaccord interne → tout finit sur votre bureau, même ce qui ne devrait plus.",
   },
   {
     icon: BrainCog,
-    title: "Charge mentale invisible",
-    description: "Vous pensez à tout, vous anticipez tout, même la nuit. Votre cerveau ne s'arrête jamais.",
+    title: "Charge mentale du dirigeant",
+    description: "Vous portez l'entreprise en tête 24/7. Les sujets ouverts s'empilent, le cerveau ne décroche jamais vraiment.",
   },
   {
     icon: Calendar,
-    title: "Agenda dicté par les autres",
-    description: "Journées hachées, urgences des autres → zéro temps pour vous, vous subissez au lieu de piloter.",
+    title: "Agenda subi",
+    description: "Journées hachées par les urgences des autres. Plus de temps pour le stratégique, plus de temps pour penser.",
   },
   {
     icon: Home,
-    title: "Impossible de déconnecter",
-    description: "Vous êtes là physiquement, mais votre tête reste au travail. Culpabilité, rumination, jamais vraiment présent.",
+    title: "Croissance qui plafonne",
+    description: "Le CA stagne, les équipes tournent à plein, mais le palier suivant semble impossible à franchir.",
   },
   {
     icon: MessageSquareWarning,
-    title: "Difficulté à poser un cadre",
-    description: "Vous évitez les confrontations ou vous réagissez trop vite → vous voulez une posture sereine et affirmée.",
+    title: "Délégation floue",
+    description: "Vous avez délégué, mais sans cadre. Résultat : vous repassez derrière, vous corrigez, vous reprenez.",
   },
   {
     icon: GitBranch,
-    title: "Tout repose sur vous",
-    description: "Vous reprenez tout, vous surcontrôlez → impossible de déléguer vraiment, ça vous épuise.",
+    title: "Organisation qui ne suit plus",
+    description: "Process bricolés, rôles flous, doublons. L'entreprise a grandi plus vite que sa structure.",
   },
   {
     icon: Users,
-    title: "Solitude du leadership",
-    description: "Vous portez tout. Seul. Personne à qui vraiment parler. Peur de montrer que vous doutez.",
+    title: "Solitude du dirigeant",
+    description: "Personne à qui parler vraiment des arbitrages, des doutes, des choix. Vous tranchez seul, en permanence.",
   },
 ];
 
