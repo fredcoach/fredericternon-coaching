@@ -152,7 +152,7 @@ Tant que les rôles sont clairs, zéro problème.`,
 Repérer → Réagir → Reprogrammer. C'est votre OS de dirigeant pour transformer un signal faible en décision claire.
 
 3. Accompagnement augmenté humain + IA
-Entre deux séances : filet de sécurité (WhatsApp, réponse jour même) + Alpha 24/7 (pocket coach IA). Vous n'êtes jamais bloqué seul face à une décision.
+Entre deux séances : filet de sécurité (WhatsApp, réponse jour même) + Alpha 24h/24 (pocket coach IA). Vous n'êtes jamais bloqué seul face à une décision.
 
 4. Zéro bullshit
 Si je sens qu'on ne peut pas travailler ensemble → je vous le dis. Si vous ne vous impliquez pas → je vous le dis. Si un outil ne marche pas → on ajuste.
