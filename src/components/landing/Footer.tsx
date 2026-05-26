@@ -30,10 +30,10 @@ export function Footer() {
               Frédéric Ternon
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Coach en performance mentale & leadership
+              Regard extérieur pour dirigeants de PME
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Dirigeants · Chefs d'entreprise · Entrepreneurs (5 à 30 personnes)
+              Dirigeants de PME · 5 à 30 personnes
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -115,7 +115,7 @@ export function Footer() {
             © {currentYear} Frédéric Ternon — Tous droits réservés
           </p>
           <p className="text-xs text-muted-foreground">
-            Coaching premium · Performance mentale · Leadership
+            Pilotage · Décision · Organisation
           </p>
         </div>
       </div>
