@@ -83,10 +83,10 @@ export function JourneySection() {
             3 repères. <span className="text-gradient">Pas un programme.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Structuré… mais vivant : on avance sur une trajectoire claire, mais on part de votre réalité.
+            Un cadre structuré, mais vivant : on avance sur une trajectoire claire, à partir de votre réalité de PME.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            L'ordre n'est pas imposé. Le rythme non plus. On commence là où ça coince aujourd'hui.
+            L'ordre n'est pas imposé. Le rythme non plus. On commence par ce qui coince le plus aujourd'hui dans votre pilotage.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export function JourneySection() {
           }`}
         >
           <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">Important :</strong> je travaille avec peu de personnes en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
+            <strong className="text-foreground">Important :</strong> je travaille avec peu de dirigeants en parallèle. La session CADRAGE sert à vérifier qu'on peut faire du bon travail ensemble — c'est un match mutuel, pas une vente.
           </p>
         </div>
 
