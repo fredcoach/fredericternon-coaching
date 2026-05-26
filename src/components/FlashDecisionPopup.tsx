@@ -88,15 +88,15 @@ const FlashDecisionPopup = () => {
               </div>
 
               <h2 className="text-[22px] font-bold text-[#f0ece4] leading-tight mb-4 font-serif">
-                Pas le temps pour un
+                Une décision bloquée
                 <br />
-                accompagnement long ?
+                ralentit toute l'entreprise.
               </h2>
 
               <p className="text-sm text-[rgba(240,236,228,0.65)] leading-relaxed mb-2">
-                Une seule décision peut tout changer.
+                Une seule décision claire peut tout débloquer.
                 <br />
-                Débloquez-la en <strong className="text-warning">1 heure</strong>.
+                On la traite en <strong className="text-warning">1 heure</strong>.
               </p>
 
               <p className="text-sm text-[rgba(240,236,228,0.5)] leading-relaxed mb-7">
