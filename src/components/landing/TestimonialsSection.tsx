@@ -16,24 +16,35 @@ import videoThumbnail from "@/assets/testimonial-video-thumbnail.png";
 
 const testimonials = [
   {
+    name: "Fatima",
+    duration: "6 semaines",
+    image: testimonialFatima,
+    caption: "Moins de pensées parasites. Plus de capacité à poser un cadre.",
+  },
+  {
     name: "Marie",
     duration: "15 jours",
     image: testimonialMarie,
-    highlight: "Je me sens comme une autre personne. J'ai retrouvé un équilibre que je pensais perdu depuis des années.",
+    caption: "Retour d'équilibre et regain d'énergie en quelques semaines.",
   },
   {
     name: "Estelle",
     duration: "8 semaines",
     image: testimonialEstelle1,
-    highlight: "Je suis beaucoup plus alignée avec moi-même et je ressens un calme intérieur.",
-  },
-  {
-    name: "Fatima",
-    duration: "6 semaines",
-    image: testimonialFatima,
-    highlight: "J'ai beaucoup moins de pensées parasites, et j'arrive à dire « non » sans culpabiliser.",
+    caption: "Plus de calme intérieur, moins d'anciens automatismes, plus d'alignement.",
   },
 ];
+
+const insights = [
+  "moins de pensées parasites",
+  "plus de clarté intérieure",
+  "meilleure capacité à dire non sans culpabiliser",
+  "retour d'un équilibre personnel",
+  "plus de calme sous pression",
+  "énergie plus disponible",
+  "posture plus stable dans le quotidien",
+];
+
 
 // Témoignage vedette avec vignette de qualité
 const featuredVideo = {
@@ -66,11 +77,35 @@ export function TestimonialsSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Histoires de <span className="text-gradient">transformation</span>
+            Clarté, recul, énergie <span className="text-gradient">retrouvée</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les résultats concrets de ceux qui ont fait le travail
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+            Des retours bruts, issus de conversations WhatsApp, partagés avec accord. Ils montrent ce qui revient souvent après l'accompagnement&nbsp;: moins de charge mentale, plus de recul, une posture plus stable et une meilleure capacité à avancer.
           </p>
+          <p className="text-sm md:text-base text-foreground/75 italic max-w-3xl mx-auto mt-6 leading-relaxed">
+            « Avant de mieux piloter son entreprise, il faut souvent retrouver de l'espace mental. Ces retours montrent une chose simple&nbsp;: quand la charge intérieure baisse, la clarté revient. Et avec elle, la capacité à décider, poser un cadre, dire non et avancer avec plus de stabilité. »
+          </p>
+        </div>
+
+        {/* Insights block */}
+        <div
+          className={`max-w-4xl mx-auto mb-14 transition-all duration-700 delay-100 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="bg-card border border-border/60 rounded-2xl p-6 md:p-8 shadow-sm">
+            <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-5 text-center">
+              Ce que ces retours illustrent
+            </h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+              {insights.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm md:text-base text-foreground/85">
+                  <span className="text-primary font-semibold mt-0.5">→</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Featured Video */}
@@ -79,6 +114,7 @@ export function TestimonialsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
+
           <div className="max-w-sm mx-auto">
             {/* Featured Video - Mahel */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30 bg-card mx-auto w-full">
@@ -166,12 +202,13 @@ export function TestimonialsSection() {
                       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#ECE5DD] to-transparent" />
                     </div>
                     
-                    {/* Quote highlight - Enhanced */}
+                    {/* Caption */}
                     <div className="p-4 bg-gradient-to-b from-card to-card/80 border-t border-border/30">
-                      <p className="text-sm text-foreground/80 italic line-clamp-2 leading-relaxed">
-                        "{testimonial.highlight}"
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        {testimonial.caption}
                       </p>
                     </div>
+
                     
                     {/* Decorative corner */}
                     <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -202,6 +239,25 @@ export function TestimonialsSection() {
           <p className="text-sm text-muted-foreground">
             ✓ Témoignages partagés avec l'accord des clients
           </p>
+        </div>
+
+        {/* CTA */}
+        <div
+          className={`text-center mt-12 transition-all duration-700 delay-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <p className="text-base md:text-lg text-foreground/85 mb-5">
+            Vous voulez identifier ce qui bloque dans votre pilotage&nbsp;?
+          </p>
+          <a
+            href="https://calendly.com/ternon/entretien-confidentiel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all duration-300 hover:-translate-y-0.5"
+          >
+            30 min pour faire le point
+          </a>
         </div>
       </div>
     </section>
