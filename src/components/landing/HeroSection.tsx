@@ -1,37 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, Target, Zap } from "lucide-react";
-import { useEffect, useState, useRef, useCallback } from "react";
+import { ArrowRight, ArrowDown } from "lucide-react";
+import { useEffect, useState, useRef } from "react";
 
-const heroHeadlines = [
-  { bold: "Votre entreprise tourne", accent: "Mais tout repose sur vous." },
-  { bold: "Vous décidez sur tout", accent: "Vous n'avez plus de recul." },
-  { bold: "Vos équipes avancent", accent: "L'organisation ne suit plus." },
-];
-
-const pillars = [
-  {
-    icon: Brain,
-    label: "Recul",
-    description: "Sortir la tête du guidon",
-  },
-  {
-    icon: Target,
-    label: "Décision",
-    description: "Trancher net, sans rumination",
-  },
-  {
-    icon: Zap,
-    label: "Pilotage",
-    description: "Reprendre la main sur l'agenda",
-  },
+const shortLineItems = [
+  "Organisation",
+  "Décisions",
+  "Délégation",
+  "Pilotage sous pression",
 ];
 
 export function HeroSection() {
-  const [scrollY, setScrollY] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const rafRef = useRef<number>();
-
-  const [headlineIndex, setHeadlineIndex] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
@@ -52,16 +33,8 @@ export function HeroSection() {
     };
   }, [isLoaded]);
 
-  // Headline rotation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHeadlineIndex((prev) => (prev + 1) % heroHeadlines.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const scrollToFinalCTA = () => {
-    const element = document.querySelector("#final-cta");
+  const scrollToSection = (id: string) => {
+    const element = document.querySelector(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -98,87 +71,76 @@ export function HeroSection() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center gap-10 lg:gap-14">
 
-            {/* Badge */}
+            {/* Kicker */}
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <span className="text-sm text-white/70 font-medium tracking-wide">
-                  Regard extérieur pour dirigeants de PME (5 à 30 personnes)
+                <span className="text-sm text-white/70 font-medium tracking-wide uppercase">
+                  Dirigeants de PME
                 </span>
               </div>
             </div>
 
             {/* Text content */}
             <div className="text-center">
-              <h1 className="animate-fade-in-up mb-8 relative h-[7rem] md:h-[7rem] lg:h-[8.5rem] xl:h-[9.5rem] overflow-hidden">
-                {heroHeadlines.map((headline, index) => (
-                  <div
-                    key={index}
-                    className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-in-out"
-                    style={{
-                      opacity: headlineIndex === index ? 1 : 0,
-                      transform: headlineIndex === index ? "translateY(0)" : "translateY(20px)",
-                    }}
-                  >
-                    <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] tracking-tight">
-                      {headline.bold}
-                    </span>
-                    <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight mt-1">
-                      <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-                        — {headline.accent}
-                      </span>
-                    </span>
-                  </div>
-                ))}
+              {/* Headline */}
+              <h1 className="animate-fade-in-up mb-6">
+                <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] tracking-tight">
+                  Votre entreprise tourne,
+                </span>
+                <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight mt-1">
+                  <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
+                    mais tout repose encore trop sur vous ?
+                  </span>
+                </span>
               </h1>
 
+              {/* Subtitle */}
               <p
-                className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto animate-fade-in-up leading-relaxed"
+                className="text-lg md:text-xl text-white/60 mb-8 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Un regard extérieur pour identifier ce qui bloque, clarifier l'organisation
+                Un regard extérieur pour clarifier l'organisation, mieux décider
                 <br className="hidden md:block" />
                 <span className="text-white/80 font-medium">
-                  et vous aider à mieux piloter sous pression.
+                  et retrouver un pilotage plus net sous pression.
                 </span>
               </p>
 
-              {/* 3 Pillars */}
+              {/* Short line */}
               <div
-                className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mb-14 animate-fade-in-up"
+                className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 animate-fade-in-up"
                 style={{ animationDelay: "0.25s" }}
               >
-                {pillars.map((pillar) => (
-                  <div key={pillar.label} className="text-center group">
-                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/20 transition-colors">
-                      <pillar.icon className="w-5 h-5 md:w-6 md:h-6 text-accent" />
-                    </div>
-                    <h3 className="text-sm md:text-base font-bold text-white mb-1">
-                      {pillar.label}
-                    </h3>
-                    <p className="text-xs md:text-sm text-white/40">
-                      {pillar.description}
-                    </p>
-                  </div>
+                {shortLineItems.map((item) => (
+                  <span
+                    key={item}
+                    className="text-sm md:text-base text-white/50 font-medium"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
 
-              {/* CTA */}
+              {/* CTAs */}
               <div
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
                 style={{ animationDelay: "0.35s" }}
               >
                 <Button
                   size="lg"
-                  onClick={scrollToFinalCTA}
+                  onClick={() => scrollToSection("#final-cta")}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
                   30 min pour identifier ce qui bloque
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <span className="text-sm text-white/40">
-                  Échange confidentiel · Sans engagement
-                </span>
+                <button
+                  onClick={() => scrollToSection("#about")}
+                  className="text-sm text-white/40 hover:text-white/70 transition-colors underline underline-offset-4"
+                >
+                  Découvrir l'approche
+                </button>
               </div>
             </div>
           </div>
