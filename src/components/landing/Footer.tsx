@@ -33,7 +33,7 @@ export function Footer() {
               Coach en performance mentale & leadership
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Dirigeants · Chefs d'entreprise · Entrepreneurs (0–50 personnes)
+              Dirigeants · Chefs d'entreprise · Entrepreneurs (5 à 30 personnes)
             </p>
             <div className="flex items-center gap-4">
               <a

@@ -146,7 +146,7 @@ export function OfferSection() {
                     les mêmes besoins qu'un fondateur solo en surcharge mentale.
                   </p>
                   <p className="text-sm text-primary-foreground/80">
-                    Le tarif reflète la valeur créée, pas des heures facturées.
+                    Le tarif reflèvous la valeur créée, pas des heures facturées.
                   </p>
                 </div>
 
