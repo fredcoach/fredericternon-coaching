@@ -26,11 +26,11 @@ const ctaCards = [
   },
   {
     icon: Calendar,
-    title: "Appel découverte",
-    subtitle: "30 min pour faire le point",
+    title: "Session CADRAGE",
+    subtitle: "30 min pour identifier ce qui bloque",
     description:
-      "Un échange confidentiel pour comprendre votre situation et voir si un accompagnement fait sens.",
-    cta: "Réserver un créneau",
+      "Un échange direct et confidentiel pour cartographier ce qui bloque dans votre pilotage — et voir si un accompagnement fait sens.",
+    cta: "Réserver 30 min",
     href: "https://calendly.com/ternon/entretien-confidentiel",
     isExternal: true,
   },
