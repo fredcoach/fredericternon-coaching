@@ -131,22 +131,20 @@ export function OfferSection() {
 
                 <p className="text-primary-foreground/90 mb-3">Le montant dépend de plusieurs facteurs :</p>
                 <ul className="space-y-2 text-sm text-primary-foreground/90 mb-6">
-                  <li>• La complexité de votre situation</li>
-                  <li>• Vos objectifs et le délai pour les atteindre</li>
+                  <li>• La taille et la complexité de votre PME</li>
+                  <li>• Vos objectifs de pilotage et le délai pour les atteindre</li>
                   <li>• Le niveau d'accompagnement nécessaire (coaching + ressources + disponibilité)</li>
                 </ul>
 
                 <div className="border-t border-primary-foreground/20 pt-6 mb-6">
                   <p className="font-semibold mb-3">
-                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément vos
-                    enjeux.
+                    Je communique l'investissement lors de notre appel de 30 min, après avoir compris précisément ce qui bloque dans votre pilotage.
                   </p>
                   <p className="text-sm text-primary-foreground/80 mb-4">
-                    Pourquoi ? Parce qu'un dirigeant qui gère 10 personnes avec une décision stratégique bloquée n'a pas
-                    les mêmes besoins qu'un fondateur solo en surcharge mentale.
+                    Pourquoi ? Parce qu'un dirigeant de 8 personnes qui doit clarifier son organisation n'a pas les mêmes besoins qu'un fondateur de 25 personnes qui doit apprendre à déléguer ses décisions stratégiques.
                   </p>
                   <p className="text-sm text-primary-foreground/80">
-                    Le tarif reflèvous la valeur créée, pas des heures facturées.
+                    Le tarif reflète la valeur créée pour votre entreprise, pas des heures facturées.
                   </p>
                 </div>
 
@@ -161,7 +159,7 @@ export function OfferSection() {
                   onClick={scrollToFinalCTA}
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  Session CADRAGE
+                  30 min pour identifier ce qui bloque
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
