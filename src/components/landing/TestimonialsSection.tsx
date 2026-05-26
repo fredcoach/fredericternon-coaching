@@ -202,12 +202,13 @@ export function TestimonialsSection() {
                       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#ECE5DD] to-transparent" />
                     </div>
                     
-                    {/* Quote highlight - Enhanced */}
+                    {/* Caption */}
                     <div className="p-4 bg-gradient-to-b from-card to-card/80 border-t border-border/30">
-                      <p className="text-sm text-foreground/80 italic line-clamp-2 leading-relaxed">
-                        "{testimonial.highlight}"
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        {testimonial.caption}
                       </p>
                     </div>
+
                     
                     {/* Decorative corner */}
                     <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
