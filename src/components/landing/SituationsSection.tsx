@@ -18,7 +18,7 @@ const situations = [
   {
     icon: BrainCog,
     title: "Charge mentale du dirigeant",
-    description: "Vous portez l'entreprise en tête 24/7. Les sujets ouverts s'empilent, le cerveau ne décroche jamais vraiment.",
+    description: "Vous portez l'entreprise en tête en permanence. Les sujets ouverts s'empilent et rien ne se referme vraiment.",
   },
   {
     icon: Calendar,
