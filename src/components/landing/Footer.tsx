@@ -82,7 +82,7 @@ export function Footer() {
               WhatsApp
             </a>
             <a
-              href="https://calendly.com/ternon/entretien-confidentiel"
+              href="https://calendly.com/ternon/alpha-pme"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors block mb-4"

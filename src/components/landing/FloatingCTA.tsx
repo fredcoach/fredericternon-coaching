@@ -37,7 +37,7 @@ export function FloatingCTA() {
           className="gradient-primary text-primary-foreground shadow-lg hover:shadow-xl hover:opacity-90 transition-all animate-fade-in"
         >
           <a
-            href="https://calendly.com/ternon/entretien-confidentiel"
+            href="https://calendly.com/ternon/alpha-pme"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2"

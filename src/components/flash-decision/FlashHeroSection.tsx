@@ -67,7 +67,7 @@ export function FlashHeroSection() {
               className="bg-warning text-warning-foreground hover:bg-warning/90 text-lg px-8 py-6 shadow-lg"
             >
               <a
-                href="https://calendly.com/ternon/flash-decision"
+                href="https://calendly.com/ternon/alpha-pme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

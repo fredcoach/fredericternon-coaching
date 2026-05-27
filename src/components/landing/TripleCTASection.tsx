@@ -31,7 +31,7 @@ const ctaCards = [
     description:
       "Un échange direct et confidentiel pour cartographier ce qui bloque dans votre pilotage, et voir si un accompagnement fait sens.",
     cta: "Réserver 30 min",
-    href: "https://calendly.com/ternon/entretien-confidentiel",
+    href: "https://calendly.com/ternon/alpha-pme",
     isExternal: true,
   },
 ];

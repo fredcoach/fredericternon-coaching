@@ -251,7 +251,7 @@ export function TestimonialsSection() {
             Vous voulez identifier ce qui bloque dans votre pilotage&nbsp;?
           </p>
           <a
-            href="https://calendly.com/ternon/entretien-confidentiel"
+            href="https://calendly.com/ternon/alpha-pme"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all duration-300 hover:-translate-y-0.5"
