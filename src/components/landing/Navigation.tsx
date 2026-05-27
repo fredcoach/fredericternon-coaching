@@ -5,9 +5,6 @@ import { Menu, X, ExternalLink } from "lucide-react";
 
 const navLinks = [
   { href: "#about", label: "À propos" },
-  { href: "#differentiators", label: "Approche" },
-  { href: "#situations", label: "Situations" },
-  { href: "#journey", label: "Parcours" },
   { href: "#offer", label: "Offre" },
   { href: "#faq", label: "FAQ" },
 ];
@@ -18,9 +15,7 @@ const pageLinks = [
   { href: "/blog", label: "Blog" },
 ];
 
-const externalLinks = [
-  { href: "https://mentalpro.fr", label: "Espace Sportifs", external: true },
-];
+const externalLinks: { href: string; label: string; external?: boolean }[] = [];
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
