@@ -45,15 +45,6 @@ export function Footer() {
                 mental-pro.fr
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a
-                href="https://mentalpro.fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1"
-              >
-                Espace Sportifs
-                <ExternalLink className="w-3 h-3" />
-              </a>
             </div>
           </div>
 
