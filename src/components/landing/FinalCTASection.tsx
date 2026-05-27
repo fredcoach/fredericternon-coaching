@@ -38,7 +38,7 @@ export function FinalCTASection() {
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg"
             >
               <a
-                href="https://calendly.com/ternon/entretien-confidentiel"
+                href="https://calendly.com/ternon/alpha-pme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
