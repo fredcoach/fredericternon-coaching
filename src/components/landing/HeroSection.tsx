@@ -67,8 +67,8 @@ export function HeroSection() {
         )}
       </div>
 
-      <div className="container mx-auto px-8 sm:px-10 md:px-12 py-20 md:py-28 relative z-10">
-        <div className="max-w-5xl mx-auto">
+      <div className="container mx-auto px-5 sm:px-10 md:px-12 py-16 md:py-28 relative z-10">
+        <div className="max-w-5xl mx-auto px-2 sm:px-0">
           <div className="flex flex-col items-center gap-10 lg:gap-14">
 
             {/* Kicker */}
@@ -85,15 +85,16 @@ export function HeroSection() {
             <div className="text-center">
               {/* Headline */}
               <h1 className="animate-fade-in-up mb-6">
-                <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] tracking-tight">
+                <span className="block font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.15] tracking-tight">
                   Votre entreprise tourne,
                 </span>
-                <span className="block font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight mt-1">
+                <span className="block font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.15] tracking-tight mt-1">
                   <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
                     mais tout repose encore trop sur vous ?
                   </span>
                 </span>
               </h1>
+
 
               {/* Subtitle */}
               <p
