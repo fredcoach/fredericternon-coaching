@@ -53,7 +53,7 @@ export function HeroSection() {
           }}
         />
         <div
-          className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/10 blur-[100px] will-change-transform"
+          className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-accent/20 blur-[100px] will-change-transform"
           style={{ transform: isLoaded ? `translateY(${scrollY * 0.3}px)` : "none" }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
