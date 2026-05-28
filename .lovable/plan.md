@@ -1,65 +1,43 @@
 ## Objectif
+Rendre le Hero plus percutant visuellement (c'est l'accroche d'accueil), améliorer la lisibilité du titre et agrandir le logo dans la navbar.
 
-Lancer le Chantier 2 — Polissage premium — en intégrant le nouveau logo **Alpha PME** (vert profond + or) et en alignant la chartre graphique du site dessus. Le branding bascule de "navy + coral" vers "deep emerald + gold", positionnement plus premium et plus cohérent avec la cible dirigeants.
+## 1. Titre Hero — lisibilité
+Actuellement le H1 utilise `text-[1.35rem]` sur mobile (~21px) avec un dégradé or→vert→or sur la 2ᵉ ligne, peu lisible sur fond sombre.
 
-## 1. Intégration du logo
+Changements dans `src/components/landing/HeroSection.tsx` :
+- **Tailles** : passer à `text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl` (mobile ~30px, desktop ~72px).
+- **Ligne 1** "Votre entreprise tourne," : blanc pur, font-serif, weight 600.
+- **Ligne 2** "mais tout repose encore trop sur vous ?" :
+  - Texte de base en blanc (lisible)
+  - Seuls les mots-clés "**repose encore trop sur vous**" en or (`text-accent`) — pas de dégradé tricolore illisible
+- `leading-[1.15]` + `tracking-tight` + `text-balance` pour un meilleur rendu.
+- Drop-shadow subtile sur le H1 pour détacher du fond animé.
 
-- Copier le logo uploadé dans `src/assets/alpha-pme-logo.png` (version carrée vert/or pour réutilisation) **et** créer une variante transparente `alpha-pme-mark.png` (juste le A doré, fond transparent) via edit_image pour usage sur fond clair/foncé.
-- **Navigation.tsx** : remplacer le texte "Frédéric Ternon" / wordmark actuel par `<img src={logo} alt="Alpha PME" />` à gauche (hauteur ~36-40px desktop, ~32px mobile). Garder la logique dynamique navbar (transparent sur hero → blanc/sombre au scroll). Sur fond transparent (hero) : logo version claire ; sur fond blanc scrollé : logo version sombre.
-- **Footer.tsx** : ajouter le logo en tête du footer.
-- **Favicon** : générer un favicon depuis le mark (A doré sur vert) → `public/favicon.ico` + `public/apple-touch-icon.png`, et mettre à jour `index.html`.
+## 2. Logo navbar — taille
+Actuellement `h-9 md:h-11` (36/44px), trop petit pour un logo identitaire.
 
-## 2. Nouvelle chartre graphique (alignée au logo)
+Dans `src/components/landing/Navigation.tsx` :
+- Logo : `h-12 md:h-16` (48/64px)
+- Hauteur navbar : `h-20 md:h-24` (au lieu de 16/20) pour accueillir le logo
+- Sur scroll (state condensé) : `h-10 md:h-12` pour rester compact
+- Ajuster le padding/offset du Hero si nécessaire (déjà en `min-h-screen`, OK)
 
-Palette extraite du logo :
-- **Vert profond (primary)** : `#0F3D2E` env. — HSL `158 60% 15%`
-- **Or (accent)** : `#C9A861` env. — HSL `40 50% 58%`
-- **Crème/ivoire (texte clair)** : `#F5EFE0` — HSL `42 50% 92%`
+## 3. Hero — plus d'impact visuel
+Renforcer la dimension premium / accroche :
 
-Modifications dans `src/index.css` :
+- **Badge kicker** : passer à fond or translucide (`bg-accent/10 border-accent/30`) au lieu du blanc 5%, plus visible.
+- **Sous-titre** : passer de `text-white/60` à `text-white/80` pour la lisibilité, et garder la 2ᵉ ligne en `text-accent/90` (or) au lieu de blanc — souligne la promesse.
+- **Pills "Organisation/Décisions/…"** : transformer en petits badges contournés (`border border-white/15 px-3 py-1 rounded-full`) au lieu de simples mots, plus structurés.
+- **CTA principal** : passer à la variante or pleine (`bg-accent text-primary hover:bg-accent/90`) avec glow doré au hover, au lieu du blanc générique — colle à la charte emerald+gold.
+- **Background** : intensifier légèrement la halo or (passer `bg-accent/10` → `bg-accent/15`) pour plus de chaleur.
+- **Espacements** : `py-20 md:py-32` (au lieu de 16/28) pour aérer.
 
-```
---primary:        158 60% 15%   (vert profond — remplace navy)
---primary-glow:   158 45% 28%   (vert moyen pour gradients)
---secondary:      158 40% 35%   (vert sauge)
---accent:         40 50% 58%    (or — remplace le corail)
---background:     42 30% 97%    (ivoire très léger au lieu du blanc bleuté)
---foreground:     158 25% 12%
---muted:          42 20% 94%
---border:         42 15% 88%
---ring:           40 50% 58%    (or pour focus)
---gradient-primary: linear-gradient(135deg, hsl(158 60% 15%), hsl(158 45% 28%))
---gradient-dark:    linear-gradient(135deg, hsl(158 65% 10%), hsl(158 50% 18%))
-```
+## 4. Out of scope
+- Pas de changement de copy au-delà de la mise en forme du titre.
+- Pas de refonte des autres sections.
+- Mémoire `mem://style/hero-tagline-design` à mettre à jour après implémentation pour refléter le nouveau traitement (or sur mots-clés vs shimmer tricolore).
 
-Dark mode : fond vert profond `158 50% 8%`, accent or conservé.
-
-Tous les composants utilisant les tokens sémantiques (`text-primary`, `bg-primary`, `text-accent`, `bg-gradient-primary`, etc.) basculent automatiquement. Pas de recherche/remplacement massif nécessaire.
-
-## 3. Polissage premium (volet DA déjà prévu)
-
-- **HeroSection** : H1 mieux dimensionné (clamp 2.75rem → 4.5rem), gradient or sur mot-clé "clarté" au lieu du gradient navy actuel. Le shimmer reste mais en doré.
-- **Navigation** : retirer les emojis (🎯, 💡…) à côté des items de menu pour un rendu plus premium.
-- **Sections** : harmoniser l'alternance de fond (ivoire / blanc / vert profond) sur 3 niveaux max, plus de patchwork.
-- **Icônes lucide** : passer en accent or (`text-accent`) plutôt que primary, ton plus chaud et cohérent.
-- **Boutons CTA** : variant `premium` = fond vert profond + bordure or + hover or remplit.
-
-## 4. Mémoire à mettre à jour
-
-- `mem://style/brand-identity` : remplacer "navy + coral" par "deep emerald + gold, Alpha PME".
-- `mem://index.md` Core : mettre à jour ligne palette.
-- Créer `mem://style/logo` : usage du logo (variantes, hauteurs, contexts d'utilisation).
-
-## Fichiers touchés
-
-- **Créés** : `src/assets/alpha-pme-logo.png`, `src/assets/alpha-pme-mark.png`, `public/favicon.ico`, `public/apple-touch-icon.png`
-- **Édités** : `src/index.css` (tokens), `tailwind.config.ts` (si extension nécessaire), `src/components/landing/Navigation.tsx`, `src/components/landing/Footer.tsx`, `src/components/landing/HeroSection.tsx` (gradient H1), `index.html` (favicon + theme-color), mémoires.
-
-## Hors scope
-
-- Chantier 3 (perf, canonicals, prefers-reduced-motion, fake aggregateRating) — reste à faire après.
-- Refonte des photos / illustrations (le rendu doit déjà être nettement plus premium avec juste la nouvelle palette).
-
-## Risque & rollback
-
-Tokens centralisés dans `index.css` : rollback = restaurer la version git du fichier. Le logo est ajouté, pas substitué destructivement aux assets existants.
+## Fichiers modifiés
+- `src/components/landing/HeroSection.tsx`
+- `src/components/landing/Navigation.tsx`
+- `mem://style/hero-tagline-design` (après implémentation)
