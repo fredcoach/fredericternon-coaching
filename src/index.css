@@ -48,7 +48,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(158 60% 15%) 0%, hsl(158 45% 28%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(42 30% 98%) 0%, hsl(158 15% 92%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(158 65% 10%) 0%, hsl(158 50% 18%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40 55% 50%) 0%, hsl(40 60% 65%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 30% 48%) 0%, hsl(38 25% 62%) 100%);
     
     --success: 158 60% 30%;
     --success-foreground: 0 0% 100%;
