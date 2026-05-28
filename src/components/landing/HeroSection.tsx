@@ -67,15 +67,15 @@ export function HeroSection() {
         )}
       </div>
 
-      <div className="container mx-auto px-5 sm:px-10 md:px-12 py-16 md:py-28 relative z-10">
+      <div className="container mx-auto px-5 sm:px-10 md:px-12 py-20 md:py-32 relative z-10">
         <div className="max-w-5xl mx-auto px-2 sm:px-0">
           <div className="flex flex-col items-center gap-10 lg:gap-14">
 
             {/* Kicker */}
             <div className="animate-fade-in">
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 backdrop-blur-sm border border-accent/30">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <span className="text-sm text-white/70 font-medium tracking-wide uppercase">
+                <span className="text-sm text-accent font-medium tracking-wide uppercase">
                   Dirigeants de PME
                 </span>
               </div>
@@ -84,39 +84,37 @@ export function HeroSection() {
             {/* Text content */}
             <div className="text-center">
               {/* Headline */}
-              <h1 className="animate-fade-in-up mb-6 break-words">
-                <span className="block font-serif text-[1.35rem] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.2] tracking-tight">
+              <h1 className="animate-fade-in-up mb-8 break-words font-serif font-semibold text-white leading-[1.1] tracking-tight text-balance drop-shadow-[0_2px_24px_rgba(0,0,0,0.4)]">
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                   Votre entreprise tourne,
                 </span>
-                <span className="block font-serif text-[1.35rem] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight mt-1">
-                  <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-                    mais tout repose encore trop sur vous ?
-                  </span>
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
+                  mais tout <span className="text-accent">repose encore trop sur vous</span> ?
                 </span>
               </h1>
 
 
               {/* Subtitle */}
               <p
-                className="text-lg md:text-xl text-white/60 mb-8 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
+                className="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
                 Un regard extérieur pour clarifier l'organisation, mieux décider
                 <br className="hidden md:block" />
-                <span className="text-white/80 font-medium">
+                <span className="text-accent/90 font-medium">
                   et retrouver un pilotage plus net sous pression.
                 </span>
               </p>
 
-              {/* Short line */}
+              {/* Short line — pills */}
               <div
-                className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 animate-fade-in-up"
+                className="flex flex-wrap justify-center gap-2 md:gap-3 mb-12 animate-fade-in-up"
                 style={{ animationDelay: "0.25s" }}
               >
                 {shortLineItems.map((item) => (
                   <span
                     key={item}
-                    className="text-sm md:text-base text-white/50 font-medium"
+                    className="text-xs md:text-sm text-white/70 font-medium border border-white/15 px-3 py-1.5 rounded-full bg-white/5 backdrop-blur-sm"
                   >
                     {item}
                   </span>
@@ -131,14 +129,14 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   onClick={() => scrollToSection("#final-cta")}
-                  className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
+                  className="bg-accent text-primary hover:bg-accent/90 text-lg px-8 py-6 font-semibold hover:shadow-[0_0_40px_hsl(var(--accent)/0.5)] hover:scale-105 transition-all duration-300 group"
                 >
                   Voir si on peut travailler ensemble
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <button
                   onClick={() => scrollToSection("#about")}
-                  className="text-sm text-white/40 hover:text-white/70 transition-colors underline underline-offset-4"
+                  className="text-sm text-white/60 hover:text-white transition-colors underline underline-offset-4"
                 >
                   Découvrir l'approche
                 </button>
