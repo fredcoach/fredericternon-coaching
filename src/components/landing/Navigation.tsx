@@ -59,7 +59,7 @@ export function Navigation() {
       }`}
     >
       <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-between h-16 md:h-20">
+        <nav className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? "h-16 md:h-20" : "h-20 md:h-28"}`}>
           <a
             href="#"
             aria-label="Alpha PME — accueil"
@@ -72,9 +72,9 @@ export function Navigation() {
             <img
               src={shouldUseWhiteText ? logoLight : logoDark}
               alt="Alpha PME — Clarté, Structure, Pilotage"
-              className="h-9 md:h-11 w-auto"
-              width="220"
-              height="44"
+              className={`w-auto transition-all duration-300 ${isScrolled ? "h-10 md:h-12" : "h-14 md:h-20"}`}
+              width="320"
+              height="80"
             />
           </a>
 
