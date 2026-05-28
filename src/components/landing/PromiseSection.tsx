@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { Shield, Gauge, Compass, RotateCcw, ArrowRight, ArrowDown } from "lucide-react";
+import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
 
 const promises = [
   {
