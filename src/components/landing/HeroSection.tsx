@@ -133,7 +133,7 @@ export function HeroSection() {
                   onClick={() => scrollToSection("#final-cta")}
                   className="bg-white text-slate-900 hover:bg-white/90 text-lg px-8 py-6 font-semibold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
                 >
-                  30 min pour identifier ce qui bloque
+                  Voir si on peut travailler ensemble
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <button
