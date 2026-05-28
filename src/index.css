@@ -31,9 +31,9 @@ All colors MUST be HSL.
     --muted-foreground: 158 15% 32%;
 
     /* Accent - Brushed Gold */
-    --accent: 40 50% 55%;
+    --accent: 38 28% 52%;
     --accent-foreground: 158 60% 12%;
-    --accent-text: 40 60% 35%;
+    --accent-text: 35 35% 32%;
 
     --destructive: 8 65% 45%;
     --destructive-foreground: 0 0% 100%;
@@ -48,7 +48,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(158 60% 15%) 0%, hsl(158 45% 28%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(42 30% 98%) 0%, hsl(158 15% 92%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(158 65% 10%) 0%, hsl(158 50% 18%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40 55% 50%) 0%, hsl(40 60% 65%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 30% 48%) 0%, hsl(38 25% 62%) 100%);
     
     --success: 158 60% 30%;
     --success-foreground: 0 0% 100%;
@@ -63,7 +63,7 @@ All colors MUST be HSL.
     --sidebar-accent: 42 20% 94%;
     --sidebar-accent-foreground: 158 60% 15%;
     --sidebar-border: 42 15% 88%;
-    --sidebar-ring: 40 50% 55%;
+    --sidebar-ring: 38 28% 52%;
   }
 
   .dark {
@@ -86,9 +86,9 @@ All colors MUST be HSL.
     --muted: 158 30% 15%;
     --muted-foreground: 42 15% 70%;
 
-    --accent: 40 55% 60%;
+    --accent: 38 32% 58%;
     --accent-foreground: 158 60% 10%;
-    --accent-text: 40 70% 72%;
+    --accent-text: 38 40% 70%;
 
     --destructive: 8 60% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -110,12 +110,12 @@ All colors MUST be HSL.
 
     --sidebar-background: 158 50% 7%;
     --sidebar-foreground: 42 40% 92%;
-    --sidebar-primary: 40 50% 58%;
+    --sidebar-primary: 38 30% 55%;
     --sidebar-primary-foreground: 158 60% 10%;
     --sidebar-accent: 158 30% 15%;
     --sidebar-accent-foreground: 42 40% 92%;
     --sidebar-border: 158 30% 18%;
-    --sidebar-ring: 40 50% 58%;
+    --sidebar-ring: 38 30% 55%;
   }
 }
 

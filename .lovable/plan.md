@@ -1,41 +1,31 @@
-## Corrections palette Alpha PME
+## Option C — Émeraude + bronze froid
 
-Objectif : corriger les faiblesses identifiées (accessibilité, dark mode, gradient hero, ring, warning) sans casser l'identité émeraude + or.
+Objectif : gagner en sérieux "cabinet de conseil B2B" en désaturant l'or, sans toucher à l'émeraude ni à la structure. Changement chirurgical, uniquement sur les tokens d'accent.
 
-### 1. `src/index.css` — light mode
+### Modifications `src/index.css`
 
-- Ajouter `--accent-text: 40 60% 35%` (or bronze foncé, lisible sur fond clair, ~5.2:1).
-- Garder `--accent: 40 50% 55%` pour fonds/CTA/décor.
-- `--muted-foreground` : `158 15% 32%` (au lieu de 12% 38%) → passe AA.
-- `--ring` : `158 60% 25%` (émeraude au lieu d'or).
-- `--warning` : `30 85% 50%` (ambre orangé, distinct de l'or).
-- `--destructive` : `8 65% 45%` (rouge chaud).
-- `--gradient-hero` : `linear-gradient(180deg, hsl(42 30% 98%) 0%, hsl(158 15% 92%) 100%)` (contraste visible).
+**Light mode :**
+- `--accent: 38 28% 52%` (au lieu de `40 50% 55%`) → bronze froid désaturé, moins "bijou", plus "métal brossé corporate"
+- `--accent-text: 35 35% 32%` (au lieu de `40 60% 35%`) → bronze foncé pour textes, conserve un bon contraste (~6:1)
+- `--gradient-gold: linear-gradient(135deg, hsl(38 30% 48%) 0%, hsl(38 25% 62%) 100%)` → cohérent avec le nouvel accent
+- `--sidebar-ring: 38 28% 52%`
 
-### 2. `src/index.css` — dark mode
-
-- `--primary` : `158 40% 45%` (réintroduit l'émeraude, fini le tout-or).
-- `--primary-foreground` : `42 50% 95%`.
-- `--accent` reste or (`40 55% 60%`).
-- `--ring` : `158 40% 50%` (émeraude).
-- Ajouter `--accent-text: 40 70% 72%` (or clair lisible sur fond sombre).
-
-### 3. `tailwind.config.ts`
-
-Ajouter le token `accent-text` :
-```ts
-accent: {
-  DEFAULT: "hsl(var(--accent))",
-  foreground: "hsl(var(--accent-foreground))",
-  text: "hsl(var(--accent-text))",
-},
-```
-
-### 4. Utilisation (optionnel, signalé seulement)
-
-Pas de remplacement massif dans cette tâche. À l'avenir : `text-accent` pour gros titres/décor, `text-accent-text` pour paragraphes/petits textes sur fond clair.
+**Dark mode :**
+- `--accent: 38 32% 58%` (au lieu de `40 55% 60%`) → bronze légèrement plus lumineux pour rester lisible sur fond sombre, mais désaturé
+- `--accent-text: 38 40% 70%` (au lieu de `40 70% 72%`)
+- `--sidebar-primary: 38 30% 55%`
+- `--sidebar-ring: 38 30% 55%`
 
 ### Hors scope
-- Pas de modification de composants
-- Pas de changement de copy
-- Mise à jour mémoire après validation
+- Pas de changement sur l'émeraude (`--primary`, `--secondary`)
+- Pas de changement sur l'ivoire (`--background`, `--muted`)
+- Pas de modification de composants ni de copy
+- Pas de changement du logo (il garde son or d'origine, qui restera cohérent visuellement avec un bronze froid)
+
+### Validation visuelle après build
+- Vérifier le hero (kicker "Dirigeants de PME", "repose encore trop sur vous", CTA principal) → l'accent doit rester visible mais paraître plus mat/métal
+- Vérifier les sections claires (cartes, badges accent) → le bronze doit lire comme "premium discret" et non "jaune"
+
+### Mémoire à mettre à jour après validation
+- `mem://style/brand-identity` : préciser "or brossé tirant vers le bronze froid désaturé" au lieu de "or brossé" pur
+- `mem://index.md` Core : ajuster la mention palette si besoin
