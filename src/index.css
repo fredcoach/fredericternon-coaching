@@ -31,9 +31,9 @@ All colors MUST be HSL.
     --muted-foreground: 158 15% 32%;
 
     /* Accent - Brushed Gold */
-    --accent: 40 50% 55%;
+    --accent: 38 28% 52%;
     --accent-foreground: 158 60% 12%;
-    --accent-text: 40 60% 35%;
+    --accent-text: 35 35% 32%;
 
     --destructive: 8 65% 45%;
     --destructive-foreground: 0 0% 100%;
