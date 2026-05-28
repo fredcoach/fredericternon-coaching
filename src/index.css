@@ -28,31 +28,32 @@ All colors MUST be HSL.
     --secondary-foreground: 42 50% 95%;
 
     --muted: 42 20% 94%;
-    --muted-foreground: 158 12% 38%;
+    --muted-foreground: 158 15% 32%;
 
     /* Accent - Brushed Gold */
     --accent: 40 50% 55%;
     --accent-foreground: 158 60% 12%;
+    --accent-text: 40 60% 35%;
 
-    --destructive: 0 70% 45%;
+    --destructive: 8 65% 45%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 42 15% 88%;
     --input: 42 15% 88%;
-    --ring: 40 50% 55%;
+    --ring: 158 60% 25%;
 
     --radius: 0.75rem;
 
     /* Custom tokens — Alpha PME */
     --gradient-primary: linear-gradient(135deg, hsl(158 60% 15%) 0%, hsl(158 45% 28%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(42 30% 97%) 0%, hsl(42 25% 94%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(42 30% 98%) 0%, hsl(158 15% 92%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(158 65% 10%) 0%, hsl(158 50% 18%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(40 55% 50%) 0%, hsl(40 60% 65%) 100%);
     
     --success: 158 60% 30%;
     --success-foreground: 0 0% 100%;
     
-    --warning: 40 80% 50%;
+    --warning: 30 85% 50%;
     --warning-foreground: 158 60% 12%;
 
     --sidebar-background: 42 30% 97%;
@@ -75,25 +76,26 @@ All colors MUST be HSL.
     --popover: 158 45% 11%;
     --popover-foreground: 42 40% 92%;
 
-    --primary: 40 50% 58%;
-    --primary-foreground: 158 60% 10%;
-    --primary-glow: 40 55% 70%;
+    --primary: 158 40% 45%;
+    --primary-foreground: 42 50% 95%;
+    --primary-glow: 158 45% 55%;
 
     --secondary: 158 30% 25%;
     --secondary-foreground: 42 40% 92%;
 
     --muted: 158 30% 15%;
-    --muted-foreground: 42 15% 65%;
+    --muted-foreground: 42 15% 70%;
 
     --accent: 40 55% 60%;
     --accent-foreground: 158 60% 10%;
+    --accent-text: 40 70% 72%;
 
-    --destructive: 0 60% 45%;
+    --destructive: 8 60% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 158 30% 18%;
     --input: 158 30% 18%;
-    --ring: 40 50% 58%;
+    --ring: 158 40% 50%;
 
     --gradient-primary: linear-gradient(135deg, hsl(158 55% 18%) 0%, hsl(158 40% 28%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(158 50% 7%) 0%, hsl(158 45% 11%) 100%);
