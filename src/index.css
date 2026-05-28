@@ -110,12 +110,12 @@ All colors MUST be HSL.
 
     --sidebar-background: 158 50% 7%;
     --sidebar-foreground: 42 40% 92%;
-    --sidebar-primary: 40 50% 58%;
+    --sidebar-primary: 38 30% 55%;
     --sidebar-primary-foreground: 158 60% 10%;
     --sidebar-accent: 158 30% 15%;
     --sidebar-accent-foreground: 42 40% 92%;
     --sidebar-border: 158 30% 18%;
-    --sidebar-ring: 40 50% 58%;
+    --sidebar-ring: 38 30% 55%;
   }
 }
 
