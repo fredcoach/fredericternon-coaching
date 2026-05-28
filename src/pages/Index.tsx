@@ -3,25 +3,16 @@ import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { HeroSection } from "@/components/landing/HeroSection";
-import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
-import { AboutSection } from "@/components/landing/AboutSection";
-import { MyRoleSection } from "@/components/landing/MyRoleSection";
 import { JulienTestimonialSection } from "@/components/landing/JulienTestimonialSection";
-import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
-import { PainPointsSection } from "@/components/landing/PainPointsSection";
-import { SituationsSection } from "@/components/landing/SituationsSection";
+import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
+import { ProblemSolutionSection } from "@/components/landing/ProblemSolutionSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
-import { BenefitsSection } from "@/components/landing/BenefitsSection";
-import { TargetAudienceSection } from "@/components/landing/TargetAudienceSection";
-import { JourneySection } from "@/components/landing/JourneySection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
+import { AboutMeSection } from "@/components/landing/AboutMeSection";
 import { OfferSection } from "@/components/landing/OfferSection";
-import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { LinkedInRecommendationsSection } from "@/components/landing/LinkedInRecommendationsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
-import { DiagnosticTeaser } from "@/components/landing/DiagnosticTeaser";
-import { TripleCTASection } from "@/components/landing/TripleCTASection";
 import { Footer } from "@/components/landing/Footer";
 import { FloatingCTA } from "@/components/landing/FloatingCTA";
 
@@ -95,28 +86,19 @@ const Index = () => {
       
       <div className="min-h-screen">
         <Navigation />
-      <main>
-        <HeroSection />
-        <RealityCheckSection />
-        <AboutSection />
-        <MyRoleSection />
-        <DifferentiatorsSection />
-        <PainPointsSection />
-        <SituationsSection />
-        <PromiseSection />
-        <BenefitsSection />
-        <JulienTestimonialSection />
-        <TargetAudienceSection />
-        <JourneySection />
-        <Method3RSection />
-        <OfferSection />
-        <TestimonialsSection />
-        <LinkedInRecommendationsSection />
-        <FAQSection />
-        <DiagnosticTeaser />
-        <TripleCTASection />
-        <FinalCTASection />
-      </main>
+        <main>
+          <HeroSection />
+          <JulienTestimonialSection />
+          <RealityCheckSection />
+          <ProblemSolutionSection />
+          <PromiseSection />
+          <Method3RSection />
+          <AboutMeSection />
+          <OfferSection />
+          <LinkedInRecommendationsSection />
+          <FAQSection />
+          <FinalCTASection />
+        </main>
         <Footer />
         <FloatingCTA />
       </div>

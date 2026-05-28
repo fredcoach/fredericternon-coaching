@@ -43,7 +43,7 @@ export function FloatingCTA() {
             className="inline-flex items-center gap-2"
           >
             <Calendar className="w-5 h-5" />
-            <span className="hidden sm:inline">30 min pour identifier ce qui bloque</span>
+            <span className="hidden sm:inline">Réserver 30 min</span>
             <span className="sm:hidden">Réserver</span>
           </a>
         </Button>

@@ -159,7 +159,7 @@ export function OfferSection() {
                   onClick={scrollToFinalCTA}
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  30 min pour identifier ce qui bloque
+                  Réserver une session de cadrage
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
