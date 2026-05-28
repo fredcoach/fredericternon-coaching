@@ -84,11 +84,11 @@ export function HeroSection() {
             {/* Text content */}
             <div className="text-center">
               {/* Headline */}
-              <h1 className="animate-fade-in-up mb-6">
-                <span className="block font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.15] tracking-tight">
+              <h1 className="animate-fade-in-up mb-6 break-words">
+                <span className="block font-serif text-[1.35rem] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.2] tracking-tight">
                   Votre entreprise tourne,
                 </span>
-                <span className="block font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.15] tracking-tight mt-1">
+                <span className="block font-serif text-[1.35rem] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight mt-1">
                   <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
                     mais tout repose encore trop sur vous ?
                   </span>
