@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ExternalLink } from "lucide-react";
+import logoLight from "@/assets/alpha-pme-horizontal-light.png";
+import logoDark from "@/assets/alpha-pme-horizontal.png";
 
 const navLinks = [
   { href: "#about", label: "À propos" },
@@ -60,15 +62,20 @@ export function Navigation() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className={`font-serif text-lg md:text-xl font-bold transition-colors ${
-              shouldUseWhiteText ? "text-white drop-shadow-md" : "text-foreground"
-            }`}
+            aria-label="Alpha PME — accueil"
+            className="flex items-center transition-opacity hover:opacity-90"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            Frédéric Ternon
+            <img
+              src={shouldUseWhiteText ? logoLight : logoDark}
+              alt="Alpha PME — Clarté, Structure, Pilotage"
+              className="h-9 md:h-11 w-auto"
+              width="220"
+              height="44"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -100,8 +107,6 @@ export function Navigation() {
                       : "text-foreground hover:text-primary"
                 }`}
               >
-                {link.label === "Flash Decision" && <span className="text-xs">⚡</span>}
-                {link.label === "Diagnostic" && <span className="text-xs">🧠</span>}
                 {link.label}
               </Link>
             ))}

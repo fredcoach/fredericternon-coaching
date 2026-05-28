@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ExternalLink } from "lucide-react";
+import logoHorizontal from "@/assets/alpha-pme-horizontal.png";
 
 const sectionLinks = [
   { href: "#about", label: "À propos" },
@@ -26,11 +27,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <p className="font-serif text-lg font-semibold text-foreground mb-1">
-              Frédéric Ternon
-            </p>
+            <img
+              src={logoHorizontal}
+              alt="Alpha PME"
+              className="h-12 w-auto mb-3"
+              width="200"
+              height="48"
+              loading="lazy"
+            />
             <p className="text-sm text-muted-foreground mb-3">
-              Regard extérieur pour dirigeants de PME
+              Frédéric Ternon — regard extérieur pour dirigeants de PME
             </p>
             <p className="text-sm text-muted-foreground mb-3">
               Dirigeants de PME · jusqu'à 30 personnes
@@ -103,7 +109,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Frédéric Ternon. Tous droits réservés
+            © {currentYear} Alpha PME · Frédéric Ternon. Tous droits réservés
           </p>
           <p className="text-xs text-muted-foreground">
             Pilotage · Décision · Organisation

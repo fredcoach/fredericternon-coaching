@@ -1,68 +1,65 @@
 ## Objectif
 
-Resserrer la landing `/` pour servir un dirigeant de PME pressé : message clair en 5 secondes, preuve sociale tôt, un seul CTA dominant, zéro contenu hors-cible. On passe de 19 sections à ~12, sans toucher au design ni au backend.
+Lancer le Chantier 2 — Polissage premium — en intégrant le nouveau logo **Alpha PME** (vert profond + or) et en alignant la chartre graphique du site dessus. Le branding bascule de "navy + coral" vers "deep emerald + gold", positionnement plus premium et plus cohérent avec la cible dirigeants.
 
-## Nouvelle séquence de sections
+## 1. Intégration du logo
 
-```text
-1.  HeroSection                          (inchangée — micro fix CTA libellé)
-2.  JulienTestimonialSection             ⬆️ remontée (preuve sociale forte avant tout)
-3.  RealityCheckSection                  (inchangée — reconnaissance du problème)
-4.  PainPointsSection                    (fusionne PainPoints + Situations + Benefits — voir note)
-5.  PromiseSection                       (allégée, supprimer le schéma pill→arrow→pill)
-6.  Method3RSection                      (la méthode — pièce maîtresse)
-7.  AboutSection + MyRoleSection         (fusionnées en une seule "Qui je suis")
-8.  OfferSection                         (avec Flash Decision 350€ ajouté en porte d'entrée)
-9.  LinkedInRecommendationsSection       (preuve sociale business, conservée telle quelle)
-10. FAQSection                           (remontée avant le CTA final pour lever objections)
-11. FinalCTASection                      (CTA unique, libellé final)
-12. Footer
+- Copier le logo uploadé dans `src/assets/alpha-pme-logo.png` (version carrée vert/or pour réutilisation) **et** créer une variante transparente `alpha-pme-mark.png` (juste le A doré, fond transparent) via edit_image pour usage sur fond clair/foncé.
+- **Navigation.tsx** : remplacer le texte "Frédéric Ternon" / wordmark actuel par `<img src={logo} alt="Alpha PME" />` à gauche (hauteur ~36-40px desktop, ~32px mobile). Garder la logique dynamique navbar (transparent sur hero → blanc/sombre au scroll). Sur fond transparent (hero) : logo version claire ; sur fond blanc scrollé : logo version sombre.
+- **Footer.tsx** : ajouter le logo en tête du footer.
+- **Favicon** : générer un favicon depuis le mark (A doré sur vert) → `public/favicon.ico` + `public/apple-touch-icon.png`, et mettre à jour `index.html`.
+
+## 2. Nouvelle chartre graphique (alignée au logo)
+
+Palette extraite du logo :
+- **Vert profond (primary)** : `#0F3D2E` env. — HSL `158 60% 15%`
+- **Or (accent)** : `#C9A861` env. — HSL `40 50% 58%`
+- **Crème/ivoire (texte clair)** : `#F5EFE0` — HSL `42 50% 92%`
+
+Modifications dans `src/index.css` :
+
+```
+--primary:        158 60% 15%   (vert profond — remplace navy)
+--primary-glow:   158 45% 28%   (vert moyen pour gradients)
+--secondary:      158 40% 35%   (vert sauge)
+--accent:         40 50% 58%    (or — remplace le corail)
+--background:     42 30% 97%    (ivoire très léger au lieu du blanc bleuté)
+--foreground:     158 25% 12%
+--muted:          42 20% 94%
+--border:         42 15% 88%
+--ring:           40 50% 58%    (or pour focus)
+--gradient-primary: linear-gradient(135deg, hsl(158 60% 15%), hsl(158 45% 28%))
+--gradient-dark:    linear-gradient(135deg, hsl(158 65% 10%), hsl(158 50% 18%))
 ```
 
-**Sections supprimées :** `DifferentiatorsSection`, `TargetAudienceSection`, `JourneySection`, `TestimonialsSection` (témoignages hors-cible WhatsApp + vidéo Mahel), `DiagnosticTeaser`, `TripleCTASection`.
+Dark mode : fond vert profond `158 50% 8%`, accent or conservé.
 
-**Sections fusionnées :**
-- `PainPoints` + `Situations` + `Benefits` → une seule section en 3 colonnes : *"Ce que vous vivez / Ce que vous voulez / Ce que vous gagnez"*. On garde le meilleur contenu des trois.
-- `About` + `MyRole` → une seule section "Qui je suis", avec photo portrait recadrée et 3 paragraphes max.
+Tous les composants utilisant les tokens sémantiques (`text-primary`, `bg-primary`, `text-accent`, `bg-gradient-primary`, etc.) basculent automatiquement. Pas de recherche/remplacement massif nécessaire.
 
-## Différenciation des CTA
+## 3. Polissage premium (volet DA déjà prévu)
 
-Six occurrences identiques de *"30 min pour identifier ce qui bloque"* à varier selon la position :
+- **HeroSection** : H1 mieux dimensionné (clamp 2.75rem → 4.5rem), gradient or sur mot-clé "clarté" au lieu du gradient navy actuel. Le shimmer reste mais en doré.
+- **Navigation** : retirer les emojis (🎯, 💡…) à côté des items de menu pour un rendu plus premium.
+- **Sections** : harmoniser l'alternance de fond (ivoire / blanc / vert profond) sur 3 niveaux max, plus de patchwork.
+- **Icônes lucide** : passer en accent or (`text-accent`) plutôt que primary, ton plus chaud et cohérent.
+- **Boutons CTA** : variant `premium` = fond vert profond + bordure or + hover or remplit.
 
-| Section | Nouveau libellé |
-|---|---|
-| Hero | *"Voir si on peut travailler ensemble"* |
-| Promise | *"Identifier le vrai point de blocage"* |
-| Offer | *"Réserver une session de cadrage"* |
-| FloatingCTA | *"Réserver 30 min"* (icône calendrier) |
-| FinalCTA | *"Réserver votre session — 30 min, gratuite"* (libellé fort, conservé pour le final uniquement) |
+## 4. Mémoire à mettre à jour
 
-## Témoignages hors-cible — décisions
+- `mem://style/brand-identity` : remplacer "navy + coral" par "deep emerald + gold, Alpha PME".
+- `mem://index.md` Core : mettre à jour ligne palette.
+- Créer `mem://style/logo` : usage du logo (variantes, hauteurs, contexts d'utilisation).
 
-- **Supprimer** `TestimonialsSection` complète : les témoignages Fatima/Marie/Estelle (bien-être personnel) et la vidéo Mahel (joueur d'échec) cassent le positionnement PME.
-- **Conserver** `JulienTestimonialSection` (DG Dokles.io) — remonté en position 2.
-- **Conserver** `LinkedInRecommendationsSection` — preuve sociale business pure.
-- Les assets témoignages restent dans `src/assets/` (pas de suppression de fichier — réutilisables ailleurs).
+## Fichiers touchés
 
-## Détails techniques
+- **Créés** : `src/assets/alpha-pme-logo.png`, `src/assets/alpha-pme-mark.png`, `public/favicon.ico`, `public/apple-touch-icon.png`
+- **Édités** : `src/index.css` (tokens), `tailwind.config.ts` (si extension nécessaire), `src/components/landing/Navigation.tsx`, `src/components/landing/Footer.tsx`, `src/components/landing/HeroSection.tsx` (gradient H1), `index.html` (favicon + theme-color), mémoires.
 
-- **Index.tsx** : réécriture du bloc `<main>` (lignes 99–119) avec la nouvelle séquence.
-- **Nouveau composant** `src/components/landing/ProblemSolutionSection.tsx` qui fusionne le contenu de PainPoints + Situations + Benefits en 3 colonnes.
-- **Nouveau composant** `src/components/landing/AboutMeSection.tsx` qui fusionne About + MyRole.
-- **HeroSection.tsx:136** — changer le libellé du bouton blanc.
-- **PromiseSection.tsx:95-111** — supprimer le schéma pill→arrow→pill, garder le CTA avec libellé varié.
-- **OfferSection.tsx:127-162** — ajouter un encart "Flash Decision — 350€, 1h" comme porte d'entrée payante, juste avant le CTA Session Cadrage.
-- **FloatingCTA.tsx:46** — nouveau libellé court.
-- **FinalCTASection.tsx:47** — libellé final fort, conservé.
-- **DiagnosticTeaser.tsx**, **TripleCTASection.tsx**, **TestimonialsSection.tsx**, **DifferentiatorsSection.tsx**, **TargetAudienceSection.tsx**, **JourneySection.tsx** : fichiers conservés sur disque (au cas où) mais retirés de l'import et du rendu dans `Index.tsx`.
-- **Memory** : mettre à jour `mem://style/hero-tagline-design` et le memory CTA pour refléter les nouveaux libellés.
+## Hors scope
 
-## Ce qui n'est PAS dans ce chantier
-
-- Refonte chromatique des fonds (dark/light cohérent) → Chantier 2 (DA).
-- Fix preload LCP, canonicals dupliqués, parallax setState, prefers-reduced-motion → Chantier 3 (Tech).
-- Suppression des emojis nav, retravail du gradient H1, refonte AboutSection en portrait → Chantier 2 (DA).
+- Chantier 3 (perf, canonicals, prefers-reduced-motion, fake aggregateRating) — reste à faire après.
+- Refonte des photos / illustrations (le rendu doit déjà être nettement plus premium avec juste la nouvelle palette).
 
 ## Risque & rollback
 
-Aucune perte de fichiers. Les composants supprimés du flow restent sur disque ; un rollback consiste à restaurer les imports dans `Index.tsx`. La page Diagnostic reste accessible via la nav et son popup déclenché à 8s — la suppression de `DiagnosticTeaser` ne casse pas le funnel diagnostic.
+Tokens centralisés dans `index.css` : rollback = restaurer la version git du fichier. Le logo est ajouté, pas substitué destructivement aux assets existants.
