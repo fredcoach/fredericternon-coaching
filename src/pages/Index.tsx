@@ -8,8 +8,11 @@ import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
 import { ProblemSolutionSection } from "@/components/landing/ProblemSolutionSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
+import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
 import { AboutMeSection } from "@/components/landing/AboutMeSection";
+import { ClientVoicesSection } from "@/components/landing/ClientVoicesSection";
 import { OfferSection } from "@/components/landing/OfferSection";
+import { EntryProductsTeaser } from "@/components/landing/EntryProductsTeaser";
 import { LinkedInRecommendationsSection } from "@/components/landing/LinkedInRecommendationsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
@@ -93,8 +96,11 @@ const Index = () => {
           <ProblemSolutionSection />
           <PromiseSection />
           <Method3RSection />
+          <DifferentiatorsSection />
           <AboutMeSection />
+          <ClientVoicesSection />
           <OfferSection />
+          <EntryProductsTeaser />
           <LinkedInRecommendationsSection />
           <FAQSection />
           <FinalCTASection />

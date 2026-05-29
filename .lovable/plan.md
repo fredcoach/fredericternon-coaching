@@ -1,31 +1,73 @@
-## Option C — Émeraude + bronze froid
+## Objectif
 
-Objectif : gagner en sérieux "cabinet de conseil B2B" en désaturant l'or, sans toucher à l'émeraude ni à la structure. Changement chirurgical, uniquement sur les tokens d'accent.
+Recompléter le funnel de la home en réintégrant les blocs critiques manquants, sans ressortir Mahel ni les WhatsApp actuels. Passage de 11 → 14 sections, avec un bloc témoignages **prêt à recevoir** les 2 nouvelles vidéos + 3 nouveaux WhatsApp à venir.
 
-### Modifications `src/index.css`
+## Nouvel ordre des sections (src/pages/Index.tsx)
 
-**Light mode :**
-- `--accent: 38 28% 52%` (au lieu de `40 50% 55%`) → bronze froid désaturé, moins "bijou", plus "métal brossé corporate"
-- `--accent-text: 35 35% 32%` (au lieu de `40 60% 35%`) → bronze foncé pour textes, conserve un bon contraste (~6:1)
-- `--gradient-gold: linear-gradient(135deg, hsl(38 30% 48%) 0%, hsl(38 25% 62%) 100%)` → cohérent avec le nouvel accent
-- `--sidebar-ring: 38 28% 52%`
+```
+1.  Hero
+2.  Julien (témoignage narratif long)
+3.  Reality Check
+4.  Problème / Solution
+5.  Promesse
+6.  Méthode 3R
+7.  Différenciateurs                    ← RÉINTÉGRÉ
+8.  About Me
+9.  Témoignages vidéo + WhatsApp        ← NOUVEAU bloc, vide tant que les assets n'arrivent pas
+10. Offre
+11. Teaser Diagnostic / Flash Decision  ← NOUVEAU bloc 2 cards
+12. LinkedIn Recommendations
+13. FAQ
+14. Final CTA
+```
 
-**Dark mode :**
-- `--accent: 38 32% 58%` (au lieu de `40 55% 60%`) → bronze légèrement plus lumineux pour rester lisible sur fond sombre, mais désaturé
-- `--accent-text: 38 40% 70%` (au lieu de `40 70% 72%`)
-- `--sidebar-primary: 38 30% 55%`
-- `--sidebar-ring: 38 30% 55%`
+## Bloc 1 — Différenciateurs
 
-### Hors scope
-- Pas de changement sur l'émeraude (`--primary`, `--secondary`)
-- Pas de changement sur l'ivoire (`--background`, `--muted`)
-- Pas de modification de composants ni de copy
-- Pas de changement du logo (il garde son or d'origine, qui restera cohérent visuellement avec un bronze froid)
+- Réinsérer `<DifferentiatorsSection />` (composant existant, intact).
+- Position : juste après Méthode 3R, avant About Me. Répond au "pourquoi vous plutôt qu'un autre".
+- Aucune modif du composant.
 
-### Validation visuelle après build
-- Vérifier le hero (kicker "Dirigeants de PME", "repose encore trop sur vous", CTA principal) → l'accent doit rester visible mais paraître plus mat/métal
-- Vérifier les sections claires (cartes, badges accent) → le bronze doit lire comme "premium discret" et non "jaune"
+## Bloc 2 — Nouvelle section Témoignages (sans Mahel ni WhatsApp actuels)
 
-### Mémoire à mettre à jour après validation
-- `mem://style/brand-identity` : préciser "or brossé tirant vers le bronze froid désaturé" au lieu de "or brossé" pur
-- `mem://index.md` Core : ajuster la mention palette si besoin
+- **Ne pas réinsérer** `TestimonialsSection.tsx` existant (contient Mahel + Marie/Estelle/Fatima → non souhaité).
+- Créer un **nouveau composant** `src/components/landing/ClientVoicesSection.tsx`, basé sur la même structure visuelle (header, vidéo featured, carousel WhatsApp, CTA), mais avec des tableaux **vides** prêts à recevoir :
+  - `featuredVideos: []` → accueillera les 2 nouvelles vidéos (layout 1 colonne si 1 vidéo, grille 2 colonnes desktop si 2 vidéos)
+  - `whatsappTestimonials: []` → accueillera les 3 nouveaux screenshots WhatsApp (mêmes specs visuelles : header WhatsApp, screenshot, caption courte)
+- **Tant que les 2 tableaux sont vides** : la section ne s'affiche pas (early return `null`) → aucune zone vide visible en preview.
+- Dès que tu fournis les assets, il suffira :
+  1. de déposer les `.mp4` + thumbnails dans `src/assets/` (ou `/public/videos/`)
+  2. d'ajouter 2 objets dans `featuredVideos` et 3 dans `whatsappTestimonials`
+  3. la section apparaîtra automatiquement à la bonne position
+- Position dans Index : entre About Me et Offre.
+
+## Bloc 3 — Teaser Diagnostic / Flash Decision
+
+- Créer `src/components/landing/EntryProductsTeaser.tsx` : 2 cards côte à côte
+  1. **Diagnostic 10 min** — gratuit, identifier ce qui bloque → CTA `/diagnostic`
+  2. **Flash Decision 1h — 350€** — débloquer une décision qui traîne → CTA `/flash-decision`
+- Design : cards premium, icône + titre + bénéfice + prix/durée + CTA, hover-lift bronze froid.
+- Mini-baseline au-dessus : "Pas encore prêt pour un accompagnement long ? Deux portes d'entrée."
+- Position : après Offre principale, avant LinkedIn.
+- L'ancien `DiagnosticTeaser.tsx` reste en place (utilisé ailleurs ? à vérifier au build, sinon ignoré).
+
+## Fichiers touchés
+
+- `src/pages/Index.tsx` — ajouter 3 imports, insérer 3 sections aux bonnes positions
+- `src/components/landing/ClientVoicesSection.tsx` — **nouveau**, vide jusqu'à réception des assets
+- `src/components/landing/EntryProductsTeaser.tsx` — **nouveau**, 2 cards
+- Aucune modification de `TestimonialsSection.tsx` existant (laissé tel quel, non utilisé sur la home)
+
+## Hors scope
+
+- Pas de modification de la palette
+- Pas de retouche aux autres composants existants
+- Pas de modif SEO/Helmet
+- Pas de réutilisation de Mahel ni des WhatsApp Marie/Estelle/Fatima
+
+## Validation post-build
+
+- Scroll complet desktop (1003px) + mobile (<768px)
+- Vérifier que la nouvelle section témoignages **n'apparaît pas** tant qu'on n'a pas d'assets (pas de bloc vide)
+- Vérifier les 2 CTA du teaser → `/diagnostic` et `/flash-decision`
+- Différenciateurs bien rendu après Méthode 3R, hover bronze OK
+- Pas de double CTA Calendly trop rapproché
