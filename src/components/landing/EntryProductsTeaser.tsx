@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     icon: Compass,
-    eyebrow: "Diagnostic · 10 min · Gratuit",
+    eyebrow: "Diagnostic · 15 min ",
     title: "Identifier ce qui bloque",
     description:
       "10 minutes pour mettre le doigt sur vos points de friction, vos angles morts et le coût réel de ce qui repose encore sur vous.",
