@@ -8,10 +8,14 @@ const PolitiqueConfidentialite = () => {
   return (
     <>
       <Helmet>
-        <title>Politique de confidentialité | Frédéric Ternon Coaching</title>
-        <meta name="description" content="Politique de confidentialité et protection des données personnelles du site fredericternon.com." />
+        <title>Politique de confidentialité | Frédéric Ternon</title>
+        <meta name="description" content="Politique de confidentialité et protection des données personnelles du site mentalpro.biz." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://fredericternon.com/politique-confidentialite" />
+        <link rel="canonical" href="https://www.mentalpro.biz/politique-confidentialite" />
+        <meta property="og:title" content="Politique de confidentialité | Frédéric Ternon" />
+        <meta property="og:description" content="Comment vos données personnelles sont collectées, utilisées et protégées sur mentalpro.biz." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mentalpro.biz/politique-confidentialite" />
       </Helmet>
 
       <div className="min-h-screen">

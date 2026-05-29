@@ -1,81 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fredericternon.com/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <loc>https://www.mentalpro.biz/</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog</loc>
-    <lastmod>2026-03-08</lastmod>
+    <loc>https://www.mentalpro.biz/diagnostic</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.mentalpro.biz/flash-decision</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.mentalpro.biz/blog</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/syndrome-imposteur-entrepreneur</loc>
+    <loc>https://www.mentalpro.biz/blog/syndrome-imposteur-entrepreneur</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/peur-reussite-entrepreneur</loc>
+    <loc>https://www.mentalpro.biz/blog/peur-reussite-entrepreneur</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/perfectionnisme-entrepreneur</loc>
+    <loc>https://www.mentalpro.biz/blog/perfectionnisme-entrepreneur</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/peur-argent-entrepreneur</loc>
+    <loc>https://www.mentalpro.biz/blog/peur-argent-entrepreneur</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/peur-visibilite-entrepreneur</loc>
+    <loc>https://www.mentalpro.biz/blog/peur-visibilite-entrepreneur</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/identite-entrepreneur-evolution</loc>
+    <loc>https://www.mentalpro.biz/blog/identite-entrepreneur-evolution</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/lucidite-dirigeant-sous-pression</loc>
+    <loc>https://www.mentalpro.biz/blog/lucidite-dirigeant-sous-pression</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/repousser-decisions-cles</loc>
+    <loc>https://www.mentalpro.biz/blog/repousser-decisions-cles</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/pilotage-interieur-dirigeant</loc>
+    <loc>https://www.mentalpro.biz/blog/pilotage-interieur-dirigeant</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/decision-fatigue-mentale-performance</loc>
+    <loc>https://www.mentalpro.biz/blog/decision-fatigue-mentale-performance</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fredericternon.com/blog/sportif-haut-niveau-dirigeant</loc>
+    <loc>https://www.mentalpro.biz/blog/sportif-haut-niveau-dirigeant</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mentalpro.biz/mentions-legales</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.mentalpro.biz/politique-confidentialite</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

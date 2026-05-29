@@ -30,17 +30,18 @@ const FlashDecision = () => {
   return (
     <>
       <Helmet>
-        <title>Flash Decision | Session Coaching Décisionnel 1h - Frédéric Ternon</title>
+        <title>Flash Decision | Session Coaching 1h — Frédéric Ternon</title>
         <meta name="description" content="Débloquez une décision stratégique en 1 heure. Session intensive de questionnement puissant pour dirigeants. 350€, résultats immédiats." />
-        <link rel="canonical" href="https://fredericternon.com/flash-decision" />
-        <meta property="og:title" content="Flash Decision | Session Coaching Décisionnel 1h" />
-        <meta property="og:description" content="Débloquez une décision stratégique en 1 heure. Session intensive pour dirigeants." />
+        <link rel="canonical" href="https://www.mentalpro.biz/flash-decision" />
+        <meta property="og:title" content="Flash Decision | Session Coaching 1h" />
+        <meta property="og:description" content="Débloquez une décision stratégique en 1 heure. Session intensive pour dirigeants. 350€." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://fredericternon.com/og-flash-decision.jpg" />
+        <meta property="og:url" content="https://www.mentalpro.biz/flash-decision" />
+        <meta property="og:image" content="https://www.mentalpro.biz/og-flash-decision.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://fredericternon.com/og-flash-decision.jpg" />
+        <meta name="twitter:image" content="https://www.mentalpro.biz/og-flash-decision.jpg" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
