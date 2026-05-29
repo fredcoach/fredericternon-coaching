@@ -5,7 +5,7 @@ import { Video, FileText, Headphones, MessageCircle, Bot, CheckCircle2, ArrowRig
 const offerItems = [
   {
     icon: Video,
-    title: "Coaching 1:1 (visio)",
+    title: "Coaching 1:1 ",
     description: "Durée adaptée à votre rythme et vos objectifs",
   },
   {
