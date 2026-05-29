@@ -59,7 +59,7 @@ const BlogArticle = () => {
     "@type": "Product",
     "name": article.productName,
     "description": article.productDescription,
-    "image": `https://fredericternon.com${article.ogImage}`,
+    "image": `https://www.mentalpro.biz${article.ogImage}`,
     "sku": `COACHING-${article.id}`,
     "mpn": `FT-${article.slug}`,
     "brand": {
@@ -69,11 +69,11 @@ const BlogArticle = () => {
     "manufacturer": {
       "@type": "Organization",
       "name": "Frédéric Ternon Coaching Mental",
-      "url": "https://fredericternon.com"
+      "url": "https://www.mentalpro.biz"
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://fredericternon.com/blog/${article.slug}`,
+      "url": `https://www.mentalpro.biz/blog/${article.slug}`,
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
@@ -108,7 +108,7 @@ const BlogArticle = () => {
       "seller": {
         "@type": "Organization",
         "name": "Frédéric Ternon Coaching Mental",
-        "url": "https://fredericternon.com"
+        "url": "https://www.mentalpro.biz"
       }
     },
     "aggregateRating": {
@@ -162,11 +162,11 @@ const BlogArticle = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "image": `https://fredericternon.com${article.ogImage}`,
+    "image": `https://www.mentalpro.biz${article.ogImage}`,
     "author": {
       "@type": "Person",
       "name": "Frédéric Ternon",
-      "url": "https://fredericternon.com",
+      "url": "https://www.mentalpro.biz",
       "jobTitle": "Coach Mental pour Entrepreneurs"
     },
     "publisher": {
@@ -174,14 +174,14 @@ const BlogArticle = () => {
       "name": "Frédéric Ternon Coaching Mental",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://fredericternon.com/images/blog-og.jpg"
+        "url": "https://www.mentalpro.biz/images/blog-og.jpg"
       }
     },
     "datePublished": article.publishedAt,
     "dateModified": article.updatedAt,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://fredericternon.com/blog/${article.slug}`
+      "@id": `https://www.mentalpro.biz/blog/${article.slug}`
     },
     "articleSection": article.category,
     "wordCount": article.content.split(/\s+/).length,
@@ -221,19 +221,19 @@ const BlogArticle = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://fredericternon.com"
+        "item": "https://www.mentalpro.biz"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://fredericternon.com/blog"
+        "item": "https://www.mentalpro.biz/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": article.title,
-        "item": `https://fredericternon.com/blog/${article.slug}`
+        "item": `https://www.mentalpro.biz/blog/${article.slug}`
       }
     ]
   };
@@ -248,8 +248,8 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://fredericternon.com/blog/${article.slug}`} />
-        <meta property="og:image" content={`https://fredericternon.com${article.ogImage}`} />
+        <meta property="og:url" content={`https://www.mentalpro.biz/blog/${article.slug}`} />
+        <meta property="og:image" content={`https://www.mentalpro.biz${article.ogImage}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon Coaching" />
@@ -269,13 +269,13 @@ const BlogArticle = () => {
         <meta property="product:price:amount" content="0" />
         <meta property="product:price:currency" content="EUR" />
         
-        <link rel="canonical" href={`https://fredericternon.com/blog/${article.slug}`} />
+        <link rel="canonical" href={`https://www.mentalpro.biz/blog/${article.slug}`} />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
         <meta name="twitter:description" content={article.metaDescription} />
-        <meta name="twitter:image" content={`https://fredericternon.com${article.ogImage}`} />
+        <meta name="twitter:image" content={`https://www.mentalpro.biz${article.ogImage}`} />
         <meta name="twitter:creator" content="@fredericternon" />
         
         {/* Additional SEO */}

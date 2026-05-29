@@ -1,11 +1,10 @@
-# Robots.txt pour fredericternon.com
-# Coaching masculin - Frédéric Ternon
+# Robots.txt - Frédéric Ternon | Pilotage Dirigeant PME
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://fredericternon.com/sitemap.xml
+Sitemap: https://www.mentalpro.biz/sitemap.xml
 
 # Autoriser tous les bots à indexer correctement
 User-agent: Googlebot

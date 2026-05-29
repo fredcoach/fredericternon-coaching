@@ -41,7 +41,7 @@ const Index = () => {
     "name": "Frédéric Ternon | Pilotage du Dirigeant",
     "description": "Regard extérieur pour dirigeants de PME jusqu'à 30 personnes : identifier ce qui bloque, clarifier l'organisation, améliorer les décisions.",
     "url": "https://www.mentalpro.biz",
-    "telephone": "",
+    "telephone": "+33767971952",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "FR"
@@ -57,7 +57,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME jusqu'à 30</title>
+        <title>Frédéric Ternon | Pilotage PME — Décisions & Organisation</title>
         <meta name="description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier ce qui bloque, clarifier l'organisation, mieux décider. Méthode 3R. 30 min pour identifier ce qui bloque." />
         <meta name="keywords" content="dirigeant PME, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME, délégation dirigeant, décision stratégique, coach dirigeant PME" />
         <link rel="canonical" href="https://www.mentalpro.biz/" />

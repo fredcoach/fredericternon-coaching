@@ -69,33 +69,33 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Blog Coaching Mental | Croyances Limitantes Entrepreneurs - Frédéric Ternon</title>
-        <meta name="title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs - Frédéric Ternon" />
-        <meta name="description" content="Découvrez les croyances limitantes qui freinent votre croissance entrepreneuriale. Syndrome de l'imposteur, peur de réussir, perfectionnisme : solutions concrètes pour entrepreneurs." />
+        <title>Blog Pilotage Dirigeant PME | Frédéric Ternon</title>
+        <meta name="title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
+        <meta name="description" content="Articles pour dirigeants de PME : pilotage, décisions, organisation, délégation. Croyances limitantes et leviers concrets pour reprendre la main." />
         <meta name="keywords" content="croyances limitantes entrepreneur, syndrome imposteur entrepreneur, peur réussir entrepreneur, coaching mental, développement personnel entrepreneur, blocages entrepreneurs" />
-        <link rel="canonical" href="https://fredericternon.com/blog" />
-        
+        <link rel="canonical" href="https://www.mentalpro.biz/blog" />
+
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fredericternon.com/blog" />
-        <meta property="og:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
-        <meta property="og:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
-        <meta property="og:image" content="https://fredericternon.com/images/blog-og.jpg" />
+        <meta property="og:url" content="https://www.mentalpro.biz/blog" />
+        <meta property="og:title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
+        <meta property="og:description" content="Articles et guides pour dirigeants de PME : pilotage, décisions et croyances limitantes." />
+        <meta property="og:image" content="https://www.mentalpro.biz/images/blog-og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
-        <meta property="og:site_name" content="Frédéric Ternon Coaching" />
-        
+        <meta property="og:site_name" content="Frédéric Ternon | Pilotage du Dirigeant" />
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog Coaching Mental | Croyances Limitantes Entrepreneurs" />
-        <meta name="twitter:description" content="Articles et guides pour dépasser vos croyances limitantes et libérer votre potentiel d'entrepreneur." />
-        <meta name="twitter:image" content="https://fredericternon.com/images/blog-og.jpg" />
-        
+        <meta name="twitter:title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
+        <meta name="twitter:description" content="Articles et guides pour dirigeants de PME : pilotage, décisions et croyances limitantes." />
+        <meta name="twitter:image" content="https://www.mentalpro.biz/images/blog-og.jpg" />
+
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="Frédéric Ternon" />
         <meta name="language" content="French" />
-        
+
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(blogListStructuredData)}

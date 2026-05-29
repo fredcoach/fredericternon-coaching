@@ -26,7 +26,7 @@ export const blogArticles: BlogArticle[] = [
     id: "1",
     slug: "syndrome-imposteur-entrepreneur",
     title: "Le syndrome de l'imposteur : pourquoi tu te sabotes en pleine réussite",
-    metaTitle: "Syndrome de l'imposteur dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Syndrome de l'imposteur dirigeant | Frédéric Ternon",
     metaDescription: "Découvrez comment le syndrome de l'imposteur freine votre leadership et les solutions pour le dépasser définitivement en tant que dirigeant.",
     excerpt: "Tu as les compétences, les résultats, mais tu te sens toujours illégitime. Ce n'est pas un problème de technique, c'est une question d'identité.",
     content: `<p>Après avoir accompagné des centaines de dirigeants et chefs d'entreprise, j'ai fait un constat troublant : <strong>les plus brillants sont souvent ceux qui doutent le plus</strong>.</p>
@@ -94,7 +94,7 @@ export const blogArticles: BlogArticle[] = [
     id: "2",
     slug: "peur-reussite-entrepreneur",
     title: "La peur de réussir : l'ennemi invisible de ta croissance",
-    metaTitle: "Peur de réussir dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Peur de réussir dirigeant | Frédéric Ternon",
     metaDescription: "Pourquoi vous sabotez inconsciemment la croissance de votre entreprise et comment reprogrammer cette peur profonde.",
     excerpt: "Tu penses avoir peur de l'échec ? Et si ton vrai frein était la peur de réussir ? Une croyance bien plus sournoise.",
     content: `<p>C'est paradoxal. Tu pilotes une entreprise, tu prends des décisions chaque jour, et pourtant, à chaque fois que tu approches d'un nouveau palier, quelque chose te retient.</p>
@@ -160,7 +160,7 @@ export const blogArticles: BlogArticle[] = [
     id: "3",
     slug: "perfectionnisme-entrepreneur",
     title: "Le perfectionnisme : la prison dorée du dirigeant",
-    metaTitle: "Perfectionnisme dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Perfectionnisme dirigeant | Frédéric Ternon",
     metaDescription: "Comment le perfectionnisme détruit votre efficacité de dirigeant et les clés pour en sortir sans sacrifier la qualité.",
     excerpt: "Tu appelles ça de l'exigence. En réalité, c'est une peur déguisée qui te coûte du temps, de l'énergie et freine ta structure.",
     content: `<p>On te l'a vendu comme une force. "Je suis perfectionniste" sonne comme un badge d'honneur. En réalité, <strong>c'est souvent une stratégie de protection contre la peur du jugement, de ton board, de tes équipes, de tes pairs</strong>.</p>
@@ -227,7 +227,7 @@ export const blogArticles: BlogArticle[] = [
     id: "4",
     slug: "peur-argent-entrepreneur",
     title: "Ton rapport à l'argent sabote la croissance de ton entreprise",
-    metaTitle: "Rapport à l'argent dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Rapport à l'argent dirigeant | Frédéric Ternon",
     metaDescription: "Vos croyances sur l'argent déterminent la croissance de votre entreprise. Découvrez comment reprogrammer votre relation à l'argent en tant que dirigeant.",
     excerpt: "Ton chiffre d'affaires est le reflet exact de ce que tu t'autorises à viser. Pas de tes compétences de dirigeant.",
     content: `<p>Le chiffre d'affaires de ton entreprise n'est pas un indicateur de compétence managériale. C'est un indicateur de ce que tu crois possible, de ce que tu t'autorises à viser, de ta relation profonde à l'argent et à la valeur.</p>
@@ -299,7 +299,7 @@ export const blogArticles: BlogArticle[] = [
     id: "5",
     slug: "peur-visibilite-entrepreneur",
     title: "Pourquoi tu te caches : la peur de la visibilité chez le dirigeant",
-    metaTitle: "Peur de la visibilité dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Peur de la visibilité dirigeant | Frédéric Ternon",
     metaDescription: "Vous évitez de vous exposer en tant que dirigeant ? Découvrez les croyances profondes derrière cette peur et comment les dépasser.",
     excerpt: "Tu sais que ta visibilité porte ton entreprise. Et pourtant, tu trouves toujours une excuse pour rester dans l'ombre.",
     content: `<p>Tu diriges une entreprise qui a de la valeur. Tu pourrais attirer plus de talents, plus de clients, plus de partenaires. Mais quelque chose te retient de te mettre en avant.</p>
@@ -373,8 +373,8 @@ export const blogArticles: BlogArticle[] = [
     id: "6",
     slug: "identite-entrepreneur-evolution",
     title: "Ton identité de dirigeant est ton plafond : comment évoluer vraiment",
-    metaTitle: "Identité dirigeant croissance | Coaching Mental Frédéric Ternon",
-    metaDescription: "Votre entreprise ne dépassera jamais votre identité de leader. Découvrez comment faire évoluer qui vous êtes pour débloquer la croissance de votre structure.",
+    metaTitle: "Identité dirigeant croissance | Frédéric Ternon",
+    metaDescription: "Votre entreprise ne dépassera jamais votre identité de leader. Comment faire évoluer qui vous êtes pour débloquer la croissance.",
     excerpt: "Tu ne peux pas diriger une entreprise à 50 personnes avec l'identité d'un entrepreneur solo. Ta croissance commence par qui tu deviens.",
     content: `<p>J'ai accompagné des dirigeants qui avaient tout : les compétences, le marché, les équipes, les ressources. Et pourtant, leur entreprise plafonnait. <strong>Leur structure avait atteint la limite de leur identité de leader.</strong></p>
 
@@ -451,7 +451,7 @@ export const blogArticles: BlogArticle[] = [
     id: "7",
     slug: "lucidite-dirigeant-sous-pression",
     title: "Dirigeant sous pression : pourquoi la lucidité baisse",
-    metaTitle: "Lucidité dirigeant sous pression | Coaching Mental Frédéric Ternon",
+    metaTitle: "Lucidité dirigeant sous pression | Frédéric Ternon",
     metaDescription: "Découvrez pourquoi la pression chronique détruit votre lucidité de dirigeant et comment restaurer votre clarté décisionnelle durablement.",
     excerpt: "Plus la pression monte, plus tu devrais être lucide. C'est exactement l'inverse qui se passe. Et ça te coûte cher.",
     content: `<p>Tu le sais instinctivement : <strong>tes meilleures décisions, tu les prends quand tu es calme, reposé, aligné</strong>. Et pourtant, tu diriges sous pression permanente. Résultat : tu décides en mode survie.</p>
@@ -532,7 +532,7 @@ export const blogArticles: BlogArticle[] = [
     id: "8",
     slug: "repousser-decisions-cles",
     title: "Pourquoi vous repoussez certaines décisions clés",
-    metaTitle: "Procrastination décisionnelle dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Procrastination décisionnelle dirigeant | Frédéric Ternon",
     metaDescription: "Vous repoussez des décisions stratégiques depuis des semaines ? Découvrez le mécanisme caché derrière cette procrastination et comment en sortir.",
     excerpt: "Ce n'est pas un manque de temps. Ce n'est pas un manque de données. C'est quelque chose de bien plus profond qui bloque ta capacité à trancher.",
     content: `<p>Tu as toutes les informations. Tu as analysé les scénarios. Tu connais la bonne option. <strong>Et pourtant, tu repousses.</strong></p>
@@ -617,7 +617,7 @@ export const blogArticles: BlogArticle[] = [
     id: "9",
     slug: "pilotage-interieur-dirigeant",
     title: "Pilotage intérieur : ce que ça change concrètement",
-    metaTitle: "Pilotage intérieur dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Pilotage intérieur dirigeant | Frédéric Ternon",
     metaDescription: "Le pilotage intérieur est la compétence cachée des dirigeants qui performent sans s'épuiser. Découvrez ce que ça change concrètement.",
     excerpt: "Tu pilotes ton entreprise. Mais qui pilote ton état intérieur ? Ta clarté, ton énergie, ta capacité à encaisser, ça se travaille.",
     content: `<p>Tu as appris à piloter une entreprise. À lire un P&L. À manager des équipes. À négocier des contrats. <strong>Mais personne ne t'a appris à piloter ce qui pilote tout le reste : ton état intérieur.</strong></p>
@@ -694,7 +694,7 @@ export const blogArticles: BlogArticle[] = [
     id: "10",
     slug: "decision-fatigue-mentale-performance",
     title: "Décision, fatigue mentale et performance business",
-    metaTitle: "Fatigue décisionnelle dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Fatigue décisionnelle dirigeant | Frédéric Ternon",
     metaDescription: "La fatigue décisionnelle coûte des millions aux entreprises. Découvrez comment protéger votre énergie mentale pour des décisions de meilleure qualité.",
     excerpt: "Chaque décision consomme de l'énergie. En fin de journée, tu prends des décisions à 200M€ avec un cerveau à 30% de capacité.",
     content: `<p>Une étude célèbre sur les juges montre que les décisions de libération conditionnelle passent de 65% le matin à quasi 0% en fin de journée. <strong>Le cerveau fatigué dit non par défaut.</strong></p>
@@ -779,7 +779,7 @@ export const blogArticles: BlogArticle[] = [
     id: "11",
     slug: "sportif-haut-niveau-dirigeant",
     title: "Ce qu'un sportif de haut niveau comprend mieux que beaucoup de dirigeants",
-    metaTitle: "Mental sportif dirigeant | Coaching Mental Frédéric Ternon",
+    metaTitle: "Mental sportif dirigeant | Frédéric Ternon",
     metaDescription: "Les sportifs de haut niveau entraînent leur mental autant que leur physique. Pourquoi les dirigeants ne font-ils pas la même chose ?",
     excerpt: "Un athlète olympique n'imaginerait jamais performer sans préparation mentale. Pourtant, toi, tu diriges à 100% sans entraîner ton mental.",
     content: `<p>J'ai eu le privilège d'accompagner des sportifs de haut niveau et des dirigeants d'entreprise. <strong>Les deux opèrent sous pression extrême. Un seul des deux entraîne systématiquement son mental.</strong></p>
