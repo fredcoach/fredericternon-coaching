@@ -374,7 +374,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "identite-entrepreneur-evolution",
     title: "Ton identité de dirigeant est ton plafond : comment évoluer vraiment",
     metaTitle: "Identité dirigeant croissance | Frédéric Ternon",
-    metaDescription: "Votre entreprise ne dépassera jamais votre identité de leader. Découvrez comment faire évoluer qui vous êtes pour débloquer la croissance de votre structure.",
+    metaDescription: "Votre entreprise ne dépassera jamais votre identité de leader. Comment faire évoluer qui vous êtes pour débloquer la croissance.",
     excerpt: "Tu ne peux pas diriger une entreprise à 50 personnes avec l'identité d'un entrepreneur solo. Ta croissance commence par qui tu deviens.",
     content: `<p>J'ai accompagné des dirigeants qui avaient tout : les compétences, le marché, les équipes, les ressources. Et pourtant, leur entreprise plafonnait. <strong>Leur structure avait atteint la limite de leur identité de leader.</strong></p>
 
