@@ -12,13 +12,11 @@ const before = [
 ];
 
 const after = [
-  "Moins de décisions qui remontent",
-  "Des responsabilités plus claires",
-  "Une délégation plus solide",
-  "Plus de visibilité sur les priorités",
-  "Plus de recul pour piloter",
-  "Plus de temps pour penser l'étape suivante",
-  "Une entreprise moins dépendante du dirigeant",
+  { bold: "Moins de remontées", text: "Les décisions circulent mieux et les arbitrages ne reviennent plus systématiquement vers vous." },
+  { bold: "Plus de recul", text: "Vous retrouvez du temps pour les sujets qui comptent vraiment." },
+  { bold: "Posture plus stable", text: "Vous décidez avec plus de calme, même quand la pression monte." },
+  { bold: "Pilotage plus clair", text: "Vous passez moins de temps à colmater, plus de temps à diriger." },
+  { bold: "Entreprise plus autonome", text: "La PME avance avec un cadre plus solide, sans vous remettre au centre de tout." },
 ];
 
 export function BeforeAfterSection() {
