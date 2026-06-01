@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/landing/HeroSection";
 import { JulienTestimonialSection } from "@/components/landing/JulienTestimonialSection";
 import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
 import { HiddenCostSection } from "@/components/landing/HiddenCostSection";
+import { BeforeAfterSection } from "@/components/landing/BeforeAfterSection";
 import { ProblemSolutionSection } from "@/components/landing/ProblemSolutionSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
@@ -95,6 +96,7 @@ const Index = () => {
           <JulienTestimonialSection />
           <RealityCheckSection />
           <HiddenCostSection />
+          <BeforeAfterSection />
           <ProblemSolutionSection />
           <PromiseSection />
           <Method3RSection />
