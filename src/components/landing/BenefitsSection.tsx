@@ -60,7 +60,7 @@ export function BenefitsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">
+          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-lg">
             Bénéfices concrets
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">

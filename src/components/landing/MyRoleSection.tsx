@@ -34,7 +34,7 @@ export function MyRoleSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">Mon rôle</p>
+          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-lg">Mon rôle</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
             Un regard extérieur sur <span className="text-gradient">votre pilotage</span>
           </h2>
