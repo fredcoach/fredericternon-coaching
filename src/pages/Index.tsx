@@ -94,6 +94,7 @@ const Index = () => {
           <HeroSection />
           <JulienTestimonialSection />
           <RealityCheckSection />
+          <HiddenCostSection />
           <ProblemSolutionSection />
           <PromiseSection />
           <Method3RSection />
