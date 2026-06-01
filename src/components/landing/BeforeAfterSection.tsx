@@ -4,13 +4,11 @@ import laurentVideo from "@/assets/laurent-testimonial.mp4.asset.json";
 import laurentPoster from "@/assets/laurent-poster.jpg";
 
 const before = [
-  "Agenda saturé",
-  "Arbitrages permanents",
-  "Difficulté à déléguer durablement",
-  "Sensation de courir après l'entreprise",
-  "Décisions qui remontent constamment",
-  "Peu de temps pour prendre du recul",
-  "Impression que tout repose encore trop sur eux",
+  { bold: "Décisions", text: "Vous restez au cœur d'arbitrages qui ne devraient plus passer par vous." },
+  { bold: "Délégation", text: "Vous avez délégué, mais les validations, tensions et questions reviennent encore." },
+  { bold: "Urgences", text: "Votre agenda est rempli par le court terme, au détriment du recul stratégique." },
+  { bold: "Organisation", text: "Vous sentez que quelque chose coince, sans toujours voir précisément où agir." },
+  { bold: "Recrutement", text: "Vous envisagez d'embaucher, mais vous savez qu'une personne de plus ne suffira pas si le cadre reste flou." },
 ];
 
 const after = [
