@@ -5,6 +5,7 @@ import { Navigation } from "@/components/landing/Navigation";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { JulienTestimonialSection } from "@/components/landing/JulienTestimonialSection";
 import { RealityCheckSection } from "@/components/landing/RealityCheckSection";
+import { HiddenCostSection } from "@/components/landing/HiddenCostSection";
 import { ProblemSolutionSection } from "@/components/landing/ProblemSolutionSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
