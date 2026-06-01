@@ -12,13 +12,11 @@ const before = [
 ];
 
 const after = [
-  "Moins de décisions qui remontent",
-  "Des responsabilités plus claires",
-  "Une délégation plus solide",
-  "Plus de visibilité sur les priorités",
-  "Plus de recul pour piloter",
-  "Plus de temps pour penser l'étape suivante",
-  "Une entreprise moins dépendante du dirigeant",
+  { bold: "Moins de remontées", text: "Les décisions circulent mieux et les arbitrages ne reviennent plus systématiquement vers vous." },
+  { bold: "Plus de recul", text: "Vous retrouvez du temps pour les sujets qui comptent vraiment." },
+  { bold: "Posture plus stable", text: "Vous décidez avec plus de calme, même quand la pression monte." },
+  { bold: "Pilotage plus clair", text: "Vous passez moins de temps à colmater, plus de temps à diriger." },
+  { bold: "Entreprise plus autonome", text: "La PME avance avec un cadre plus solide, sans vous remettre au centre de tout." },
 ];
 
 export function BeforeAfterSection() {
@@ -88,18 +86,21 @@ export function BeforeAfterSection() {
                   Après
                 </p>
                 <h3 className="font-serif text-lg font-bold text-foreground">
-                  L'organisation reprend la main
+                  Ce que vous gagnez
                 </h3>
               </div>
             </div>
-            <ul className="space-y-3">
-              {after.map((item) => (
+            <ul className="space-y-4">
+              {after.map((item, i) => (
                 <li
-                  key={item}
-                  className="flex items-start gap-3 text-foreground/85 text-[15px] leading-relaxed"
+                  key={i}
+                  className="flex items-start gap-3 text-foreground/85 text-sm md:text-base leading-relaxed"
                 >
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                  <span>{item}</span>
+                  <span>
+                    <strong className="text-foreground font-semibold">{item.bold}</strong>
+                    {" — "}{item.text}
+                  </span>
                 </li>
               ))}
             </ul>
