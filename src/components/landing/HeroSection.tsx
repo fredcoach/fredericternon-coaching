@@ -4,9 +4,9 @@ import { useEffect, useState, useRef } from "react";
 
 const shortLineItems = [
   "Organisation",
-  "Décisions",
+  "Décision",
   "Délégation",
-  "Pilotage sous pression",
+  "Croissance",
 ];
 
 export function HeroSection() {
@@ -84,12 +84,12 @@ export function HeroSection() {
             {/* Text content */}
             <div className="text-center">
               {/* Headline */}
-              <h1 className="animate-fade-in-up mb-8 break-words font-serif font-semibold text-white leading-[1.1] tracking-tight text-balance drop-shadow-[0_2px_24px_rgba(0,0,0,0.4)]">
+              <h1 className="animate-fade-in-up mb-8 break-words font-serif font-semibold text-white leading-[1.15] tracking-tight text-balance drop-shadow-[0_2px_24px_rgba(0,0,0,0.4)]">
                 <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-                  Votre entreprise tourne,
+                  Votre entreprise fonctionne.
                 </span>
-                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
-                  mais tout <span className="text-accent">repose encore trop sur vous</span> ?
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-3">
+                  Mais dépend-elle encore <span className="text-accent">trop de vous</span> ?
                 </span>
               </h1>
 
@@ -99,10 +99,14 @@ export function HeroSection() {
                 className="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Un regard extérieur pour clarifier l'organisation, mieux décider
+                Organisation, délégation, recrutement, décisions :
                 <br className="hidden md:block" />
                 <span className="text-accent/90 font-medium">
-                  et retrouver un pilotage plus net sous pression.
+                  un regard extérieur pour identifier ce qui bloque, structurer le prochain palier
+                </span>
+                <br className="hidden md:block" />
+                <span className="text-white/80">
+                  et réduire ce que vous continuez à porter seul.
                 </span>
               </p>
 
