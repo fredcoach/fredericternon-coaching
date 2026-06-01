@@ -90,14 +90,17 @@ export function BeforeAfterSection() {
                 </h3>
               </div>
             </div>
-            <ul className="space-y-3">
-              {after.map((item) => (
+            <ul className="space-y-4">
+              {after.map((item, i) => (
                 <li
-                  key={item}
-                  className="flex items-start gap-3 text-foreground/85 text-[15px] leading-relaxed"
+                  key={i}
+                  className="flex items-start gap-3 text-foreground/85 text-sm md:text-base leading-relaxed"
                 >
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                  <span>{item}</span>
+                  <span>
+                    <strong className="text-foreground font-semibold">{item.bold}</strong>
+                    {" — "}{item.text}
+                  </span>
                 </li>
               ))}
             </ul>
