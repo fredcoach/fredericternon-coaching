@@ -28,11 +28,11 @@ export function JulienTestimonialSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">
-            Témoignage dirigeant
+          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-lg">
+            TÉMOIGNAGE DE JULIEN
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Un impact concret sur le <span className="text-gradient">quotidien du dirigeant</span>
+            Un impact concret son <span className="text-gradient">quotidien</span> 
           </h2>
           <div className="space-y-3 text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             <p>

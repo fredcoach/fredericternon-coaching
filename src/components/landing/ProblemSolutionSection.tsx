@@ -21,7 +21,7 @@ const columns = [
     title: "Reprendre la main sur le pilotage",
     items: [
       "Clarifier les rôles, les périmètres et les décisions à plat",
-      "Définir une délégation qui tient — sans repasser derrière",
+      "Définir une délégation qui tient  sans repasser derrière",
       "Sortir des urgences, retrouver le temps stratégique",
       "Structurer l'organisation pour passer le palier suivant",
     ],
@@ -36,7 +36,7 @@ const columns = [
       "Moins de remontées, des arbitrages plus rapides",
       "Du recul sur les sujets qui comptent vraiment",
       "Une posture plus stable dans les moments de pression",
-      "Un dirigeant qui pilote — pas qui colmate",
+      "Un dirigeant qui pilote pas qui colmate",
     ],
     accent: "text-success",
     bg: "bg-success/10",
@@ -58,7 +58,7 @@ export function ProblemSolutionSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">
+          <p className="text-primary font-medium mb-2 uppercase tracking-wider text-lg">
             Constat · Méthode · Résultat
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">

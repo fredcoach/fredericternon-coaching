@@ -48,8 +48,8 @@ export function AboutMeSection() {
             {/* Content */}
             <div className="md:col-span-3 space-y-5">
               <div>
-                <p className="text-primary font-medium mb-2 uppercase tracking-wider text-sm">
-                  Qui je suis
+                <p className="text-primary font-medium mb-2 uppercase tracking-wider text-lg">
+                  Qui je suis ?
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
                   Frédéric Ternon : un regard extérieur sur votre pilotage
