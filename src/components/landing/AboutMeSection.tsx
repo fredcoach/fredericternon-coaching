@@ -52,7 +52,7 @@ export function AboutMeSection() {
                   Qui je suis
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Frédéric Ternon — un regard extérieur sur votre pilotage
+                  Frédéric Ternon : un regard extérieur sur votre pilotage
                 </h2>
               </div>
 
