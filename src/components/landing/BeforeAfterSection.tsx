@@ -86,7 +86,7 @@ export function BeforeAfterSection() {
                   Après
                 </p>
                 <h3 className="font-serif text-lg font-bold text-foreground">
-                  L'organisation reprend la main
+                  Ce que vous gagnez
                 </h3>
               </div>
             </div>
