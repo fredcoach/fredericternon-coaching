@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertTriangle, CheckCircle2 } from "lucide-react";
 import laurentVideo from "@/assets/laurent-testimonial.mp4.asset.json";
+import laurentPoster from "@/assets/laurent-poster.jpg";
 
 const before = [
   "Agenda saturé",
@@ -127,6 +128,7 @@ export function BeforeAfterSection() {
                 controls
                 preload="none"
                 playsInline
+                poster={laurentPoster}
                 className="w-full aspect-[9/16] bg-black object-cover"
               >
                 <source src={laurentVideo.url} type="video/mp4" />
