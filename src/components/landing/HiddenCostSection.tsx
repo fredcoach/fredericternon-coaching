@@ -32,9 +32,15 @@ export function HiddenCostSection() {
               Un sujet que vous reprenez parce qu'il sera "plus rapide de le faire vous-même".
             </p>
 
-            <p className="text-foreground font-medium">
-              Pris séparément, cela paraît anodin.
-            </p>
+            <div className="space-y-4 text-foreground font-medium">
+              <p>Pris séparément, cela paraît anodin.</p>
+              <p>
+                Mais si seulement 30 minutes de décisions inutiles remontent vers vous chaque jour, cela représente plus de 100 heures par an.
+              </p>
+              <p>
+                Soit près de 3 semaines de travail consacrées à des sujets que l'organisation devrait déjà absorber.
+              </p>
+            </div>
 
             <p>
               Additionnés sur une année, les conséquences deviennent beaucoup plus importantes :
