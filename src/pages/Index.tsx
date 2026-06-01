@@ -9,6 +9,7 @@ import { HiddenCostSection } from "@/components/landing/HiddenCostSection";
 import { BeforeAfterSection } from "@/components/landing/BeforeAfterSection";
 import { ProblemSolutionSection } from "@/components/landing/ProblemSolutionSection";
 import { PromiseSection } from "@/components/landing/PromiseSection";
+import { OrganigrammeSection } from "@/components/landing/OrganigrammeSection";
 import { Method3RSection } from "@/components/landing/Method3RSection";
 import { DifferentiatorsSection } from "@/components/landing/DifferentiatorsSection";
 import { AboutMeSection } from "@/components/landing/AboutMeSection";
@@ -99,6 +100,7 @@ const Index = () => {
           <BeforeAfterSection />
           <ProblemSolutionSection />
           <PromiseSection />
+          <OrganigrammeSection />
           <Method3RSection />
           <DifferentiatorsSection />
           <AboutMeSection />
