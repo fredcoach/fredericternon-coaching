@@ -1,5 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Linkedin, Quote, ExternalLink } from "lucide-react";
+import julienPhoto from "@/assets/julien-laudy.png.asset.json";
 
 const highlights = [
   "ordre",
@@ -65,9 +66,13 @@ export function JulienTestimonialSection() {
             <Quote className="absolute top-6 right-6 md:top-8 md:right-8 w-10 h-10 text-primary/10" />
 
             <div className="flex items-start gap-4 mb-6">
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border border-primary/10">
-                <span className="text-xl font-bold text-primary">J</span>
-              </div>
+              <img
+                src={julienPhoto.url}
+                alt="Julien Laudy, Co-fondateur et Directeur Général de Dokles.io"
+                loading="lazy"
+                decoding="async"
+                className="flex-shrink-0 w-14 h-14 rounded-full object-cover border border-primary/10"
+              />
               <div className="min-w-0">
                 <h3 className="font-semibold text-foreground text-base md:text-lg">
                   Julien Laudy
