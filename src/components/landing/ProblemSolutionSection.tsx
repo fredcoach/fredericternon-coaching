@@ -20,10 +20,11 @@ const columns = [
     kicker: "Ce sur quoi on travaille",
     title: "Reprendre la main sur le pilotage",
     items: [
-      "Clarifier les rôles, les périmètres et les décisions à plat",
-      "Définir une délégation qui tient  sans repasser derrière",
-      "Sortir des urgences, retrouver le temps stratégique",
-      "Structurer l'organisation pour passer le palier suivant",
+      { bold: "Pilotage", text: "Parce que tout ne doit plus dépendre de vous." },
+      { bold: "Rôles & responsabilités", text: "Parce que le flou crée des validations inutiles." },
+      { bold: "Délégation", text: "Parce qu'une délégation floue finit toujours par revenir." },
+      { bold: "Recrutement", text: "Parce qu'embaucher sans structure amplifie le problème." },
+      { bold: "Temps stratégique", text: "Parce que la croissance ne se construit pas dans l'urgence." },
     ],
     accent: "text-primary",
     bg: "bg-primary/10",
@@ -90,11 +91,19 @@ export function ProblemSolutionSection() {
               <h3 className="font-serif text-xl font-bold text-foreground mb-5 leading-snug">
                 {col.title}
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {col.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                  <li key={i} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground leading-relaxed">
                     <span className={`${col.accent} font-bold mt-0.5`}>·</span>
-                    <span>{item}</span>
+                    {typeof item === "string" ? (
+                      <span>{item}</span>
+                    ) : (
+                      <span>
+                        <strong className="text-foreground font-semibold">{item.bold}</strong>
+                        {" — "}
+                        {item.text}
+                      </span>
+                    )}
                   </li>
                 ))}
               </ul>
