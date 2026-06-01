@@ -4,13 +4,11 @@ import laurentVideo from "@/assets/laurent-testimonial.mp4.asset.json";
 import laurentPoster from "@/assets/laurent-poster.jpg";
 
 const before = [
-  "Agenda saturé",
-  "Arbitrages permanents",
-  "Difficulté à déléguer durablement",
-  "Sensation de courir après l'entreprise",
-  "Décisions qui remontent constamment",
-  "Peu de temps pour prendre du recul",
-  "Impression que tout repose encore trop sur eux",
+  { bold: "Décisions", text: "Vous restez au cœur d'arbitrages qui ne devraient plus passer par vous." },
+  { bold: "Délégation", text: "Vous avez délégué, mais les validations, tensions et questions reviennent encore." },
+  { bold: "Urgences", text: "Votre agenda est rempli par le court terme, au détriment du recul stratégique." },
+  { bold: "Organisation", text: "Vous sentez que quelque chose coince, sans toujours voir précisément où agir." },
+  { bold: "Recrutement", text: "Vous envisagez d'embaucher, mais vous savez qu'une personne de plus ne suffira pas si le cadre reste flou." },
 ];
 
 const after = [
@@ -38,8 +36,8 @@ export function BeforeAfterSection() {
             Situations rencontrées
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground leading-tight">
-            Ce que vivent souvent les dirigeants{" "}
-            <span className="text-gradient">qui me contactent</span>
+            Ce que vous vivez{" "}
+            <span className="text-gradient">au quotidien</span>
           </h2>
         </div>
 
@@ -63,14 +61,17 @@ export function BeforeAfterSection() {
                 </h3>
               </div>
             </div>
-            <ul className="space-y-3">
-              {before.map((item) => (
+            <ul className="space-y-4">
+              {before.map((item, i) => (
                 <li
-                  key={item}
-                  className="flex items-start gap-3 text-foreground/80 text-[15px] leading-relaxed"
+                  key={i}
+                  className="flex items-start gap-3 text-foreground/80 text-sm md:text-base leading-relaxed"
                 >
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                  <span>{item}</span>
+                  <span>
+                    <strong className="text-foreground font-semibold">{item.bold}</strong>
+                    {" — "}{item.text}
+                  </span>
                 </li>
               ))}
             </ul>
