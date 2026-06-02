@@ -44,7 +44,7 @@ export function FinalCTASection() {
                 className="inline-flex items-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Réserver votre session — 30 min, gratuite
+                Réserver votre échange : 30 min
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

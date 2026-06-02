@@ -47,7 +47,7 @@ export function AboutSection() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants de PME, principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand l'entreprise fonctionne mais{" "}
+                J'accompagne les dirigeants de TPE et de PME, principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand l'entreprise fonctionne mais{" "}
                 <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle : apporter un regard extérieur pour identifier ce qui bloque, clarifier l'organisation, fluidifier les décisions et vous aider à reprendre la main sur le pilotage.
               </p>
 

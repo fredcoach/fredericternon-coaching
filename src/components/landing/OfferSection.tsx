@@ -11,7 +11,7 @@ const offerItems = [
   {
     icon: FileText,
     title: "Kit Opérationnel du Dirigeant",
-    description: "20+ fiches & checklists de pilotage (décision, délégation, organisation)",
+    description: "Fiches & checklists de pilotage (décision, délégation, organisation)",
   },
   {
     icon: Headphones,
@@ -159,7 +159,7 @@ export function OfferSection() {
                   onClick={scrollToFinalCTA}
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  Réserver une session de cadrage
+                  &nbsp; &nbsp; &nbsp;Réserver un échange informatif
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

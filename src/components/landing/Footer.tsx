@@ -36,7 +36,7 @@ export function Footer() {
               loading="lazy"
             />
             <p className="text-sm text-muted-foreground mb-3">
-              Frédéric Ternon — regard extérieur pour dirigeants de PME
+              Frédéric Ternon : regard extérieur pour dirigeants de PME
             </p>
             <p className="text-sm text-muted-foreground mb-3">
               Dirigeants de PME · jusqu'à 30 personnes

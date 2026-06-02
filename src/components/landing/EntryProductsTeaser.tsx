@@ -21,10 +21,10 @@ type Product = {
 const products: Product[] = [
   {
     icon: Map,
-    eyebrow: "Diagnostic · 10 min",
+    eyebrow: "DIAGNOSTIC · 15 MIN",
     title: "Identifier ce qui freine réellement votre PME",
     description:
-      "En 10 minutes, identifiez les zones où votre entreprise dépend encore excessivement de vous et les priorités à traiter pour passer le prochain palier.",
+      "En 15 minutes, identifiez les zones où votre entreprise dépend encore excessivement de vous et les priorités à traiter pour passer le prochain palier.",
     bullets: [
       "Une vision plus claire des points de friction",
       "Les principaux goulots d'étranglement",
@@ -40,7 +40,7 @@ const products: Product[] = [
     eyebrow: "Session · 1h",
     title: "Débloquer une décision qui traîne",
     description:
-      "Une heure dense pour clarifier une décision stratégique, un arbitrage ou un conflit interne. Vous repartez avec une décision actée et un plan d'action clair.",
+      "Besoin d'avancer vite ?\n\n\nUne heure dense pour clarifier une décision stratégique, un arbitrage ou un conflit interne. \n\n\nVous repartez avec une décision actée et un plan d'action clair.",
     priceLabel: "Investissement",
     price: "350 €",
     cta: "Réserver une session",
@@ -54,7 +54,7 @@ const products: Product[] = [
       "Un accompagnement plus complet pour travailler sur l'organisation, la délégation, le recrutement, les décisions et le pilotage de l'entreprise.",
     objective:
       "Construire une entreprise plus autonome, plus fluide et moins dépendante du dirigeant.",
-    cta: "Réserver une session de cadrage",
+    cta: "      Réserver un échange informatif",
     href: "https://calendly.com/ternon/alpha-pme",
     external: true,
     featured: true,
