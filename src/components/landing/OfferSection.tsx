@@ -85,7 +85,7 @@ export function OfferSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-sm text-muted-foreground whitespace-pre-line">{item.description}</p>
                   </div>
                 </div>
               ))}

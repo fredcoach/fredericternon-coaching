@@ -117,7 +117,7 @@ export function EntryProductsTeaser() {
                   <h3 className="font-serif text-2xl font-bold text-foreground mb-4 leading-snug">
                     {p.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-muted-foreground leading-relaxed mb-6 whitespace-pre-line">
                     {p.description}
                   </p>
 
