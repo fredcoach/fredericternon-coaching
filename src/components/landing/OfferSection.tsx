@@ -21,7 +21,7 @@ const offerItems = [
   {
     icon: MessageCircle,
     title: "Filet de sécurité",
-    description: "Entre séances : recadrage + prochaine action (réponse jour même)",
+    description: "Entre séances via Whatsapp : recadrage + prochaine action (réponse jour même)",
   },
 ];
 
