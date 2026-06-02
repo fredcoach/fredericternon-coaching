@@ -14,7 +14,7 @@ const pillars = [
   },
   {
     icon: Gauge,
-    title: "Les décisions sous pression",
+    title: "Décisions sous pression",
     description: "Comment vous tranchez, arbitrez et avancez quand tout s'accélère.",
   },
 ];

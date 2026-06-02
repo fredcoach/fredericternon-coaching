@@ -11,7 +11,7 @@ const offerItems = [
   {
     icon: FileText,
     title: "Kit Opérationnel du Dirigeant",
-    description: "20+ fiches & checklists de pilotage (décision, délégation, organisation)",
+    description: "Fiches & checklists de pilotage (décision, délégation, organisation)",
   },
   {
     icon: Headphones,
@@ -21,7 +21,7 @@ const offerItems = [
   {
     icon: MessageCircle,
     title: "Filet de sécurité",
-    description: "Entre séances : recadrage + prochaine action (réponse jour même)",
+    description: "Entre séances via Whatsapp : recadrage + prochaine action (réponse jour même)",
   },
 ];
 
@@ -85,7 +85,7 @@ export function OfferSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-sm text-muted-foreground whitespace-pre-line">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -159,7 +159,7 @@ export function OfferSection() {
                   onClick={scrollToFinalCTA}
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  Réserver une session de cadrage
+                  &nbsp; &nbsp; &nbsp;Réserver un échange informatif
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

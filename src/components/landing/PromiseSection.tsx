@@ -55,10 +55,10 @@ export function PromiseSection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            La promesse <span className="text-gradient">(concrète)</span>
+            4 Pilliers concrets :&nbsp;
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto whitespace-pre-line">
-            Pas de transformation magique. {"\n"}4 piliers  concrets :
+            {"\n"}
           </p>
         </div>
 

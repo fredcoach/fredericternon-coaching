@@ -57,7 +57,7 @@ export function AboutMeSection() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants de PME{" "}
+                J'accompagne les dirigeants de TPE et de PME{" "}
                 <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand
                 l'entreprise fonctionne mais{" "}
                 <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle :
