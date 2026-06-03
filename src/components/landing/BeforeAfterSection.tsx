@@ -2,6 +2,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertTriangle, CheckCircle2 } from "lucide-react";
 import laurentVideo from "@/assets/laurent-testimonial.mp4.asset.json";
 import laurentPoster from "@/assets/laurent-poster.jpg";
+import francoisVideo from "@/assets/francois-testimonial.mp4.asset.json";
+import francoisPoster from "@/assets/francois-poster.jpg";
 
 const before = [
   { bold: "Décisions", text: "Vous restez au cœur d'arbitrages qui ne devraient plus passer par vous." },
@@ -124,27 +126,51 @@ export function BeforeAfterSection() {
             mais qui continuaient à porter davantage que ce qu'ils auraient dû.
           </p>
 
-          <figure className="max-w-sm mx-auto">
-            <div className="rounded-2xl overflow-hidden bg-card border border-border shadow-xl">
-              <video
-                controls
-                preload="none"
-                playsInline
-                poster={laurentPoster}
-                className="w-full aspect-[9/16] bg-black object-cover"
-              >
-                <source src={laurentVideo.url} type="video/mp4" />
-              </video>
-            </div>
-            <figcaption className="mt-5">
-              <p className="font-serif text-lg font-bold text-foreground">
-                Laurent
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Entrepreneur · Agence Marketing
-              </p>
-            </figcaption>
-          </figure>
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <figure>
+              <div className="rounded-2xl overflow-hidden bg-card border border-border shadow-xl">
+                <video
+                  controls
+                  preload="none"
+                  playsInline
+                  poster={laurentPoster}
+                  className="w-full aspect-[9/16] bg-black object-cover"
+                >
+                  <source src={laurentVideo.url} type="video/mp4" />
+                </video>
+              </div>
+              <figcaption className="mt-5">
+                <p className="font-serif text-lg font-bold text-foreground">
+                  Laurent
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Entrepreneur · Agence Marketing
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure>
+              <div className="rounded-2xl overflow-hidden bg-card border border-border shadow-xl">
+                <video
+                  controls
+                  preload="none"
+                  playsInline
+                  poster={francoisPoster}
+                  className="w-full aspect-[9/16] bg-black object-cover"
+                >
+                  <source src={francoisVideo.url} type="video/mp4" />
+                </video>
+              </div>
+              <figcaption className="mt-5">
+                <p className="font-serif text-lg font-bold text-foreground">
+                  François
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Informatique · Services aux entreprises
+                </p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
