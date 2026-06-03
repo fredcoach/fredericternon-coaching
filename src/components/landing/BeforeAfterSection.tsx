@@ -162,7 +162,7 @@ export function BeforeAfterSection() {
                 </video>
               </div>
               <figcaption className="mt-5">
-                <p className="font-serif text-lg font-bold text-foreground">
+                <p className="font-serif text-lg font-bold text-accent">
                   François
                 </p>
                 <p className="text-sm text-muted-foreground">
