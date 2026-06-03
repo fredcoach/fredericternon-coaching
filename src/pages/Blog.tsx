@@ -35,6 +35,7 @@ const blogImages: Record<string, string> = {
   "pilotage-interieur-dirigeant": blogPilotageInterieur,
   "decision-fatigue-mentale-performance": blogFatigueMentale,
   "sportif-haut-niveau-dirigeant": blogSportifDirigeant,
+  "sortir-roue-hamster-dirigeant": blogRoueHamster,
 };
 
 const Blog = () => {
