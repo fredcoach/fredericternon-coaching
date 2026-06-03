@@ -4,21 +4,21 @@ import { Clock } from "lucide-react";
 const steps = [
   {
     number: 1,
-    duration: "20 min",
+    duration: "",
     title: "Exploration guidée",
     description:
       "On pose le cadre. Quelle est vraiment la décision ? Quels sont les enjeux profonds ? Le questionnement révèle ce qui se joue réellement.",
   },
   {
     number: 2,
-    duration: "20 min",
+    duration: "",
     title: "Déclic émotionnel",
     description:
       "On court-circuite le mental analytique. L'intuition émerge. Vous ressentez ce qui est juste pour vous, au-delà de la peur.",
   },
   {
     number: 3,
-    duration: "20 min",
+    duration: "",
     title: "Choix & Plan d'action",
     description:
       "La décision devient évidente. On construit ensemble les premières actions concrètes pour ancrer ce choix dans le réel.",
