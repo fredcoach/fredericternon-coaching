@@ -856,6 +856,106 @@ export const blogArticles: BlogArticle[] = [
     price: "Sur mesure",
     availability: "Disponible"
   },
+  {
+    id: "12",
+    slug: "sortir-roue-hamster-dirigeant",
+    title: "Sortir de la roue du hamster : du dirigeant opérateur au dirigeant pilote",
+    metaTitle: "Sortir de la roue du hamster (dirigeant) | Alpha PME",
+    metaDescription: "Coaching dirigeant PME : sortir de la roue du hamster, reprendre de la hauteur et passer de l'opérationnel au pilotage stratégique.",
+    excerpt: "Tu cours toute la journée sans avancer ? Voilà comment passer du dirigeant-opérateur au dirigeant-pilote, et reprendre la main sur ton entreprise.",
+    content: `<p>Tu connais cette sensation : tes journées sont pleines, tu n'arrêtes pas, tu réponds, tu arbitres, tu éteins des feux. Le soir, tu es vidé. Et pourtant, quand tu regardes en arrière, tu as l'impression de n'avoir <strong>rien fait avancer de stratégique</strong>.</p>
+
+<p>C'est exactement l'image du <strong>hamster dans sa roue</strong> : beaucoup d'énergie dépensée, beaucoup de mouvement, zéro distance parcourue.</p>
+
+<p>Dans les PME jusqu'à 30 personnes que j'accompagne, c'est de loin le motif le plus fréquent quand un dirigeant me contacte. Pas un burn-out déclaré. Pas une crise. Juste cette fatigue diffuse de <em>tourner sans avancer</em>.</p>
+
+<h2>Pourquoi tu es coincé dans la roue</h2>
+
+<p>La roue du hamster n'est pas une fatalité de caractère. C'est un système. Et ce système s'est installé pour de bonnes raisons :</p>
+
+<ul>
+<li><strong>Tu as construit l'entreprise en mode opérateur.</strong> Au début, c'était toi qui faisais. C'était normal, et c'était même un avantage.</li>
+<li><strong>Tes équipes te sollicitent en permanence.</strong> Tu es devenu le point de passage obligé de toutes les décisions, même mineures.</li>
+<li><strong>Tu confonds urgence et importance.</strong> Tout est urgent, donc rien n'est important. La stratégie passe toujours après "le truc qui brûle".</li>
+<li><strong>Tu n'as pas de regard extérieur.</strong> Personne ne te renvoie ce que tu ne vois plus.</li>
+</ul>
+
+<p>Le problème, c'est qu'à un moment, la roue devient le métier. Et tu oublies qu'à l'origine, tu voulais <strong>piloter une entreprise</strong>, pas la faire tourner à la main.</p>
+
+<h2>Dirigeant opérateur vs dirigeant pilote</h2>
+
+<p>La sortie de la roue ne se joue pas dans la productivité. Elle se joue dans <strong>l'identité de rôle</strong>.</p>
+
+<p><strong>Le dirigeant opérateur</strong> mesure sa valeur à ce qu'il produit lui-même. Il est rassuré quand il "fait". Il a du mal à déléguer parce qu'il pense (souvent à raison à court terme) que personne ne le fera aussi bien. Sa journée est dictée par les sollicitations.</p>
+
+<p><strong>Le dirigeant pilote</strong>, lui, mesure sa valeur à ce qu'il met en mouvement. Il passe du temps sur quelques décisions structurantes, et il s'organise pour que le reste tourne sans lui. Sa journée est dictée par ses priorités.</p>
+
+<p>Aucun des deux n'est moral. Mais une PME ne dépasse pas un certain plafond tant que le dirigeant reste majoritairement opérateur.</p>
+
+<h2>Les 3 repères pour sortir de la roue</h2>
+
+<p>Avec les dirigeants que j'accompagne, on travaille presque toujours sur les mêmes trois repères, dans cet ordre.</p>
+
+<h3>1. Repère de lucidité : voir où tu mets ton énergie</h3>
+
+<p>Avant de changer quoi que ce soit, il faut <strong>cartographier la roue</strong>. Concrètement : pendant 5 à 10 jours, tu notes à quoi tu consacres tes heures. Pas pour culpabiliser. Pour voir.</p>
+
+<p>À la sortie, presque tous mes clients découvrent la même chose : <em>40 à 60 % de leur temps part dans des sujets qui ne devraient pas remonter jusqu'à eux</em>.</p>
+
+<h3>2. Repère d'organisation : remettre chaque décision au bon niveau</h3>
+
+<p>Une fois la carte faite, on trie. Trois piles :</p>
+<ul>
+<li>Ce que <strong>toi seul</strong> peux faire (vision, arbitrages stratégiques, recrutements clés, alliances).</li>
+<li>Ce qui doit être <strong>délégué avec un cadre clair</strong> (méthode, indicateurs, rituel de revue).</li>
+<li>Ce qui doit <strong>tout simplement disparaître</strong> (réunions inutiles, validations rituelles, reportings que personne ne lit).</li>
+</ul>
+
+<p>C'est moins glamour qu'un grand plan stratégique. Mais c'est ce qui libère réellement de l'oxygène.</p>
+
+<h3>3. Repère de décision : protéger le temps de hauteur</h3>
+
+<p>Sortir de la roue, c'est aussi <strong>se forcer à reprendre de l'altitude</strong>. Pas une fois par an en séminaire. Toutes les semaines.</p>
+
+<p>Concrètement : un créneau bloqué, sans téléphone, sans équipe, sans mail, dédié à <em>regarder ton entreprise comme si tu venais d'arriver dedans</em>. C'est souvent là que les vraies décisions se prennent.</p>
+
+<h2>Ce que change un accompagnement dirigeant sur ce sujet</h2>
+
+<p>Mon rôle, dans un <a href="/">accompagnement dirigeant de PME</a>, ce n'est pas de te donner des outils de productivité. C'est de te servir de <strong>regard extérieur</strong>, calme et structuré, pour :</p>
+
+<ul>
+<li>Te renvoyer ce que tu ne vois plus dans ton fonctionnement quotidien</li>
+<li>Identifier les 2 ou 3 décisions qui débloqueraient vraiment la situation</li>
+<li>Te tenir sur la durée pour que la roue ne se reforme pas dès la première semaine chargée</li>
+</ul>
+
+<p>La plupart des dirigeants n'ont pas besoin de plus de méthodes. Ils ont besoin de <strong>quelqu'un en face d'eux</strong> qui les aide à penser clair.</p>
+
+<p>👉 Lire aussi : <a href="/blog/repousser-decisions-cles">Pourquoi tu repousses les décisions clés</a>, et comment t'en sortir.</p>
+
+<p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> : pourquoi tu décides moins bien quand tu cours dans la roue.</p>
+
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> dans une PME.</p>
+
+<p><strong>Sortir de la roue du hamster n'est pas une question de volonté. C'est une question d'organisation, d'identité de rôle, et de regard extérieur. Le jour où tu remets les trois en place, ton entreprise change de plafond.</strong></p>`,
+    category: "Pilotage dirigeant",
+    readTime: "6 min",
+    publishedAt: "2026-06-03",
+    updatedAt: "2026-06-03",
+    image: "/assets/blog-roue-hamster.jpg",
+    ogImage: "/images/og-roue-hamster.jpg",
+    productName: "Accompagnement dirigeant PME - Sortir de la roue du hamster",
+    productDescription: "Coaching dirigeant pour PME jusqu'à 30 personnes : sortir de la surcharge opérationnelle, structurer le pilotage et reprendre de la hauteur stratégique.",
+    benefits: [
+      "Cartographier précisément où part votre énergie de dirigeant",
+      "Remettre chaque décision au bon niveau dans l'entreprise",
+      "Protéger un temps de hauteur stratégique chaque semaine",
+      "Passer durablement du rôle d'opérateur à celui de pilote"
+    ],
+    targetAudience: "Dirigeants de PME jusqu'à 30 personnes qui veulent sortir de la surcharge opérationnelle",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
