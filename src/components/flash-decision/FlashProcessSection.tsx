@@ -4,21 +4,21 @@ import { Clock } from "lucide-react";
 const steps = [
   {
     number: 1,
-    duration: "20 min",
+    duration: "",
     title: "Exploration guidée",
     description:
       "On pose le cadre. Quelle est vraiment la décision ? Quels sont les enjeux profonds ? Le questionnement révèle ce qui se joue réellement.",
   },
   {
     number: 2,
-    duration: "20 min",
+    duration: "",
     title: "Déclic émotionnel",
     description:
       "On court-circuite le mental analytique. L'intuition émerge. Vous ressentez ce qui est juste pour vous, au-delà de la peur.",
   },
   {
     number: 3,
-    duration: "20 min",
+    duration: "",
     title: "Choix & Plan d'action",
     description:
       "La décision devient évidente. On construit ensemble les premières actions concrètes pour ancrer ce choix dans le réel.",
@@ -54,13 +54,15 @@ export function FlashProcessSection() {
               style={{ transitionDelay: `${200 + i * 150}ms` }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center font-bold text-lg">
+                <div className="w-10 h-10 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center font-bold text-lg text-center">
                   {step.number}
                 </div>
-                <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5" />
-                  {step.duration}
-                </span>
+                {step.duration && (
+                  <span className="text-sm text-muted-foreground flex items-center gap-1">
+                    <Clock className="w-3.5 h-3.5" />
+                    {step.duration}
+                  </span>
+                )}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">{step.description}</p>

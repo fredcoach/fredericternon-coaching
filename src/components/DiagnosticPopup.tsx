@@ -71,7 +71,7 @@ const DiagnosticPopup = () => {
                 border: "1px solid rgba(200, 170, 110, 0.25)",
                 borderRadius: "16px",
                 padding: "40px 32px",
-                textAlign: "center",
+                textAlign: undefined,
                 boxShadow:
                   "0 25px 60px -12px rgba(0,0,0,0.7), 0 0 40px -8px rgba(200,170,110,0.15)",
                 pointerEvents: "auto",
