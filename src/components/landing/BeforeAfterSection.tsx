@@ -2,6 +2,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { AlertTriangle, CheckCircle2 } from "lucide-react";
 import laurentVideo from "@/assets/laurent-testimonial.mp4.asset.json";
 import laurentPoster from "@/assets/laurent-poster.jpg";
+import francoisVideo from "@/assets/francois-testimonial.mp4.asset.json";
+import francoisPoster from "@/assets/francois-poster.jpg";
 
 const before = [
   { bold: "Décisions", text: "Vous restez au cœur d'arbitrages qui ne devraient plus passer par vous." },
