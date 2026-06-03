@@ -198,9 +198,10 @@ const DiagnosticPopup = () => {
                 fontSize: "11px",
                 color: "rgba(255,255,255,0.3)",
                 marginTop: "16px",
+                whiteSpace: "pre-line",
               }}
             >
-              10 min · Résultats immédiats · Satisfait ou remboursé
+              10 à 15 minutes pour découvrir ce que la pression vous cache.{"\n"}Résultats immédiats.
             </p>
             </div>
           </motion.div>
