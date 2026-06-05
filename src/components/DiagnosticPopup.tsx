@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { popupCoordinator } from "@/hooks/usePopupCoordinator";
 
 const DIAGNOSTIC_URL = "https://pilotage-mental-diagnostic.lovable.app";
+const POPUP_ID = "diagnostic";
 
 const DiagnosticPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,22 +13,53 @@ const DiagnosticPopup = () => {
 
   const isFlashDecision = location.pathname === "/flash-decision";
 
+  const tryOpen = useCallback(() => {
+    if (sessionStorage.getItem("diag_popup_dismissed")) return false;
+    if (!popupCoordinator.canShow(POPUP_ID)) return false;
+    popupCoordinator.open(POPUP_ID);
+    setIsOpen(true);
+    return true;
+  }, []);
+
   useEffect(() => {
     if (isFlashDecision) return;
-    const dismissed = sessionStorage.getItem("diag_popup_dismissed");
-    if (dismissed) return;
-    const timer = setTimeout(() => setIsOpen(true), 8000);
-    return () => clearTimeout(timer);
-  }, [isFlashDecision]);
+    if (sessionStorage.getItem("diag_popup_dismissed")) return;
+
+    let opened = false;
+    const timer = setTimeout(() => {
+      opened = tryOpen();
+    }, 25000);
+
+    const onScroll = () => {
+      const scrolled =
+        (window.scrollY + window.innerHeight) /
+        document.documentElement.scrollHeight;
+      if (scrolled > 0.5) {
+        if (tryOpen()) {
+          opened = true;
+          window.removeEventListener("scroll", onScroll);
+          clearTimeout(timer);
+        }
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [isFlashDecision, tryOpen]);
 
   if (isFlashDecision) return null;
 
   const handleDismiss = () => {
     setIsOpen(false);
     sessionStorage.setItem("diag_popup_dismissed", "true");
+    popupCoordinator.close(POPUP_ID);
   };
 
   const handleCTA = () => {
+    popupCoordinator.markConverted();
     window.open(DIAGNOSTIC_URL, "_blank", "noopener");
     handleDismiss();
   };
@@ -43,7 +76,7 @@ const DiagnosticPopup = () => {
             style={{
               position: "fixed",
               inset: 0,
-              zIndex: 9998,
+              zIndex: 9990,
               backgroundColor: "rgba(0,0,0,0.6)",
               backdropFilter: "blur(4px)",
             }}
@@ -56,7 +89,7 @@ const DiagnosticPopup = () => {
             style={{
               position: "fixed",
               inset: 0,
-              zIndex: 9999,
+              zIndex: 9991,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

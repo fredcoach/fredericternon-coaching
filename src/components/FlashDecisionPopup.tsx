@@ -2,6 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import { X, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { popupCoordinator } from "@/hooks/usePopupCoordinator";
+
+const POPUP_ID = "flash";
 
 const FlashDecisionPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,42 +13,37 @@ const FlashDecisionPopup = () => {
   const isHomepage = location.pathname === "/";
 
   const showPopup = useCallback(() => {
-    const dismissed = sessionStorage.getItem("flash_popup_dismissed");
-    if (dismissed) return;
+    if (sessionStorage.getItem("flash_popup_dismissed")) return;
+    if (!popupCoordinator.canShow(POPUP_ID)) return;
+    popupCoordinator.open(POPUP_ID);
     setIsOpen(true);
   }, []);
 
   useEffect(() => {
     if (!isHomepage) return;
-    const dismissed = sessionStorage.getItem("flash_popup_dismissed");
-    if (dismissed) return;
+    if (sessionStorage.getItem("flash_popup_dismissed")) return;
 
     const handleMouseLeave = (e: MouseEvent) => {
-      // Déclenche uniquement quand la souris sort par le haut de la page
+      // Exit-intent desktop uniquement (sortie par le haut)
       if (e.clientY <= 0) {
         showPopup();
       }
     };
 
-    // Fallback mobile/tablette : déclenche si l'utilisateur reste inactif 45s
-    const fallbackTimer = setTimeout(() => {
-      showPopup();
-    }, 45000);
-
     document.addEventListener("mouseleave", handleMouseLeave);
-
     return () => {
       document.removeEventListener("mouseleave", handleMouseLeave);
-      clearTimeout(fallbackTimer);
     };
   }, [isHomepage, showPopup]);
 
   const handleDismiss = () => {
     setIsOpen(false);
     sessionStorage.setItem("flash_popup_dismissed", "true");
+    popupCoordinator.close(POPUP_ID);
   };
 
   const handleCTA = () => {
+    popupCoordinator.markConverted();
     window.location.href = "/flash-decision";
     handleDismiss();
   };
@@ -61,14 +59,14 @@ const FlashDecisionPopup = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={handleDismiss}
-            className="fixed inset-0 z-[9998] bg-black/60 backdrop-blur-sm"
+            className="fixed inset-0 z-[9992] bg-black/60 backdrop-blur-sm"
           />
           <motion.div
             initial={{ opacity: 0, scale: 0.92, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed inset-0 z-[9999] flex items-center justify-center pointer-events-none"
+            className="fixed inset-0 z-[9993] flex items-center justify-center pointer-events-none"
           >
             <div className="w-[90%] max-w-[480px] bg-[#0c0c0f] border border-warning/25 rounded-2xl p-10 text-center shadow-[0_25px_60px_-12px_rgba(0,0,0,0.7),0_0_40px_-8px_rgba(200,170,110,0.15)] pointer-events-auto relative">
               <button
