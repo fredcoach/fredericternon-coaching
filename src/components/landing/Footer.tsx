@@ -73,6 +73,18 @@ export function Footer() {
               >
                 Blog
               </Link>
+              <Link
+                to="/ressources"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Ressources
+              </Link>
+              <Link
+                to="/presse"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Presse
+              </Link>
             </div>
           </div>
 
