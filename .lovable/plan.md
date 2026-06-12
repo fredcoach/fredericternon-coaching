@@ -1,55 +1,43 @@
-# Régénération du guide PDF « Sortir de la roue du hamster »
+## Objective
 
-## Objectif
+Create a dedicated `/signature` page on the site that renders Frédéric's email signature **visually** (not as raw HTML code), so he can select it with Ctrl/Cmd+A, copy, and paste directly into Gmail → Settings → Signature.
 
-Corriger l'erreur de prix (auto-diagnostic à **47 €** et non gratuit), enrichir visuellement le PDF avec le **logo Alpha PME** et des **images d'illustration**, tout en gardant le ton premium B2B (marine + or + ivoire).
+## Context
 
-## Corrections de contenu
+Gmail does not support pasting raw HTML code into the signature field. The only reliable method is to render the signature in a browser, select the rendered output, copy it, and paste the rich text into Gmail. The previous attempt using a local file (`file:///mnt/documents/...`) failed because the file is on the sandbox, not the user's machine.
 
-Dans la section « Aller plus loin » (chapitre 07) :
+## Deliverables
 
-- Avant : `1. L'auto-diagnostic en ligne (gratuit, 10 min)`
-- Après : `1. L'auto-diagnostic en ligne (47 €, 10 min)`
-- Mettre à jour la description si nécessaire pour rester cohérent.
+1. **New page `src/pages/Signature.tsx`**
+   - Renders the signature using the same inline styles as the email HTML (table layout, navy + gold colors, clickable links)
+   - Displays on a clean white background for easy selection
+   - Uses the brand colors: navy `#0f1b3d`, gold `#b8923d`
+   - Content:
+     - **Frédéric TERNON** (bold, 15px, navy)
+     - *Performance humaine & Pilotage* (13px)
+     - *Conférencier* (italic, 12px, muted)
+     - Separator line
+     - 📞 07 67 97 19 52 (clickable `tel:` link)
+     - 💬 WhatsApp (clickable `wa.me/33767971952` link)
+     - 🎯 **Guide gratuit — Sortir de la roue du hamster** (gold link to `/ressources`)
+     - 🌐 alphadirigeant.solutions (gold link)
 
-Vérification globale : retirer toute autre mention « gratuit » qui concernerait le diagnostic.
+2. **Route registration in `src/App.tsx`**
+   - Add `<Route path="/signature" element={<Signature />} />`
 
-## Enrichissement visuel
+3. **Meta tag**
+   - No-index the page via `<Helmet>` (not useful for SEO, internal tool only)
 
-1. **Logo Alpha PME** (`src/assets/alpha-pme-horizontal-light.png` sur fonds marine, `src/assets/alpha-pme-horizontal.png` sur fond ivoire) :
-   - Couverture : grand logo centré sous le titre.
-   - Pied de page de chaque page intérieure : logo discret + numéro de page.
-2. **Image de couverture** : visuel d'illustration en bandeau (concept « roue du hamster » → dirigeant qui reprend le contrôle, sobre, marine/or).
-3. **Images d'ouverture de chapitre** (1 par chapitre, format bandeau 16:9 doux, surtitrage chapitre) :
-   - Ch.01 Pourquoi vous courez sans avancer — visuel symbolique mouvement circulaire.
-   - Ch.02 Les 5 symptômes — visuel agenda saturé / mains qui jonglent.
-   - Ch.03 Le vrai coût — visuel graphique abstrait marine/or.
-   - Ch.04 Les 3 leviers — visuel 3 piliers / engrenages clarifiés.
-   - Ch.05 Protocole 30 jours — visuel calendrier épuré.
-   - Ch.06 Auto-diagnostic — visuel checklist sur bureau.
-   - Ch.07 Aller plus loin — visuel horizon / ouverture.
-4. **Citations** mises en exergue avec un filet doré et un fond ivoire léger (déjà partiellement présent, à harmoniser).
+## How the user will use it
 
-## Approche technique
+1. Open `https://alphadirigeant.solutions/signature` (or the preview URL)
+2. Select the entire signature area
+3. Copy (Ctrl/Cmd+C)
+4. Open Gmail → Settings → Signature
+5. Paste — Gmail preserves colors, links, and formatting
 
-- Créer `scripts/generate-guide-pdf.py` (ReportLab + Platypus) avec :
-  - Page A4, marges 18 mm.
-  - Palette HSL → hex : marine `#0F1B3D`, or `#C9A04E`, ivoire `#F7F3EA`, texte `#1A1A1A`.
-  - Polices : famille système (Helvetica) avec hiérarchie claire (Title 36pt, H1 22pt, body 11pt, caption 9pt).
-  - Header/footer Platypus avec logo + pagination + url `alphadirigeant.solutions`.
-  - Couverture pleine page + sommaire + 7 chapitres avec image d'ouverture.
-- Générer les 8 images d'illustration via `imagegen--generate_image` (qualité `fast`, 1536×864), enregistrées dans `/tmp/guide-images/` (non versionnées).
-- Compiler le PDF vers `public/ressources/guide-sortir-roue-hamster-alpha-pme.pdf` (overwrite).
-- QA : convertir le PDF en images (`pdftoppm`) et inspecter chaque page (overlap, marges, lisibilité), corriger puis re-générer jusqu'à zéro défaut.
+## No-go
 
-## Fichiers impactés
-
-- **Nouveau** : `scripts/generate-guide-pdf.py`
-- **Remplacé** : `public/ressources/guide-sortir-roue-hamster-alpha-pme.pdf`
-- Aucun autre fichier app modifié (le lien de téléchargement pointe déjà sur ce PDF).
-
-## Hors scope
-
-- Pas de changement du composant de téléchargement ni du tracking lead.
-- Pas de version multilingue.
-- Pas de retravail du texte au-delà de la correction du prix.
+- Do not use a `<textarea>` or display raw HTML code — Gmail users need the *rendered* output
+- Do not add the navbar or footer to this page — keep it minimal for clean selection
+- Do not use external CSS classes that might not inline correctly when copied
