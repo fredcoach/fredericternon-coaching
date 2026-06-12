@@ -16,7 +16,7 @@ const resources = [
       "Un questionnaire structuré pour identifier ce qui bloque vraiment dans le pilotage de votre PME : décisions repoussées, organisation floue, surcharge mentale.",
     href: "/diagnostic",
     cta: "Faire le diagnostic",
-    type: "Outil interactif · Gratuit",
+    type: "Outil interactif · 47 €",
   },
   {
     icon: Zap,
