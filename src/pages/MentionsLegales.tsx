@@ -9,11 +9,11 @@ const MentionsLegales = () => {
     <>
       <Helmet>
         <title>Mentions légales | Frédéric Ternon</title>
-        <meta name="description" content="Mentions légales du site mentalpro.biz — Frédéric Ternon, accompagnement de dirigeants de PME." />
+        <meta name="description" content="Mentions légales du site alphadirigeant.solutions — Frédéric Ternon, accompagnement de dirigeants de PME." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://www.mentalpro.biz/mentions-legales" />
+        <link rel="canonical" href="https://alphadirigeant.solutions/mentions-legales" />
         <meta property="og:title" content="Mentions légales | Frédéric Ternon" />
-        <meta property="og:description" content="Informations légales du site mentalpro.biz : éditeur, hébergeur, propriété intellectuelle." />
+        <meta property="og:description" content="Informations légales du site alphadirigeant.solutions : éditeur, hébergeur, propriété intellectuelle." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mentalpro.biz/mentions-legales" />
       </Helmet>

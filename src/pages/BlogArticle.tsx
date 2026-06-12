@@ -176,14 +176,14 @@ const BlogArticle = () => {
       "name": "Frédéric Ternon Coaching Mental",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.mentalpro.biz/images/blog-og.jpg"
+        "url": "https://alphadirigeant.solutions/images/blog-og.jpg"
       }
     },
     "datePublished": article.publishedAt,
     "dateModified": article.updatedAt,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.mentalpro.biz/blog/${article.slug}`
+      "@id": `https://alphadirigeant.solutions/blog/${article.slug}`
     },
     "articleSection": article.category,
     "wordCount": article.content.split(/\s+/).length,
@@ -223,19 +223,19 @@ const BlogArticle = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://www.mentalpro.biz"
+        "item": "https://alphadirigeant.solutions"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://www.mentalpro.biz/blog"
+        "item": "https://alphadirigeant.solutions/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": article.title,
-        "item": `https://www.mentalpro.biz/blog/${article.slug}`
+        "item": `https://alphadirigeant.solutions/blog/${article.slug}`
       }
     ]
   };
@@ -250,8 +250,8 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://www.mentalpro.biz/blog/${article.slug}`} />
-        <meta property="og:image" content={`https://www.mentalpro.biz${article.ogImage}`} />
+        <meta property="og:url" content={`https://alphadirigeant.solutions/blog/${article.slug}`} />
+        <meta property="og:image" content={`https://alphadirigeant.solutions${article.ogImage}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon Coaching" />
@@ -271,13 +271,13 @@ const BlogArticle = () => {
         <meta property="product:price:amount" content="0" />
         <meta property="product:price:currency" content="EUR" />
         
-        <link rel="canonical" href={`https://www.mentalpro.biz/blog/${article.slug}`} />
+        <link rel="canonical" href={`https://alphadirigeant.solutions/blog/${article.slug}`} />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
         <meta name="twitter:description" content={article.metaDescription} />
-        <meta name="twitter:image" content={`https://www.mentalpro.biz${article.ogImage}`} />
+        <meta name="twitter:image" content={`https://alphadirigeant.solutions${article.ogImage}`} />
         <meta name="twitter:creator" content="@fredericternon" />
         
         {/* Additional SEO */}
