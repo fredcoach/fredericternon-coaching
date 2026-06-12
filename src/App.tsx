@@ -12,6 +12,8 @@ import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import Presse from "./pages/Presse";
+import Ressources from "./pages/Ressources";
 import DiagnosticPopup from "./components/DiagnosticPopup";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
 const queryClient = new QueryClient();
@@ -31,6 +33,8 @@ const App = () => (
             <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            <Route path="/presse" element={<Presse />} />
+            <Route path="/ressources" element={<Ressources />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
