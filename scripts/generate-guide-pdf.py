@@ -26,9 +26,17 @@ LOGO_LIGHT = "src/assets/alpha-pme-horizontal-light.png"
 LOGO_DARK = "src/assets/alpha-pme-horizontal.png"
 IMG = "/tmp/guide-images"
 
-FONT = "Helvetica"
-FONT_B = "Helvetica-Bold"
-FONT_O = "Helvetica-Oblique"
+import glob
+_font_dir = glob.glob("/nix/store/*-liberation-fonts-*/share/fonts/truetype")[0]
+pdfmetrics.registerFont(TTFont("LibSans", f"{_font_dir}/LiberationSans-Regular.ttf"))
+pdfmetrics.registerFont(TTFont("LibSans-Bold", f"{_font_dir}/LiberationSans-Bold.ttf"))
+pdfmetrics.registerFont(TTFont("LibSans-Italic", f"{_font_dir}/LiberationSans-Italic.ttf"))
+from reportlab.pdfbase.pdfmetrics import registerFontFamily
+registerFontFamily("LibSans", normal="LibSans", bold="LibSans-Bold",
+                   italic="LibSans-Italic", boldItalic="LibSans-Bold")
+FONT = "LibSans"
+FONT_B = "LibSans-Bold"
+FONT_O = "LibSans-Italic"
 
 URL = "alphadirigeant.solutions"
 
