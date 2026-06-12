@@ -16,7 +16,7 @@ const resources = [
       "Un questionnaire structuré pour identifier ce qui bloque vraiment dans le pilotage de votre PME : décisions repoussées, organisation floue, surcharge mentale.",
     href: "/diagnostic",
     cta: "Faire le diagnostic",
-    type: "Outil interactif · Gratuit",
+    type: "Outil interactif · 47 €",
   },
   {
     icon: Zap,
@@ -80,7 +80,7 @@ const Ressources = () => {
         <title>Ressources Dirigeants PME | Alpha PME — Frédéric Ternon</title>
         <meta
           name="description"
-          content="Outils, diagnostics et analyses gratuits pour dirigeants de PME : auto-diagnostic, Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
+          content="Outils, analyses et ressources pour dirigeants de PME : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
         />
         <link rel="canonical" href="https://alphadirigeant.solutions/ressources" />
         <meta property="og:title" content="Ressources pour dirigeants de PME | Alpha PME" />
@@ -105,7 +105,7 @@ const Ressources = () => {
             Tout ce qu'il vous faut pour reprendre la main
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Outils gratuits, formats courts et analyses pour les dirigeants de PME qui
+            Outils, formats courts et analyses pour les dirigeants de PME qui
             veulent mieux décider et clarifier leur organisation.
           </p>
         </div>
