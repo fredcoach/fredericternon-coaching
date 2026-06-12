@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText } from "lucide-react";
+import { GuideDownloadDialog } from "@/components/guide/GuideDownloadDialog";
 
-const GUIDE_PDF = "/ressources/guide-sortir-roue-hamster-alpha-pme.pdf";
 
 const resources = [
   {
