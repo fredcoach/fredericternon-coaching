@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText } from "lucide-react";
+import { GuideDownloadDialog } from "@/components/guide/GuideDownloadDialog";
 
-const GUIDE_PDF = "/ressources/guide-sortir-roue-hamster-alpha-pme.pdf";
 
 const resources = [
   {
@@ -48,9 +48,22 @@ const resources = [
 ];
 
 const Ressources = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [guideOpen, setGuideOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (searchParams.get("guide") === "1") {
+      setGuideOpen(true);
+      const next = new URLSearchParams(searchParams);
+      next.delete("guide");
+      setSearchParams(next, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
+
 
   const collectionSchema = {
     "@context": "https://schema.org",
@@ -116,14 +129,18 @@ const Ressources = () => {
                   décisions. 7 chapitres, un auto-diagnostic, un protocole 30 jours.
                 </p>
                 <p className="text-sm text-primary-foreground/60 mb-6 flex items-center gap-2">
-                  <FileText className="w-4 h-4" /> PDF · ~25 min de lecture · Pas d'email demandé
+                  <FileText className="w-4 h-4" /> PDF · ~25 min de lecture · Accès immédiat
                 </p>
-                <a href={GUIDE_PDF} download>
-                  <Button size="lg" variant="secondary" className="gap-2 font-semibold">
-                    <Download className="w-5 h-5" />
-                    Télécharger le guide
-                  </Button>
-                </a>
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="gap-2 font-semibold"
+                  onClick={() => setGuideOpen(true)}
+                >
+                  <Download className="w-5 h-5" />
+                  Télécharger le guide
+                </Button>
+
               </div>
               <div className="hidden md:flex w-40 h-52 rounded-xl bg-background/10 border border-accent/30 items-center justify-center backdrop-blur-sm">
                 <FileText className="w-20 h-20 text-accent" />
@@ -192,6 +209,9 @@ const Ressources = () => {
       </section>
 
       <Footer />
+
+      <GuideDownloadDialog open={guideOpen} onOpenChange={setGuideOpen} />
+
     </div>
   );
 };
