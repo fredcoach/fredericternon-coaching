@@ -6,15 +6,15 @@ import logoLight from "@/assets/alpha-pme-horizontal-light.png";
 import logoDark from "@/assets/alpha-pme-horizontal.png";
 
 const navLinks = [
-  { href: "#about", label: "À propos" },
   { href: "#offer", label: "Offre" },
-  { href: "#faq", label: "FAQ" },
 ];
 
 const pageLinks = [
   { href: "/flash-decision", label: "Flash Decision", highlight: true },
   { href: "/diagnostic", label: "Diagnostic", highlight: true },
   { href: "/blog", label: "Blog" },
+  { href: "/ressources", label: "Ressources" },
+  { href: "/presse", label: "Presse" },
 ];
 
 const externalLinks: { href: string; label: string; external?: boolean }[] = [];
