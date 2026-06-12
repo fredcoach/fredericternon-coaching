@@ -14,6 +14,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import Presse from "./pages/Presse";
 import Ressources from "./pages/Ressources";
+import Signature from "./pages/Signature";
 import DiagnosticPopup from "./components/DiagnosticPopup";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
             <Route path="/presse" element={<Presse />} />
             <Route path="/ressources" element={<Ressources />} />
+            <Route path="/signature" element={<Signature />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
