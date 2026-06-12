@@ -84,7 +84,7 @@ export function HeroSection() {
             {/* Text content */}
             <div className="text-center">
               {/* Headline */}
-              <h1 className="animate-fade-in-up mb-8 break-words font-serif font-semibold text-white leading-[1.15] tracking-tight text-balance drop-shadow-[0_2px_24px_rgba(0,0,0,0.4)]">
+              <h1 className="mb-8 break-words font-serif font-semibold text-white leading-[1.15] tracking-tight text-balance drop-shadow-[0_2px_24px_rgba(0,0,0,0.4)]">
                 <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                   Votre entreprise fonctionne.
                 </span>
