@@ -931,7 +931,7 @@ export const blogArticles: BlogArticle[] = [
 
 <p>La plupart des dirigeants n'ont pas besoin de plus de méthodes. Ils ont besoin de <strong>quelqu'un en face d'eux</strong> qui les aide à penser clair.</p>
 
-<p style="background:#0f1b3d;color:#faf7f0;padding:20px;border-radius:12px;border-left:4px solid #b8923d;">📘 <strong>Guide PDF gratuit</strong> — <a href="/ressources/guide-sortir-roue-hamster-alpha-pme.pdf" download style="color:#d9c89a;text-decoration:underline;">Télécharger « Sortir de la roue du hamster »</a> : 7 chapitres, un auto-diagnostic en 10 questions et un protocole 30 jours. Sans email demandé.</p>
+<p style="background:#0f1b3d;color:#faf7f0;padding:20px;border-radius:12px;border-left:4px solid #b8923d;">📘 <strong>Guide PDF gratuit</strong> — <a href="/ressources?guide=1" style="color:#d9c89a;text-decoration:underline;">Recevoir « Sortir de la roue du hamster »</a> : 7 chapitres, un auto-diagnostic en 10 questions et un protocole 30 jours.</p>
 
 <p>👉 Lire aussi : <a href="/blog/repousser-decisions-cles">Pourquoi tu repousses les décisions clés</a>, et comment t'en sortir.</p>
 
