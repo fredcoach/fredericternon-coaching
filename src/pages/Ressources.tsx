@@ -129,14 +129,18 @@ const Ressources = () => {
                   décisions. 7 chapitres, un auto-diagnostic, un protocole 30 jours.
                 </p>
                 <p className="text-sm text-primary-foreground/60 mb-6 flex items-center gap-2">
-                  <FileText className="w-4 h-4" /> PDF · ~25 min de lecture · Pas d'email demandé
+                  <FileText className="w-4 h-4" /> PDF · ~25 min de lecture · Accès immédiat
                 </p>
-                <a href={GUIDE_PDF} download>
-                  <Button size="lg" variant="secondary" className="gap-2 font-semibold">
-                    <Download className="w-5 h-5" />
-                    Télécharger le guide
-                  </Button>
-                </a>
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="gap-2 font-semibold"
+                  onClick={() => setGuideOpen(true)}
+                >
+                  <Download className="w-5 h-5" />
+                  Télécharger le guide
+                </Button>
+
               </div>
               <div className="hidden md:flex w-40 h-52 rounded-xl bg-background/10 border border-accent/30 items-center justify-center backdrop-blur-sm">
                 <FileText className="w-20 h-20 text-accent" />
