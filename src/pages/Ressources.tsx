@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper } from "lucide-react";
+import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText } from "lucide-react";
+
+const GUIDE_PDF = "/ressources/guide-sortir-roue-hamster-alpha-pme.pdf";
 
 const resources = [
   {
@@ -96,8 +98,47 @@ const Ressources = () => {
         </div>
       </section>
 
+      {/* Featured PDF guide */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <article className="relative overflow-hidden rounded-3xl bg-primary text-primary-foreground p-8 md:p-12 shadow-2xl">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
+            <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-accent mb-3">
+                  Guide PDF · Nouveau · Gratuit
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Sortir de la roue du hamster
+                </h2>
+                <p className="text-primary-foreground/80 mb-2 max-w-xl">
+                  Le manuel du dirigeant qui veut reprendre la main sur son agenda et ses
+                  décisions. 7 chapitres, un auto-diagnostic, un protocole 30 jours.
+                </p>
+                <p className="text-sm text-primary-foreground/60 mb-6 flex items-center gap-2">
+                  <FileText className="w-4 h-4" /> PDF · ~25 min de lecture · Pas d'email demandé
+                </p>
+                <a href={GUIDE_PDF} download>
+                  <Button size="lg" variant="secondary" className="gap-2 font-semibold">
+                    <Download className="w-5 h-5" />
+                    Télécharger le guide
+                  </Button>
+                </a>
+              </div>
+              <div className="hidden md:flex w-40 h-52 rounded-xl bg-background/10 border border-accent/30 items-center justify-center backdrop-blur-sm">
+                <FileText className="w-20 h-20 text-accent" />
+              </div>
+            </div>
+          </article>
+          <p className="text-center text-xs text-muted-foreground mt-4">
+            Vous pouvez le partager librement (lien, email, intranet) en citant la source.
+          </p>
+        </div>
+      </section>
+
       {/* Resources grid */}
       <section className="py-16 px-4">
+
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-8">
             {resources.map((res) => {
