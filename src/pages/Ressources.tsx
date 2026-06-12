@@ -209,6 +209,9 @@ const Ressources = () => {
       </section>
 
       <Footer />
+
+      <GuideDownloadDialog open={guideOpen} onOpenChange={setGuideOpen} />
+
     </div>
   );
 };
