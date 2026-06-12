@@ -9,13 +9,13 @@ const MentionsLegales = () => {
     <>
       <Helmet>
         <title>Mentions légales | Frédéric Ternon</title>
-        <meta name="description" content="Mentions légales du site mentalpro.biz — Frédéric Ternon, accompagnement de dirigeants de PME." />
+        <meta name="description" content="Mentions légales du site alphadirigeant.solutions — Frédéric Ternon, accompagnement de dirigeants de PME." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://www.mentalpro.biz/mentions-legales" />
+        <link rel="canonical" href="https://alphadirigeant.solutions/mentions-legales" />
         <meta property="og:title" content="Mentions légales | Frédéric Ternon" />
-        <meta property="og:description" content="Informations légales du site mentalpro.biz : éditeur, hébergeur, propriété intellectuelle." />
+        <meta property="og:description" content="Informations légales du site alphadirigeant.solutions : éditeur, hébergeur, propriété intellectuelle." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.mentalpro.biz/mentions-legales" />
+        <meta property="og:url" content="https://alphadirigeant.solutions/mentions-legales" />
       </Helmet>
 
       <div className="min-h-screen">
@@ -33,7 +33,7 @@ const MentionsLegales = () => {
               <section>
                 <h2 className="text-xl font-semibold text-foreground">1. Éditeur du site</h2>
                 <p>
-                  Le site <strong className="text-foreground">fredericternon.com</strong> est édité par :<br />
+                  Le site <strong className="text-foreground">alphadirigeant.solutions</strong> est édité par :<br />
                   <strong className="text-foreground">Frédéric Ternon</strong><br />
                   Entrepreneur individuel<br />
                   Coach en performance mentale & leadership<br />

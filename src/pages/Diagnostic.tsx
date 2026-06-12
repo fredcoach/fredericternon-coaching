@@ -28,7 +28,7 @@ const Diagnostic = () => {
           name="description"
           content="Évaluez votre score de lucidité décisionnelle en 10 minutes. Identifiez vos zones fragiles, angles morts et le coût réel de vos hésitations sous pression."
         />
-        <link rel="canonical" href="https://www.mentalpro.biz/diagnostic" />
+        <link rel="canonical" href="https://alphadirigeant.solutions/diagnostic" />
         <meta
           property="og:title"
           content="Diagnostic Lucidité Décisionnelle | Frédéric Ternon"
@@ -38,12 +38,12 @@ const Diagnostic = () => {
           content="Évaluez votre score de lucidité décisionnelle en 10 minutes. Identifiez vos zones fragiles et angles morts."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.mentalpro.biz/diagnostic" />
-        <meta property="og:image" content="https://www.mentalpro.biz/og-diagnostic.jpg" />
+        <meta property="og:url" content="https://alphadirigeant.solutions/diagnostic" />
+        <meta property="og:image" content="https://alphadirigeant.solutions/og-diagnostic.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://www.mentalpro.biz/og-diagnostic.jpg" />
+        <meta name="twitter:image" content="https://alphadirigeant.solutions/og-diagnostic.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

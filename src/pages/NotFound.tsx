@@ -6,7 +6,7 @@ const NotFound = () => {
     <>
       <Helmet>
         <title>Page introuvable (404) | Frédéric Ternon</title>
-        <meta name="description" content="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil de mentalpro.biz." />
+        <meta name="description" content="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil de alphadirigeant.solutions." />
         <meta name="robots" content="noindex, follow" />
         <meta property="og:title" content="Page introuvable (404) | Frédéric Ternon" />
         <meta property="og:description" content="Cette page n'existe pas ou a été déplacée." />

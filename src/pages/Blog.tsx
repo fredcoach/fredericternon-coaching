@@ -50,7 +50,7 @@ const Blog = () => {
     "@type": "CollectionPage",
     "name": "Blog Coaching Mental - Croyances Limitantes Entrepreneurs",
     "description": "Articles et guides sur les croyances limitantes qui freinent la croissance des entrepreneurs. Syndrome de l'imposteur, peur de réussir, perfectionnisme...",
-    "url": "https://fredericternon.com/blog",
+    "url": "https://alphadirigeant.solutions/blog",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": blogArticles.map((article, index) => ({
@@ -58,10 +58,10 @@ const Blog = () => {
         "position": index + 1,
         "item": {
           "@type": "Article",
-          "@id": `https://fredericternon.com/blog/${article.slug}`,
+          "@id": `https://alphadirigeant.solutions/blog/${article.slug}`,
           "name": article.title,
           "description": article.metaDescription,
-          "url": `https://fredericternon.com/blog/${article.slug}`
+          "url": `https://alphadirigeant.solutions/blog/${article.slug}`
         }
       }))
     }
@@ -75,14 +75,14 @@ const Blog = () => {
         <meta name="title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
         <meta name="description" content="Articles pour dirigeants de PME : pilotage, décisions, organisation, délégation. Croyances limitantes et leviers concrets pour reprendre la main." />
         <meta name="keywords" content="croyances limitantes entrepreneur, syndrome imposteur entrepreneur, peur réussir entrepreneur, coaching mental, développement personnel entrepreneur, blocages entrepreneurs" />
-        <link rel="canonical" href="https://www.mentalpro.biz/blog" />
+        <link rel="canonical" href="https://alphadirigeant.solutions/blog" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.mentalpro.biz/blog" />
+        <meta property="og:url" content="https://alphadirigeant.solutions/blog" />
         <meta property="og:title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
         <meta property="og:description" content="Articles et guides pour dirigeants de PME : pilotage, décisions et croyances limitantes." />
-        <meta property="og:image" content="https://www.mentalpro.biz/images/blog-og.jpg" />
+        <meta property="og:image" content="https://alphadirigeant.solutions/images/blog-og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:site_name" content="Frédéric Ternon | Pilotage du Dirigeant" />
@@ -91,7 +91,7 @@ const Blog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Blog Pilotage Dirigeant PME | Frédéric Ternon" />
         <meta name="twitter:description" content="Articles et guides pour dirigeants de PME : pilotage, décisions et croyances limitantes." />
-        <meta name="twitter:image" content="https://www.mentalpro.biz/images/blog-og.jpg" />
+        <meta name="twitter:image" content="https://alphadirigeant.solutions/images/blog-og.jpg" />
 
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

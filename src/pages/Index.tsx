@@ -43,7 +43,7 @@ const Index = () => {
     "@type": "LocalBusiness",
     "name": "Frédéric Ternon | Pilotage du Dirigeant",
     "description": "Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider.",
-    "url": "https://www.mentalpro.biz",
+    "url": "https://alphadirigeant.solutions",
     "telephone": "+33767971952",
     "address": {
       "@type": "PostalAddress",
@@ -63,11 +63,11 @@ const Index = () => {
         <title>Frédéric Ternon | Pilotage PME — Décisions & Organisation</title>
         <meta name="description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
         <meta name="keywords" content="dirigeant PME, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME, délégation dirigeant, décision stratégique, coach dirigeant PME" />
-        <link rel="canonical" href="https://www.mentalpro.biz/" />
+        <link rel="canonical" href="https://alphadirigeant.solutions/" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.mentalpro.biz/" />
+        <meta property="og:url" content="https://alphadirigeant.solutions/" />
         <meta property="og:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
         <meta property="og:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
         <meta property="og:site_name" content="Frédéric Ternon | Pilotage du Dirigeant" />
