@@ -48,9 +48,22 @@ const resources = [
 ];
 
 const Ressources = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [guideOpen, setGuideOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (searchParams.get("guide") === "1") {
+      setGuideOpen(true);
+      const next = new URLSearchParams(searchParams);
+      next.delete("guide");
+      setSearchParams(next, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
+
 
   const collectionSchema = {
     "@context": "https://schema.org",
