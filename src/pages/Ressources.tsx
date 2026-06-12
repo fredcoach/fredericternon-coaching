@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper } from "lucide-react";
+import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText } from "lucide-react";
+
+const GUIDE_PDF = "/ressources/guide-sortir-roue-hamster-alpha-pme.pdf";
 
 const resources = [
   {
