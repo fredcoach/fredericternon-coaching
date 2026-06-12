@@ -61,7 +61,7 @@ const BlogArticle = () => {
     "@type": "Product",
     "name": article.productName,
     "description": article.productDescription,
-    "image": `https://www.mentalpro.biz${article.ogImage}`,
+    "image": `https://alphadirigeant.solutions${article.ogImage}`,
     "sku": `COACHING-${article.id}`,
     "mpn": `FT-${article.slug}`,
     "brand": {
@@ -71,11 +71,11 @@ const BlogArticle = () => {
     "manufacturer": {
       "@type": "Organization",
       "name": "Frédéric Ternon Coaching Mental",
-      "url": "https://www.mentalpro.biz"
+      "url": "https://alphadirigeant.solutions"
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://www.mentalpro.biz/blog/${article.slug}`,
+      "url": `https://alphadirigeant.solutions/blog/${article.slug}`,
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
@@ -110,7 +110,7 @@ const BlogArticle = () => {
       "seller": {
         "@type": "Organization",
         "name": "Frédéric Ternon Coaching Mental",
-        "url": "https://www.mentalpro.biz"
+        "url": "https://alphadirigeant.solutions"
       }
     },
     "aggregateRating": {
@@ -164,11 +164,11 @@ const BlogArticle = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "image": `https://www.mentalpro.biz${article.ogImage}`,
+    "image": `https://alphadirigeant.solutions${article.ogImage}`,
     "author": {
       "@type": "Person",
       "name": "Frédéric Ternon",
-      "url": "https://www.mentalpro.biz",
+      "url": "https://alphadirigeant.solutions",
       "jobTitle": "Coach Mental pour Entrepreneurs"
     },
     "publisher": {
