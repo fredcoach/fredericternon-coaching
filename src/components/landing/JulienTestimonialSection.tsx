@@ -69,7 +69,8 @@ export function JulienTestimonialSection() {
               <img
                 src={julienPhoto.url}
                 alt="Julien Laudy, Co-fondateur et Directeur Général de Dokles.io"
-                loading="lazy"
+                width="56"
+                height="56"
                 decoding="async"
                 className="flex-shrink-0 w-14 h-14 rounded-full object-cover border border-primary/10"
               />
