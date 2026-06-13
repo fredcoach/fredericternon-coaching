@@ -30,7 +30,7 @@ const FlashDecision = () => {
   return (
     <>
       <Helmet>
-        <title>Flash Decision | Session Coaching 1h — Frédéric Ternon</title>
+        <title>Flash Decision | Session Coaching 1h | Frédéric Ternon</title>
         <meta name="description" content="Débloquez une décision stratégique en 1 heure. Session intensive de questionnement puissant pour dirigeants. 350€, résultats immédiats." />
         <link rel="canonical" href="https://alphadirigeant.solutions/flash-decision" />
         <meta property="og:title" content="Flash Decision | Session Coaching 1h" />

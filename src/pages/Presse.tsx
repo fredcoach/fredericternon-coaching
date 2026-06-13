@@ -11,7 +11,7 @@ const expertiseTopics = [
   {
     title: "Pilotage du dirigeant de PME",
     angle:
-      "Pourquoi les dirigeants de PME (jusqu'à 30 personnes) sont les plus seuls de l'écosystème entrepreneurial — et comment ils peuvent reprendre la main sur leur agenda et leurs décisions.",
+      "Pourquoi les dirigeants de PME (jusqu'à 30 personnes) sont les plus seuls de l'écosystème entrepreneurial, et comment ils peuvent reprendre la main sur leur agenda et leurs décisions.",
   },
   {
     title: "Décisions repoussées & coût caché",
@@ -26,12 +26,12 @@ const expertiseTopics = [
   {
     title: "Organigramme & délégation",
     angle:
-      "Pourquoi un organigramme clair (même à 8 personnes) est l'un des actes managériaux les plus rentables — et les 3 erreurs qui empêchent les PME de déléguer.",
+      "Pourquoi un organigramme clair (même à 8 personnes) est l'un des actes managériaux les plus rentables, et les 3 erreurs qui empêchent les PME de déléguer.",
   },
   {
     title: "Regard extérieur vs coaching classique",
     angle:
-      "Ce que change un regard extérieur structuré pour un dirigeant — différence avec le coaching, le conseil stratégique et le mentorat.",
+      "Ce que change un regard extérieur structuré pour un dirigeant : différence avec le coaching, le conseil stratégique et le mentorat.",
   },
 ];
 
@@ -64,7 +64,7 @@ const Presse = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Presse & Médias | Alpha PME — Frédéric Ternon</title>
+        <title>Presse & Médias | Alpha PME | Frédéric Ternon</title>
         <meta
           name="description"
           content="Espace presse d'Alpha PME : bio de Frédéric Ternon, sujets d'expertise, logos et visuels à télécharger pour journalistes, podcasts et organisateurs d'événements."
@@ -73,7 +73,7 @@ const Presse = () => {
         <meta property="og:title" content="Presse & Médias | Alpha PME" />
         <meta
           property="og:description"
-          content="Bio, sujets d'expertise et ressources médias de Frédéric Ternon — pilotage du dirigeant de PME."
+          content="Bio, sujets d'expertise et ressources médias de Frédéric Ternon, pilotage du dirigeant de PME."
         />
         <meta property="og:url" content="https://alphadirigeant.solutions/presse" />
         <meta name="robots" content="index, follow" />
@@ -89,7 +89,7 @@ const Presse = () => {
             <span className="text-sm font-medium">Espace presse & médias</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Frédéric Ternon — Pilotage du dirigeant de PME
+            Frédéric Ternon | Pilotage du dirigeant de PME
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Journalistes, podcasteurs, organisateurs d'événements : toutes les ressources
@@ -116,7 +116,7 @@ const Presse = () => {
             <div className="bg-card border border-border rounded-2xl p-6 text-muted-foreground leading-relaxed space-y-3">
               <p>
                 Frédéric Ternon est le fondateur d'Alpha PME. Il accompagne les dirigeants
-                de PME jusqu'à 30 personnes — un segment souvent isolé, trop grand pour le
+                de PME jusqu'à 30 personnes, un segment souvent isolé, trop grand pour le
                 solopreneuriat, trop petit pour les grands cabinets de conseil.
               </p>
               <p>
@@ -126,7 +126,7 @@ const Presse = () => {
                 décisions clés.
               </p>
               <p>
-                Sa méthode s'appuie sur trois repères — Pilotage, Décision, Organisation —
+                Sa méthode s'appuie sur trois repères (Pilotage, Décision, Organisation)
                 et un format court (Session CADRAGE) qui permet en quelques heures de poser
                 un diagnostic actionnable. Il intervient aussi sous la marque mental-pro.fr
                 pour la préparation mentale des dirigeants sous pression.
@@ -207,7 +207,7 @@ const Presse = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://wa.me/33767971952" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="gap-2">
-                <Phone className="w-4 h-4" /> WhatsApp — 07 67 97 19 52
+                <Phone className="w-4 h-4" /> WhatsApp : 07 67 97 19 52
               </Button>
             </a>
             <a href="https://calendly.com/ternon/alpha-pme" target="_blank" rel="noopener noreferrer">

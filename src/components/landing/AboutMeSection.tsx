@@ -6,12 +6,12 @@ const pillars = [
   {
     icon: User,
     title: "La posture du dirigeant",
-    description: "Recul, lucidité, énergie — comment vous tenez votre rôle au quotidien.",
+    description: "Recul, lucidité, énergie : comment vous tenez votre rôle au quotidien.",
   },
   {
     icon: Building2,
     title: "L'organisation réelle",
-    description: "Rôles, priorités, délégation — ce qui se passe vraiment dans l'entreprise.",
+    description: "Rôles, priorités, délégation : ce qui se passe vraiment dans l'entreprise.",
   },
   {
     icon: Gauge,

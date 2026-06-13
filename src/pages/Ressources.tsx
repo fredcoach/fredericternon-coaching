@@ -20,7 +20,7 @@ const resources = [
   },
   {
     icon: Zap,
-    title: "Flash Décision — 1h pour trancher",
+    title: "Flash Décision | 1h pour trancher",
     description:
       "Une session courte (350 €) pour traiter une décision précise que vous repoussez depuis trop longtemps. Format dense, sortie avec un plan d'action écrit.",
     href: "/flash-decision",
@@ -77,7 +77,7 @@ const Ressources = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Ressources Dirigeants PME | Alpha PME — Frédéric Ternon</title>
+        <title>Ressources Dirigeants PME | Alpha PME | Frédéric Ternon</title>
         <meta
           name="description"
           content="Outils, analyses et ressources pour dirigeants de PME : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
