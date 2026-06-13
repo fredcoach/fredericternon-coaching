@@ -60,7 +60,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Frédéric Ternon | Pilotage PME — Décisions & Organisation</title>
+        <title>Frédéric Ternon | Pilotage PME | Décisions & Organisation</title>
         <meta name="description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
         <meta name="keywords" content="dirigeant PME, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME, délégation dirigeant, décision stratégique, coach dirigeant PME" />
         <link rel="canonical" href="https://alphadirigeant.solutions/" />

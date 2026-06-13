@@ -4,7 +4,7 @@ const Signature = () => {
   return (
     <>
       <Helmet>
-        <title>Signature email — Alpha Dirigeant</title>
+        <title>Signature email | Alpha Dirigeant</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div style={{ minHeight: "100vh", background: "#f5f5f5", padding: "40px 20px", fontFamily: "Arial, sans-serif" }}>
@@ -52,7 +52,7 @@ const Signature = () => {
                         <tr>
                           <td style={{ fontSize: "13px", lineHeight: 1.6, paddingTop: "6px" }}>
                             🎯 <a href="https://alphadirigeant.solutions/ressources" style={{ color: "#b8923d", textDecoration: "none", fontWeight: "bold" }}>
-                              Guide gratuit — Sortir de la roue du hamster
+                              Guide gratuit : Sortir de la roue du hamster
                             </a>
                           </td>
                         </tr>
