@@ -1,43 +1,29 @@
-## Objective
+## Goal
+Force-sync the workspace with GitHub `main`, verify the new route exists, and provide the preview URL.
 
-Create a dedicated `/signature` page on the site that renders Frédéric's email signature **visually** (not as raw HTML code), so he can select it with Ctrl/Cmd+A, copy, and paste directly into Gmail → Settings → Signature.
+## Steps (build mode)
 
-## Context
+1. **Fetch & inspect remote main**
+   - `git fetch origin main`
+   - `git log --oneline HEAD..origin/main` to see any commits we're missing
+   - `git status` to confirm a clean tree
 
-Gmail does not support pasting raw HTML code into the signature field. The only reliable method is to render the signature in a browser, select the rendered output, copy it, and paste the rich text into Gmail. The previous attempt using a local file (`file:///mnt/documents/...`) failed because the file is on the sandbox, not the user's machine.
+2. **Force-refresh local branch from main** (if commits are missing)
+   - Pull/fast-forward `origin/main` into the current edit branch so `src/pages/TestProfilsAlphaPME.tsx` and the route registration land locally
 
-## Deliverables
+3. **Restart preview** with `code--restart_dev_server` so Vite picks up the synced files
 
-1. **New page `src/pages/Signature.tsx`**
-   - Renders the signature using the same inline styles as the email HTML (table layout, navy + gold colors, clickable links)
-   - Displays on a clean white background for easy selection
-   - Uses the brand colors: navy `#0f1b3d`, gold `#b8923d`
-   - Content:
-     - **Frédéric TERNON** (bold, 15px, navy)
-     - *Performance humaine & Pilotage* (13px)
-     - *Conférencier* (italic, 12px, muted)
-     - Separator line
-     - 📞 07 67 97 19 52 (clickable `tel:` link)
-     - 💬 WhatsApp (clickable `wa.me/33767971952` link)
-     - 🎯 **Guide gratuit — Sortir de la roue du hamster** (gold link to `/ressources`)
-     - 🌐 alphadirigeant.solutions (gold link)
+4. **Verify on disk**
+   - Confirm `src/pages/TestProfilsAlphaPME.tsx` exists
+   - Grep `src/App.tsx` for `test-profils-alpha-pme` and the matching import
 
-2. **Route registration in `src/App.tsx`**
-   - Add `<Route path="/signature" element={<Signature />} />`
+5. **Smoke test** with `browser--view_preview` at `/test-profils-alpha-pme`
 
-3. **Meta tag**
-   - No-index the page via `<Helmet>` (not useful for SEO, internal tool only)
+6. **Report the preview URL**:
+   `https://id-preview--eb1b39cd-b9bb-435c-acef-5dcaa227e4a9.lovable.app/test-profils-alpha-pme`
 
-## How the user will use it
+## Notes
+- If the branch is already in sync (as last check suggested), step 2 is a no-op and we go straight to verification.
+- No file edits planned — read-only verification + dev server restart.
 
-1. Open `https://alphadirigeant.solutions/signature` (or the preview URL)
-2. Select the entire signature area
-3. Copy (Ctrl/Cmd+C)
-4. Open Gmail → Settings → Signature
-5. Paste — Gmail preserves colors, links, and formatting
-
-## No-go
-
-- Do not use a `<textarea>` or display raw HTML code — Gmail users need the *rendered* output
-- Do not add the navbar or footer to this page — keep it minimal for clean selection
-- Do not use external CSS classes that might not inline correctly when copied
+Approve to switch to build mode and run this.
