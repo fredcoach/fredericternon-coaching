@@ -42,32 +42,23 @@ export default function CartographieQuestionnaire() {
         if (stored) setAnswers(JSON.parse(stored));
 
         const { data, error } = await supabase.functions.invoke("carto-get", {
-          method: "GET",
-          // supabase-js v2: GET doesn't support query params; use direct fetch
+          body: { session_id: sessionId },
         });
-        // Fallback to direct fetch with query
         if (error || !data) {
-          const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get?session_id=${encodeURIComponent(sessionId)}`;
-          const r = await fetch(url, {
-            headers: { apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string },
+          toast({
+            title: "Session introuvable",
+            description: "Vérifiez votre lien ou recommencez.",
+            variant: "destructive",
           });
-          if (!r.ok) {
-            toast({
-              title: "Session introuvable",
-              description: "Vérifiez votre lien ou recommencez.",
-              variant: "destructive",
-            });
-            navigate("/cartographie-des-blocages", { replace: true });
-            return;
-          }
-          const body = await r.json();
-          if (body.result) {
-            navigate(
-              `/cartographie-des-blocages/resultat?session_id=${encodeURIComponent(sessionId)}`,
-              { replace: true },
-            );
-            return;
-          }
+          navigate("/cartographie-des-blocages", { replace: true });
+          return;
+        }
+        if (data.result) {
+          navigate(
+            `/cartographie-des-blocages/resultat?session_id=${encodeURIComponent(sessionId)}`,
+            { replace: true },
+          );
+          return;
         }
       } finally {
         setVerifying(false);
