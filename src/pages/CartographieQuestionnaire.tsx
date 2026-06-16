@@ -41,10 +41,18 @@ export default function CartographieQuestionnaire() {
         const stored = localStorage.getItem(STORAGE_KEY(sessionId));
         if (stored) setAnswers(JSON.parse(stored));
 
-        const { data, error } = await supabase.functions.invoke("carto-get", {
-          body: { session_id: sessionId },
+        const cartoGetUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get?session_id=${encodeURIComponent(sessionId)}`;
+        const response = await fetch(cartoGetUrl, {
+          method: "POST",
+          headers: {
+            apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string,
+            Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ session_id: sessionId }),
         });
-        if (error || !data) {
+        const data = response.ok ? await response.json() : null;
+        if (!response.ok || !data) {
           toast({
             title: "Session introuvable",
             description: "Vérifiez votre lien ou recommencez.",
