@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import { ArrowLeft, ArrowRight, CheckCircle2, Clock, Share2, Sparkles, RotateCcw } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, Clock, Play, Share2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -9,8 +8,17 @@ import { cn } from "@/lib/utils";
 
 type ProfileKey = "indispensable" | "controleur" | "organisation" | "expert";
 
-type AnswerOption = { profile: ProfileKey; text: string };
-type Question = { id: number; text: string; weight: number; options: AnswerOption[] };
+type AnswerOption = {
+  profile: ProfileKey;
+  text: string;
+};
+
+type Question = {
+  id: number;
+  text: string;
+  weight: number;
+  options: AnswerOption[];
+};
 
 type ProfileContent = {
   label: string;
@@ -220,15 +228,15 @@ const computeResult = (answers: ProfileKey[]) => {
     weightedScores[answer] += questions[index]?.weight || 1;
   });
 
-  const highestRaw = Math.max(...profileOrder.map((p) => rawScores[p]));
-  const rawLeaders = profileOrder.filter((p) => rawScores[p] === highestRaw);
+  const highestRaw = Math.max(...profileOrder.map((profile) => rawScores[profile]));
+  const rawLeaders = profileOrder.filter((profile) => rawScores[profile] === highestRaw);
 
   let dominant = rawLeaders[0];
   let tiedProfiles: ProfileKey[] = rawLeaders;
 
   if (rawLeaders.length > 1) {
-    const highestWeighted = Math.max(...rawLeaders.map((p) => weightedScores[p]));
-    const weightedLeaders = rawLeaders.filter((p) => weightedScores[p] === highestWeighted);
+    const highestWeighted = Math.max(...rawLeaders.map((profile) => weightedScores[profile]));
+    const weightedLeaders = rawLeaders.filter((profile) => weightedScores[profile] === highestWeighted);
     dominant = weightedLeaders[0];
     tiedProfiles = weightedLeaders;
   }
@@ -242,7 +250,7 @@ const computeResult = (answers: ProfileKey[]) => {
   }
 
   const secondary = profileOrder
-    .filter((p) => p !== dominant)
+    .filter((profile) => profile !== dominant)
     .sort((a, b) => rawScores[b] - rawScores[a] || weightedScores[b] - weightedScores[a])[0];
 
   const hasSecondary = secondary && rawScores[dominant] - rawScores[secondary] <= 1;
@@ -271,7 +279,12 @@ const TestProfilsAlphaPME = () => {
   const progress = started ? ((currentQuestionIndex + (selectedAnswer ? 1 : 0)) / questions.length) * 100 : 0;
 
   useEffect(() => {
+    document.title = "Test des 4 Profils Alpha PME";
+  }, []);
+
+  useEffect(() => {
     if (!result) return;
+
     const payload = {
       completedAt: new Date().toISOString(),
       answers,
@@ -280,6 +293,7 @@ const TestProfilsAlphaPME = () => {
       scores: result.rawScores,
       source: new URLSearchParams(window.location.search).get("source") || "direct",
     };
+
     localStorage.setItem("alpha-pme-profile-test-result", JSON.stringify(payload));
   }, [answers, result]);
 
@@ -291,12 +305,14 @@ const TestProfilsAlphaPME = () => {
 
   const goNext = () => {
     if (!selectedAnswer) return;
+
     if (currentQuestionIndex === questions.length - 1) {
       setIsRevealing(true);
       window.setTimeout(() => setIsRevealing(false), 1200);
       return;
     }
-    setCurrentQuestionIndex((i) => i + 1);
+
+    setCurrentQuestionIndex((index) => index + 1);
   };
 
   const goBack = () => {
@@ -304,7 +320,8 @@ const TestProfilsAlphaPME = () => {
       setStarted(false);
       return;
     }
-    setCurrentQuestionIndex((i) => i - 1);
+
+    setCurrentQuestionIndex((index) => index - 1);
   };
 
   const restart = () => {
@@ -317,216 +334,321 @@ const TestProfilsAlphaPME = () => {
 
   const shareResult = async () => {
     if (!dominantContent) return;
+
     const text = dominantContent.shareText;
+
     if (navigator.share) {
-      try {
-        await navigator.share({ title: dominantContent.label, text, url: window.location.href });
-      } catch {}
+      await navigator.share({ title: dominantContent.label, text, url: window.location.href });
       return;
     }
-    try {
-      await navigator.clipboard.writeText(`${text}\n${window.location.href}`);
-    } catch {}
+
+    await navigator.clipboard.writeText(`${text}\n${window.location.href}`);
   };
 
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Helmet>
-        <title>Test des 4 Profils Alpha PME</title>
-        <meta
-          name="description"
-          content="Découvrez en 3 minutes quel rôle votre entreprise vous oblige encore à jouer : Indispensable, Contrôleur, Organisation Saturée ou Expert Prisonnier."
-        />
-      </Helmet>
+  if (!started) {
+    return (
+      <div className="min-h-screen bg-background">
+        <section className="border-b border-border/60 bg-gradient-to-b from-secondary/40 to-background">
+          <div className="container mx-auto max-w-6xl px-4 py-16 md:py-24">
+            <div className="grid gap-12 md:grid-cols-2 md:items-center">
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
+                  <Clock className="h-4 w-4" />
+                  Gratuit. 10 questions. Moins de 3 minutes.
+                </div>
 
-      {!started && (
-        <section className="container mx-auto max-w-4xl px-4 py-16">
-          <div className="mb-6">
-            <Link to="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Retour à l'accueil
-            </Link>
-          </div>
+                <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl">
+                  Découvrez quel rôle votre entreprise vous oblige encore à jouer
+                </h1>
 
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm text-primary">
-            <Clock className="h-4 w-4" />
-            Gratuit · 10 questions · Moins de 3 minutes
-          </div>
+                <p className="text-lg text-muted-foreground">
+                  Votre entreprise fonctionne. Vous avez des clients, de l'activité, parfois une équipe. Mais une partie importante repose encore sur vous.
+                </p>
 
-          <h1 className="text-4xl font-bold leading-tight md:text-5xl">
-            Découvrez quel rôle votre entreprise vous oblige encore à jouer
-          </h1>
+                <p className="text-base text-muted-foreground">
+                  Ce test vous aide à mettre des mots simples sur ce que vous vivez au quotidien, sans jargon et sans questionnaire interminable.
+                </p>
 
-          <p className="mt-6 text-lg text-muted-foreground">
-            Votre entreprise fonctionne. Vous avez des clients, de l'activité, parfois une équipe. Mais une partie
-            importante repose encore sur vous.
-          </p>
-          <p className="mt-3 text-lg text-muted-foreground">
-            Ce test vous aide à mettre des mots simples sur ce que vous vivez au quotidien, sans jargon et sans
-            questionnaire interminable.
-          </p>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <Button size="lg" onClick={() => setStarted(true)} className="group">
+                    Commencer le test
+                    <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
+                  </Button>
+                  <Button size="lg" variant="outline" asChild>
+                    <a href="#profils">Voir les 4 profils</a>
+                  </Button>
+                </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button size="lg" onClick={() => setStarted(true)}>
-              Commencer le test
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
+                <p className="text-sm text-muted-foreground">
+                  Choisissez simplement la réponse qui ressemble le plus à votre quotidien actuel.
+                </p>
+              </div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {profileOrder.map((profile) => (
-              <Card key={profile}>
-                <CardContent className="p-5">
-                  <div className="mb-2 inline-flex items-center gap-2 text-sm font-medium text-primary">
-                    <Sparkles className="h-4 w-4" />
-                    {profileContent[profile].shortLabel}
+              <Card className="border-primary/10 shadow-elegant">
+                <CardContent className="space-y-6 p-8">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <Sparkles className="h-6 w-6" />
                   </div>
-                  <p className="text-sm text-muted-foreground">{profileContent[profile].headline}</p>
+                  <div className="space-y-3">
+                    <h2 className="text-2xl font-semibold text-foreground">Le miroir rapide du dirigeant</h2>
+                    <p className="text-muted-foreground">
+                      Le résultat ne cherche pas à vous juger. Il montre le rôle que votre entreprise vous demande encore de porter.
+                    </p>
+                  </div>
+                  <ul className="space-y-3">
+                    {profileOrder.map((profile) => (
+                      <li key={profile} className="flex items-start gap-3 text-sm text-foreground">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-primary" />
+                        <span>{profileContent[profile].label}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
-            ))}
+            </div>
           </div>
         </section>
-      )}
 
-      {started && !isComplete && currentQuestion && (
-        <section className="container mx-auto max-w-2xl px-4 py-12">
-          <div className="mb-6 flex items-center justify-between">
-            <Button variant="ghost" size="sm" onClick={goBack}>
-              <ArrowLeft className="mr-2 h-4 w-4" /> Retour
-            </Button>
-            <span className="text-sm text-muted-foreground">
-              Question {currentQuestion.id} sur {questions.length}
-            </span>
+        <section id="profils" className="border-b border-border/60 bg-background py-16">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="grid gap-6 md:grid-cols-2">
+              {profileOrder.map((profile) => (
+                <Card key={profile} className="border-border/60">
+                  <CardContent className="space-y-3 p-6">
+                    <h3 className="text-xl font-semibold text-foreground">{profileContent[profile].label}</h3>
+                    <p className="text-muted-foreground">{profileContent[profile].headline}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
+        </section>
+      </div>
+    );
+  }
 
-          <Progress value={progress} className="mb-8" />
+  if (isRevealing || (isComplete && !result)) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-4">
+        <div className="max-w-md text-center">
+          <div className="mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <Sparkles className="h-8 w-8 animate-pulse" />
+          </div>
+          <h2 className="mb-3 text-3xl font-semibold text-foreground">Votre profil est prêt</h2>
+          <p className="text-muted-foreground">
+            Vos réponses montrent le rôle que vous portez le plus souvent dans votre entreprise aujourd'hui.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
-          <Card>
-            <CardContent className="p-6">
-              <p className="mb-2 text-xs uppercase tracking-wide text-muted-foreground">
+  if (isComplete && result && dominantContent) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto max-w-5xl px-4 py-12 md:py-16">
+          <button
+            type="button"
+            onClick={restart}
+            className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Refaire le test
+          </button>
+
+          <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+            <Card className="border-primary/10 shadow-elegant">
+              <CardContent className="space-y-6 p-8">
+                <div className="space-y-2">
+                  <p className="text-sm font-medium uppercase tracking-wide text-primary">Votre profil Alpha PME</p>
+                  <h1 className="text-3xl font-bold text-foreground md:text-4xl">{dominantContent.title}</h1>
+                  <p className="text-lg text-muted-foreground">{dominantContent.headline}</p>
+                </div>
+
+                <p className="text-base text-foreground">{dominantContent.description}</p>
+
+                <div className="rounded-2xl border border-primary/10 bg-primary/5 p-5">
+                  <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-primary">Ce que cela révèle</p>
+                  <p className="text-foreground">{dominantContent.reveals}</p>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div className="rounded-2xl border border-border/60 bg-card p-5">
+                    <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-foreground">Ce que ce rôle apporte</h3>
+                    <ul className="space-y-2">
+                      {dominantContent.strengths.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-primary" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-2xl border border-border/60 bg-card p-5">
+                    <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-foreground">Ce que ce rôle peut coûter</h3>
+                    <ul className="space-y-2">
+                      {dominantContent.cost.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-primary" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl border border-primary/20 bg-secondary/40 p-5">
+                  <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-primary">Question miroir</p>
+                  <p className="text-base italic text-foreground">{dominantContent.mirrorQuestion}</p>
+                </div>
+
+                {secondaryContent && (
+                  <div className="rounded-2xl border border-border/60 bg-muted/40 p-5">
+                    <p className="mb-1 text-sm font-semibold text-foreground">
+                      Tendance secondaire : {secondaryContent.label}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Votre résultat est nuancé. Vous pouvez aussi reconnaître une partie de votre quotidien dans ce profil secondaire.
+                    </p>
+                  </div>
+                )}
+
+                <Button variant="outline" onClick={shareResult} className="w-full sm:w-auto">
+                  <Share2 className="mr-2 h-4 w-4" />
+                  Partager mon résultat
+                </Button>
+              </CardContent>
+            </Card>
+
+            <div className="space-y-6">
+              <Card className="border-border/60">
+                <CardContent className="space-y-4 p-6">
+                  <h2 className="text-xl font-semibold text-foreground">
+                    Pourquoi ce profil peut freiner le passage au palier suivant
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    Votre profil n'est pas une faiblesse. Il montre souvent ce qui a permis à votre entreprise de fonctionner jusqu'ici. Mais à un certain niveau, le rôle que vous avez joué pour construire l'entreprise peut devenir ce qui limite sa prochaine étape.
+                  </p>
+                  <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-muted/40">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-elegant">
+                      <Play className="ml-1 h-6 w-6" />
+                    </div>
+                    <span className="absolute bottom-3 left-3 rounded-full bg-background/80 px-3 py-1 text-xs text-muted-foreground">
+                      VSL Alpha PME — environ 8 min
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Cette vidéo vous explique pourquoi certains dirigeants compétents restent coincés dans un rôle que leur entreprise continue de renforcer.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-primary/30 bg-primary/5">
+                <CardContent className="space-y-4 p-6">
+                  <div className="space-y-1">
+                    <p className="text-sm font-semibold uppercase tracking-wide text-primary">Étape suivante</p>
+                    <h3 className="text-xl font-semibold text-foreground">
+                      Votre profil montre ce que vous vivez. La Cartographie montre pourquoi cela continue.
+                    </h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Deux dirigeants avec le même profil peuvent vivre cette situation pour des raisons très différentes. La Cartographie des Blocages Alpha PME permet d'identifier ce qui entretient réellement cette situation et ce qui doit changer en priorité.
+                  </p>
+                  <Button size="lg" className="w-full" asChild>
+                    <a href="/cartographie">Faire ma Cartographie — 97 €</a>
+                  </Button>
+                  <Button variant="link" className="w-full text-primary" asChild>
+                    <a href="/cartographie">Voir ce que contient la Cartographie</a>
+                  </Button>
+                  <p className="text-xs text-muted-foreground">
+                    Environ 15 minutes. Restitution personnalisée. Pensée pour les dirigeants de TPE/PME.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto max-w-2xl px-4 py-10 md:py-16">
+        <div className="mb-6 flex items-center justify-between">
+          <button
+            type="button"
+            onClick={goBack}
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Retour
+          </button>
+          <span className="text-sm text-muted-foreground">
+            Question {currentQuestion.id} sur {questions.length}
+          </span>
+        </div>
+
+        <Progress value={progress} className="mb-8 h-2" />
+
+        <Card className="border-border/60 shadow-elegant">
+          <CardContent className="space-y-6 p-6 md:p-8">
+            <div className="space-y-2">
+              <p className="text-sm uppercase tracking-wide text-muted-foreground">
                 Choisissez la réponse qui ressemble le plus à votre quotidien actuel.
               </p>
-              <h2 className="mb-6 text-2xl font-semibold leading-snug">{currentQuestion.text}</h2>
+              <h2 className="text-2xl font-semibold leading-snug text-foreground md:text-3xl">
+                {currentQuestion.text}
+              </h2>
+            </div>
 
-              <div className="space-y-3">
-                {currentQuestion.options.map((option) => {
-                  const isSelected = selectedAnswer === option.profile;
-                  return (
-                    <button
-                      key={option.profile + option.text}
-                      type="button"
-                      onClick={() => selectAnswer(option.profile)}
-                      className={cn(
-                        "flex w-full items-start gap-3 rounded-2xl border bg-card p-4 text-left text-base leading-relaxed transition hover:border-primary/40 hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
-                        isSelected && "border-primary bg-primary/10"
-                      )}
-                    >
+            <div className="grid gap-3">
+              {currentQuestion.options.map((option) => {
+                const isSelected = selectedAnswer === option.profile;
+                return (
+                  <button
+                    key={`${currentQuestion.id}-${option.profile}`}
+                    type="button"
+                    onClick={() => selectAnswer(option.profile)}
+                    className={cn(
+                      "min-h-[72px] rounded-2xl border bg-card p-4 text-left text-base leading-relaxed transition hover:border-primary/40 hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+                      isSelected && "border-primary bg-primary/10 shadow-elegant"
+                    )}
+                  >
+                    <div className="flex items-start gap-3">
                       <span
                         className={cn(
-                          "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border",
-                          isSelected ? "border-primary bg-primary text-primary-foreground" : "border-muted-foreground/30"
+                          "mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full border",
+                          isSelected ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background"
                         )}
                       >
                         {isSelected && <CheckCircle2 className="h-4 w-4" />}
                       </span>
                       <span>{option.text}</span>
-                    </button>
-                  );
-                })}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {currentQuestionIndex === 4 && selectedAnswer && (
+              <div className="rounded-xl border border-primary/20 bg-primary/5 p-3 text-center text-sm text-primary">
+                Vous êtes à mi-parcours.
               </div>
+            )}
 
-              {currentQuestionIndex === 4 && selectedAnswer && (
-                <p className="mt-6 text-sm text-muted-foreground">Vous êtes à mi-parcours.</p>
-              )}
-
-              <div className="mt-8 flex justify-end">
-                <Button onClick={goNext} disabled={!selectedAnswer}>
-                  {currentQuestionIndex === questions.length - 1 ? "Voir mon profil" : "Question suivante"}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-      )}
-
-      {isComplete && (isRevealing || !result) && (
-        <section className="container mx-auto flex max-w-xl flex-col items-center px-4 py-24 text-center">
-          <Sparkles className="mb-4 h-10 w-10 animate-pulse text-primary" />
-          <h2 className="mb-3 text-2xl font-semibold">Votre profil est prêt</h2>
-          <p className="text-muted-foreground">
-            Vos réponses montrent le rôle que vous portez le plus souvent dans votre entreprise aujourd'hui.
-          </p>
-        </section>
-      )}
-
-      {isComplete && result && dominantContent && !isRevealing && (
-        <section className="container mx-auto max-w-4xl px-4 py-12">
-          <div className="mb-6 flex items-center justify-between">
-            <Button variant="ghost" size="sm" onClick={restart}>
-              <RotateCcw className="mr-2 h-4 w-4" /> Refaire le test
+            <Button
+              size="lg"
+              className="w-full group"
+              onClick={goNext}
+              disabled={!selectedAnswer}
+            >
+              {currentQuestionIndex === questions.length - 1 ? "Voir mon profil" : "Question suivante"}
+              <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" size="sm" onClick={shareResult}>
-              <Share2 className="mr-2 h-4 w-4" /> Partager
-            </Button>
-          </div>
-
-          <Card>
-            <CardContent className="p-8">
-              <p className="mb-2 text-xs uppercase tracking-wide text-primary">Votre profil Alpha PME</p>
-              <h1 className="text-3xl font-bold md:text-4xl">{dominantContent.title}</h1>
-              <p className="mt-3 text-lg text-muted-foreground">{dominantContent.headline}</p>
-
-              <p className="mt-6 leading-relaxed">{dominantContent.description}</p>
-
-              <div className="mt-8 rounded-2xl border bg-muted/40 p-5">
-                <p className="mb-1 text-xs uppercase tracking-wide text-muted-foreground">Ce que cela révèle</p>
-                <p className="leading-relaxed">{dominantContent.reveals}</p>
-              </div>
-
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-                <div className="rounded-2xl border p-5">
-                  <p className="mb-3 font-semibold">Ce que ce rôle apporte</p>
-                  <ul className="space-y-2 text-sm">
-                    {dominantContent.strengths.map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="rounded-2xl border p-5">
-                  <p className="mb-3 font-semibold">Ce que ce rôle peut coûter</p>
-                  <ul className="space-y-2 text-sm">
-                    {dominantContent.cost.map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-foreground" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/5 p-5">
-                <p className="mb-1 text-xs uppercase tracking-wide text-primary">Question miroir</p>
-                <p className="text-lg leading-relaxed">{dominantContent.mirrorQuestion}</p>
-              </div>
-
-              {secondaryContent && (
-                <div className="mt-6 rounded-2xl border p-5">
-                  <p className="mb-1 font-semibold">Tendance secondaire : {secondaryContent.label}</p>
-                  <p className="text-sm text-muted-foreground">
-                    Votre résultat est nuancé. Vous pouvez aussi reconnaître une partie de votre quotidien dans ce
-                    profil secondaire.
-                  </p>
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </section>
-      )}
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 };
