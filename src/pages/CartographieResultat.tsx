@@ -20,9 +20,14 @@ export default function CartographieResultat() {
     }
     (async () => {
       try {
-        const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get?session_id=${encodeURIComponent(sessionId)}`;
+        const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get`;
         const r = await fetch(url, {
-          headers: { apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string },
+          method: "POST",
+          headers: {
+            apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ session_id: sessionId }),
         });
         if (!r.ok) throw new Error("Cartographie introuvable");
         const body = await r.json();
