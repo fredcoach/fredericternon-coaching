@@ -12,6 +12,7 @@ const DiagnosticPopup = () => {
   const location = useLocation();
 
   const isFlashDecision = location.pathname === "/flash-decision";
+  const isCartoRoute = location.pathname.startsWith("/cartographie-des-blocages");
 
   const tryOpen = useCallback(() => {
     if (sessionStorage.getItem("diag_popup_dismissed")) return false;
@@ -22,7 +23,7 @@ const DiagnosticPopup = () => {
   }, []);
 
   useEffect(() => {
-    if (isFlashDecision) return;
+    if (isFlashDecision || isCartoRoute) return;
     if (sessionStorage.getItem("diag_popup_dismissed")) return;
 
     let opened = false;
