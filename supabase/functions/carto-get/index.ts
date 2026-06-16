@@ -8,7 +8,13 @@ Deno.serve(async (req) => {
 
   try {
     const url = new URL(req.url);
-    const sessionId = url.searchParams.get("session_id");
+    let sessionId = url.searchParams.get("session_id");
+    if (!sessionId && (req.method === "POST" || req.method === "PUT")) {
+      try {
+        const body = await req.json();
+        sessionId = body?.session_id ?? null;
+      } catch (_) {}
+    }
     if (!sessionId) {
       return new Response(JSON.stringify({ error: "session_id requis" }), {
         status: 400,
