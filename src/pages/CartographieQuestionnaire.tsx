@@ -239,9 +239,12 @@ function QuestionRenderer({
   if (q.kind === "choice") {
     return (
       <div>
-        <h3 className="text-lg md:text-xl font-medium text-foreground mb-5 leading-snug">
+        <h3 className="text-lg md:text-xl font-medium text-foreground mb-2 leading-snug">
           {q.title}
         </h3>
+        <p className="text-xs text-muted-foreground italic mb-5">
+          Une seule réponse possible — choisissez celle qui ressemble LE PLUS à votre quotidien.
+        </p>
         <div className="grid gap-2">
           {q.options.map((opt) => {
             const selected = value === opt.value;
