@@ -1,1 +1,10 @@
 project_id = "ldobywkpecrzwdikslzo"
+
+[functions.carto-checkout]
+verify_jwt = false
+
+[functions.carto-submit]
+verify_jwt = false
+
+[functions.carto-get]
+verify_jwt = false

@@ -14,6 +14,54 @@ export type Database = {
   }
   public: {
     Tables: {
+      cartographie_sessions: {
+        Row: {
+          access_email_sent_at: string | null
+          answers: Json | null
+          completed_at: string | null
+          cout_statu_quo: string | null
+          created_at: string
+          decision_repoussee: string | null
+          email: string | null
+          id: string
+          payment_status: string
+          result: Json | null
+          source: string | null
+          stripe_session_id: string
+          updated_at: string
+        }
+        Insert: {
+          access_email_sent_at?: string | null
+          answers?: Json | null
+          completed_at?: string | null
+          cout_statu_quo?: string | null
+          created_at?: string
+          decision_repoussee?: string | null
+          email?: string | null
+          id?: string
+          payment_status?: string
+          result?: Json | null
+          source?: string | null
+          stripe_session_id: string
+          updated_at?: string
+        }
+        Update: {
+          access_email_sent_at?: string | null
+          answers?: Json | null
+          completed_at?: string | null
+          cout_statu_quo?: string | null
+          created_at?: string
+          decision_repoussee?: string | null
+          email?: string | null
+          id?: string
+          payment_status?: string
+          result?: Json | null
+          source?: string | null
+          stripe_session_id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       guide_leads: {
         Row: {
           company: string
