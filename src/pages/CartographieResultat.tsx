@@ -23,11 +23,12 @@ export default function CartographieResultat() {
     }
     (async () => {
       try {
-        const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get`;
+        const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get?session_id=${encodeURIComponent(sessionId)}`;
         const r = await fetch(url, {
           method: "POST",
           headers: {
             apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string,
+            Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ session_id: sessionId }),
