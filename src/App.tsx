@@ -16,6 +16,9 @@ import Presse from "./pages/Presse";
 import Ressources from "./pages/Ressources";
 import Signature from "./pages/Signature";
 import TestProfilsAlphaPME from "./pages/TestProfilsAlphaPME";
+import CartographieLanding from "./pages/CartographieLanding";
+import CartographieQuestionnaire from "./pages/CartographieQuestionnaire";
+import CartographieResultat from "./pages/CartographieResultat";
 import DiagnosticPopup from "./components/DiagnosticPopup";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
 const queryClient = new QueryClient();
@@ -39,6 +42,9 @@ const App = () => (
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/signature" element={<Signature />} />
             <Route path="/test-profils-alpha-pme" element={<TestProfilsAlphaPME />} />
+            <Route path="/cartographie-des-blocages" element={<CartographieLanding />} />
+            <Route path="/cartographie-des-blocages/questionnaire" element={<CartographieQuestionnaire />} />
+            <Route path="/cartographie-des-blocages/resultat" element={<CartographieResultat />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
