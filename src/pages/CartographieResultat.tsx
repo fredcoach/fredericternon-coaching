@@ -18,6 +18,9 @@ export default function CartographieResultat() {
       setLoading(false);
       return;
     }
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("carto_session_id", sessionId);
+    }
     (async () => {
       try {
         const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/carto-get`;
@@ -193,7 +196,7 @@ export default function CartographieResultat() {
               className="w-full bg-primary hover:bg-primary-glow text-primary-foreground"
             >
               <a
-                href={CALENDLY_URL}
+                href={`${CALENDLY_URL}${CALENDLY_URL.includes("?") ? "&" : "?"}utm_source=cartographie${sessionId ? `&utm_content=${sessionId}` : ""}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 referrerPolicy="no-referrer"
