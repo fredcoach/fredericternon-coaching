@@ -374,9 +374,6 @@ const TestProfilsAlphaPME = () => {
                     Commencer le test
                     <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
                   </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <a href="#profils">Voir les 4 profils</a>
-                  </Button>
                 </div>
 
                 <p className="text-sm text-muted-foreground">
@@ -390,16 +387,18 @@ const TestProfilsAlphaPME = () => {
                     <Sparkles className="h-6 w-6" />
                   </div>
                   <div className="space-y-3">
-                    <h2 className="text-2xl font-semibold text-foreground">Le miroir rapide du dirigeant</h2>
-                    <p className="text-muted-foreground">
-                      Le résultat ne cherche pas à vous juger. Il montre le rôle que votre entreprise vous demande encore de porter.
-                    </p>
+                    <h2 className="text-2xl font-semibold text-foreground">Ce que ce test va vous révéler</h2>
                   </div>
                   <ul className="space-y-3">
-                    {profileOrder.map((profile) => (
-                      <li key={profile} className="flex items-start gap-3 text-sm text-foreground">
+                    {[
+                      "Pourquoi votre entreprise continue peut-être de reposer sur vous",
+                      "Ce qui vous empêche de sortir complètement de l'opérationnel",
+                      "Le rôle que votre entreprise vous oblige encore à jouer",
+                      "Ce qui pourrait freiner le passage au palier suivant",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-sm text-foreground">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-primary" />
-                        <span>{profileContent[profile].label}</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -408,24 +407,10 @@ const TestProfilsAlphaPME = () => {
             </div>
           </div>
         </section>
-
-        <section id="profils" className="border-b border-border/60 bg-background py-16">
-          <div className="container mx-auto max-w-6xl px-4">
-            <div className="grid gap-6 md:grid-cols-2">
-              {profileOrder.map((profile) => (
-                <Card key={profile} className="border-border/60">
-                  <CardContent className="space-y-3 p-6">
-                    <h3 className="text-xl font-semibold text-foreground">{profileContent[profile].label}</h3>
-                    <p className="text-muted-foreground">{profileContent[profile].headline}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
       </div>
     );
   }
+
 
   if (isRevealing || (isComplete && !result)) {
     return (
@@ -548,23 +533,53 @@ const TestProfilsAlphaPME = () => {
                   <div className="space-y-1">
                     <p className="text-sm font-semibold uppercase tracking-wide text-primary">Étape suivante</p>
                     <h3 className="text-xl font-semibold text-foreground">
-                      Votre profil montre ce que vous vivez. La Cartographie montre pourquoi cela continue.
+                      Pourquoi certaines entreprises franchissent un cap... et d'autres restent bloquées
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Deux dirigeants avec le même profil peuvent vivre cette situation pour des raisons très différentes. La Cartographie des Blocages Alpha PME permet d'identifier ce qui entretient réellement cette situation et ce qui doit changer en priorité.
-                  </p>
+                  <div className="space-y-3 text-sm text-muted-foreground">
+                    <p>Votre profil explique ce que vous vivez aujourd'hui.</p>
+                    <p>
+                      Mais deux dirigeants avec exactement le même profil peuvent obtenir des résultats totalement
+                      différents.
+                    </p>
+                    <p>L'un continue à courir après les urgences.</p>
+                    <p>
+                      L'autre retrouve du temps, de la visibilité et une entreprise moins dépendante de lui.
+                    </p>
+                    <p>La différence se situe rarement dans la motivation.</p>
+                    <p>
+                      Elle se situe dans le véritable blocage qui entretient la situation.
+                    </p>
+                    <p>
+                      La Cartographie des Blocages permet d'identifier ce blocage et les priorités à traiter pour
+                      franchir le palier suivant.
+                    </p>
+                  </div>
                   <Button size="lg" className="w-full" asChild>
-                    <a href="/cartographie">Faire ma Cartographie — 97 €</a>
+                    <a href="/cartographie">Identifier mon principal blocage — 97 €</a>
                   </Button>
-                  <Button variant="link" className="w-full text-primary" asChild>
-                    <a href="/cartographie">Voir ce que contient la Cartographie</a>
-                  </Button>
-                  <p className="text-xs text-muted-foreground">
-                    Environ 15 minutes. Restitution personnalisée. Pensée pour les dirigeants de TPE/PME.
-                  </p>
+
+                  <div className="rounded-2xl border border-primary/20 bg-background/60 p-5">
+                    <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-primary">
+                      Inclus avec votre Cartographie
+                    </p>
+                    <ul className="space-y-2">
+                      {[
+                        "Restitution personnalisée",
+                        "Call stratégique de 15 minutes avec Frédéric Ternon",
+                        "Identification de votre priorité n°1",
+                        "Recommandations adaptées à votre situation",
+                      ].map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-primary" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </CardContent>
               </Card>
+
             </div>
           </div>
         </div>
