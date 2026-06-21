@@ -264,7 +264,7 @@ const computeResult = (answers: ProfileKey[]) => {
   };
 };
 
-const TestProfils AlphaPME/TPE  = () => {
+const TestProfilsAlphaPME = () => {
   const [started, setStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<ProfileKey[]>([]);
@@ -279,7 +279,7 @@ const TestProfils AlphaPME/TPE  = () => {
   const progress = started ? ((currentQuestionIndex + (selectedAnswer ? 1 : 0)) / questions.length) * 100 : 0;
 
   useEffect(() => {
-    document.title = "Test des 4 Profils  alpha_pme ";
+    document.title = "Test des 4 Profils alpha_pme";
   }, []);
 
   useEffect(() => {
@@ -445,7 +445,7 @@ const TestProfils AlphaPME/TPE  = () => {
             <Card className="border-primary/10 shadow-elegant">
               <CardContent className="space-y-6 p-8">
                 <div className="space-y-2">
-                  <p className="text-sm font-medium uppercase tracking-wide text-primary">Votre profil  alpha_pme </p>
+                  <p className="text-sm font-medium uppercase tracking-wide text-primary">Votre profil alpha_pme</p>
                   <h1 className="text-3xl font-bold text-foreground md:text-4xl">{dominantContent.title}</h1>
                   <p className="text-lg text-muted-foreground">{dominantContent.headline}</p>
                 </div>
@@ -519,7 +519,7 @@ const TestProfils AlphaPME/TPE  = () => {
                       <Play className="ml-1 h-6 w-6" />
                     </div>
                     <span className="absolute bottom-3 left-3 rounded-full bg-background/80 px-3 py-1 text-xs text-muted-foreground">
-                      VSL  alpha_pme  — environ 8 min
+                      VSL alpha_pme — environ 8 min
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
@@ -668,4 +668,4 @@ const TestProfils AlphaPME/TPE  = () => {
   );
 };
 
-export default TestProfils AlphaPME/TPE ;
+export default TestProfilsAlphaPME;

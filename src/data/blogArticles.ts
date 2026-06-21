@@ -860,7 +860,7 @@ export const blogArticles: BlogArticle[] = [
     id: "12",
     slug: "sortir-roue-hamster-dirigeant",
     title: "Sortir de la roue du hamster : du dirigeant opérateur au dirigeant pilote",
-    metaTitle: "Sortir de la roue du hamster (dirigeant) |  alpha_pme ",
+    metaTitle: "Sortir de la roue du hamster (dirigeant) | alpha_pme",
     metaDescription: "Coaching dirigeant PME/TPE : sortir de la roue du hamster, reprendre de la hauteur et passer de l'opérationnel au pilotage stratégique.",
     excerpt: "Tu cours toute la journée sans avancer ? Voilà comment passer du dirigeant-opérateur au dirigeant-pilote, et reprendre la main sur ton entreprise.",
     content: `<p>Tu connais cette sensation : tes journées sont pleines, tu n'arrêtes pas, tu réponds, tu arbitres, tu éteins des feux. Le soir, tu es vidé. Et pourtant, quand tu regardes en arrière, tu as l'impression de n'avoir <strong>rien fait avancer de stratégique</strong>.</p>
