@@ -22,7 +22,7 @@ const products: Product[] = [
   {
     icon: Map,
     eyebrow: "DIAGNOSTIC · 15 MIN",
-    title: "Identifier ce qui freine réellement votre PME",
+    title: "Identifier ce qui freine réellement votre PME/TPE",
     description:
       "En 15 minutes, identifiez les zones où votre entreprise dépend encore excessivement de vous et les priorités à traiter pour passer le prochain palier.",
     bullets: [

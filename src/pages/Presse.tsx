@@ -9,9 +9,9 @@ import logoLight from "@/assets/alpha-pme-horizontal-light.png";
 
 const expertiseTopics = [
   {
-    title: "Pilotage du dirigeant de PME",
+    title: "Pilotage du dirigeant de PME/TPE",
     angle:
-      "Pourquoi les dirigeants de PME (jusqu'à 30 personnes) sont les plus seuls de l'écosystème entrepreneurial, et comment ils peuvent reprendre la main sur leur agenda et leurs décisions.",
+      "Pourquoi les dirigeants de PME/TPE (jusqu'à 30 personnes) sont les plus seuls de l'écosystème entrepreneurial, et comment ils peuvent reprendre la main sur leur agenda et leurs décisions.",
   },
   {
     title: "Décisions repoussées & coût caché",
@@ -26,7 +26,7 @@ const expertiseTopics = [
   {
     title: "Organigramme & délégation",
     angle:
-      "Pourquoi un organigramme clair (même à 8 personnes) est l'un des actes managériaux les plus rentables, et les 3 erreurs qui empêchent les PME de déléguer.",
+      "Pourquoi un organigramme clair (même à 8 personnes) est l'un des actes managériaux les plus rentables, et les 3 erreurs qui empêchent les PME/TPE de déléguer.",
   },
   {
     title: "Regard extérieur vs coaching classique",
@@ -44,7 +44,7 @@ const Presse = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Frédéric Ternon",
-    jobTitle: "Accompagnateur de dirigeants de PME",
+    jobTitle: "Accompagnateur de dirigeants de PME/TPE",
     url: "https://alphadirigeant.solutions",
     sameAs: ["https://mental-pro.fr"],
     worksFor: {
@@ -55,7 +55,7 @@ const Presse = () => {
     knowsAbout: [
       "Pilotage de dirigeant",
       "Décision stratégique",
-      "Organisation de PME",
+      "Organisation de PME/TPE",
       "Délégation",
       "Management",
     ],
@@ -73,7 +73,7 @@ const Presse = () => {
         <meta property="og:title" content="Presse & Médias | Alpha PME" />
         <meta
           property="og:description"
-          content="Bio, sujets d'expertise et ressources médias de Frédéric Ternon, pilotage du dirigeant de PME."
+          content="Bio, sujets d'expertise et ressources médias de Frédéric Ternon, pilotage du dirigeant de PME/TPE."
         />
         <meta property="og:url" content="https://alphadirigeant.solutions/presse" />
         <meta name="robots" content="index, follow" />
@@ -89,7 +89,7 @@ const Presse = () => {
             <span className="text-sm font-medium">Espace presse & médias</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Frédéric Ternon | Pilotage du dirigeant de PME
+            Frédéric Ternon | Pilotage du dirigeant de PME/TPE
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Journalistes, podcasteurs, organisateurs d'événements : toutes les ressources
@@ -104,7 +104,7 @@ const Presse = () => {
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-4">Bio courte (50 mots)</h2>
             <div className="bg-card border border-border rounded-2xl p-6 text-muted-foreground leading-relaxed">
-              Frédéric Ternon accompagne les dirigeants de PME jusqu'à 30 personnes. Sous la
+              Frédéric Ternon accompagne les dirigeants de PME/TPE jusqu'à 30 personnes. Sous la
               marque Alpha PME, il leur apporte un regard extérieur structuré pour identifier
               les blocages, clarifier l'organisation et mieux décider. Sa méthode combine
               pilotage, décision et structuration opérationnelle.
@@ -116,7 +116,7 @@ const Presse = () => {
             <div className="bg-card border border-border rounded-2xl p-6 text-muted-foreground leading-relaxed space-y-3">
               <p>
                 Frédéric Ternon est le fondateur d'Alpha PME. Il accompagne les dirigeants
-                de PME jusqu'à 30 personnes, un segment souvent isolé, trop grand pour le
+                de PME/TPE jusqu'à 30 personnes, un segment souvent isolé, trop grand pour le
                 solopreneuriat, trop petit pour les grands cabinets de conseil.
               </p>
               <p>

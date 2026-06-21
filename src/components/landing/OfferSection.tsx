@@ -131,7 +131,7 @@ export function OfferSection() {
 
                 <p className="text-primary-foreground/90 mb-3">Le montant dépend de plusieurs facteurs :</p>
                 <ul className="space-y-2 text-sm text-primary-foreground/90 mb-6">
-                  <li>• La taille et la complexité de votre PME</li>
+                  <li>• La taille et la complexité de votre PME/TPE</li>
                   <li>• Vos objectifs de pilotage et le délai pour les atteindre</li>
                   <li>• Le niveau d'accompagnement nécessaire (coaching + ressources + disponibilité)</li>
                 </ul>

@@ -37,7 +37,7 @@ export function AboutMeSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4]">
                 <img
                   src={fredericConference}
-                  alt="Frédéric Ternon, accompagnement de dirigeants de PME"
+                  alt="Frédéric Ternon, accompagnement de dirigeants de PME/TPE"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -57,7 +57,7 @@ export function AboutMeSection() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants de TPE et de PME{" "}
+                J'accompagne les dirigeants de TPE et de PME/TPE{" "}
                 <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand
                 l'entreprise fonctionne mais{" "}
                 <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle :

@@ -32,7 +32,7 @@ const columns = [
   {
     icon: CheckCircle2,
     kicker: "Ce que vous gagnez",
-    title: "Une PME qui avance sans vous au centre",
+    title: "Une PME/TPE qui avance sans vous au centre",
     items: [
       "Moins de remontées, des arbitrages plus rapides",
       "Du recul sur les sujets qui comptent vraiment",
@@ -67,7 +67,7 @@ export function ProblemSolutionSection() {
             <span className="text-gradient">C'est de reprendre la main.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Une PME ne plafonne presque jamais par manque de stratégie. Elle plafonne parce que tout
+            Une PME/TPE ne plafonne presque jamais par manque de stratégie. Elle plafonne parce que tout
             remonte au dirigeant, que la délégation est floue, et que l'organisation n'a pas suivi
             la croissance.
           </p>

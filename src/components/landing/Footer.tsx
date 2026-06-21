@@ -36,10 +36,10 @@ export function Footer() {
               loading="lazy"
             />
             <p className="text-sm text-muted-foreground mb-3">
-              Frédéric Ternon : regard extérieur pour dirigeants de PME
+              Frédéric Ternon : regard extérieur pour dirigeants de PME/TPE
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Dirigeants de PME · jusqu'à 30 personnes
+              Dirigeants de PME/TPE · jusqu'à 30 personnes
             </p>
             <div className="flex items-center gap-4">
               <a

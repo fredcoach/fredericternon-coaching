@@ -13,7 +13,7 @@ const resources = [
     icon: ClipboardCheck,
     title: "Auto-diagnostic dirigeant (10 min)",
     description:
-      "Un questionnaire structuré pour identifier ce qui bloque vraiment dans le pilotage de votre PME : décisions repoussées, organisation floue, surcharge mentale.",
+      "Un questionnaire structuré pour identifier ce qui bloque vraiment dans le pilotage de votre PME/TPE : décisions repoussées, organisation floue, surcharge mentale.",
     href: "/diagnostic",
     cta: "Faire le diagnostic",
     type: "Outil interactif · 47 €",
@@ -31,7 +31,7 @@ const resources = [
     icon: BookOpen,
     title: "Articles & analyses",
     description:
-      "Le blog Alpha PME : analyses de fond sur les blocages, les décisions et l'organisation des dirigeants de PME. Lectures de 5 à 10 minutes.",
+      "Le blog Alpha PME : analyses de fond sur les blocages, les décisions et l'organisation des dirigeants de PME/TPE. Lectures de 5 à 10 minutes.",
     href: "/blog",
     cta: "Explorer le blog",
     type: "Contenu · Mis à jour mensuellement",
@@ -68,25 +68,25 @@ const Ressources = () => {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Ressources Alpha PME pour dirigeants de PME",
+    name: "Ressources Alpha PME pour dirigeants de PME/TPE",
     description:
-      "Outils, analyses et formats courts pour aider les dirigeants de PME à mieux décider, clarifier leur organisation et reprendre la main sur leur pilotage.",
+      "Outils, analyses et formats courts pour aider les dirigeants de PME/TPE à mieux décider, clarifier leur organisation et reprendre la main sur leur pilotage.",
     url: "https://alphadirigeant.solutions/ressources",
   };
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Ressources Dirigeants PME | Alpha PME | Frédéric Ternon</title>
+        <title>Ressources Dirigeants PME/TPE | Alpha PME | Frédéric Ternon</title>
         <meta
           name="description"
-          content="Outils, analyses et ressources pour dirigeants de PME : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
+          content="Outils, analyses et ressources pour dirigeants de PME/TPE : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
         />
         <link rel="canonical" href="https://alphadirigeant.solutions/ressources" />
-        <meta property="og:title" content="Ressources pour dirigeants de PME | Alpha PME" />
+        <meta property="og:title" content="Ressources pour dirigeants de PME/TPE | Alpha PME" />
         <meta
           property="og:description"
-          content="Outils, diagnostics et analyses pour mieux piloter votre PME."
+          content="Outils, diagnostics et analyses pour mieux piloter votre PME/TPE."
         />
         <meta property="og:url" content="https://alphadirigeant.solutions/ressources" />
         <meta name="robots" content="index, follow" />
@@ -105,7 +105,7 @@ const Ressources = () => {
             Tout ce qu'il vous faut pour reprendre la main
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Outils, formats courts et analyses pour les dirigeants de PME qui
+            Outils, formats courts et analyses pour les dirigeants de PME/TPE qui
             veulent mieux décider et clarifier leur organisation.
           </p>
         </div>

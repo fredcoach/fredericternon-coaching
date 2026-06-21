@@ -30,7 +30,7 @@ export function RealityCheckSection() {
           {/* Body text */}
           <div className="mb-10">
             <p className="text-lg text-white/60 leading-relaxed mb-6">
-              Votre PME fonctionne. Les clients sont là. L'équipe existe.
+              Votre PME/TPE fonctionne. Les clients sont là. L'équipe existe.
             </p>
             <p className="text-lg text-white/60 leading-relaxed">
               Mais les urgences reviennent, les décisions remontent, la délégation

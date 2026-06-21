@@ -21,7 +21,7 @@ const promises = [
   {
     icon: RotateCcw,
     title: "Pilotage tenu",
-    description: "Une PME qui avance, sans que tout passe par vous",
+    description: "Une PME/TPE qui avance, sans que tout passe par vous",
   },
 ];
 

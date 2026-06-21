@@ -41,7 +41,7 @@ export function Method3RSection() {
         >
           <p className="text-accent font-medium mb-2">Le fil rouge</p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            Méthode 3R appliquée au <span className="text-accent">pilotage PME</span>
+            Méthode 3R appliquée au <span className="text-accent">pilotage PME/TPE</span>
           </h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
             Un cadre concret pour reprendre la main sur l'organisation, la délégation et les décisions. Pas un programme de développement personnel.

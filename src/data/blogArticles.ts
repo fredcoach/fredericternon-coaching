@@ -861,13 +861,13 @@ export const blogArticles: BlogArticle[] = [
     slug: "sortir-roue-hamster-dirigeant",
     title: "Sortir de la roue du hamster : du dirigeant opérateur au dirigeant pilote",
     metaTitle: "Sortir de la roue du hamster (dirigeant) | Alpha PME",
-    metaDescription: "Coaching dirigeant PME : sortir de la roue du hamster, reprendre de la hauteur et passer de l'opérationnel au pilotage stratégique.",
+    metaDescription: "Coaching dirigeant PME/TPE : sortir de la roue du hamster, reprendre de la hauteur et passer de l'opérationnel au pilotage stratégique.",
     excerpt: "Tu cours toute la journée sans avancer ? Voilà comment passer du dirigeant-opérateur au dirigeant-pilote, et reprendre la main sur ton entreprise.",
     content: `<p>Tu connais cette sensation : tes journées sont pleines, tu n'arrêtes pas, tu réponds, tu arbitres, tu éteins des feux. Le soir, tu es vidé. Et pourtant, quand tu regardes en arrière, tu as l'impression de n'avoir <strong>rien fait avancer de stratégique</strong>.</p>
 
 <p>C'est exactement l'image du <strong>hamster dans sa roue</strong> : beaucoup d'énergie dépensée, beaucoup de mouvement, zéro distance parcourue.</p>
 
-<p>Dans les PME jusqu'à 30 personnes que j'accompagne, c'est de loin le motif le plus fréquent quand un dirigeant me contacte. Pas un burn-out déclaré. Pas une crise. Juste cette fatigue diffuse de <em>tourner sans avancer</em>.</p>
+<p>Dans les PME/TPE jusqu'à 30 personnes que j'accompagne, c'est de loin le motif le plus fréquent quand un dirigeant me contacte. Pas un burn-out déclaré. Pas une crise. Juste cette fatigue diffuse de <em>tourner sans avancer</em>.</p>
 
 <h2>Pourquoi tu es coincé dans la roue</h2>
 
@@ -890,7 +890,7 @@ export const blogArticles: BlogArticle[] = [
 
 <p><strong>Le dirigeant pilote</strong>, lui, mesure sa valeur à ce qu'il met en mouvement. Il passe du temps sur quelques décisions structurantes, et il s'organise pour que le reste tourne sans lui. Sa journée est dictée par ses priorités.</p>
 
-<p>Aucun des deux n'est moral. Mais une PME ne dépasse pas un certain plafond tant que le dirigeant reste majoritairement opérateur.</p>
+<p>Aucun des deux n'est moral. Mais une PME/TPE ne dépasse pas un certain plafond tant que le dirigeant reste majoritairement opérateur.</p>
 
 <h2>Les 3 repères pour sortir de la roue</h2>
 
@@ -921,7 +921,7 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Ce que change un accompagnement dirigeant sur ce sujet</h2>
 
-<p>Mon rôle, dans un <a href="/">accompagnement dirigeant de PME</a>, ce n'est pas de te donner des outils de productivité. C'est de te servir de <strong>regard extérieur</strong>, calme et structuré, pour :</p>
+<p>Mon rôle, dans un <a href="/">accompagnement dirigeant de PME/TPE</a>, ce n'est pas de te donner des outils de productivité. C'est de te servir de <strong>regard extérieur</strong>, calme et structuré, pour :</p>
 
 <ul>
 <li>Te renvoyer ce que tu ne vois plus dans ton fonctionnement quotidien</li>
@@ -937,7 +937,7 @@ export const blogArticles: BlogArticle[] = [
 
 <p>👉 <a href="/blog/decision-fatigue-mentale-performance">Décision, fatigue mentale et performance</a> : pourquoi tu décides moins bien quand tu cours dans la roue.</p>
 
-<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> dans une PME.</p>
+<p>👉 <a href="/blog/pilotage-interieur-dirigeant">Pilotage intérieur : ce que ça change concrètement</a> dans une PME/TPE.</p>
 
 <p><strong>Sortir de la roue du hamster n'est pas une question de volonté. C'est une question d'organisation, d'identité de rôle, et de regard extérieur. Le jour où tu remets les trois en place, ton entreprise change de plafond.</strong></p>`,
     category: "Pilotage dirigeant",
@@ -946,15 +946,15 @@ export const blogArticles: BlogArticle[] = [
     updatedAt: "2026-06-03",
     image: "/assets/blog-roue-hamster.jpg",
     ogImage: "/images/og-roue-hamster.jpg",
-    productName: "Accompagnement dirigeant PME - Sortir de la roue du hamster",
-    productDescription: "Coaching dirigeant pour PME jusqu'à 30 personnes : sortir de la surcharge opérationnelle, structurer le pilotage et reprendre de la hauteur stratégique.",
+    productName: "Accompagnement dirigeant PME/TPE - Sortir de la roue du hamster",
+    productDescription: "Coaching dirigeant pour PME/TPE jusqu'à 30 personnes : sortir de la surcharge opérationnelle, structurer le pilotage et reprendre de la hauteur stratégique.",
     benefits: [
       "Cartographier précisément où part votre énergie de dirigeant",
       "Remettre chaque décision au bon niveau dans l'entreprise",
       "Protéger un temps de hauteur stratégique chaque semaine",
       "Passer durablement du rôle d'opérateur à celui de pilote"
     ],
-    targetAudience: "Dirigeants de PME jusqu'à 30 personnes qui veulent sortir de la surcharge opérationnelle",
+    targetAudience: "Dirigeants de PME/TPE jusqu'à 30 personnes qui veulent sortir de la surcharge opérationnelle",
     price: "Sur mesure",
     availability: "Disponible"
   },

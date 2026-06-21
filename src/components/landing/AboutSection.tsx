@@ -40,14 +40,14 @@ export function AboutSection() {
             {/* Content */}
             <div className="space-y-6">
               <div>
-                <p className="text-primary font-medium mb-2">Regard extérieur pour dirigeants de PME</p>
+                <p className="text-primary font-medium mb-2">Regard extérieur pour dirigeants de PME/TPE</p>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
                   Je suis Frédéric Ternon
                 </h2>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                J'accompagne les dirigeants de TPE et de PME, principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand l'entreprise fonctionne mais{" "}
+                J'accompagne les dirigeants de TPE et de PME/TPE, principalement <strong className="text-foreground">jusqu'à 30 personnes</strong> : quand l'entreprise fonctionne mais{" "}
                 <strong className="text-foreground">repose encore trop sur eux</strong>. Mon rôle : apporter un regard extérieur pour identifier ce qui bloque, clarifier l'organisation, fluidifier les décisions et vous aider à reprendre la main sur le pilotage.
               </p>
 
@@ -92,7 +92,7 @@ export function AboutSection() {
                 <div>
                   <p className="font-semibold text-foreground mb-1">Ma conviction</p>
                   <p className="text-muted-foreground">
-                    Une PME ne plafonne presque jamais par manque de stratégie. Elle plafonne parce que les décisions remontent toutes au dirigeant, que la délégation est floue, et que l'organisation n'a pas suivi la croissance. C'est là qu'un regard extérieur change tout.
+                    Une PME/TPE ne plafonne presque jamais par manque de stratégie. Elle plafonne parce que les décisions remontent toutes au dirigeant, que la délégation est floue, et que l'organisation n'a pas suivi la croissance. C'est là qu'un regard extérieur change tout.
                   </p>
                 </div>
               </div>
