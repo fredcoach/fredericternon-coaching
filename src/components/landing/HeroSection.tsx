@@ -76,7 +76,7 @@ export function HeroSection() {
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 backdrop-blur-sm border border-accent/30">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="text-sm text-accent font-medium tracking-wide uppercase">
-                  Dirigeants de PME
+                  DIRIGEANTS DE PME/ TPE
                 </span>
               </div>
             </div>
