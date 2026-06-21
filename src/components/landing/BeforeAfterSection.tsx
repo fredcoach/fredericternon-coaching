@@ -18,7 +18,7 @@ const after = [
   { bold: "Plus de recul", text: "Vous retrouvez du temps pour les sujets qui comptent vraiment." },
   { bold: "Posture plus stable", text: "Vous décidez avec plus de calme, même quand la pression monte." },
   { bold: "Pilotage plus clair", text: "Vous passez moins de temps à colmater, plus de temps à diriger." },
-  { bold: "Entreprise plus autonome", text: "La PME avance avec un cadre plus solide, sans vous remettre au centre de tout." },
+  { bold: "Entreprise plus autonome", text: "La PME/TPE avance avec un cadre plus solide, sans vous remettre au centre de tout." },
 ];
 
 export function BeforeAfterSection() {

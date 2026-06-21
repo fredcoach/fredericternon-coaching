@@ -11,7 +11,7 @@ const faqItems = [
     question: "C'est pour moi ou pas ?",
     answer: `Checklist rapide :
 
-✅ Vous dirigez une PME jusqu'à 30 personnes
+✅ Vous dirigez une PME/TPE jusqu'à 30 personnes
 ✅ L'entreprise tourne, mais tout repose encore sur vous
 ✅ Les décisions importantes finissent toutes sur votre bureau
 ✅ Vous sentez que l'organisation a atteint un plafond
@@ -79,7 +79,7 @@ Zéro complaisance. Zéro perte de temps mutuelle.`,
     question: "Quel est l'investissement pour cet accompagnement ?",
     answer: `L'accompagnement est sur-mesure, le montant varie selon :
 
-• La taille et la complexité de votre PME
+• La taille et la complexité de votre PME/TPE
 • Vos objectifs et le délai pour les atteindre
 • Le niveau d'accompagnement nécessaire
 
@@ -112,7 +112,7 @@ Le but : que ça rentre dans votre rythme de dirigeant, pas l'inverse.`,
   },
   {
     question: "Mon entreprise tourne déjà bien. Pourquoi j'aurais besoin de ça ?",
-    answer: `Justement. Quand une PME tourne, le vrai sujet n'est plus de survivre, c'est de ne plus dépendre du dirigeant pour tout.
+    answer: `Justement. Quand une PME/TPE tourne, le vrai sujet n'est plus de survivre, c'est de ne plus dépendre du dirigeant pour tout.
 
 Vous pouvez avoir :
 • Un chiffre d'affaires sain

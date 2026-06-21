@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Vous dirigez une PME jusqu'à 30 personnes, l'entreprise tourne, mais elle tourne autour de vous",
+  "Vous dirigez une PME/TPE jusqu'à 30 personnes, l'entreprise tourne, mais elle tourne autour de vous",
   "Les décisions remontent toutes au dirigeant et votre agenda est saturé d'urgences",
   "La délégation est floue : vous avez délégué, mais vous repassez derrière",
   "Vous sentez que l'organisation n'a pas suivi la croissance et que vous plafonnez",
@@ -35,7 +35,7 @@ export function TargetAudienceSection() {
             C'est fait pour vous si…
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Cet accompagnement s'adresse aux dirigeants de PME jusqu'à 30 personnes qui veulent reprendre la main sur le pilotage.
+            Cet accompagnement s'adresse aux dirigeants de PME/TPE jusqu'à 30 personnes qui veulent reprendre la main sur le pilotage.
           </p>
         </div>
 

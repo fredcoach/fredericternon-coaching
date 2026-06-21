@@ -14,7 +14,7 @@ const differentiators = [
   },
   {
     icon: Users,
-    title: "Spécifique PME jusqu'à 30",
+    title: "Spécifique PME/TPE jusqu'à 30",
     description: "Pensé pour les structures qui ne sont plus une TPE et pas encore un grand groupe. Ni théorie, ni recettes corporate.",
   },
   {
@@ -53,7 +53,7 @@ export function DifferentiatorsSection() {
             Ce que vous ne trouverez <span className="text-gradient">pas ailleurs</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Un accompagnement pensé pour le pilotage d'une PME, pas pour les livres.
+            Un accompagnement pensé pour le pilotage d'une PME/TPE, pas pour les livres.
           </p>
         </div>
 

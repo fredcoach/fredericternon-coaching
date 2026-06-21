@@ -24,8 +24,8 @@ type WhatsAppTestimonial = {
 };
 
 const featuredVideos: FeaturedVideo[] = [
-  // { src: "/videos/temoin1.mp4", poster: "/videos/temoin1.jpg", name: "Prénom", role: "Dirigeant PME · Secteur" },
-  // { src: "/videos/temoin2.mp4", poster: "/videos/temoin2.jpg", name: "Prénom", role: "Dirigeant PME · Secteur" },
+  // { src: "/videos/temoin1.mp4", poster: "/videos/temoin1.jpg", name: "Prénom", role: "Dirigeant PME/TPE · Secteur" },
+  // { src: "/videos/temoin2.mp4", poster: "/videos/temoin2.jpg", name: "Prénom", role: "Dirigeant PME/TPE · Secteur" },
 ];
 
 const whatsappTestimonials: WhatsAppTestimonial[] = [

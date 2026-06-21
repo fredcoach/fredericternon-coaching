@@ -42,7 +42,7 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Frédéric Ternon | Pilotage du Dirigeant",
-    "description": "Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider.",
+    "description": "Regard extérieur pour dirigeants de PME/TPE jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider.",
     "url": "https://alphadirigeant.solutions",
     "telephone": "+33767971952",
     "address": {
@@ -60,23 +60,23 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Frédéric Ternon | Pilotage PME | Décisions & Organisation</title>
-        <meta name="description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
-        <meta name="keywords" content="dirigeant PME, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME, délégation dirigeant, décision stratégique, coach dirigeant PME" />
+        <title>Frédéric Ternon | Pilotage PME/TPE | Décisions & Organisation</title>
+        <meta name="description" content="Regard extérieur pour dirigeants de PME/TPE jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
+        <meta name="keywords" content="dirigeant PME/TPE, accompagnement dirigeant, pilotage entreprise, regard extérieur dirigeant, organisation PME/TPE, délégation dirigeant, décision stratégique, coach dirigeant PME/TPE" />
         <link rel="canonical" href="https://alphadirigeant.solutions/" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://alphadirigeant.solutions/" />
-        <meta property="og:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
-        <meta property="og:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
+        <meta property="og:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME/TPE" />
+        <meta property="og:description" content="Regard extérieur pour dirigeants de PME/TPE jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
         <meta property="og:site_name" content="Frédéric Ternon | Pilotage du Dirigeant" />
         <meta property="og:locale" content="fr_FR" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME" />
-        <meta name="twitter:description" content="Regard extérieur pour dirigeants de PME jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
+        <meta name="twitter:title" content="Frédéric Ternon | Pilotage & Décision pour Dirigeants de PME/TPE" />
+        <meta name="twitter:description" content="Regard extérieur pour dirigeants de PME/TPE jusqu'à 30 personnes. Identifier les blocages, clarifier l'organisation, mieux décider." />
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

@@ -52,7 +52,7 @@ const steps = [
       "Protéger les temps de recul et les sujets stratégiques",
       "Ancrer des réflexes de pilotage qui restent après l'accompagnement",
     ],
-    result: "Une PME qui peut grandir, sans que tout repose encore sur vous.",
+    result: "Une PME/TPE qui peut grandir, sans que tout repose encore sur vous.",
   },
 ];
 
@@ -83,7 +83,7 @@ export function JourneySection() {
             3 repères. <span className="text-gradient">Pas un programme.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Un cadre structuré, mais vivant : on avance sur une trajectoire claire, à partir de votre réalité de PME.
+            Un cadre structuré, mais vivant : on avance sur une trajectoire claire, à partir de votre réalité de PME/TPE.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             L'ordre n'est pas imposé. Le rythme non plus. On commence par ce qui coince le plus aujourd'hui dans votre pilotage.
@@ -177,7 +177,7 @@ export function JourneySection() {
           <p className="text-muted-foreground mb-3">
             Ces 3 repères sont un cadre de progression, pas une trajectoire rigide.
             <br />
-            On ajuste selon votre contexte PME, vos enjeux du moment et le niveau de pression.
+            On ajuste selon votre contexte PME/TPE, vos enjeux du moment et le niveau de pression.
           </p>
           <p className="text-foreground font-medium">
             Le but n'est pas de vous faire rentrer dans une méthode.

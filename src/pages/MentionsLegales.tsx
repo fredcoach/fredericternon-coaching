@@ -9,7 +9,7 @@ const MentionsLegales = () => {
     <>
       <Helmet>
         <title>Mentions légales | Frédéric Ternon</title>
-        <meta name="description" content="Mentions légales du site alphadirigeant.solutions | Frédéric Ternon, accompagnement de dirigeants de PME." />
+        <meta name="description" content="Mentions légales du site alphadirigeant.solutions | Frédéric Ternon, accompagnement de dirigeants de PME/TPE." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://alphadirigeant.solutions/mentions-legales" />
         <meta property="og:title" content="Mentions légales | Frédéric Ternon" />

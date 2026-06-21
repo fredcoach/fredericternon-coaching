@@ -40,7 +40,7 @@ export function MyRoleSection() {
           </h2>
           <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Quand une PME grandit, ce qui fonctionnait avant ne suffit plus toujours.
+              Quand une PME/TPE grandit, ce qui fonctionnait avant ne suffit plus toujours.
             </p>
             <p>
               L'organisation doit évoluer. La posture du dirigeant aussi. La manière de déléguer,

@@ -40,7 +40,7 @@ export function OrganigrammeSection() {
 
           {/* Intro */}
           <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-8">
-            Quand une PME grandit, le premier réflexe est souvent de chercher
+            Quand une PME/TPE grandit, le premier réflexe est souvent de chercher
             la solution dans :
           </p>
 
