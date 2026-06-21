@@ -49,7 +49,7 @@ const Presse = () => {
     sameAs: ["https://mental-pro.fr"],
     worksFor: {
       "@type": "Organization",
-      name: "alpha_pme",
+      name: "Alpha PME",
       url: "https://alphadirigeant.solutions",
     },
     knowsAbout: [
@@ -64,13 +64,13 @@ const Presse = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Presse & Médias | alpha_pme | Frédéric Ternon</title>
+        <title>Presse & Médias | Alpha PME | Frédéric Ternon</title>
         <meta
           name="description"
-          content="Espace presse d'alpha_pme : bio de Frédéric Ternon, sujets d'expertise, logos et visuels à télécharger pour journalistes, podcasts et organisateurs d'événements."
+          content="Espace presse d'Alpha PME : bio de Frédéric Ternon, sujets d'expertise, logos et visuels à télécharger pour journalistes, podcasts et organisateurs d'événements."
         />
         <link rel="canonical" href="https://alphadirigeant.solutions/presse" />
-        <meta property="og:title" content="Presse & Médias | alpha_pme" />
+        <meta property="og:title" content="Presse & Médias | Alpha PME" />
         <meta
           property="og:description"
           content="Bio, sujets d'expertise et ressources médias de Frédéric Ternon, pilotage du dirigeant de PME/TPE."
@@ -93,7 +93,7 @@ const Presse = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Journalistes, podcasteurs, organisateurs d'événements : toutes les ressources
-            pour parler d'alpha_pme et solliciter une intervention.
+            pour parler d'Alpha PME et solliciter une intervention.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ const Presse = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4">Bio courte (50 mots)</h2>
             <div className="bg-card border border-border rounded-2xl p-6 text-muted-foreground leading-relaxed">
               Frédéric Ternon accompagne les dirigeants de PME/TPE jusqu'à 30 personnes. Sous la
-              marque alpha_pme, il leur apporte un regard extérieur structuré pour identifier
+              marque Alpha PME, il leur apporte un regard extérieur structuré pour identifier
               les blocages, clarifier l'organisation et mieux décider. Sa méthode combine
               pilotage, décision et structuration opérationnelle.
             </div>
@@ -115,7 +115,7 @@ const Presse = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4">Bio longue (150 mots)</h2>
             <div className="bg-card border border-border rounded-2xl p-6 text-muted-foreground leading-relaxed space-y-3">
               <p>
-                Frédéric Ternon est le fondateur d'alpha_pme. Il accompagne les dirigeants
+                Frédéric Ternon est le fondateur d'Alpha PME. Il accompagne les dirigeants
                 de PME/TPE jusqu'à 30 personnes, un segment souvent isolé, trop grand pour le
                 solopreneuriat, trop petit pour les grands cabinets de conseil.
               </p>
@@ -167,12 +167,12 @@ const Presse = () => {
             Logos & visuels
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Téléchargez les logos alpha_pme en haute définition pour vos publications.
+            Téléchargez les logos Alpha PME en haute définition pour vos publications.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-card border border-border rounded-2xl p-8 text-center">
               <div className="bg-background rounded-xl p-6 mb-4 flex items-center justify-center min-h-[120px]">
-                <img src={logoHorizontal} alt="Logo alpha_pme version foncée" className="max-h-16 w-auto" />
+                <img src={logoHorizontal} alt="Logo Alpha PME version foncée" className="max-h-16 w-auto" />
               </div>
               <p className="font-semibold text-foreground mb-3">Logo sur fond clair</p>
               <a href={logoHorizontal} download="alpha-pme-logo-dark.png">
@@ -183,7 +183,7 @@ const Presse = () => {
             </div>
             <div className="bg-card border border-border rounded-2xl p-8 text-center">
               <div className="bg-primary rounded-xl p-6 mb-4 flex items-center justify-center min-h-[120px]">
-                <img src={logoLight} alt="Logo alpha_pme version claire" className="max-h-16 w-auto" />
+                <img src={logoLight} alt="Logo Alpha PME version claire" className="max-h-16 w-auto" />
               </div>
               <p className="font-semibold text-foreground mb-3">Logo sur fond sombre</p>
               <a href={logoLight} download="alpha-pme-logo-light.png">

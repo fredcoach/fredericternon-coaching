@@ -76,7 +76,7 @@ export default function CartographieResultat() {
   return (
     <>
       <Helmet>
-        <title>Votre Cartographie — alpha_pme</title>
+        <title>Votre Cartographie — Alpha PME</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 
@@ -213,7 +213,7 @@ export default function CartographieResultat() {
 
           <p className="text-center text-sm text-muted-foreground pt-6">
             <Link to="/" className="hover:text-foreground underline-offset-4 hover:underline">
-              Retour à l'accueil alpha_pme
+              Retour à l'accueil Alpha PME
             </Link>
           </p>
         </main>

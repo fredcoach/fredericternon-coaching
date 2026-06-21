@@ -31,7 +31,7 @@ const resources = [
     icon: BookOpen,
     title: "Articles & analyses",
     description:
-      "Le blog alpha_pme : analyses de fond sur les blocages, les décisions et l'organisation des dirigeants de PME/TPE. Lectures de 5 à 10 minutes.",
+      "Le blog Alpha PME : analyses de fond sur les blocages, les décisions et l'organisation des dirigeants de PME/TPE. Lectures de 5 à 10 minutes.",
     href: "/blog",
     cta: "Explorer le blog",
     type: "Contenu · Mis à jour mensuellement",
@@ -68,7 +68,7 @@ const Ressources = () => {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Ressources alpha_pme pour dirigeants de PME/TPE",
+    name: "Ressources Alpha PME pour dirigeants de PME/TPE",
     description:
       "Outils, analyses et formats courts pour aider les dirigeants de PME/TPE à mieux décider, clarifier leur organisation et reprendre la main sur leur pilotage.",
     url: "https://alphadirigeant.solutions/ressources",
@@ -77,13 +77,13 @@ const Ressources = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Ressources Dirigeants PME/TPE | alpha_pme | Frédéric Ternon</title>
+        <title>Ressources Dirigeants PME/TPE | Alpha PME | Frédéric Ternon</title>
         <meta
           name="description"
-          content="Outils, analyses et ressources pour dirigeants de PME/TPE : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources alpha_pme en un point."
+          content="Outils, analyses et ressources pour dirigeants de PME/TPE : auto-diagnostic (47 €), Flash Décision, blog et espace presse. Toutes les ressources Alpha PME en un point."
         />
         <link rel="canonical" href="https://alphadirigeant.solutions/ressources" />
-        <meta property="og:title" content="Ressources pour dirigeants de PME/TPE | alpha_pme" />
+        <meta property="og:title" content="Ressources pour dirigeants de PME/TPE | Alpha PME" />
         <meta
           property="og:description"
           content="Outils, diagnostics et analyses pour mieux piloter votre PME/TPE."
@@ -99,7 +99,7 @@ const Ressources = () => {
       <section className="pt-32 pb-12 px-4 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary mb-6">
-            <span className="text-sm font-medium">Ressources alpha_pme</span>
+            <span className="text-sm font-medium">Ressources Alpha PME</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Tout ce qu'il vous faut pour reprendre la main

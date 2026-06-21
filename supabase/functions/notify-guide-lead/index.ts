@@ -20,7 +20,7 @@ const BodySchema = z.object({
 });
 
 const NOTIFY_TO = "contact@fredericternon.com";
-const FROM = "alpha_pme <onboarding@resend.dev>";
+const FROM = "Alpha PME <onboarding@resend.dev>";
 
 const escapeHtml = (s: string) =>
   s

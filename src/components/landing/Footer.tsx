@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <img
               src={logoHorizontal}
-              alt="alpha_pme"
+              alt="Alpha PME"
               className="h-12 w-auto mb-3"
               width="200"
               height="48"
@@ -121,7 +121,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} alpha_pme · Frédéric Ternon. Tous droits réservés
+            © {currentYear} Alpha PME · Frédéric Ternon. Tous droits réservés
           </p>
           <p className="text-xs text-muted-foreground">
             Pilotage · Décision · Organisation

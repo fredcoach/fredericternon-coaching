@@ -50,7 +50,7 @@ Deno.serve(async (req) => {
       customer_email: email,
       return_url: returnUrl,
       payment_intent_data: {
-        description: "Cartographie des Blocages alpha_pme",
+        description: "Cartographie des Blocages Alpha PME",
       },
       managed_payments: { enabled: true },
       metadata: {

@@ -73,7 +73,7 @@ export default function CartographieLanding() {
   return (
     <>
       <Helmet>
-        <title>Cartographie des Blocages — alpha_pme</title>
+        <title>Cartographie des Blocages — Alpha PME</title>
         <meta
           name="description"
           content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 15 min inclus."
@@ -87,7 +87,7 @@ export default function CartographieLanding() {
         <header className="bg-gradient-to-b from-primary to-primary-glow text-primary-foreground">
           <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
             <div className="text-sm uppercase tracking-widest text-accent mb-4 font-medium">
-              alpha_pme · Produit premium
+              Alpha PME · Produit premium
             </div>
             <h1 className="text-3xl md:text-5xl font-light leading-tight mb-6">
               Cartographie des Blocages
@@ -194,7 +194,7 @@ export default function CartographieLanding() {
 
           <p className="text-center text-sm text-muted-foreground mt-12">
             <Link to="/" className="hover:text-foreground underline-offset-4 hover:underline">
-              Retour à l'accueil alpha_pme
+              Retour à l'accueil Alpha PME
             </Link>
           </p>
         </main>

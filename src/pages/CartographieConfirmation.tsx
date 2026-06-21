@@ -25,7 +25,7 @@ export default function CartographieConfirmation() {
   return (
     <>
       <Helmet>
-        <title>Rendez-vous confirmé — alpha_pme</title>
+        <title>Rendez-vous confirmé — Alpha PME</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 
@@ -114,7 +114,7 @@ export default function CartographieConfirmation() {
               to="/"
               className="hover:text-foreground underline-offset-4 hover:underline"
             >
-              Retour à l'accueil alpha_pme
+              Retour à l'accueil Alpha PME
             </Link>
           </p>
         </main>

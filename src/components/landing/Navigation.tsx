@@ -62,7 +62,7 @@ export function Navigation() {
         <nav className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? "h-16 md:h-20" : "h-20 md:h-28"}`}>
           <a
             href="#"
-            aria-label="alpha_pme | accueil"
+            aria-label="Alpha PME | accueil"
             className="flex items-center transition-opacity hover:opacity-90"
             onClick={(e) => {
               e.preventDefault();
@@ -71,7 +71,7 @@ export function Navigation() {
           >
             <img
               src={shouldUseWhiteText ? logoLight : logoDark}
-              alt="alpha_pme | Clarté, Structure, Pilotage"
+              alt="Alpha PME | Clarté, Structure, Pilotage"
               className={`w-auto transition-all duration-300 ${isScrolled ? "h-10 md:h-12" : "h-14 md:h-20"}`}
               width="320"
               height="80"

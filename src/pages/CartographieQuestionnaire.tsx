@@ -156,7 +156,7 @@ export default function CartographieQuestionnaire() {
   return (
     <>
       <Helmet>
-        <title>Cartographie en cours — alpha_pme</title>
+        <title>Cartographie en cours — Alpha PME</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 

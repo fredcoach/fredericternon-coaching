@@ -30,7 +30,7 @@ Structure verticale :
 
 6. **CTA secondaire** (bouton `outline`) : « Retourner à ma Cartographie » → revient vers `/cartographie-des-blocages/resultat?session_id=…` si présent, sinon `/cartographie-des-blocages`.
 
-`<Helmet>` : title « Rendez-vous confirmé — alpha_pme », `noindex`.
+`<Helmet>` : title « Rendez-vous confirmé — Alpha PME », `noindex`.
 
 ### 2. Routing
 
