@@ -85,9 +85,15 @@ export function Navigation() {
             to="/"
             aria-label="Alpha PME | accueil"
             className="flex items-center transition-opacity hover:opacity-90"
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
               if (location.pathname === "/") {
                 window.scrollTo({ top: 0, behavior: "smooth" });
+              } else {
+                navigate("/");
+                // Ensure we land at the top of the homepage
+                requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
               }
             }}
           >
@@ -133,10 +139,14 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden p-2 transition-colors ${
+            type="button"
+            className={`md:hidden relative z-[60] p-3 -mr-2 transition-colors touch-manipulation ${
               shouldUseWhiteText ? "text-white drop-shadow-md" : "text-foreground"
             }`}
-            onClick={() => setIsMobileMenuOpen((v) => !v)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsMobileMenuOpen((v) => !v);
+            }}
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
           >
