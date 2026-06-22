@@ -20,6 +20,7 @@ import CartographieLanding from "./pages/CartographieLanding";
 import CartographieQuestionnaire from "./pages/CartographieQuestionnaire";
 import CartographieResultat from "./pages/CartographieResultat";
 import CartographieConfirmation from "./pages/CartographieConfirmation";
+import RdvConfirmation from "./pages/RdvConfirmation";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
 
 const queryClient = new QueryClient();
