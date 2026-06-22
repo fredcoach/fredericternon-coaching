@@ -56,7 +56,7 @@ Ordre vertical final dans le Hero, après le sous-titre :
 [NOUVEAU paragraphe de contexte — text-white/85, max-w-3xl]
 [Bouton "Faire le Test des 4 Profils"]
 [Réassurance: "Test gratuit • 10 questions • moins de 3 minutes" — text-accent/90, text-xs/sm]
-[Lien "Découvrir l'approche"]
+[Lien "Comment ça fonctionne ?"]
 ```
 
 Aucun nouvel asset, aucune dépendance ajoutée.
