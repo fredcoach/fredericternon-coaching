@@ -155,12 +155,18 @@ export function OfferSection() {
                 </div>
 
                 <Button
+                  asChild
                   size="lg"
-                  onClick={scrollToFinalCTA}
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  &nbsp; &nbsp; &nbsp;Réserver un échange informatif
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <a
+                    href="https://calendly.com/ternon/alpha-pme?redirect_url=https://alphadirigeant.solutions/rendez-vous/confirmation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    &nbsp; &nbsp; &nbsp;Réserver un échange informatif
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </div>

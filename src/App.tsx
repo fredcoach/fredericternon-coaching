@@ -20,6 +20,7 @@ import CartographieLanding from "./pages/CartographieLanding";
 import CartographieQuestionnaire from "./pages/CartographieQuestionnaire";
 import CartographieResultat from "./pages/CartographieResultat";
 import CartographieConfirmation from "./pages/CartographieConfirmation";
+import RdvConfirmation from "./pages/RdvConfirmation";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/cartographie-des-blocages/questionnaire" element={<CartographieQuestionnaire />} />
             <Route path="/cartographie-des-blocages/resultat" element={<CartographieResultat />} />
             <Route path="/cartographie-des-blocages/confirmation" element={<CartographieConfirmation />} />
+            <Route path="/rendez-vous/confirmation" element={<RdvConfirmation />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
