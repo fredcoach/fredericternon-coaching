@@ -85,9 +85,15 @@ export function Navigation() {
             to="/"
             aria-label="Alpha PME | accueil"
             className="flex items-center transition-opacity hover:opacity-90"
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
               if (location.pathname === "/") {
                 window.scrollTo({ top: 0, behavior: "smooth" });
+              } else {
+                navigate("/");
+                // Ensure we land at the top of the homepage
+                requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
               }
             }}
           >
