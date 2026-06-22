@@ -29,7 +29,7 @@ Deno.serve(async (req) => {
 
     const { data, error } = await supabase
       .from("cartographie_sessions")
-      .select("payment_status, email, result, completed_at")
+      .select("payment_status, result, completed_at")
       .eq("stripe_session_id", sessionId)
       .maybeSingle();
 
