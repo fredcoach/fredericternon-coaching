@@ -10,7 +10,7 @@ Clarifier la promesse du Test des 4 Profils dans le Hero, sans changer la struct
 - Sous-titre actuel (Organisation, délégation, recrutement, décisions…)
 - Pills (Organisation, Décision, Délégation, Croissance)
 - Bouton "Faire le Test des 4 Profils" → `/test-profils-alpha-pme`
-- Lien "Découvrir l'approche"
+- Lien "Comment ça fonctionne ?"
 - Animations, halos, grille, scroll indicator
 
 ### 2. Ajouter juste AU-DESSUS du bouton CTA
