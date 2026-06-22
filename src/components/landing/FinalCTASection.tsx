@@ -1,9 +1,12 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, MessageCircle } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function FinalCTASection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
+
+  const reassurances = ["Gratuit", "Moins de 3 minutes", "Résultat immédiat"];
 
   return (
     <section id="final-cta" ref={ref} className="py-20 md:py-28 gradient-dark text-primary-foreground relative overflow-hidden">
@@ -19,62 +22,42 @@ export function FinalCTASection() {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Votre entreprise tourne.
-            <br />
-            <span className="text-accent">
-              Mais doit-elle encore reposer autant sur vous ?
-            </span>
+            Faire le <span className="text-accent">Test des 4 Profils</span>
           </h2>
 
           <p className="text-lg md:text-xl text-primary-foreground/85 mb-10 leading-relaxed">
-            En 30 minutes, nous faisons le point sur votre situation, vos points de tension et les
-            endroits où votre organisation vous ramène trop au centre.
+            Découvrez le rôle que votre entreprise vous oblige encore à jouer, et ce qui pourrait
+            limiter aujourd'hui votre capacité à franchir le palier suivant.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+          <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10">
+            {reassurances.map((item) => (
+              <li
+                key={item}
+                className="inline-flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium"
+              >
+                <span className="w-6 h-6 rounded-full bg-accent/15 border border-accent/30 inline-flex items-center justify-center">
+                  <Check className="w-3.5 h-3.5 text-accent" strokeWidth={3} />
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex justify-center">
             <Button
               size="lg"
               asChild
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg"
             >
-              <a
-                href="https://calendly.com/ternon/alpha-pme"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/test-profils-alpha-pme"
                 className="inline-flex items-center gap-2"
               >
-                <Calendar className="w-5 h-5" />
-                Réserver votre échange : 30 min
+                Commencer le Test
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </Button>
-
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6"
-            >
-              <a
-                href="https://wa.me/33767971952"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5" />
-                M'envoyer un message
-              </a>
-            </Button>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-primary-foreground/80 text-base md:text-lg font-medium">
-            <span>Moins d'opérationnel subi.</span>
-            <span className="text-accent">·</span>
-            <span>Plus de recul.</span>
-            <span className="text-accent">·</span>
-            <span>Une organisation plus claire.</span>
-            <span className="text-accent">·</span>
-            <span>Des décisions plus nettes.</span>
           </div>
         </div>
       </div>
