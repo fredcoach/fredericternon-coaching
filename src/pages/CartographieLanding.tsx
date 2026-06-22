@@ -42,13 +42,11 @@ export default function CartographieLanding() {
 
     setLoading(true);
     try {
-      const environment = getStripeEnvironment();
       const returnUrl = `${window.location.origin}/cartographie-des-blocages/questionnaire?session_id={CHECKOUT_SESSION_ID}`;
 
       const { data, error } = await supabase.functions.invoke("carto-checkout", {
         body: {
           email: parsed.data,
-          environment,
           returnUrl,
           source: "landing",
         },
