@@ -125,6 +125,14 @@ export function HeroSection() {
                 ))}
               </div>
 
+              {/* Context line above CTA */}
+              <p
+                className="text-base md:text-lg text-white/85 max-w-3xl mx-auto mb-6 leading-relaxed animate-fade-in-up"
+                style={{ animationDelay: "0.3s" }}
+              >
+                Découvrez quel rôle votre entreprise vous oblige encore à jouer, et ce que cela révèle sur son niveau d'autonomie.
+              </p>
+
               {/* CTAs */}
               <div
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
@@ -145,14 +153,11 @@ export function HeroSection() {
 
               {/* Reassurance under primary CTA */}
               <div
-                className="flex flex-col items-center gap-1 mt-5 animate-fade-in-up"
+                className="flex justify-center mt-5 animate-fade-in-up"
                 style={{ animationDelay: "0.45s" }}
               >
-                <p className="text-sm md:text-base text-white/80 font-medium">
+                <p className="text-xs md:text-sm text-accent/90 font-medium">
                   Test gratuit • 10 questions • moins de 3 minutes
-                </p>
-                <p className="text-xs md:text-sm text-white/55">
-                  Situation actuelle / Ce que vous gagnez
                 </p>
               </div>
 
