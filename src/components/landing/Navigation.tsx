@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoLight from "@/assets/alpha-pme-horizontal-light.png";
 import logoDark from "@/assets/alpha-pme-horizontal.png";
@@ -122,6 +123,12 @@ export function Navigation() {
                 </Link>
               )
             )}
+            <Button
+              onClick={() => handleAnchor("#final-cta")}
+              className="gradient-primary text-primary-foreground hover:opacity-90"
+            >
+              30 min pour échanger
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -169,6 +176,12 @@ export function Navigation() {
                   </Link>
                 )
               )}
+              <Button
+                onClick={() => handleAnchor("#final-cta")}
+                className="mt-2 gradient-primary text-primary-foreground"
+              >
+                30 min pour échanger
+              </Button>
             </div>
           </div>
         )}
