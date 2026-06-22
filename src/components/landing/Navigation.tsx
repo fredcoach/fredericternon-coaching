@@ -123,6 +123,12 @@ export function Navigation() {
                 </Link>
               )
             )}
+            <Button
+              onClick={() => handleAnchor("#final-cta")}
+              className="gradient-primary text-primary-foreground hover:opacity-90"
+            >
+              30 min pour échanger
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
