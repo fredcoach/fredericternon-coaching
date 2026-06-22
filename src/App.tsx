@@ -48,6 +48,7 @@ const App = () => (
             <Route path="/cartographie-des-blocages/questionnaire" element={<CartographieQuestionnaire />} />
             <Route path="/cartographie-des-blocages/resultat" element={<CartographieResultat />} />
             <Route path="/cartographie-des-blocages/confirmation" element={<CartographieConfirmation />} />
+            <Route path="/rendez-vous/confirmation" element={<RdvConfirmation />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
