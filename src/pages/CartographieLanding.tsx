@@ -119,7 +119,16 @@ export default function CartographieLanding() {
               {VALUE_ITEMS.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-1" />
-                  <span className="text-foreground">{item}</span>
+                  <span className="text-foreground">
+                    {item.highlight ? (
+                      <>
+                        <strong className="font-semibold text-primary">{item.highlight}</strong>
+                        {item.text.slice(item.highlight.length)}
+                      </>
+                    ) : (
+                      item.text
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>
