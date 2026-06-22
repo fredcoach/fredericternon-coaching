@@ -48,8 +48,8 @@ Deno.serve(async (req) => {
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
-    const { sessionId, environment, answers } = parsed.data;
-    const env: StripeEnv = environment;
+    const { sessionId, answers } = parsed.data;
+    const env = resolveServerStripeEnv();
 
     const supabase = createClient(
       Deno.env.get("SUPABASE_URL")!,
