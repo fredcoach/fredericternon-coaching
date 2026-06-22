@@ -106,9 +106,8 @@ export default function CartographieQuestionnaire() {
     setSubmitting(true);
     setAnalyzing(true);
     try {
-      const environment = getStripeEnvironment();
       const { data, error } = await supabase.functions.invoke("carto-submit", {
-        body: { sessionId, environment, answers },
+        body: { sessionId, answers },
       });
       if (error || !data?.result) {
         throw new Error(error?.message || "Impossible de calculer votre Cartographie");
