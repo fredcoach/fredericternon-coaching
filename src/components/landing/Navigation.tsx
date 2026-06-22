@@ -176,6 +176,12 @@ export function Navigation() {
                   </Link>
                 )
               )}
+              <Button
+                onClick={() => handleAnchor("#final-cta")}
+                className="mt-2 gradient-primary text-primary-foreground"
+              >
+                30 min pour échanger
+              </Button>
             </div>
           </div>
         )}
