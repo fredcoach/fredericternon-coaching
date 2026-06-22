@@ -132,12 +132,15 @@ export function HeroSection() {
               >
                 <Button
                   size="lg"
-                  onClick={() => scrollToSection("#final-cta")}
+                  asChild
                   className="bg-accent text-primary hover:bg-accent/90 text-lg px-8 py-6 font-semibold hover:shadow-[0_0_40px_hsl(var(--accent)/0.5)] hover:scale-105 transition-all duration-300 group"
                 >
-                  Voir si on peut travailler ensemble
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <a href="/test-profils-alpha-pme">
+                    Faire le Test des 4 Profils
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
+
                 <button
                   onClick={() => scrollToSection("#about")}
                   className="text-sm text-white/60 hover:text-white transition-colors underline underline-offset-4"

@@ -2,11 +2,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import FlashDecision from "./pages/FlashDecision";
-import Diagnostic from "./pages/Diagnostic";
+
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
@@ -20,8 +20,8 @@ import CartographieLanding from "./pages/CartographieLanding";
 import CartographieQuestionnaire from "./pages/CartographieQuestionnaire";
 import CartographieResultat from "./pages/CartographieResultat";
 import CartographieConfirmation from "./pages/CartographieConfirmation";
-import DiagnosticPopup from "./components/DiagnosticPopup";
 import FlashDecisionPopup from "./components/FlashDecisionPopup";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -34,7 +34,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/flash-decision" element={<FlashDecision />} />
-            <Route path="/diagnostic" element={<Diagnostic />} />
+            <Route path="/diagnostic" element={<Navigate to="/cartographie-des-blocages" replace />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
@@ -50,8 +50,8 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <DiagnosticPopup />
           <FlashDecisionPopup />
+
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
