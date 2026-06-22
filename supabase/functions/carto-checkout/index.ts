@@ -32,6 +32,42 @@ Deno.serve(async (req) => {
     }
     const { email, source, returnUrl } = parsed.data;
 
+    // Restrict return_url to known origins to prevent open-redirect / phishing
+    // hand-off after Stripe redirects back from checkout.
+    const ALLOWED_ORIGIN_HOSTS = [
+      "alphadirigeant.solutions",
+      "www.alphadirigeant.solutions",
+      "fredericternon-coaching.lovable.app",
+    ];
+    let returnOrigin: URL;
+    try {
+      returnOrigin = new URL(returnUrl);
+    } catch {
+      return new Response(JSON.stringify({ error: "Invalid returnUrl" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    const host = returnOrigin.hostname;
+    const isAllowed =
+      ALLOWED_ORIGIN_HOSTS.includes(host) ||
+      host.endsWith(".lovable.app") ||
+      host.endsWith(".lovable.dev") ||
+      host === "localhost" ||
+      host === "127.0.0.1";
+    if (returnOrigin.protocol !== "https:" && host !== "localhost" && host !== "127.0.0.1") {
+      return new Response(JSON.stringify({ error: "Invalid returnUrl" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (!isAllowed) {
+      return new Response(JSON.stringify({ error: "Invalid returnUrl" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
     const env = resolveServerStripeEnv();
     const stripe = createStripeClient(env);
 
