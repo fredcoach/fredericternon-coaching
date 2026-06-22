@@ -16,7 +16,7 @@ Clarifier la promesse du Test des 4 Profils dans le Hero, sans changer la struct
 ### 2. Ajouter juste AU-DESSUS du bouton CTA
 Nouveau paragraphe inséré entre les pills et le bloc CTA :
 
-> Découvrez quel rôle votre entreprise vous oblige encore à jouer, et ce que cela révèle sur son niveau d'autonomie.
+> Découvrez le rôle que votre entreprise vous oblige encore à jouer.
 
 Style :
 - Largeur équivalente au sous-titre (`max-w-3xl mx-auto`)
