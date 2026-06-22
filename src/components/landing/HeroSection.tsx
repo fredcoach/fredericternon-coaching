@@ -99,7 +99,7 @@ export function HeroSection() {
                 className="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Organisation, délégation, recrutement, décisions :
+                Organisation, délégation, recrutement, décisions :{"\u00a0"}
                 <br className="hidden md:block" />
                 <span className="text-accent/90 font-medium">
                   un regard extérieur pour identifier ce qui bloque, structurer le prochain palier
