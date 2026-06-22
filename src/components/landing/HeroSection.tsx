@@ -106,7 +106,7 @@ export function HeroSection() {
                 </span>
                 <br className="hidden md:block" />
                 <span className="text-white/80">
-                  et réduire ce que vous continuez à porter seul.
+                  {"\u00a0"}et réduire ce que vous continuez à porter seul.
                 </span>
               </p>
 
