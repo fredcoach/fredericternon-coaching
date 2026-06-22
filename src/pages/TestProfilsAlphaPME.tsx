@@ -265,6 +265,7 @@ const computeResult = (answers: ProfileKey[]) => {
 };
 
 const TestProfilsAlphaPME = () => {
+  const navigate = useNavigate();
   const [started, setStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<ProfileKey[]>([]);
