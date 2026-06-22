@@ -74,7 +74,7 @@ export default function CartographieLanding() {
         <title>Cartographie des Blocages — Alpha PME</title>
         <meta
           name="description"
-          content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 15 min inclus."
+          content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 30 min offert."
         />
       </Helmet>
 
