@@ -15,13 +15,13 @@ import { toast } from "@/hooks/use-toast";
 
 const EmailSchema = z.string().trim().email("Email invalide").max(255);
 
-const VALUE_ITEMS = [
-  "Votre palier actuel et celui que votre entreprise cherche à franchir",
-  "Votre blocage principal — celui qui entretient le rôle que vous jouez encore",
-  "Ce que ce blocage produit aujourd'hui et son coût si rien ne change",
-  "Ce qui n'est probablement pas votre vrai problème",
-  "Votre priorité n°1 pour les 90 prochains jours",
-  "Un call stratégique de 15 minutes inclus avec Frédéric Ternon",
+const VALUE_ITEMS: Array<{ text: string; highlight?: string }> = [
+  { text: "Votre palier actuel et celui que votre entreprise cherche à franchir" },
+  { text: "Votre blocage principal — celui qui entretient le rôle que vous jouez encore" },
+  { text: "Ce que ce blocage produit aujourd'hui et son coût si rien ne change" },
+  { text: "Ce qui n'est probablement pas votre vrai problème" },
+  { text: "Votre priorité n°1 pour les 90 prochains jours" },
+  { text: "Un call stratégique de 30 minutes offert avec Frédéric Ternon", highlight: "Un call stratégique de 30 minutes offert" },
 ];
 
 export default function CartographieLanding() {
