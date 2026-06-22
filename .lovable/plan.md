@@ -1,65 +1,62 @@
 ## Objectif
-Faire du **Test gratuit des 4 Profils** l'entrée principale du tunnel sur toute la homepage. Le RDV "Réserver 30 min" reste accessible mais devient secondaire (menu, footer, section Accompagnement uniquement).
 
-## Tunnel cible rappelé
-Test gratuit → VSL → Cartographie 97€ → Appel 15 min → Alpha PME
+Clarifier la promesse du Test des 4 Profils dans le Hero, sans changer la structure ni le design de la homepage. On ne parle ni de diagnostic, ni de cartographie, ni de blocages.
 
-## Changements section par section
+## Modifications — `src/components/landing/HeroSection.tsx`
 
-### 1. Menu (`Navigation.tsx`) — inchangé
-Bouton **"30 min pour échanger"** conservé tel quel (desktop + mobile).
+### 1. Conserver tel quel
+- Kicker "DIRIGEANTS DE PME/TPE"
+- H1 "Votre entreprise fonctionne. Mais dépend-elle encore trop de vous ?"
+- Sous-titre actuel (Organisation, délégation, recrutement, décisions…)
+- Pills (Organisation, Décision, Délégation, Croissance)
+- Bouton "Faire le Test des 4 Profils" → `/test-profils-alpha-pme`
+- Lien "Découvrir l'approche"
+- Animations, halos, grille, scroll indicator
 
-### 2. Hero (`HeroSection.tsx`)
-- CTA principal conservé : **"Faire le Test des 4 Profils"** → `/test-profils-alpha-pme`.
-- Ajouter juste sous le bouton (remplace le lien "Découvrir l'approche") :
-  - Ligne 1 : `Test gratuit • 10 questions • moins de 3 minutes`
-  - Ligne 2 (plus discrète) : `Situation actuelle / Ce que vous gagnez`
-- Style : petits textes blancs/opacités, centrés, cohérents avec le hero existant.
+### 2. Ajouter juste AU-DESSUS du bouton CTA
+Nouveau paragraphe inséré entre les pills et le bloc CTA :
 
-### 3. PromiseSection (`PromiseSection.tsx`)
-- Bouton actuel `"Identifier le vrai point de blocage"` (→ `#final-cta`) remplacé par :
-  - **"Découvrir ce qui freine vraiment ma PME"** → `/test-profils-alpha-pme` (Link react-router).
-- Suppression du `scrollToFinalCTA`.
+> Découvrez quel rôle votre entreprise vous oblige encore à jouer, et ce que cela révèle sur son niveau d'autonomie.
 
-### 4. OfferSection (`OfferSection.tsx`) — section Accompagnement
-- Bouton **"Réserver un échange informatif"** conservé (calendly via `#final-cta` actuel). C'est l'une des 3 zones autorisées pour le RDV.
-- Aucune autre modification.
+Style :
+- Largeur équivalente au sous-titre (`max-w-3xl mx-auto`)
+- Centré
+- Taille discrète mais visible : `text-base md:text-lg`
+- Couleur cohérente Hero sombre : `text-white/85`
+- Animation `animate-fade-in-up` avec delay aligné sur la séquence existante (~0.3s)
+- Marge basse réduite pour rester collé au bouton (`mb-5` ou `mb-6`)
 
-### 5. EntryProductsTeaser (`EntryProductsTeaser.tsx`)
-- Cartes Cartographie 97€ et Flash Decision : inchangées (étapes du tunnel).
-- Carte Accompagnement Alpha PME avec CTA Calendly "Réserver un échange informatif" : inchangée (zone Accompagnement autorisée).
+### 3. Remplacer le bloc de réassurance sous le bouton
+Actuellement deux lignes :
+- "Test gratuit • 10 questions • moins de 3 minutes"
+- "Situation actuelle / Ce que vous gagnez"
 
-### 6. FinalCTASection (`FinalCTASection.tsx`)
-- Garder le CTA Test.
-- Remplacer la liste de réassurances actuelle (`Gratuit / Moins de 3 minutes / Résultat immédiat`) par les éléments demandés :
-  - Ligne principale : `Test gratuit • 10 questions • moins de 3 minutes`
-  - Sous-ligne : `Situation actuelle / Ce que vous gagnez`
-- Style identique (texte clair sur fond dark, accent or pour les points séparateurs).
+Nouveau bloc — une seule ligne :
 
-### 7. FloatingCTA (`FloatingCTA.tsx`)
-- WhatsApp conservé.
-- Bouton **"Réserver 30 min" → remplacé** par un bouton test :
-  - Label desktop : `Découvrir ce qui freine ma PME`
-  - Label mobile : `Faire le test`
-  - Lien : `/test-profils-alpha-pme`
-  - Style accent or (cohérent avec le CTA Hero).
+> Test gratuit • 10 questions • moins de 3 minutes
 
-### 8. Footer (`Footer.tsx`) — inchangé
-Bouton **"Réserver un entretien"** (calendly) conservé : c'est l'une des 3 zones autorisées.
+Style :
+- Petit (`text-xs md:text-sm`)
+- Rassurant, très lisible
+- Couleur secondaire de la charte = `text-accent/90` (or chaud Alpha PME)
+- Séparateurs `•` conservés
+- La seconde ligne "Situation actuelle / Ce que vous gagnez" est **supprimée** (elle introduisait une notion de restitution qui appartient aux étapes suivantes du tunnel)
 
-## Récapitulatif des CTA après modifs
+### 4. Ne PAS toucher
+- Le reste de la page (PromiseSection, FinalCTA, FloatingCTA, etc.)
+- Le design system, les couleurs, la typographie
+- Le lien "Découvrir l'approche" reste sous la réassurance
 
-| Zone | CTA |
-|---|---|
-| Menu top | Réserver 30 min ✅ |
-| Hero | Faire le Test + sous-lignes réassurance |
-| PromiseSection | Découvrir ce qui freine vraiment ma PME (→ test) |
-| OfferSection (Accompagnement) | Réserver un échange informatif ✅ |
-| EntryProductsTeaser | Cartographie / Flash / Échange (inchangé) |
-| FinalCTA | Commencer le Test + sous-lignes réassurance |
-| FloatingCTA | WhatsApp + Découvrir ce qui freine ma PME (→ test) |
-| Footer | Réserver un entretien ✅ |
+## Détails techniques
 
-## Hors scope
-- Pas de modification de la structure du tunnel ni des pages `/cartographie-*`, `/flash-decision`, `/test-profils-alpha-pme`.
-- Pas de changement de design system ni de palette.
+Ordre vertical final dans le Hero, après le sous-titre :
+
+```
+[Pills: Organisation · Décision · Délégation · Croissance]
+[NOUVEAU paragraphe de contexte — text-white/85, max-w-3xl]
+[Bouton "Faire le Test des 4 Profils"]
+[Réassurance: "Test gratuit • 10 questions • moins de 3 minutes" — text-accent/90, text-xs/sm]
+[Lien "Découvrir l'approche"]
+```
+
+Aucun nouvel asset, aucune dépendance ajoutée.
