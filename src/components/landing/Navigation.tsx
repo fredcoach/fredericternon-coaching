@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoLight from "@/assets/alpha-pme-horizontal-light.png";
 import logoDark from "@/assets/alpha-pme-horizontal.png";
