@@ -197,7 +197,7 @@ export default function CartographieResultat() {
               className="w-full bg-primary hover:bg-primary-glow text-primary-foreground"
             >
               <a
-                href={`${CALENDLY_URL}${CALENDLY_URL.includes("?") ? "&" : "?"}utm_source=cartographie${sessionId ? `&utm_content=${sessionId}` : ""}`}
+                href={`${CALENDLY_URL}${CALENDLY_URL.includes("?") ? "&" : "?"}utm_source=cartographie`}
                 target="_blank"
                 rel="noopener noreferrer"
                 referrerPolicy="no-referrer"
