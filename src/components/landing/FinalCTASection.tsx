@@ -1,12 +1,11 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function FinalCTASection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
 
-  const reassurances = ["Gratuit", "Moins de 3 minutes", "Résultat immédiat"];
 
   return (
     <section id="final-cta" ref={ref} className="py-20 md:py-28 gradient-dark text-primary-foreground relative overflow-hidden">
@@ -30,19 +29,15 @@ export function FinalCTASection() {
             limiter aujourd'hui votre capacité à franchir le palier suivant.
           </p>
 
-          <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10">
-            {reassurances.map((item) => (
-              <li
-                key={item}
-                className="inline-flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium"
-              >
-                <span className="w-6 h-6 rounded-full bg-accent/15 border border-accent/30 inline-flex items-center justify-center">
-                  <Check className="w-3.5 h-3.5 text-accent" strokeWidth={3} />
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-col items-center gap-2 mb-10">
+            <p className="text-base md:text-lg text-primary-foreground/90 font-medium">
+              Test gratuit <span className="text-accent">•</span> 10 questions <span className="text-accent">•</span> moins de 3 minutes
+            </p>
+            <p className="text-sm md:text-base text-primary-foreground/65">
+              Situation actuelle / Ce que vous gagnez
+            </p>
+          </div>
+
 
           <div className="flex justify-center">
             <Button

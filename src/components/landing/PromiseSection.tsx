@@ -1,6 +1,8 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Shield, Gauge, Compass, RotateCcw, ArrowRight } from "lucide-react";
+
 
 const promises = [
   {
@@ -28,12 +30,7 @@ const promises = [
 export function PromiseSection() {
   const [ref, isVisible] = useScrollAnimation<HTMLElement>();
 
-  const scrollToFinalCTA = () => {
-    const element = document.querySelector("#final-cta");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   return (
     <section
@@ -92,12 +89,15 @@ export function PromiseSection() {
         >
           <Button
             size="lg"
-            onClick={scrollToFinalCTA}
+            asChild
             className="gradient-primary text-primary-foreground hover:opacity-90"
           >
-            Identifier le vrai point de blocage
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <Link to="/test-profils-alpha-pme">
+              Découvrir ce qui freine vraiment ma PME
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
+
         </div>
       </div>
     </section>

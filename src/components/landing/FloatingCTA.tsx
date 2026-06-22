@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, MessageCircle } from "lucide-react";
+import { MessageCircle, Sparkles } from "lucide-react";
 
 export function FloatingCTA() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,20 +34,19 @@ export function FloatingCTA() {
         <Button
           asChild
           size="lg"
-          className="gradient-primary text-primary-foreground shadow-lg hover:shadow-xl hover:opacity-90 transition-all animate-fade-in"
+          className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all animate-fade-in font-semibold"
         >
           <a
-            href="https://calendly.com/ternon/alpha-pme"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/test-profils-alpha-pme"
             className="inline-flex items-center gap-2"
           >
-            <Calendar className="w-5 h-5" />
-            <span className="hidden sm:inline">Réserver 30 min</span>
-            <span className="sm:hidden">Réserver</span>
+            <Sparkles className="w-5 h-5" />
+            <span className="hidden sm:inline">Découvrir ce qui freine ma PME</span>
+            <span className="sm:hidden">Faire le test</span>
           </a>
         </Button>
       )}
+
     </div>
   );
 }

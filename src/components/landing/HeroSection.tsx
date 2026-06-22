@@ -141,12 +141,29 @@ export function HeroSection() {
                   </a>
                 </Button>
 
+              </div>
+
+              {/* Reassurance under primary CTA */}
+              <div
+                className="flex flex-col items-center gap-1 mt-5 animate-fade-in-up"
+                style={{ animationDelay: "0.45s" }}
+              >
+                <p className="text-sm md:text-base text-white/80 font-medium">
+                  Test gratuit • 10 questions • moins de 3 minutes
+                </p>
+                <p className="text-xs md:text-sm text-white/55">
+                  Situation actuelle / Ce que vous gagnez
+                </p>
+              </div>
+
+              <div className="flex justify-center mt-4">
                 <button
                   onClick={() => scrollToSection("#about")}
                   className="text-sm text-white/60 hover:text-white transition-colors underline underline-offset-4"
                 >
                   Découvrir l'approche
                 </button>
+
               </div>
             </div>
           </div>
