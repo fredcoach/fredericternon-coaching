@@ -26,7 +26,6 @@ const AnswersSchema = z.object({
 
 const BodySchema = z.object({
   sessionId: z.string().min(1).max(255),
-  environment: z.enum(["sandbox", "live"]),
   answers: AnswersSchema,
 });
 
