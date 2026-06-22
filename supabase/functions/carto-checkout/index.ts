@@ -87,7 +87,7 @@ Deno.serve(async (req) => {
       payment_intent_data: {
         description: "Cartographie des Blocages Alpha PME",
       },
-      managed_payments: { enabled: true },
+      automatic_tax: { enabled: true },
       metadata: {
         product: "cartographie_blocages",
         source: source ?? "",
