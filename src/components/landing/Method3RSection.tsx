@@ -31,7 +31,8 @@ export function Method3RSection() {
   return (
     <section
       ref={ref}
-      className="py-20 md:py-28 gradient-dark text-primary-foreground"
+      id="methode-3r"
+      className="py-20 md:py-28 gradient-dark text-primary-foreground scroll-mt-24"
     >
       <div className="container mx-auto px-4">
         <div
