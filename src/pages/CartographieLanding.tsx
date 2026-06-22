@@ -145,7 +145,7 @@ export default function CartographieLanding() {
               </div>
               <p className="text-sm text-muted-foreground mb-6">
                 17 questions. Environ 8 minutes. Restitution personnalisée immédiate.
-                Call stratégique 15 min inclus.
+                Call stratégique 30 min offert.
               </p>
 
               <div className="space-y-4">
