@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Menu, X, ExternalLink } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logoLight from "@/assets/alpha-pme-horizontal-light.png";
 import logoDark from "@/assets/alpha-pme-horizontal.png";
 
-const navLinks = [
-  { href: "#offer", label: "Offre" },
-];
+type NavItem = {
+  label: string;
+  /** External page route (Link). */
+  to?: string;
+  /** Same-page anchor (smooth scroll, navigates to "/" first if needed). */
+  anchor?: string;
+  highlight?: boolean;
+};
 
-const pageLinks = [
-  { href: "/flash-decision", label: "Flash Decision", highlight: true },
-  { href: "/test-profils-alpha-pme", label: "Test des 4 Profils", highlight: true },
-  { href: "/blog", label: "Blog" },
-  { href: "/ressources", label: "Ressources" },
-  { href: "/presse", label: "Presse" },
+const navItems: NavItem[] = [
+  { label: "Test des 4 Profils", to: "/test-profils-alpha-pme", highlight: true },
+  { label: "Méthode 3R", anchor: "#methode-3r" },
+  { label: "Blog", to: "/blog" },
+  { label: "Ressources", to: "/ressources" },
+  { label: "Presse", to: "/presse" },
 ];
-
-const externalLinks: { href: string; label: string; external?: boolean }[] = [];
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,105 +35,93 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
+  // Close mobile menu on route change
+  useEffect(() => {
     setIsMobileMenuOpen(false);
-    
-    // If not on homepage, navigate there first
+  }, [location.pathname]);
+
+  const handleAnchor = (anchor: string) => {
+    setIsMobileMenuOpen(false);
     if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: href } });
+      navigate("/", { state: { scrollTo: anchor } });
       return;
     }
-    
-    const element = document.querySelector(href);
+    const element = document.querySelector(anchor);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  // Check if we're on a page with a dark hero (homepage) or light background (blog, etc.)
   const isHomePage = location.pathname === "/";
-  const shouldUseWhiteText = !isScrolled && isHomePage;
+  const shouldUseWhiteText = !isScrolled && isHomePage && !isMobileMenuOpen;
+
+  const linkClass = (item: NavItem) => {
+    if (item.highlight) {
+      return shouldUseWhiteText
+        ? "text-amber-400 hover:text-amber-300 drop-shadow-sm"
+        : "text-warning hover:text-warning/80";
+    }
+    return shouldUseWhiteText
+      ? "text-white hover:text-white/80 drop-shadow-sm"
+      : "text-foreground hover:text-primary";
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
+        isScrolled || isMobileMenuOpen
+          ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
-        <nav className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? "h-16 md:h-20" : "h-20 md:h-28"}`}>
-          <a
-            href="#"
+        <nav
+          className={`flex items-center justify-between transition-all duration-300 ${
+            isScrolled ? "h-16 md:h-20" : "h-20 md:h-28"
+          }`}
+        >
+          <Link
+            to="/"
             aria-label="Alpha PME | accueil"
             className="flex items-center transition-opacity hover:opacity-90"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
+            onClick={() => {
+              if (location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
           >
             <img
               src={shouldUseWhiteText ? logoLight : logoDark}
               alt="Alpha PME | Clarté, Structure, Pilotage"
-              className={`w-auto transition-all duration-300 ${isScrolled ? "h-10 md:h-12" : "h-14 md:h-20"}`}
+              className={`w-auto transition-all duration-300 ${
+                isScrolled ? "h-10 md:h-12" : "h-14 md:h-20"
+              }`}
               width="320"
               height="80"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className={`text-sm transition-colors ${
-                  shouldUseWhiteText 
-                    ? "text-white/90 hover:text-white drop-shadow-sm" 
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
-            {pageLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`text-sm font-medium transition-colors flex items-center gap-1.5 ${
-                  (link as any).highlight
-                    ? shouldUseWhiteText
-                      ? "text-amber-400 hover:text-amber-300 drop-shadow-sm"
-                      : "text-warning hover:text-warning/80"
-                    : shouldUseWhiteText 
-                      ? "text-white hover:text-white/80 drop-shadow-sm" 
-                      : "text-foreground hover:text-primary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            {externalLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                  shouldUseWhiteText 
-                    ? "text-amber-400 hover:text-amber-300 drop-shadow-sm" 
-                    : "text-primary hover:text-primary/80"
-                }`}
-              >
-                {link.label}
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            ))}
-            <Button
-              onClick={() => scrollToSection("#final-cta")}
-              className="gradient-primary text-primary-foreground hover:opacity-90"
-            >
-              30 min pour échanger
-            </Button>
+            {navItems.map((item) =>
+              item.anchor ? (
+                <button
+                  key={item.label}
+                  onClick={() => handleAnchor(item.anchor!)}
+                  className={`text-sm font-medium transition-colors ${linkClass(item)}`}
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.to!}
+                  className={`text-sm font-medium transition-colors ${linkClass(item)}`}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -139,8 +129,9 @@ export function Navigation() {
             className={`md:hidden p-2 transition-colors ${
               shouldUseWhiteText ? "text-white drop-shadow-md" : "text-foreground"
             }`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => setIsMobileMenuOpen((v) => !v)}
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
           </button>
@@ -150,44 +141,34 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollToSection(link.href)}
-                  className="py-3 px-4 text-left text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                >
-                  {link.label}
-                </button>
-              ))}
-              {pageLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="py-3 px-4 text-left font-medium text-foreground hover:text-primary hover:bg-muted rounded-lg transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              {externalLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-3 px-4 text-left font-medium text-primary hover:text-primary/80 hover:bg-muted rounded-lg transition-colors flex items-center gap-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-              ))}
-              <Button
-                onClick={() => scrollToSection("#final-cta")}
-                className="mt-2 gradient-primary text-primary-foreground"
-              >
-                30 min pour identifier ce qui bloque
-              </Button>
+              {navItems.map((item) =>
+                item.anchor ? (
+                  <button
+                    key={item.label}
+                    onClick={() => handleAnchor(item.anchor!)}
+                    className={`py-3 px-4 text-left font-medium rounded-lg transition-colors hover:bg-muted ${
+                      item.highlight
+                        ? "text-warning hover:text-warning/80"
+                        : "text-foreground hover:text-primary"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.label}
+                    to={item.to!}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`py-3 px-4 text-left font-medium rounded-lg transition-colors hover:bg-muted ${
+                      item.highlight
+                        ? "text-warning hover:text-warning/80"
+                        : "text-foreground hover:text-primary"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
             </div>
           </div>
         )}
