@@ -15,13 +15,13 @@ import { toast } from "@/hooks/use-toast";
 
 const EmailSchema = z.string().trim().email("Email invalide").max(255);
 
-const VALUE_ITEMS = [
-  "Votre palier actuel et celui que votre entreprise cherche à franchir",
-  "Votre blocage principal — celui qui entretient le rôle que vous jouez encore",
-  "Ce que ce blocage produit aujourd'hui et son coût si rien ne change",
-  "Ce qui n'est probablement pas votre vrai problème",
-  "Votre priorité n°1 pour les 90 prochains jours",
-  "Un call stratégique de 15 minutes inclus avec Frédéric Ternon",
+const VALUE_ITEMS: Array<{ text: string; highlight?: string }> = [
+  { text: "Votre palier actuel et celui que votre entreprise cherche à franchir" },
+  { text: "Votre blocage principal — celui qui entretient le rôle que vous jouez encore" },
+  { text: "Ce que ce blocage produit aujourd'hui et son coût si rien ne change" },
+  { text: "Ce qui n'est probablement pas votre vrai problème" },
+  { text: "Votre priorité n°1 pour les 90 prochains jours" },
+  { text: "Un call stratégique de 30 minutes offert avec Frédéric Ternon", highlight: "Un call stratégique de 30 minutes offert" },
 ];
 
 export default function CartographieLanding() {
@@ -74,7 +74,7 @@ export default function CartographieLanding() {
         <title>Cartographie des Blocages — Alpha PME</title>
         <meta
           name="description"
-          content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 15 min inclus."
+          content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 30 min offert."
         />
       </Helmet>
 
@@ -119,7 +119,16 @@ export default function CartographieLanding() {
               {VALUE_ITEMS.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-1" />
-                  <span className="text-foreground">{item}</span>
+                  <span className="text-foreground">
+                    {item.highlight ? (
+                      <>
+                        <strong className="font-semibold text-primary">{item.highlight}</strong>
+                        {item.text.slice(item.highlight.length)}
+                      </>
+                    ) : (
+                      item.text
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -136,7 +145,7 @@ export default function CartographieLanding() {
               </div>
               <p className="text-sm text-muted-foreground mb-6">
                 17 questions. Environ 8 minutes. Restitution personnalisée immédiate.
-                Call stratégique 15 min inclus.
+                Call stratégique 30 min offert.
               </p>
 
               <div className="space-y-4">

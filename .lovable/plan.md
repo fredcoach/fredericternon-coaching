@@ -1,62 +1,18 @@
-## Objectif
+## Mise en avant du call stratégique offert
 
-Clarifier la promesse du Test des 4 Profils dans le Hero, sans changer la structure ni le design de la homepage. On ne parle ni de diagnostic, ni de cartographie, ni de blocages.
+Sur la page **Cartographie des Blocages** (`src/pages/CartographieLanding.tsx`, ligne 24), modifier le bénéfice listé :
 
-## Modifications — `src/components/landing/HeroSection.tsx`
+**Avant :**
+> Un call stratégique de 15 minutes inclus avec Frédéric Ternon
 
-### 1. Conserver tel quel
-- Kicker "DIRIGEANTS DE PME/TPE"
-- H1 "Votre entreprise fonctionne. Mais dépend-elle encore trop de vous ?"
-- Sous-titre actuel (Organisation, délégation, recrutement, décisions…)
-- Pills (Organisation, Décision, Délégation, Croissance)
-- Bouton "Faire le Test des 4 Profils" → `/test-profils-alpha-pme`
-- Lien "Comment ça fonctionne ?"
-- Animations, halos, grille, scroll indicator
+**Après :**
+> Un **call stratégique de 30 minutes offert** avec Frédéric Ternon
 
-### 2. Ajouter juste AU-DESSUS du bouton CTA
-Nouveau paragraphe inséré entre les pills et le bloc CTA :
+### Détail visuel
+- Passer la durée de **15** à **30 minutes**
+- Mettre en gras la portion clé « call stratégique de 30 minutes offert » (via `<strong>` avec couleur or de la marque — `text-primary` ou `text-accent` selon le rendu), pour attirer l'œil sans casser la hiérarchie de la liste de bénéfices.
+- Remplacer « inclus » par « offert » (plus vendeur, cohérent avec le ton premium).
 
-> Découvrez le rôle que votre entreprise vous oblige encore à jouer.
-
-Style :
-- Largeur équivalente au sous-titre (`max-w-3xl mx-auto`)
-- Centré
-- Taille discrète mais visible : `text-base md:text-lg`
-- Couleur cohérente Hero sombre : `text-white/85`
-- Animation `animate-fade-in-up` avec delay aligné sur la séquence existante (~0.3s)
-- Marge basse réduite pour rester collé au bouton (`mb-5` ou `mb-6`)
-
-### 3. Remplacer le bloc de réassurance sous le bouton
-Actuellement deux lignes :
-- "Test gratuit • 10 questions • moins de 3 minutes"
-- "Situation actuelle / Ce que vous gagnez"
-
-Nouveau bloc — une seule ligne :
-
-> Test gratuit • 10 questions • moins de 3 minutes
-
-Style :
-- Petit (`text-xs md:text-sm`)
-- Rassurant, très lisible
-- Couleur secondaire de la charte = `text-accent/90` (or chaud Alpha PME)
-- Séparateurs `•` conservés
-- La seconde ligne "Situation actuelle / Ce que vous gagnez" est **supprimée** (elle introduisait une notion de restitution qui appartient aux étapes suivantes du tunnel)
-
-### 4. Ne PAS toucher
-- Le reste de la page (PromiseSection, FinalCTA, FloatingCTA, etc.)
-- Le design system, les couleurs, la typographie
-- Le lien "Comment ça fonctionne ?" reste sous la réassurance
-
-## Détails techniques
-
-Ordre vertical final dans le Hero, après le sous-titre :
-
-```
-[Pills: Organisation · Décision · Délégation · Croissance]
-[NOUVEAU paragraphe de contexte — text-white/85, max-w-3xl]
-[Bouton "Faire le Test des 4 Profils"]
-[Réassurance: "Test gratuit • 10 questions • moins de 3 minutes" — text-accent/90, text-xs/sm]
-[Lien "Comment ça fonctionne ?"]
-```
-
-Aucun nouvel asset, aucune dépendance ajoutée.
+### Technique
+- Le tableau `benefits` contient actuellement des `string`. Pour permettre le gras, changer le type en `ReactNode` (ou un champ `{ text, highlight }`), et rendre l'élément `<strong className="font-semibold text-primary">` autour du segment mis en avant.
+- Aucun autre changement de logique ni de style global.
