@@ -31,10 +31,11 @@ const products: Product[] = [
       "Les priorités à traiter en premier",
     ],
     priceLabel: "Accès immédiat",
-    price: "47 €",
+    price: "97 €",
     cta: "Réaliser ma cartographie",
-    href: "/diagnostic",
+    href: "/cartographie-des-blocages",
   },
+
   {
     icon: Zap,
     eyebrow: "Session · 1h",

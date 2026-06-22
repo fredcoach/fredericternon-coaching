@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 const ctaCards = [
   {
     icon: Brain,
-    title: "Diagnostic",
-    subtitle: "10 min pour cartographier votre pilotage",
+    title: "Cartographie des Blocages",
+    subtitle: "Identifier votre priorité n°1",
     description:
-      "Identifiez en 10 minutes ce qui freine vos décisions et le coût réel de vos hésitations de dirigeant.",
-    cta: "Lancer le diagnostic",
-    href: "/diagnostic",
+      "Cartographiez ce qui entretient votre situation et obtenez les recommandations prioritaires pour passer le prochain palier.",
+    cta: "Faire ma Cartographie",
+    href: "/cartographie-des-blocages",
     isExternal: false,
   },
+
   {
     icon: Zap,
     title: "Flash Decision",

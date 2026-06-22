@@ -509,21 +509,13 @@ const TestProfilsAlphaPME = () => {
               <Card className="border-border/60">
                 <CardContent className="space-y-4 p-6">
                   <h2 className="text-xl font-semibold text-foreground">
-                    Pourquoi ce profil peut freiner le passage au palier suivant
+                    Votre profil n'est probablement pas le problème.
                   </h2>
                   <p className="text-sm text-muted-foreground">
-                    Votre profil n'est pas une faiblesse. Il montre souvent ce qui a permis à votre entreprise de fonctionner jusqu'ici. Mais à un certain niveau, le rôle que vous avez joué pour construire l'entreprise peut devenir ce qui limite sa prochaine étape.
+                    Deux dirigeants peuvent avoir exactement le même profil pour des raisons totalement différentes.
                   </p>
-                  <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-muted/40">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-elegant">
-                      <Play className="ml-1 h-6 w-6" />
-                    </div>
-                    <span className="absolute bottom-3 left-3 rounded-full bg-background/80 px-3 py-1 text-xs text-muted-foreground">
-                      VSL Alpha PME — environ 8 min
-                    </span>
-                  </div>
                   <p className="text-sm text-muted-foreground">
-                    Cette vidéo vous explique pourquoi certains dirigeants compétents restent coincés dans un rôle que leur entreprise continue de renforcer.
+                    La Cartographie des Blocages permet d'identifier ce qui entretient réellement cette situation et quelle priorité mérite votre attention maintenant.
                   </p>
                 </CardContent>
               </Card>
@@ -533,30 +525,16 @@ const TestProfilsAlphaPME = () => {
                   <div className="space-y-1">
                     <p className="text-sm font-semibold uppercase tracking-wide text-primary">Étape suivante</p>
                     <h3 className="text-xl font-semibold text-foreground">
-                      Pourquoi certaines entreprises franchissent un cap... et d'autres restent bloquées
+                      Deux façons d'avancer maintenant
                     </h3>
                   </div>
-                  <div className="space-y-3 text-sm text-muted-foreground">
-                    <p>Votre profil explique ce que vous vivez aujourd'hui.</p>
-                    <p>
-                      Mais deux dirigeants avec exactement le même profil peuvent obtenir des résultats totalement
-                      différents.
-                    </p>
-                    <p>L'un continue à courir après les urgences.</p>
-                    <p>
-                      L'autre retrouve du temps, de la visibilité et une entreprise moins dépendante de lui.
-                    </p>
-                    <p>La différence se situe rarement dans la motivation.</p>
-                    <p>
-                      Elle se situe dans le véritable blocage qui entretient la situation.
-                    </p>
-                    <p>
-                      La Cartographie des Blocages permet d'identifier ce blocage et les priorités à traiter pour
-                      franchir le palier suivant.
-                    </p>
-                  </div>
+
                   <Button size="lg" className="w-full" asChild>
-                    <a href="/cartographie">Identifier mon principal blocage — 97 €</a>
+                    <Link to="/cartographie-des-blocages">Faire ma Cartographie — 97 €</Link>
+                  </Button>
+
+                  <Button size="lg" variant="outline" className="w-full" asChild>
+                    <Link to="/#final-cta">Faire le point directement avec Frédéric — 30 min offertes</Link>
                   </Button>
 
                   <div className="rounded-2xl border border-primary/20 bg-background/60 p-5">
@@ -581,6 +559,7 @@ const TestProfilsAlphaPME = () => {
               </Card>
 
             </div>
+
           </div>
         </div>
       </div>

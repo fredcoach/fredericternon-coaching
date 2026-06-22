@@ -11,7 +11,7 @@ const navLinks = [
 
 const pageLinks = [
   { href: "/flash-decision", label: "Flash Decision", highlight: true },
-  { href: "/diagnostic", label: "Diagnostic", highlight: true },
+  { href: "/test-profils-alpha-pme", label: "Test des 4 Profils", highlight: true },
   { href: "/blog", label: "Blog" },
   { href: "/ressources", label: "Ressources" },
   { href: "/presse", label: "Presse" },
