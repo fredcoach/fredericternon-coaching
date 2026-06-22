@@ -130,7 +130,7 @@ export function HeroSection() {
                 className="text-base md:text-lg text-white/85 max-w-3xl mx-auto mb-6 leading-relaxed animate-fade-in-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                Découvrez quel rôle votre entreprise vous oblige encore à jouer, et ce que cela révèle sur son niveau d'autonomie.
+                Découvrez le rôle que votre entreprise vous oblige encore à jouer.
               </p>
 
               {/* CTAs */}
