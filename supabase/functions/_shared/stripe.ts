@@ -16,6 +16,15 @@ export function getConnectionApiKey(env: StripeEnv): string {
     : getEnv("STRIPE_LIVE_API_KEY");
 }
 
+/**
+ * Resolve the Stripe environment server-side. NEVER trust the client.
+ * Defaults to "sandbox". Set the STRIPE_ENV secret to "live" in production
+ * to route real payments through the live Stripe account.
+ */
+export function resolveServerStripeEnv(): StripeEnv {
+  return Deno.env.get("STRIPE_ENV") === "live" ? "live" : "sandbox";
+}
+
 export function createStripeClient(env: StripeEnv): Stripe {
   const connectionApiKey = getConnectionApiKey(env);
   const lovableApiKey = getEnv("LOVABLE_API_KEY");
