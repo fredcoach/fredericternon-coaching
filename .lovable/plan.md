@@ -1,62 +1,66 @@
-## Page de confirmation après prise de rendez-vous
+## Objectif
+Permettre le lancement immédiat du tunnel **Test Profils → Cartographie** sans attendre la VSL, nettoyer le parcours Diagnostic devenu redondant, et repositionner le CTA hero sur le Test des 4 Profils.
 
-### 1. Nouvelle page `/cartographie-des-blocages/confirmation`
+---
 
-Créer `src/pages/CartographieConfirmation.tsx` avec une mise en page premium, sobre, dans la continuité visuelle de `CartographieResultat.tsx` (mêmes tokens : `bg-background`, `bg-card`, `text-accent`, `border-accent`, gradients `from-primary to-primary-glow`, typographie `font-light` / `font-medium`, conteneur `max-w-3xl`).
+## 1. Page Test Profils — remplacer la VSL par un bloc texte de transition
 
-Structure verticale :
+Fichier : `src/pages/TestProfilsAlphaPME.tsx` (écran de résultat, ~lignes 509-581)
 
-1. **Header** dégradé `primary → primary-glow`
-   - Eyebrow : « Rendez-vous confirmé »
-   - H1 : « Votre rendez-vous est confirmé. »
-   - Sous-titre : « Vous venez de faire ce que beaucoup de dirigeants repoussent pendant des mois : prendre du recul sur leur entreprise. »
+**Supprimer** la première Card "Pourquoi ce profil peut freiner…" qui contient la vignette VSL placeholder (icône Play + "VSL Alpha PME — environ 8 min").
 
-2. **Bloc Cartographie** (`bg-card` avec `border-l-4 border-accent`)
-   - « Votre Cartographie a identifié un blocage principal. »
-   - « Lors de notre échange, nous vérifierons ensemble si ce blocage est bien la cause racine et nous identifierons le premier levier concret à activer. »
+**Remplacer** par une Card de transition texte avec le message exact validé :
 
-3. **Section « En attendant notre rendez-vous »** (liste avec icônes `CheckCircle2` discrètes)
-   - Relisez votre Cartographie
-   - Notez les questions qui vous viennent
-   - Réfléchissez à la décision que vous continuez à repousser
+> **Votre profil n'est probablement pas le problème.**
+>
+> Deux dirigeants peuvent avoir exactement le même profil pour des raisons totalement différentes.
+>
+> La Cartographie des Blocages permet d'identifier ce qui entretient réellement cette situation et quelle priorité mérite votre attention maintenant.
 
-4. **Encadré** (fond `bg-primary text-primary-foreground`, coin `rounded-2xl`)
-   - « Le but de cet échange n'est pas de tout résoudre en 15 minutes. »
-   - « Le but est d'identifier clairement la priorité qui mérite votre attention maintenant. »
+**Conserver** ensuite les **deux options** (primaire + secondaire) :
 
-5. **Citation finale** (italique, `border-l-2 border-accent`, centré, sans guillemets décoratifs)
-   - « Une entreprise ne franchit pas un palier en travaillant plus. »
-   - « Elle franchit un palier lorsqu'elle cesse de dépendre des mêmes mécanismes qui l'ont amenée jusqu'ici. »
+- Primaire : `Faire ma Cartographie — 97 €` → `/cartographie-des-blocages`
+- Secondaire (outline) : `Faire le point directement avec Frédéric — 30 min offertes` → ancre `/#final-cta`
 
-6. **CTA secondaire** (bouton `outline`) : « Retourner à ma Cartographie » → revient vers `/cartographie-des-blocages/resultat?session_id=…` si présent, sinon `/cartographie-des-blocages`.
+Garder l'encart "Inclus avec votre Cartographie" sous l'option primaire. Quand la VSL sera tournée, elle pourra être réintégrée au-dessus du bloc texte sans toucher au reste.
 
-`<Helmet>` : title « Rendez-vous confirmé — Alpha PME », `noindex`.
+---
 
-### 2. Routing
+## 2. CTA Hero — remplacer "Voir si on peut travailler ensemble" par "Faire le Test des 4 Profils"
 
-Ajouter la route dans `src/App.tsx` :
-```tsx
-<Route path="/cartographie-des-blocages/confirmation" element={<CartographieConfirmation />} />
-```
+Fichier : `src/components/landing/HeroSection.tsx`
 
-### 3. Conservation du `session_id`
+- Texte du CTA principal : **`Faire le Test des 4 Profils`**
+- Cible : `/test-profils-alpha-pme` (au lieu de l'ancre `#final-cta`)
+- L'icône `ArrowRight` et le style sont conservés.
 
-Sur `CartographieResultat.tsx`, modifier le lien Calendly pour ajouter les paramètres :
-- `utm_source=cartographie`
-- `utm_content={session_id}`
+Audit rapide des autres occurrences de "Voir si on peut…" / "travailler ensemble" dans les sections landing (FAQSection, ProblemSolution, etc.) — toute autre instance identique sera alignée sur le même libellé/cible pour cohérence. La CTA navbar "30 min pour échanger" reste inchangée (point d'entrée RDV direct).
 
-Et garder la valeur en `localStorage` (`carto_session_id`) pour que la page de confirmation puisse reconstruire le lien retour vers la Cartographie même si Calendly ne propage pas le query param.
+---
 
-### 4. Action côté Calendly (à faire par l'utilisateur, hors code)
+## 3. Retirer la page Diagnostic du parcours (sans supprimer le code)
 
-Pour que Calendly redirige automatiquement vers cette page après la réservation, il faut activer dans les paramètres de l'événement Calendly :
-- *Confirmation Page* → *Redirect to an external site*
-- URL : `https://alphadirigeant.solutions/cartographie-des-blocages/confirmation`
-- Cocher « Pass event details to your redirected page » pour conserver les UTM.
+- `src/components/landing/Navigation.tsx` : retirer l'entrée `/diagnostic` de `pageLinks`.
+- `src/App.tsx` : retirer `<DiagnosticPopup />` du rendu global.
+- `src/App.tsx` : transformer la route `/diagnostic` en redirection vers `/cartographie-des-blocages` via `<Navigate replace />`.
+- `public/sitemap.xml` : retirer l'entrée `/diagnostic` si présente.
+- Audit des renvois `/diagnostic` dans `TripleCTASection`, `DiagnosticTeaser`, `FAQSection`, `DifferentiatorsSection`, `JourneySection`, `EntryProductsTeaser` → repointer vers `/cartographie-des-blocages` (ou `/test-profils-alpha-pme` selon l'intention). Si `DiagnosticTeaser` devient un doublon, on le retire de `Index.tsx`.
 
-Je le rappellerai dans la réponse une fois la page livrée.
+Les fichiers `src/pages/Diagnostic.tsx` et `src/components/diagnostic/*` restent en dormance.
 
-### Fichiers touchés
-- `src/pages/CartographieConfirmation.tsx` *(nouveau)*
-- `src/App.tsx` *(ajout de la route + import)*
-- `src/pages/CartographieResultat.tsx` *(UTM + persistance `session_id`)*
+---
+
+## 4. Publication
+
+- Scan de sécurité préalable (requis avant publish).
+- Publication sur `alphadirigeant.solutions`.
+
+---
+
+## Hors scope
+- Réécriture du H1 hero.
+- Refonte visuelle des cartes résultat.
+- Tracking analytics dédié sur les nouveaux CTA.
+- Suppression définitive des fichiers Diagnostic.
+
+Dites "go" pour que j'enchaîne en build puis publication.
