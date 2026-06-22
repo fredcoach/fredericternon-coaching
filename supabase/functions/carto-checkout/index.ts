@@ -1,11 +1,10 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
 import { z } from "https://esm.sh/zod@3.23.8";
 import { corsHeaders } from "../_shared/cors.ts";
-import { createStripeClient, type StripeEnv } from "../_shared/stripe.ts";
+import { createStripeClient, resolveServerStripeEnv } from "../_shared/stripe.ts";
 
 const BodySchema = z.object({
   email: z.string().trim().email().max(255),
-  environment: z.enum(["sandbox", "live"]),
   source: z.string().max(64).optional(),
   returnUrl: z.string().url().max(500),
 });
