@@ -30,9 +30,9 @@ Deno.serve(async (req) => {
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
-    const { email, environment, source, returnUrl } = parsed.data;
+    const { email, source, returnUrl } = parsed.data;
 
-    const env: StripeEnv = environment;
+    const env = resolveServerStripeEnv();
     const stripe = createStripeClient(env);
 
     // Resolve price via lookup key
