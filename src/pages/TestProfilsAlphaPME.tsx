@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight, CheckCircle2, Clock, Share2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -265,6 +265,7 @@ const computeResult = (answers: ProfileKey[]) => {
 };
 
 const TestProfilsAlphaPME = () => {
+  const navigate = useNavigate();
   const [started, setStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<ProfileKey[]>([]);
@@ -533,8 +534,20 @@ const TestProfilsAlphaPME = () => {
                     <Link to="/cartographie-des-blocages">Faire ma Cartographie — 97 €</Link>
                   </Button>
 
-                  <Button size="lg" variant="outline" className="w-full" asChild>
-                    <Link to="/#final-cta">Faire le point directement avec Frédéric — 30 min offertes</Link>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => {
+                      window.open(
+                        "https://calendly.com/ternon/alpha-pme",
+                        "_blank",
+                        "noopener,noreferrer",
+                      );
+                      navigate("/cartographie-des-blocages/confirmation");
+                    }}
+                  >
+                    Faire le point directement avec Frédéric — 30 min offertes
                   </Button>
 
                   <div className="rounded-2xl border border-primary/20 bg-background/60 p-5">
