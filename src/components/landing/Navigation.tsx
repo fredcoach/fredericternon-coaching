@@ -130,10 +130,16 @@ export function Navigation() {
               )
             )}
             <Button
-              onClick={() => handleAnchor("#final-cta")}
+              asChild
               className="gradient-primary text-primary-foreground hover:opacity-90"
             >
-              30 min pour échanger
+              <a
+                href="https://calendly.com/ternon/alpha-pme?redirect_url=https://alphadirigeant.solutions/rendez-vous/confirmation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                30 min pour échanger
+              </a>
             </Button>
           </div>
 
