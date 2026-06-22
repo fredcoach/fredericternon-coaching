@@ -45,7 +45,7 @@ Style :
 ### 4. Ne PAS toucher
 - Le reste de la page (PromiseSection, FinalCTA, FloatingCTA, etc.)
 - Le design system, les couleurs, la typographie
-- Le lien "Découvrir l'approche" reste sous la réassurance
+- Le lien "Comment ça fonctionne ?" reste sous la réassurance
 
 ## Détails techniques
 
