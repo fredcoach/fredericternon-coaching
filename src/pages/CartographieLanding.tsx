@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
-import { getStripe, getStripeEnvironment } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 import { toast } from "@/hooks/use-toast";
 
@@ -42,13 +42,11 @@ export default function CartographieLanding() {
 
     setLoading(true);
     try {
-      const environment = getStripeEnvironment();
       const returnUrl = `${window.location.origin}/cartographie-des-blocages/questionnaire?session_id={CHECKOUT_SESSION_ID}`;
 
       const { data, error } = await supabase.functions.invoke("carto-checkout", {
         body: {
           email: parsed.data,
-          environment,
           returnUrl,
           source: "landing",
         },

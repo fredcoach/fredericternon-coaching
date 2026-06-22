@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
 import { z } from "https://esm.sh/zod@3.23.8";
 import { corsHeaders } from "../_shared/cors.ts";
-import { createStripeClient, type StripeEnv } from "../_shared/stripe.ts";
+import { createStripeClient, resolveServerStripeEnv } from "../_shared/stripe.ts";
 import { buildRestitution, type Answers } from "../_shared/cartographie-logic.ts";
 
 const AnswersSchema = z.object({
@@ -26,7 +26,6 @@ const AnswersSchema = z.object({
 
 const BodySchema = z.object({
   sessionId: z.string().min(1).max(255),
-  environment: z.enum(["sandbox", "live"]),
   answers: AnswersSchema,
 });
 
@@ -49,8 +48,8 @@ Deno.serve(async (req) => {
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
-    const { sessionId, environment, answers } = parsed.data;
-    const env: StripeEnv = environment;
+    const { sessionId, answers } = parsed.data;
+    const env = resolveServerStripeEnv();
 
     const supabase = createClient(
       Deno.env.get("SUPABASE_URL")!,
