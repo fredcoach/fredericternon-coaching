@@ -10,7 +10,7 @@ Clarifier la promesse du Test des 4 Profils dans le Hero, sans changer la struct
 - Sous-titre actuel (Organisation, délégation, recrutement, décisions…)
 - Pills (Organisation, Décision, Délégation, Croissance)
 - Bouton "Faire le Test des 4 Profils" → `/test-profils-alpha-pme`
-- Lien "Découvrir l'approche"
+- Lien "Comment ça fonctionne ?"
 - Animations, halos, grille, scroll indicator
 
 ### 2. Ajouter juste AU-DESSUS du bouton CTA
@@ -45,7 +45,7 @@ Style :
 ### 4. Ne PAS toucher
 - Le reste de la page (PromiseSection, FinalCTA, FloatingCTA, etc.)
 - Le design system, les couleurs, la typographie
-- Le lien "Découvrir l'approche" reste sous la réassurance
+- Le lien "Comment ça fonctionne ?" reste sous la réassurance
 
 ## Détails techniques
 
@@ -56,7 +56,7 @@ Ordre vertical final dans le Hero, après le sous-titre :
 [NOUVEAU paragraphe de contexte — text-white/85, max-w-3xl]
 [Bouton "Faire le Test des 4 Profils"]
 [Réassurance: "Test gratuit • 10 questions • moins de 3 minutes" — text-accent/90, text-xs/sm]
-[Lien "Découvrir l'approche"]
+[Lien "Comment ça fonctionne ?"]
 ```
 
 Aucun nouvel asset, aucune dépendance ajoutée.

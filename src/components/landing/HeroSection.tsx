@@ -166,7 +166,7 @@ export function HeroSection() {
                   onClick={() => scrollToSection("#about")}
                   className="text-sm text-white/60 hover:text-white transition-colors underline underline-offset-4"
                 >
-                  Découvrir l'approche
+                  Comment ça fonctionne ?
                 </button>
 
               </div>
