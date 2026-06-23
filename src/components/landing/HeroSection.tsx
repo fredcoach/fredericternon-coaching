@@ -102,7 +102,7 @@ export function HeroSection() {
                 Recrutement. Délégation. Organisation. Décisions.
                 <br />
                 <span className="text-accent/90 font-medium">
-                  Le plus difficile n'est pas toujours d'agir. C'est de savoir où agir en premier.
+                  Et si ce qui vous maintient dans l'opérationnel n'était pas là où vous le pensez ?
                 </span>
               </p>
 
