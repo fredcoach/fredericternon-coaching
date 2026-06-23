@@ -89,7 +89,7 @@ export function HeroSection() {
                   Votre entreprise fonctionne.
                 </span>
                 <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-3">
-                  Mais dépend-elle encore <span className="text-accent">trop de vous</span> ?
+                  Mais dépend-t-elle encore <span className="text-accent">trop de vous</span> ?
                 </span>
               </h1>
 
