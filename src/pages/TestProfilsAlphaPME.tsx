@@ -557,7 +557,7 @@ const TestProfilsAlphaPME = () => {
                     <ul className="space-y-2">
                       {[
                         "Restitution personnalisée",
-                        "Call stratégique de 15 minutes avec Frédéric Ternon",
+                        "Call stratégique de 30 minutes avec Frédéric Ternon",
                         "Identification de votre priorité n°1",
                         "Recommandations adaptées à votre situation",
                       ].map((item) => (
