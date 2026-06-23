@@ -99,12 +99,10 @@ export function HeroSection() {
                 className="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Vous avez déjà recruté.
-                <br />
-                Vous avez déjà délégué.
+                Recrutement. Délégation. Organisation. Décisions.
                 <br />
                 <span className="text-accent/90 font-medium">
-                  Alors pourquoi autant de sujets continuent-ils à remonter vers vous ?
+                  Le plus difficile n'est pas toujours d'agir. C'est de savoir où agir en premier.
                 </span>
               </p>
 
