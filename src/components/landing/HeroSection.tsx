@@ -99,14 +99,12 @@ export function HeroSection() {
                 className="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in-up leading-relaxed"
                 style={{ animationDelay: "0.15s" }}
               >
-                Organisation, délégation, recrutement, décisions :{"\u00a0"}
-                <br className="hidden md:block" />
+                Vous avez déjà recruté.
+                <br />
+                Vous avez déjà délégué.
+                <br />
                 <span className="text-accent/90 font-medium">
-                  un regard extérieur pour identifier ce qui bloque, structurer le prochain palier
-                </span>
-                <br className="hidden md:block" />
-                <span className="text-white/80">
-                  {"\u00a0"}et réduire ce que vous continuez à porter seul.
+                  Alors pourquoi autant de sujets continuent-ils à remonter vers vous ?
                 </span>
               </p>
 
@@ -127,10 +125,12 @@ export function HeroSection() {
 
               {/* Context line above CTA */}
               <p
-                className="text-base md:text-lg text-white/85 max-w-3xl mx-auto mb-6 leading-relaxed animate-fade-in-up"
+                className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-6 leading-relaxed font-medium animate-fade-in-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                Découvrez le rôle que votre entreprise vous oblige encore à jouer.
+                Découvrez quel rôle votre entreprise vous oblige encore à jouer...
+                <br />
+                <span className="text-accent">et ce qu'il révèle sur son niveau d'autonomie.</span>
               </p>
 
               {/* CTAs */}
