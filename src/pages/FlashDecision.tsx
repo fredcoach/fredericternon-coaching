@@ -37,11 +37,11 @@ const FlashDecision = () => {
         <meta property="og:description" content="Débloquez une décision stratégique en 1 heure. Session intensive pour dirigeants. 350€." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://alphadirigeant.solutions/flash-decision" />
-        <meta property="og:image" content="https://alphadirigeant.solutions/og-flash-decision.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="640" />
+        <meta property="og:image" content="https://alphadirigeant.solutions/__l5e/assets-v1/f5bd222f-d6ca-44ac-babf-126fe40c1b96/flash-decision-og.png" />
+        <meta property="og:image:width" content="1254" />
+        <meta property="og:image:height" content="1254" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://alphadirigeant.solutions/og-flash-decision.jpg" />
+        <meta name="twitter:image" content="https://alphadirigeant.solutions/__l5e/assets-v1/f5bd222f-d6ca-44ac-babf-126fe40c1b96/flash-decision-og.png" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
