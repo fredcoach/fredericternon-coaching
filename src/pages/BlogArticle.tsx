@@ -22,6 +22,7 @@ import blogPilotageInterieur from "@/assets/blog-pilotage-interieur.jpg";
 import blogFatigueMentale from "@/assets/blog-fatigue-mentale.jpg";
 import blogSportifDirigeant from "@/assets/blog-sportif-dirigeant.jpg";
 import blogRoueHamster from "@/assets/blog-roue-hamster.jpg";
+import blogBrasDroit from "@/assets/blog-bras-droit-dirigeant.jpg";
 
 // Map slugs to images
 const blogImages: Record<string, string> = {
@@ -37,6 +38,7 @@ const blogImages: Record<string, string> = {
   "decision-fatigue-mentale-performance": blogFatigueMentale,
   "sportif-haut-niveau-dirigeant": blogSportifDirigeant,
   "sortir-roue-hamster-dirigeant": blogRoueHamster,
+  "recruter-bras-droit-dirigeant-pme": blogBrasDroit,
 };
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
