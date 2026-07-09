@@ -136,7 +136,7 @@ const Blog = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogArticles.map((article) => (
+            {sortedArticles.map((article) => (
               <article
                 key={article.id}
                 className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-2 transition-all duration-300"
