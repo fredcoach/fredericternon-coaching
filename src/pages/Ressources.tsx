@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText, CheckSquare } from "lucide-react";
+import { ArrowRight, Zap, BookOpen, Newspaper, Download, FileText, CheckSquare } from "lucide-react";
 import { GuideDownloadDialog } from "@/components/guide/GuideDownloadDialog";
 
 
