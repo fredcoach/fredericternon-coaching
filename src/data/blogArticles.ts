@@ -958,6 +958,132 @@ export const blogArticles: BlogArticle[] = [
     price: "Sur mesure",
     availability: "Disponible"
   },
+  {
+    id: "13",
+    slug: "recruter-bras-droit-dirigeant-pme",
+    title: "Recruter un bras droit : la question qu'on oublie de se poser avant",
+    metaTitle: "Bras droit dirigeant : la question à se poser avant | Alpha PME",
+    metaDescription: "Avant de recruter un bras droit, clarifiez le rôle. 4 problèmes différents, 4 postes différents. Le test simple pour éviter le recrutement le plus coûteux à rater.",
+    excerpt: "\"Il me faut un bras droit.\" Souvent, la conclusion tombe avant le diagnostic. Voici les 4 problèmes qu'on confond derrière ce mot — et le test pour les distinguer.",
+    content: `<p><em>"Il me faut un bras droit."</em> C'est souvent comme ça que la réflexion commence.</p>
+
+<p>Trop de dossiers. Trop de sujets qui remontent. Trop de journées qui débordent. Le dirigeant est saturé. Il veut quelqu'un de confiance à ses côtés. La conclusion paraît évidente : <strong>il faut recruter un bras droit</strong>.</p>
+
+<p>Mais une question précède cette conclusion. Une seule. Et elle change tout :</p>
+
+<p><strong>Un bras droit pour résoudre quel problème, exactement ?</strong></p>
+
+<h2>"Bras droit" n'est pas une fiche de poste</h2>
+
+<p>Dans beaucoup de PME/TPE jusqu'à 30 personnes, "bras droit" n'est pas un rôle. C'est le nom qu'on donne à un <strong>soulagement espéré</strong>.</p>
+
+<p>On cherche une <em>personne</em> avant d'avoir défini un <em>rôle</em>. Quelqu'un de confiance avant un périmètre clair. Un profil rassurant avant une mission concrète.</p>
+
+<p>Et ce que ça coûte se voit plus tard. Un recrutement clé engagé sur un rôle flou, c'est souvent l'un des recrutements les <strong>plus coûteux à rater</strong> : 12 à 18 mois perdus, une équipe déstabilisée, un dirigeant encore plus saturé qu'avant — parce qu'en plus du reste, il doit maintenant gérer la sortie de la personne recrutée.</p>
+
+<p>Quand ça échoue, la conclusion tombe presque toujours à côté : <em>"On ne trouve pas la bonne personne."</em> Alors qu'en réalité, <strong>le poste n'a jamais vraiment existé</strong>.</p>
+
+<h2>Les 4 problèmes qu'on confond derrière "bras droit"</h2>
+
+<p>Quand un dirigeant me dit qu'il cherche un bras droit, je pose systématiquement la même question : <em>"Qu'est-ce qui déborde, concrètement ?"</em> Dans 90 % des cas, on découvre qu'il y a en réalité <strong>quatre problèmes différents</strong> derrière le même mot. Et parfois, quatre postes différents.</p>
+
+<h3>1. Trop de production : il vous manque un opérationnel senior</h3>
+
+<p>Symptôme : vous êtes encore au four et au moulin sur la livraison. Vous produisez, vous rédigez, vous exécutez. L'entreprise a grandi, mais la charge opérationnelle sur vos épaules n'a jamais vraiment diminué.</p>
+
+<p>Ce qu'il vous faut : <strong>pas un bras droit, mais un opérationnel senior</strong> capable d'absorber le cœur de métier avec autonomie. Un profil d'exécution avec de l'expérience, pas un profil de management stratégique.</p>
+
+<p>Erreur classique : recruter un profil "direction" cher, qui va vouloir manager plutôt que produire — et laisser la charge opérationnelle exactement là où elle était.</p>
+
+<h3>2. Trop de décisions qui remontent : il vous manque un manager avec périmètre</h3>
+
+<p>Symptôme : votre équipe vient vous voir pour tout. Les congés, les priorités, les arbitrages clients, les micro-conflits. Vous êtes le point de passage obligé de toutes les décisions, même mineures.</p>
+
+<p>Ce qu'il vous faut : <strong>un manager avec un périmètre clair et l'autorité pour décider dedans</strong>. Pas quelqu'un qui vous ressemble. Quelqu'un à qui vous êtes prêt à laisser <em>vraiment</em> la main sur une zone de l'entreprise.</p>
+
+<p>Erreur classique : recruter un "bras droit" à qui on demande de tout faire remonter "pour information". En trois mois, il devient un filtre supplémentaire, pas un décideur. Et rien ne change.</p>
+
+<h3>3. Trop de coordination entre équipes : il vous manque un chef d'orchestre</h3>
+
+<p>Symptôme : chaque équipe fonctionne, mais entre elles, ça grince. Les projets patinent aux interfaces. Vous passez vos journées à arbitrer entre commerce et production, entre projet et support, entre urgent et important.</p>
+
+<p>Ce qu'il vous faut : <strong>un rôle de coordination transversale</strong> — un COO ou un directeur des opérations, selon la taille. Quelqu'un dont le métier est l'orchestration, pas la production ni le management d'une équipe isolée.</p>
+
+<p>Erreur classique : penser qu'un bon manager d'équipe fera un bon coordinateur transversal. Ce sont deux métiers différents. L'un tranche vers le bas, l'autre arbitre en horizontal.</p>
+
+<h3>4. Un étage de management qui manque : il vous manque du middle management</h3>
+
+<p>Symptôme : entre vous et les équipes opérationnelles, il n'y a personne. Vingt personnes qui vous reportent, directement ou indirectement. Le jour où vous prenez trois jours de vrai repos, tout s'arrête.</p>
+
+<p>Ce qu'il vous faut : <strong>pas un bras droit, mais un étage de management</strong>. Deux ou trois chefs d'équipe, parfois promus en interne, parfois recrutés. Un vrai palier hiérarchique qui absorbe les sollicitations avant qu'elles n'arrivent chez vous.</p>
+
+<p>Erreur classique : chercher <em>la</em> personne qui va tout porter à votre place. Aucun bras droit, même excellent, ne remplace une couche de management manquante. Vous ne cherchez pas un individu, vous cherchez une <strong>structure</strong>.</p>
+
+<h2>Pourquoi on saute cette étape (et ce que ça coûte)</h2>
+
+<p>Si cette clarification paraît évidente lue à froid, elle est étonnamment rare dans la vraie vie. Trois raisons expliquent pourquoi les dirigeants passent directement à "je recrute un bras droit" sans faire le diagnostic :</p>
+
+<ul>
+<li><strong>La saturation empêche la lucidité.</strong> Quand vous êtes à 60 heures par semaine, vous voulez une solution, pas une analyse. Le mot "bras droit" est rassurant parce qu'il désigne une <em>personne</em>, pas un problème.</li>
+<li><strong>Le mot circule dans votre réseau.</strong> Vos pairs dirigeants parlent de leur bras droit. C'est un statut, presque un signal de maturité de l'entreprise. Recruter le sien devient un objectif en soi.</li>
+<li><strong>Personne ne vous renvoie la question.</strong> Vos équipes valident (elles ont envie que ça change). Votre conjoint valide (il vous voit épuisé). Votre expert-comptable ne se prononce pas. Le seul qui pourrait poser la question — un regard extérieur structuré — n'est pas dans la boucle.</li>
+</ul>
+
+<p>Résultat : vous engagez 60 000 à 120 000 € par an sur un rôle qui n'a jamais été défini. Et 12 mois plus tard, la roue tourne toujours.</p>
+
+<h2>Le test des 10 lignes</h2>
+
+<p>Avant de lancer la recherche, un test simple. Prenez une feuille — vraiment, une feuille — et essayez de répondre à cette question :</p>
+
+<p><strong>Le bras droit que vous cherchez, pourriez-vous écrire sa fiche de poste en dix lignes, là, maintenant ?</strong></p>
+
+<p>Pas dix lignes de qualités humaines ("de confiance, autonome, engagé"). Dix lignes de <em>contenu de rôle</em> :</p>
+
+<ul>
+<li>Quelles décisions prend-il seul, sans vous en référer ?</li>
+<li>Quel périmètre pilote-t-il, avec quels indicateurs de succès ?</li>
+<li>Qui manage-t-il, directement et indirectement ?</li>
+<li>Quels sujets remonte-t-il vers vous, à quelle fréquence, sous quelle forme ?</li>
+<li>Qu'est-ce qui, dans <em>votre</em> agenda actuel, disparaît le jour où il arrive ?</li>
+</ul>
+
+<p>Si vous n'y arrivez pas — ou si vous vous entendez écrire "il fera un peu de tout" — le problème n'est pas le recrutement. Le problème est en amont : <strong>le rôle n'existe pas encore</strong>. Le recruter revient à confier à quelqu'un le soin de l'inventer à votre place. C'est là que ça casse.</p>
+
+<h2>Clarifier d'abord, recruter ensuite</h2>
+
+<p>C'est exactement là que je travaille avec les dirigeants de PME/TPE. Pas pour dire s'il faut recruter ou non — cette décision vous appartient. Mais pour clarifier, <strong>en amont</strong>, ce que cette personne devra réellement porter : des décisions, un périmètre, une équipe, ou autre chose.</p>
+
+<p>Concrètement, la clarification prend souvent une à trois séances. On regarde ensemble votre agenda réel, on cartographie ce qui déborde, on trie ce qui relève de la production, du management, de la coordination ou d'un étage manquant. À la sortie, vous avez soit une fiche de poste tenable en dix lignes — soit la certitude qu'il ne fallait pas recruter un bras droit, mais autre chose.</p>
+
+<p>Dans les deux cas, vous économisez le recrutement à 100 000 € qui n'aurait pas marché.</p>
+
+<p style="background:#0f1b3d;color:#faf7f0;padding:20px;border-radius:12px;border-left:4px solid #b8923d;">📄 <strong>Outil gratuit</strong> — <a href="/grille" style="color:#d9c89a;text-decoration:underline;">La Grille de Clarification</a> : 4 zones à parcourir en 5 minutes pour localiser précisément où votre entreprise repose encore trop sur vous. Le point de départ avant toute décision de recrutement.</p>
+
+<p>👉 Lire aussi : <a href="/blog/sortir-roue-hamster-dirigeant">Sortir de la roue du hamster</a> — pourquoi la saturation vous pousse à chercher la mauvaise solution.</p>
+
+<p>👉 <a href="/blog/repousser-decisions-cles">Pourquoi vous repoussez les décisions clés</a> — et comment vous en sortir avant qu'elles ne se transforment en recrutement de rattrapage.</p>
+
+<p>👉 <a href="/cartographie-des-blocages">Cartographie des blocages du dirigeant</a> — le diagnostic complet, sur ce qui vous empêche vraiment de reprendre la main.</p>
+
+<p><strong>Recruter un bras droit n'est ni une bonne ni une mauvaise idée. C'est une réponse. La vraie question, celle qu'on oublie de poser avant, c'est : <em>à quoi</em> ?</strong></p>`,
+    category: "Pilotage dirigeant",
+    readTime: "8 min",
+    publishedAt: "2026-07-09",
+    updatedAt: "2026-07-09",
+    image: "/assets/blog-bras-droit-dirigeant.jpg",
+    ogImage: "/images/og-bras-droit-dirigeant.jpg",
+    productName: "Clarification du rôle avant recrutement d'un bras droit",
+    productDescription: "Accompagnement pour dirigeants de PME/TPE qui envisagent de recruter un bras droit : clarifier en amont le rôle, le périmètre et les décisions à déléguer, avant tout recrutement.",
+    benefits: [
+      "Distinguer les 4 problèmes cachés derrière la demande \"bras droit\"",
+      "Écrire une fiche de poste tenable en dix lignes avant de recruter",
+      "Éviter un recrutement clé à 100 000 € engagé sur un rôle flou",
+      "Identifier si le besoin est un opérationnel, un manager, un COO ou un étage de management"
+    ],
+    targetAudience: "Dirigeants de PME/TPE jusqu'à 30 personnes qui envisagent de recruter un bras droit, un numéro 2 ou un COO",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
