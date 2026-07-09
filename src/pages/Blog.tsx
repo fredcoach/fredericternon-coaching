@@ -46,6 +46,11 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Sort articles most recent first
+  const sortedArticles = [...blogArticles].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
   // Structured data for blog listing (ItemList for SEO)
   const blogListStructuredData = {
     "@context": "https://schema.org",
