@@ -72,7 +72,7 @@ Deno.serve(async (req) => {
 
     // If already completed, return existing result
     if (row.result) {
-      return new Response(JSON.stringify({ result: row.result, email: row.email }), {
+      return new Response(JSON.stringify({ result: row.result }), {
         status: 200,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
@@ -119,7 +119,7 @@ Deno.serve(async (req) => {
   } catch (e) {
     console.error("carto-submit error", e);
     return new Response(
-      JSON.stringify({ error: (e as Error).message ?? "Internal error" }),
+      JSON.stringify({ error: "Internal server error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
     );
   }
