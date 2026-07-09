@@ -1091,11 +1091,14 @@ export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
 };
 
 export const getRelatedArticles = (currentSlug: string, limit: number = 3): BlogArticle[] => {
-  const current = blogArticles.find(a => a.slug === currentSlug);
-  if (!current) return blogArticles.slice(0, limit);
-  
-  const others = blogArticles.filter(a => a.slug !== currentSlug);
-  // Prioritize same category, then mix others
+  const sorted = [...blogArticles].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+  const current = sorted.find(a => a.slug === currentSlug);
+  if (!current) return sorted.slice(0, limit);
+
+  const others = sorted.filter(a => a.slug !== currentSlug);
+  // Prioritize same category (most recent first), then fill with most recent from other categories
   const sameCategory = others.filter(a => a.category === current.category);
   const diffCategory = others.filter(a => a.category !== current.category);
   return [...sameCategory, ...diffCategory].slice(0, limit);

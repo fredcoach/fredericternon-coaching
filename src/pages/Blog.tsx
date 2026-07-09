@@ -21,6 +21,7 @@ import blogPilotageInterieur from "@/assets/blog-pilotage-interieur.jpg";
 import blogFatigueMentale from "@/assets/blog-fatigue-mentale.jpg";
 import blogSportifDirigeant from "@/assets/blog-sportif-dirigeant.jpg";
 import blogRoueHamster from "@/assets/blog-roue-hamster.jpg";
+import blogBrasDroit from "@/assets/blog-bras-droit-dirigeant.jpg";
 
 // Map slug to imported image
 const blogImages: Record<string, string> = {
@@ -36,6 +37,7 @@ const blogImages: Record<string, string> = {
   "decision-fatigue-mentale-performance": blogFatigueMentale,
   "sportif-haut-niveau-dirigeant": blogSportifDirigeant,
   "sortir-roue-hamster-dirigeant": blogRoueHamster,
+  "recruter-bras-droit-dirigeant-pme": blogBrasDroit,
 };
 
 const Blog = () => {
@@ -43,6 +45,11 @@ const Blog = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Sort articles most recent first
+  const sortedArticles = [...blogArticles].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
 
   // Structured data for blog listing (ItemList for SEO)
   const blogListStructuredData = {
@@ -53,7 +60,7 @@ const Blog = () => {
     "url": "https://alphadirigeant.solutions/blog",
     "mainEntity": {
       "@type": "ItemList",
-      "itemListElement": blogArticles.map((article, index) => ({
+      "itemListElement": sortedArticles.map((article, index) => ({
         "@type": "ListItem",
         "position": index + 1,
         "item": {
@@ -129,7 +136,7 @@ const Blog = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogArticles.map((article) => (
+            {sortedArticles.map((article) => (
               <article
                 key={article.id}
                 className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-2 transition-all duration-300"
