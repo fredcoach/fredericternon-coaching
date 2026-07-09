@@ -280,7 +280,25 @@ const TestProfilsAlphaPME = () => {
   const progress = started ? ((currentQuestionIndex + (selectedAnswer ? 1 : 0)) / questions.length) * 100 : 0;
 
   useEffect(() => {
-    document.title = "Test des 4 Profils Alpha PME";
+    document.title = "Test des 4 Profils Dirigeant | Alpha PME";
+    const setMeta = (attr: "name" | "property", key: string, content: string) => {
+      let el = document.head.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    const description =
+      "Test gratuit en 5 minutes : découvrez lequel des 4 profils de dirigeant (Indispensable, Contrôleur, Organisation Saturée, Expert Prisonnier) vous freine aujourd'hui.";
+    const title = "Test des 4 Profils Dirigeant | Alpha PME";
+    setMeta("name", "description", description);
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:url", "https://alphadirigeant.solutions/test-profils-alpha-pme");
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
   }, []);
 
   useEffect(() => {
