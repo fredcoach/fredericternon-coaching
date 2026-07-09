@@ -60,7 +60,7 @@ const Blog = () => {
     "url": "https://alphadirigeant.solutions/blog",
     "mainEntity": {
       "@type": "ItemList",
-      "itemListElement": blogArticles.map((article, index) => ({
+      "itemListElement": sortedArticles.map((article, index) => ({
         "@type": "ListItem",
         "position": index + 1,
         "item": {
