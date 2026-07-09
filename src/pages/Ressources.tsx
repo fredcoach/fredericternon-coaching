@@ -4,11 +4,20 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText } from "lucide-react";
+import { ArrowRight, ClipboardCheck, Zap, BookOpen, Newspaper, Download, FileText, CheckSquare } from "lucide-react";
 import { GuideDownloadDialog } from "@/components/guide/GuideDownloadDialog";
 
 
 const resources = [
+  {
+    icon: CheckSquare,
+    title: "La Grille de Clarification (PDF)",
+    description:
+      "Un support simple, 4 zones à parcourir en 5 minutes, pour localiser où votre entreprise repose encore trop sur vous : décisions, agenda, relais managérial, cadre d'autonomie.",
+    href: "/grille",
+    cta: "Découvrir la grille",
+    type: "Outil PDF · Gratuit",
+  },
   {
     icon: ClipboardCheck,
     title: "Auto-diagnostic dirigeant (10 min)",

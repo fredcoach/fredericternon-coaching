@@ -16,6 +16,7 @@ import Presse from "./pages/Presse";
 import Ressources from "./pages/Ressources";
 import Signature from "./pages/Signature";
 import TestProfilsAlphaPME from "./pages/TestProfilsAlphaPME";
+import Grille from "./pages/Grille";
 import CartographieLanding from "./pages/CartographieLanding";
 import CartographieQuestionnaire from "./pages/CartographieQuestionnaire";
 import CartographieResultat from "./pages/CartographieResultat";
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/signature" element={<Signature />} />
             <Route path="/test-profils-alpha-pme" element={<TestProfilsAlphaPME />} />
+            <Route path="/grille" element={<Grille />} />
             <Route path="/cartographie-des-blocages" element={<CartographieLanding />} />
             <Route path="/cartographie-des-blocages/questionnaire" element={<CartographieQuestionnaire />} />
             <Route path="/cartographie-des-blocages/resultat" element={<CartographieResultat />} />
