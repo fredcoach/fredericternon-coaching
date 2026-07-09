@@ -129,7 +129,8 @@ const Presse = () => {
                 Sa méthode s'appuie sur trois repères (Pilotage, Décision, Organisation)
                 et un format court (Session CADRAGE) qui permet en quelques heures de poser
                 un diagnostic actionnable. Il intervient aussi sous la marque mental-pro.fr
-                pour la préparation mentale des dirigeants sous pression.
+                pour l'accompagnement à la performance sous pression : sportifs de haut niveau,
+                entraineurs et particuliers.
               </p>
             </div>
           </div>
