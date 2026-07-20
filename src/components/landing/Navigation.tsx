@@ -16,7 +16,6 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   { label: "Test des 4 Profils", to: "/test-profils-alpha-pme", highlight: true },
-  { label: "Méthode 3R", anchor: "#methode-3r" },
   { label: "Blog", to: "/blog" },
   { label: "Ressources", to: "/ressources" },
   { label: "Presse", to: "/presse" },
