@@ -76,6 +76,41 @@ export default function CartographieLanding() {
           name="description"
           content="Identifiez le blocage principal qui empêche votre entreprise de franchir le palier suivant. Restitution personnalisée + call stratégique 30 min offert."
         />
+        <link rel="canonical" href="https://alphadirigeant.solutions/cartographie-des-blocages" />
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content="Cartographie des Blocages — Audit 97 € pour dirigeants de PME/TPE" />
+        <meta
+          property="og:description"
+          content="Un audit stratégique à 97 € pour identifier LE blocage qui freine votre PME/TPE. Restitution personnalisée + call stratégique de 30 min offert avec Frédéric Ternon."
+        />
+        <meta property="og:url" content="https://alphadirigeant.solutions/cartographie-des-blocages" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cartographie des Blocages — Audit 97 €" />
+        <meta
+          name="twitter:description"
+          content="Identifiez LE blocage qui freine votre PME/TPE. Restitution + call stratégique 30 min offert."
+        />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Cartographie des Blocages",
+          serviceType: "Audit stratégique pour dirigeants de PME/TPE",
+          description:
+            "Audit stratégique en 17 questions pour identifier le blocage principal qui empêche votre entreprise de franchir son prochain palier. Inclut une restitution personnalisée et un call stratégique de 30 minutes offert avec Frédéric Ternon.",
+          provider: {
+            "@type": "Organization",
+            name: "Alpha PME",
+            url: "https://alphadirigeant.solutions",
+          },
+          areaServed: "FR",
+          offers: {
+            "@type": "Offer",
+            price: "97",
+            priceCurrency: "EUR",
+            availability: "https://schema.org/InStock",
+            url: "https://alphadirigeant.solutions/cartographie-des-blocages",
+          },
+        })}</script>
       </Helmet>
 
       <PaymentTestModeBanner />

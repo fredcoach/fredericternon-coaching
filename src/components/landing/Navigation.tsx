@@ -152,7 +152,7 @@ export function Navigation() {
               e.stopPropagation();
               setIsMobileMenuOpen((v) => !v);
             }}
-            aria-label="Toggle menu"
+            aria-label="Menu"
             aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
