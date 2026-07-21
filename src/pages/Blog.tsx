@@ -146,7 +146,7 @@ const Blog = () => {
                 <div className="aspect-video overflow-hidden">
                   <LazyImage 
                     src={blogImages[article.slug] || article.image} 
-                    alt={article.title}
+                    alt={`Illustration éditoriale — ${article.category} : ${article.title}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
