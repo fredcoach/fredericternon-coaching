@@ -1084,6 +1084,120 @@ export const blogArticles: BlogArticle[] = [
     price: "Sur mesure",
     availability: "Disponible"
   },
+  {
+    id: "14",
+    slug: "cas-stephane-batiment-autonomie-equipe",
+    title: "Cas concret — Stéphane M., BTP : travailler mieux, autonomiser l'équipe, faire progresser le CA",
+    metaTitle: "Cas dirigeant BTP : autonomie équipe & croissance CA | Alpha PME",
+    metaDescription: "Cas concret d'un dirigeant de PME du bâtiment : moins de surcharge, plus d'autonomie pour ses chefs de chantier, et un CA en hausse. Retour d'accompagnement Alpha PME.",
+    excerpt: "Stéphane M., dirigeant d'une entreprise de bâtiment, ne travaille pas moins d'heures. Il travaille beaucoup mieux. Ses équipes décident, ses chantiers avancent sans lui — et son chiffre d'affaires a suivi.",
+    content: `<p><em>Cas réel, prénom modifié. Stéphane M. dirige une entreprise du bâtiment d'une vingtaine de personnes dans le Sud-Est. Il m'a contacté après deux années où le chiffre d'affaires stagnait — malgré un carnet de commandes plein et des journées de 12 heures.</em></p>
+
+<h2>Le point de départ : une entreprise qui tourne, un dirigeant qui sature</h2>
+
+<p>Quand on s'est parlé la première fois, le diagnostic de Stéphane tenait en une phrase : <strong>"Sans moi sur le chantier, ça déraille."</strong></p>
+
+<p>Concrètement, ça donnait ceci :</p>
+<ul>
+<li>Chaque devis important passait par lui, même quand le conducteur de travaux avait tous les éléments.</li>
+<li>Les arbitrages avec les clients — un délai à négocier, un poste supplémentaire à valider — remontaient systématiquement.</li>
+<li>Les chefs de chantier l'appelaient plusieurs fois par jour pour des décisions à 300 €.</li>
+<li>Il partait à 6 h, rentrait à 20 h, et ouvrait son ordinateur le soir pour "rattraper l'administratif".</li>
+</ul>
+
+<p>Le paradoxe : l'entreprise tournait. Les clients étaient contents. Les chantiers se livraient. <strong>Mais le CA plafonnait depuis deux ans, et Stéphane était épuisé.</strong></p>
+
+<h2>Ce qu'on a vu ensemble</h2>
+
+<p>La première chose qu'on a faite, ce n'était pas de la stratégie. C'était de <strong>cartographier son agenda réel</strong> pendant deux semaines. Pas ce qu'il croyait faire — ce qu'il faisait vraiment.</p>
+
+<p>Le résultat était sans appel :</p>
+<ul>
+<li><strong>62 % de son temps</strong> partait sur des décisions que quelqu'un d'autre dans l'équipe pouvait prendre, s'il avait le cadre pour.</li>
+<li><strong>18 %</strong> sur de la production pure (devis, mails clients, relances).</li>
+<li><strong>Moins de 8 %</strong> sur ce que lui seul pouvait faire : vision, commercial stratégique, arbitrages structurants.</li>
+</ul>
+
+<p>Autrement dit : il payait un chef d'entreprise pour faire un travail d'assistant. Et personne dans l'équipe n'osait décider, parce que <em>personne n'avait jamais eu le droit</em>.</p>
+
+<h2>Ce qu'on a changé — trois leviers, pas dix</h2>
+
+<h3>1. Un cadre de décision explicite pour les chefs de chantier</h3>
+
+<p>On a défini, en une page, ce que chaque chef de chantier pouvait décider seul : jusqu'à quel montant d'écart budgétaire, quels types de modification client valider sans remonter, quels arbitrages fournisseurs trancher. <strong>Pas de flou, pas de "on verra au cas par cas"</strong>. Un cadre écrit.</p>
+
+<p>Résultat en trois semaines : les appels quotidiens sont passés de 8 à 2 en moyenne. Pas parce que les chefs de chantier étaient devenus meilleurs — mais parce qu'ils <em>savaient</em> ce qui relevait d'eux.</p>
+
+<h3>2. Un rituel hebdo de 45 minutes qui a remplacé 20 micro-échanges</h3>
+
+<p>Chaque lundi matin, 45 minutes structurées avec le conducteur de travaux et les chefs de chantier. Ordre du jour figé : avancement, points durs, décisions à trancher, priorités de la semaine. <strong>Tout ce qui n'était pas urgent attendait ce rendez-vous.</strong></p>
+
+<p>Ce qui a changé : Stéphane a cessé d'être interrompu 15 fois par jour. Ses équipes ont appris à préparer les sujets. Les décisions étaient meilleures parce que prises dans la clarté, pas dans l'urgence.</p>
+
+<h3>3. La délégation commerciale sur les devis récurrents</h3>
+
+<p>C'était le point le plus dur pour lui. <em>"Un devis, ça engage l'entreprise. C'est moi qui signe."</em> Vrai — mais il n'avait pas besoin de <strong>rédiger</strong> pour signer. On a séparé les deux : le conducteur de travaux produit et cadre le devis, Stéphane relit et signe en 10 minutes au lieu de deux heures.</p>
+
+<p>Sur les devis récurrents (chantiers standardisés en dessous d'un certain montant), il a même arrêté de relire. Le conducteur signe. <strong>Ça a libéré 6 à 8 heures par semaine.</strong></p>
+
+<h2>Le résultat, six mois plus tard</h2>
+
+<p>Stéphane n'a pas réduit ses heures. C'est important à dire : il ne cherchait pas ça. Il travaille toujours beaucoup. <strong>Mais il travaille sur autre chose.</strong></p>
+
+<ul>
+<li>Il a passé <strong>trois nouveaux appels d'offres stratégiques</strong> qu'il repoussait depuis un an — il en a gagné deux.</li>
+<li>Il a ouvert un <strong>segment marché</strong> qu'il regardait de loin (rénovation énergétique tertiaire), parce qu'il avait enfin le temps d'aller y creuser.</li>
+<li>Ses <strong>chefs de chantier</strong> se sont installés dans leur rôle. Deux d'entre eux ont pris des initiatives qu'ils n'auraient jamais osées avant.</li>
+<li>Le <strong>chiffre d'affaires</strong> a progressé de l'ordre de <strong>+18 %</strong> sur l'exercice — sans embauche supplémentaire, sans investissement lourd. Juste avec de la marge de manœuvre libérée en haut.</li>
+</ul>
+
+<p>Son mot exact quand on a fait le point à six mois : <em>"J'ai l'impression d'avoir enfin le poste pour lequel j'ai créé cette boîte."</em></p>
+
+<h2>Ce que ce cas dit — et ce qu'il ne dit pas</h2>
+
+<p>Ce cas n'est pas une recette. Chaque entreprise a ses spécificités, chaque dirigeant a son point de saturation propre. Mais il illustre un mécanisme que je vois <strong>très souvent</strong> dans les PME/TPE du bâtiment, de l'industrie ou des services :</p>
+
+<p><strong>Le plafond de croissance n'est presque jamais commercial. Il est presque toujours en haut, dans l'agenda du dirigeant.</strong> Tant que 60 % de son temps part sur des décisions déléguables, l'entreprise ne peut pas grandir. Pas parce que le marché est saturé, pas parce que l'équipe est mauvaise — parce que <em>personne n'a le temps d'aller chercher la croissance</em>.</p>
+
+<p>Et l'inverse est vrai aussi : quand on libère 10 à 15 heures par semaine en haut, elles se remplissent naturellement de sujets à forte valeur — commercial stratégique, structuration, nouveaux segments. C'est presque mécanique.</p>
+
+<h2>Trois signaux que vous êtes peut-être dans la situation de Stéphane</h2>
+
+<ul>
+<li>Votre carnet de commandes est plein, mais votre CA ne progresse plus depuis 12 à 24 mois.</li>
+<li>Vos équipes vous appellent pour des décisions dont vous vous dites, en raccrochant, qu'ils auraient pu les prendre seuls.</li>
+<li>Vous avez des projets stratégiques que vous "reprendrez quand vous aurez le temps" — depuis un an ou plus.</li>
+</ul>
+
+<p>Si les trois vous parlent, le sujet n'est pas la stratégie. Le sujet est <strong>la structure de votre agenda et le cadre de décision de votre équipe</strong>. C'est là qu'il faut regarder d'abord.</p>
+
+<p style="background:#0f1b3d;color:#faf7f0;padding:20px;border-radius:12px;border-left:4px solid #b8923d;">📄 <strong>Outil gratuit</strong> — <a href="/grille" style="color:#d9c89a;text-decoration:underline;">La Grille de Clarification</a> : 4 zones à parcourir en 5 minutes pour localiser précisément où votre entreprise repose encore trop sur vous. Le point de départ qu'a utilisé Stéphane.</p>
+
+<p>👉 Lire aussi : <a href="/blog/sortir-roue-hamster-dirigeant">Sortir de la roue du hamster : du dirigeant opérateur au dirigeant pilote</a>.</p>
+
+<p>👉 <a href="/blog/recruter-bras-droit-dirigeant-pme">Recruter un bras droit</a> : la question à se poser <em>avant</em> — parce que dans le cas de Stéphane, il n'a pas eu besoin de recruter.</p>
+
+<p>👉 <a href="/cartographie-des-blocages">Cartographie des blocages du dirigeant</a> : le diagnostic complet, celui qui a permis à Stéphane de mettre le doigt sur ses vrais goulots.</p>
+
+<p><strong>Travailler moins n'est pas toujours l'objectif. Travailler <em>ailleurs</em>, sur ce qui fait vraiment progresser l'entreprise, l'est presque toujours.</strong></p>`,
+    category: "Pilotage dirigeant",
+    readTime: "7 min",
+    publishedAt: "2026-07-21",
+    updatedAt: "2026-07-21",
+    image: "/assets/blog-cas-stephane-batiment.jpg",
+    ogImage: "/images/og-cas-stephane-batiment.jpg",
+    productName: "Accompagnement pilotage dirigeant PME du bâtiment",
+    productDescription: "Accompagnement pour dirigeants de PME/TPE (bâtiment, industrie, services) : libérer du temps de dirigeant, autonomiser les équipes et débloquer la croissance du CA sans embauche lourde.",
+    benefits: [
+      "Cartographier l'agenda réel pour identifier les décisions déléguables",
+      "Installer un cadre de décision explicite pour l'équipe",
+      "Structurer un rituel hebdo qui remplace les micro-interruptions",
+      "Libérer 10 à 15 h par semaine pour le commercial stratégique"
+    ],
+    targetAudience: "Dirigeants de PME/TPE (bâtiment, industrie, services) jusqu'à 30 personnes dont le CA plafonne malgré un carnet de commandes plein",
+    price: "Sur mesure",
+    availability: "Disponible"
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined => {
