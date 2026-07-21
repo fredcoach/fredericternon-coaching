@@ -39,7 +39,12 @@
     <meta name="theme-color" content="#0f1b3d" />
 
     <!-- Preconnect to external asset domains for faster LCP -->
-    <link rel="preconnect" href="https://storage.googleapis.com" />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://storage.googleapis.com" />
+    <!-- Third-party origins used off-critical-path — resolve early to reduce TBT when they load -->
+    <link rel="dns-prefetch" href="https://js.stripe.com" />
+    <link rel="dns-prefetch" href="https://assets.calendly.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
     <!-- Hero is text-based (H1) — no LCP image preload needed -->
 
