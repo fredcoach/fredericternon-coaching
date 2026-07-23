@@ -61,43 +61,55 @@ async function generateArticle(topic: any) {
   const isCase = topic.type === "case_study";
 
   const editorialRules = `
-TON ÉDITORIAL — OBLIGATOIRE :
-- Marque : Alpha PME (Frédéric Ternon, coach de dirigeants de PME/TPE jusqu'à 30 personnes).
-- Ton : premium B2B masculin, direct, concret. Codes cabinet conseil, pas gourou.
-- Cible : dirigeants et fondateurs de PME/TPE et solopreneurs.
-- Méthode 3R (Repérer, Réagir, Reprogrammer) en toile de fond, sans jargon lourd.
+VOIX — "FRED COACH" (obligatoire) :
+- Écris comme Frédéric Ternon parle à un dirigeant en session : posé, direct, chaleureux, jamais donneur de leçon.
+- Tutoiement systématique. Le "je" est autorisé pour partager une observation terrain ("je vois souvent que…").
+- Phrases courtes, rythme irrégulier. Alterne phrases de 4-8 mots et phrases plus longues. Pas de cadence robotique.
+- Utilise des respirations : phrases nominales, incises entre virgules, questions rhétoriques ponctuelles.
+- Ancrage terrain : renvoie à des scènes concrètes de dirigeant (comité du lundi, appel client à 22h, tableau de bord Excel, associé qui pousse, équipe qui attend une décision).
+- 1 à 2 métaphores maximum, tirées du sport, du pilotage, de l'artisanat ou de la marine — jamais de "voyage intérieur" ni de "libérer son potentiel".
+- Nuance obligatoire : au moins une fois, reconnais une limite, un contre-exemple ou une exception ("Ça ne marche pas pour tout le monde, mais…").
 
-INTERDICTIONS ABSOLUES (patterns IA) :
-- Pas de "Dans un monde où", "À l'ère de", "En conclusion", "En résumé", "Pour conclure".
-- Pas d'emojis, pas de titres marketing creux, pas de "Voici les 5 secrets".
-- Pas de tirets em (—) en cascade, pas de formulations pompeuses.
-- Pas de promesses irréalistes ni de chiffres non plausibles.
-- HTML pur uniquement (pas de Markdown, pas de #, pas de **).
+INTERDICTIONS ABSOLUES (patterns IA que Google détecte) :
+- Aucune de ces expressions : "dans un monde où", "à l'ère de", "de nos jours", "il est important de", "il convient de", "en effet", "par ailleurs", "de plus", "en outre", "cependant" en début de phrase, "en conclusion", "en résumé", "pour conclure", "en définitive", "in fine".
+- Pas de listes creuses ("Voici 5 secrets/clés/étapes/piliers"), pas de titres promesse ("Comment doubler…", "Le secret ultime…").
+- Pas de superlatifs empilés ("crucial", "essentiel", "incontournable", "révolutionnaire", "puissant").
+- Pas d'emojis, pas d'icônes texte (✅ 🚀 💡), pas de tirets em (—) en cascade, pas de "— " comme séparateur.
+- Pas de parallélismes systématiques ("plus X, plus Y. Moins A, moins B."), pas de triplets rhétoriques mécaniques.
+- Pas de chiffres ronds inventés ("87% des dirigeants…"). Si tu cites un chiffre, il doit être plausible et introduit comme observation terrain, pas comme étude.
+- Pas de conclusion qui récapitule tout l'article. Termine par une phrase courte, ouverte, qui reste en tête.
 
-FORMAT HTML autorisé : <p>, <h2>, <h3>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>. Rien d'autre.
-Longueur : 900 à 1300 mots. 3 à 5 sections <h2>. Phrases courtes.
+FORME :
+- HTML pur uniquement (pas de Markdown, pas de #, pas de **, pas de \`\`\`).
+- Balises autorisées : <p>, <h2>, <h3>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>. Rien d'autre.
+- Longueur cible : 850 à 1200 mots. 3 à 4 sections <h2>, titres <h2> courts (3-7 mots), non parallèles entre eux.
+- Utilise <strong> avec parcimonie (2-4 fois max), jamais sur un paragraphe entier.
+- Insère 1 <blockquote> avec une phrase forte, tirée du corps de l'article, pas une citation inventée d'auteur.
+
+MÉTHODE 3R : présente en toile de fond, sans jamais faire un pavé "Voici la méthode 3R". Nomme-la une seule fois maximum, quand c'est naturel.
 `;
 
   const caseStudyExtras = isCase ? `
-STRUCTURE OBLIGATOIRE POUR UN CAS CONCRET :
-1. Introduction : présentation du persona (prénom fictif, activité, taille d'équipe, CA approximatif).
-2. <h2>La situation de départ</h2> : problème quotidien concret du dirigeant.
-3. <h2>Le déclic</h2> : le moment ou le constat qui a changé la trajectoire.
-4. <h2>Les 3 leviers appliqués</h2> : actions concrètes (avec sous-<h3> si utile).
-5. <h2>Ce qui a changé à 3 et 6 mois</h2> : résultats chiffrés PLAUSIBLES (temps récupéré, CA, marge, sommeil, décisions déléguées).
-6. Dernier paragraphe = disclaimer OBLIGATOIRE, texte exact :
-   <p><em>Cas illustratif inspiré de situations réelles rencontrées en accompagnement. Prénom et détails modifiés pour préserver la confidentialité.</em></p>
+STRUCTURE POUR UN CAS CONCRET (varie légèrement d'un article à l'autre) :
+- Ouvre par une scène : un moment précis, un lieu, une phrase que le dirigeant s'est dite.
+- <h2>Ce que Stéphane/Marc/... vivait avant</h2> ou variante — décris le quotidien, pas juste le problème abstrait.
+- <h2>Le déclic</h2> ou variante — un événement, une phrase, un chiffre qui a fait bouger les lignes.
+- <h2>Ce qu'il a changé concrètement</h2> — 3 leviers, sous forme de paragraphes ou courte liste, avec le "comment", pas juste le "quoi".
+- <h2>Où il en est aujourd'hui</h2> — résultats plausibles à 3 ou 6 mois. Chiffres réalistes (jamais "×3 le CA en 2 mois"). Cite aussi ce qui n'a pas changé ou ce qui reste dur.
+- Dernier paragraphe = disclaimer OBLIGATOIRE, texte exact :
+  <p><em>Cas illustratif inspiré de situations réelles rencontrées en accompagnement. Prénom et détails modifiés pour préserver la confidentialité.</em></p>
 
-PERSONA À UTILISER : ${topic.persona_hint ?? "à inventer, dirigeant PME/TPE ≤ 15 personnes ou solopreneur"}.
+PERSONA À UTILISER : ${topic.persona_hint ?? "à inventer, dirigeant PME/TPE ≤ 15 personnes ou solopreneur"}. Donne-lui un prénom, un secteur, un âge approximatif, une taille d'équipe, un CA plausible.
 ` : "";
 
   const thematicExtras = !isCase ? `
-STRUCTURE ARTICLE THÉMATIQUE :
-- Accroche courte qui nomme la douleur.
-- 3 à 4 sections <h2> qui structurent la réflexion.
-- Exemples concrets ancrés dans le quotidien d'un dirigeant de PME/TPE.
-- Dernier paragraphe : ouverture vers l'action, sans CTA commercial pushy.
+STRUCTURE ARTICLE THÉMATIQUE (à adapter, pas à recopier) :
+- Accroche : une scène ou une observation courte, pas une définition. Nomme la douleur sans la décrire à outrance.
+- 3 à 4 sections <h2> qui font AVANCER la pensée (constat → mécanisme → ce qu'on peut faire → nuance/limite). Évite le plan "problème / causes / solutions / conclusion".
+- Au moins un exemple ancré (comité, entretien, tableau de bord, associé, conjoint) sans nommer d'entreprise réelle.
+- Termine par une phrase courte, ouverte. Pas de "En conclusion", pas de récap.
 ` : "";
+
 
   const userPrompt = `
 Rédige un article de blog pour ${SITE_ORIGIN}.
