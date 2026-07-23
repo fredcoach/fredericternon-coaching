@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { blogArticles } from "@/data/blogArticles";
 import { Clock, ArrowRight, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { LazyImage } from "@/components/ui/LazyImage";
+import { useCombinedBlogArticles } from "@/hooks/useDbBlogArticles";
 
-// Import blog images
+// Import blog images (static articles only)
 import blogSyndromeImposteur from "@/assets/blog-syndrome-imposteur.jpg";
 import blogPeurReussite from "@/assets/blog-peur-reussite.jpg";
 import blogPerfectionnisme from "@/assets/blog-perfectionnisme.jpg";
@@ -24,7 +24,6 @@ import blogRoueHamster from "@/assets/blog-roue-hamster.jpg";
 import blogBrasDroit from "@/assets/blog-bras-droit-dirigeant.jpg";
 import blogCasStephane from "@/assets/blog-cas-stephane-batiment.jpg";
 
-// Map slug to imported image
 const blogImages: Record<string, string> = {
   "syndrome-imposteur-entrepreneur": blogSyndromeImposteur,
   "peur-reussite-entrepreneur": blogPeurReussite,
@@ -43,15 +42,11 @@ const blogImages: Record<string, string> = {
 };
 
 const Blog = () => {
-  // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Sort articles most recent first
-  const sortedArticles = [...blogArticles].sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
+  const { articles: sortedArticles } = useCombinedBlogArticles();
 
   // Structured data for blog listing (ItemList for SEO)
   const blogListStructuredData = {
