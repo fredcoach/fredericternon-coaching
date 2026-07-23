@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { useEffect } from "react";
-import { getArticleBySlug, getRelatedArticles } from "@/data/blogArticles";
+import { getRelatedArticles } from "@/data/blogArticles";
 import { Clock, ArrowLeft, ArrowRight, Brain, CheckCircle2, Calendar } from "lucide-react";
 import DOMPurify from "dompurify";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Helmet } from "react-helmet-async";
 import { LazyImage } from "@/components/ui/LazyImage";
+import { useCombinedArticleBySlug } from "@/hooks/useDbBlogArticles";
 
 // Import blog images
 import blogSyndromeImposteur from "@/assets/blog-syndrome-imposteur.jpg";
@@ -25,7 +26,6 @@ import blogRoueHamster from "@/assets/blog-roue-hamster.jpg";
 import blogBrasDroit from "@/assets/blog-bras-droit-dirigeant.jpg";
 import blogCasStephane from "@/assets/blog-cas-stephane-batiment.jpg";
 
-// Map slugs to images
 const blogImages: Record<string, string> = {
   "syndrome-imposteur-entrepreneur": blogSyndromeImposteur,
   "peur-reussite-entrepreneur": blogPeurReussite,
@@ -44,7 +44,7 @@ const blogImages: Record<string, string> = {
 };
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = slug ? getArticleBySlug(slug) : undefined;
+  const { article, isLoading } = useCombinedArticleBySlug(slug);
   const relatedArticles = slug ? getRelatedArticles(slug, 3) : [];
 
   // Scroll to top on mount
@@ -52,12 +52,22 @@ const BlogArticle = () => {
     window.scrollTo(0, 0);
   }, [slug]);
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-pulse text-muted-foreground">Chargement…</div>
+      </div>
+    );
+  }
+
   if (!article) {
     return <Navigate to="/blog" replace />;
   }
 
-  // Get the image for this article
+  // Get the image for this article (static import or DB URL)
   const articleImage = slug ? blogImages[slug] : undefined;
+  const heroImageSrc = articleImage || (article as { dynamicImage?: string | null }).dynamicImage || article.image;
+  const isCaseStudy = (article as { isCaseStudy?: boolean }).isCaseStudy === true;
 
   // Structured Data for Product (SEO optimized)
   const productStructuredData = {
