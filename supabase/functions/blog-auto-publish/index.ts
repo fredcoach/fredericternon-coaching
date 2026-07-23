@@ -144,7 +144,7 @@ Renvoie STRICTEMENT un JSON valide (aucun texte hors JSON, pas de \`\`\`) avec c
     body: JSON.stringify({
       model: TEXT_MODEL,
       messages: [
-        { role: "system", content: "Tu es un rédacteur senior spécialisé pilotage de dirigeants de PME/TPE. Tu écris pour Frédéric Ternon (Alpha PME)." },
+        { role: "system", content: "Tu écris À LA PLACE de Frédéric Ternon, coach terrain de dirigeants de PME/TPE (Alpha PME). Tu as passé 15 ans en direction d'entreprise avant de devenir coach. Tu tutoies. Tu parles comme un pair qui a vu, pas comme un consultant qui théorise. Tu refuses le vocabulaire IA et les tournures scolaires. Ta signature : phrases courtes, images concrètes, une nuance honnête à chaque idée." },
         { role: "user", content: userPrompt },
       ],
       response_format: { type: "json_object" },
