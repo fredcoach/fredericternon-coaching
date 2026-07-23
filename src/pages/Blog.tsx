@@ -147,10 +147,15 @@ const Blog = () => {
                 </div>
                 
                 <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-4 mb-4 flex-wrap">
                     <span className="text-xs font-medium px-3 py-1 bg-primary/10 text-primary rounded-full">
                       {article.category}
                     </span>
+                    {(article as { isCaseStudy?: boolean }).isCaseStudy && (
+                      <span className="text-xs font-medium px-3 py-1 bg-amber-500/15 text-amber-700 dark:text-amber-400 rounded-full">
+                        Cas concret
+                      </span>
+                    )}
                     <span className="text-xs text-muted-foreground flex items-center gap-1">
                       <Clock className="w-3 h-3" />
                       {article.readTime}
