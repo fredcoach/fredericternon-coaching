@@ -350,15 +350,22 @@ const BlogArticle = () => {
             </h1>
           </div>
         {/* Article Banner Image */}
-        {articleImage && (
+        {heroImageSrc && (
           <div className="container mx-auto max-w-4xl mt-8">
             <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
               <LazyImage
-                src={articleImage}
+                src={heroImageSrc}
                 alt={article.title}
                 className="w-full h-full object-cover"
               />
             </div>
+          </div>
+        )}
+        {isCaseStudy && (
+          <div className="container mx-auto max-w-4xl mt-6 px-4">
+            <p className="text-xs text-muted-foreground italic border-l-2 border-amber-500/50 pl-3">
+              Cas concret inspiré de situations réelles rencontrées en accompagnement. Prénom et détails modifiés pour préserver la confidentialité.
+            </p>
           </div>
         )}
       </section>
