@@ -14,6 +14,129 @@ export type Database = {
   }
   public: {
     Tables: {
+      blog_posts: {
+        Row: {
+          article_type: string
+          category: string
+          content_html: string
+          created_at: string
+          excerpt: string
+          id: string
+          image_alt: string | null
+          image_url: string | null
+          keywords: string[]
+          meta_description: string
+          meta_title: string | null
+          published_at: string
+          read_time: string
+          slug: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          article_type?: string
+          category: string
+          content_html: string
+          created_at?: string
+          excerpt: string
+          id?: string
+          image_alt?: string | null
+          image_url?: string | null
+          keywords?: string[]
+          meta_description: string
+          meta_title?: string | null
+          published_at?: string
+          read_time?: string
+          slug: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          article_type?: string
+          category?: string
+          content_html?: string
+          created_at?: string
+          excerpt?: string
+          id?: string
+          image_alt?: string | null
+          image_url?: string | null
+          keywords?: string[]
+          meta_description?: string
+          meta_title?: string | null
+          published_at?: string
+          read_time?: string
+          slug?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      blog_settings: {
+        Row: {
+          id: number
+          last_published_at: string | null
+          paused: boolean
+          timezone: string
+          updated_at: string
+        }
+        Insert: {
+          id?: number
+          last_published_at?: string | null
+          paused?: boolean
+          timezone?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: number
+          last_published_at?: string | null
+          paused?: boolean
+          timezone?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      blog_topics_queue: {
+        Row: {
+          angle: string | null
+          created_at: string
+          id: string
+          keywords: string[]
+          persona_hint: string | null
+          position: number
+          status: string
+          title_hint: string
+          type: string
+          updated_at: string
+          used_at: string | null
+        }
+        Insert: {
+          angle?: string | null
+          created_at?: string
+          id?: string
+          keywords?: string[]
+          persona_hint?: string | null
+          position?: number
+          status?: string
+          title_hint: string
+          type: string
+          updated_at?: string
+          used_at?: string | null
+        }
+        Update: {
+          angle?: string | null
+          created_at?: string
+          id?: string
+          keywords?: string[]
+          persona_hint?: string | null
+          position?: number
+          status?: string
+          title_hint?: string
+          type?: string
+          updated_at?: string
+          used_at?: string | null
+        }
+        Relationships: []
+      }
       cartographie_sessions: {
         Row: {
           access_email_sent_at: string | null
