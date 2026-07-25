@@ -166,7 +166,7 @@ Renvoie STRICTEMENT un JSON valide (aucun texte hors JSON, pas de \`\`\`) avec c
 async function generateImagePng(prompt: string): Promise<Uint8Array> {
   const body = {
     model: IMAGE_MODEL,
-    messages: [{ role: "user", content: `${prompt}. Editorial illustration, premium consulting aesthetic, deep navy blue and warm gold palette, cinematic lighting, no text, no faces, no logos, wide 16:9 composition.` }],
+    messages: [{ role: "user", content: `${prompt}. Cinematic photorealistic photograph, shot on full-frame camera, 35mm lens, natural warm lighting, shallow depth of field, documentary editorial style, muted natural color grading, premium business magazine aesthetic. Absolutely no illustration, no drawing, no vector art, no cartoon, no 3D render, no text, no logos, no visible faces of identifiable people. Wide 16:9 composition.` }],
     modalities: ["image", "text"],
   };
   const res = await fetch(`${AI_URL}/images/generations`, {
