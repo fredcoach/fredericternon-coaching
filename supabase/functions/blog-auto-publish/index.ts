@@ -235,7 +235,7 @@ Deno.serve(async (req) => {
         upsert: true,
       });
       if (up.error) throw up.error;
-      const imageUrl = `${SUPABASE_URL}/functions/v1/blog-image/${path}`;
+      const imageUrl = `${SUPABASE_URL}/functions/v1/blog-image/${path}?v=${Date.now()}`;
       await supa.from("blog_posts").update({ image_url: imageUrl, updated_at: new Date().toISOString() }).eq("slug", post.slug);
       return new Response(JSON.stringify({ ok: true, slug: post.slug, image_url: imageUrl }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
