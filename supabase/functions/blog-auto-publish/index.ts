@@ -276,7 +276,7 @@ Deno.serve(async (req) => {
         upsert: true,
       });
       if (up.error) throw up.error;
-      imageUrl = `${SUPABASE_URL}/storage/v1/object/public/blog-images/${path}`;
+      imageUrl = `${SUPABASE_URL}/functions/v1/blog-image/${path}`;
     } catch (e) {
       console.error("[blog-auto-publish] image generation failed:", e);
     }
