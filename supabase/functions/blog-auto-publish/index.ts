@@ -197,12 +197,14 @@ Deno.serve(async (req) => {
     let secret = req.headers.get("x-cron-secret") ?? url.searchParams.get("secret");
     let force = url.searchParams.get("force") === "1";
     let overrideType: string | null = url.searchParams.get("type");
+    let regenerateSlug: string | null = url.searchParams.get("regenerate_image") ?? null;
     if (!secret && req.method === "POST") {
       try {
         const body = await req.json();
         secret = body?.secret ?? secret;
         force = body?.force === true || force;
         overrideType = body?.type ?? overrideType;
+        regenerateSlug = body?.regenerate_image ?? regenerateSlug;
       } catch { /* ignore */ }
     }
     if (secret !== BLOG_CRON_SECRET) {
@@ -212,6 +214,33 @@ Deno.serve(async (req) => {
     }
 
     const supa = createClient(SUPABASE_URL, SERVICE_ROLE);
+
+    // Mode: regenerate image only for an existing post
+    if (regenerateSlug) {
+      const { data: post, error: pErr } = await supa
+        .from("blog_posts")
+        .select("slug, title, category, image_alt")
+        .eq("slug", regenerateSlug)
+        .maybeSingle();
+      if (pErr || !post) {
+        return new Response(JSON.stringify({ error: "post_not_found", slug: regenerateSlug }), {
+          status: 404, headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      const promptSeed = `Real-world scene for a French SME leadership blog article titled "${post.title}" (category: ${post.category}). ${post.image_alt ?? ""}`;
+      const png = await generateImagePng(promptSeed);
+      const path = `${post.slug}.png`;
+      const up = await supa.storage.from("blog-images").upload(path, png, {
+        contentType: "image/png",
+        upsert: true,
+      });
+      if (up.error) throw up.error;
+      const imageUrl = `${SUPABASE_URL}/functions/v1/blog-image/${path}`;
+      await supa.from("blog_posts").update({ image_url: imageUrl, updated_at: new Date().toISOString() }).eq("slug", post.slug);
+      return new Response(JSON.stringify({ ok: true, slug: post.slug, image_url: imageUrl }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
 
     // Settings
     const { data: settings } = await supa.from("blog_settings").select("*").eq("id", 1).maybeSingle();
