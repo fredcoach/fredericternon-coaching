@@ -132,7 +132,7 @@ Renvoie STRICTEMENT un JSON valide (aucun texte hors JSON, pas de \`\`\`) avec c
   "category": "une catégorie courte parmi : Pilotage, Décision, Délégation, Organisation, Énergie mentale, Recrutement, Croissance, Cas concret",
   "read_time": "N min",
   "content_html": "le corps de l'article en HTML pur (sans <html>/<body>)",
-  "image_prompt": "prompt anglais court pour une illustration éditoriale premium, style cabinet conseil, palette bleu marine profond + or chaud, jamais de texte dans l'image, jamais de visage identifiable, métaphore visuelle liée au sujet",
+  "image_prompt": "prompt anglais court pour une PHOTO cinématographique réaliste (pas d'illustration, pas de dessin, pas de vectoriel), scène concrète du quotidien d'un dirigeant de PME/TPE française lié au sujet (bureau, atelier, chantier, réunion, extérieur), lumière naturelle chaude type golden hour ou lumière de bureau douce, atmosphère premium sobre, palette naturelle discrète, cadrage large 16:9, profondeur de champ légère, jamais de texte visible, jamais de logo, personnages vus de profil/dos ou silhouette (pas de visage identifiable au premier plan)",
   "image_alt": "alt descriptif français de l'illustration"
 }
 `;
