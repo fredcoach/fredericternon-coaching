@@ -132,7 +132,7 @@ Renvoie STRICTEMENT un JSON valide (aucun texte hors JSON, pas de \`\`\`) avec c
   "category": "une catégorie courte parmi : Pilotage, Décision, Délégation, Organisation, Énergie mentale, Recrutement, Croissance, Cas concret",
   "read_time": "N min",
   "content_html": "le corps de l'article en HTML pur (sans <html>/<body>)",
-  "image_prompt": "prompt anglais court pour une illustration éditoriale premium, style cabinet conseil, palette bleu marine profond + or chaud, jamais de texte dans l'image, jamais de visage identifiable, métaphore visuelle liée au sujet",
+  "image_prompt": "prompt anglais court pour une PHOTO cinématographique réaliste (pas d'illustration, pas de dessin, pas de vectoriel), scène concrète du quotidien d'un dirigeant de PME/TPE française lié au sujet (bureau, atelier, chantier, réunion, extérieur), lumière naturelle chaude type golden hour ou lumière de bureau douce, atmosphère premium sobre, palette naturelle discrète, cadrage large 16:9, profondeur de champ légère, jamais de texte visible, jamais de logo, personnages vus de profil/dos ou silhouette (pas de visage identifiable au premier plan)",
   "image_alt": "alt descriptif français de l'illustration"
 }
 `;
@@ -166,7 +166,7 @@ Renvoie STRICTEMENT un JSON valide (aucun texte hors JSON, pas de \`\`\`) avec c
 async function generateImagePng(prompt: string): Promise<Uint8Array> {
   const body = {
     model: IMAGE_MODEL,
-    messages: [{ role: "user", content: `${prompt}. Editorial illustration, premium consulting aesthetic, deep navy blue and warm gold palette, cinematic lighting, no text, no faces, no logos, wide 16:9 composition.` }],
+    messages: [{ role: "user", content: `${prompt}. Cinematic photorealistic photograph, shot on full-frame camera, 35mm lens, natural warm lighting, shallow depth of field, documentary editorial style, muted natural color grading, premium business magazine aesthetic. Absolutely no illustration, no drawing, no vector art, no cartoon, no 3D render, no text, no logos, no visible faces of identifiable people. Wide 16:9 composition.` }],
     modalities: ["image", "text"],
   };
   const res = await fetch(`${AI_URL}/images/generations`, {
@@ -197,12 +197,14 @@ Deno.serve(async (req) => {
     let secret = req.headers.get("x-cron-secret") ?? url.searchParams.get("secret");
     let force = url.searchParams.get("force") === "1";
     let overrideType: string | null = url.searchParams.get("type");
+    let regenerateSlug: string | null = url.searchParams.get("regenerate_image") ?? null;
     if (!secret && req.method === "POST") {
       try {
         const body = await req.json();
         secret = body?.secret ?? secret;
         force = body?.force === true || force;
         overrideType = body?.type ?? overrideType;
+        regenerateSlug = body?.regenerate_image ?? regenerateSlug;
       } catch { /* ignore */ }
     }
     if (secret !== BLOG_CRON_SECRET) {
@@ -212,6 +214,33 @@ Deno.serve(async (req) => {
     }
 
     const supa = createClient(SUPABASE_URL, SERVICE_ROLE);
+
+    // Mode: regenerate image only for an existing post
+    if (regenerateSlug) {
+      const { data: post, error: pErr } = await supa
+        .from("blog_posts")
+        .select("slug, title, category, image_alt")
+        .eq("slug", regenerateSlug)
+        .maybeSingle();
+      if (pErr || !post) {
+        return new Response(JSON.stringify({ error: "post_not_found", slug: regenerateSlug }), {
+          status: 404, headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      const promptSeed = `Real-world scene for a French SME leadership blog article titled "${post.title}" (category: ${post.category}). ${post.image_alt ?? ""}`;
+      const png = await generateImagePng(promptSeed);
+      const path = `${post.slug}.png`;
+      const up = await supa.storage.from("blog-images").upload(path, png, {
+        contentType: "image/png",
+        upsert: true,
+      });
+      if (up.error) throw up.error;
+      const imageUrl = `${SUPABASE_URL}/functions/v1/blog-image/${path}?v=${Date.now()}`;
+      await supa.from("blog_posts").update({ image_url: imageUrl, updated_at: new Date().toISOString() }).eq("slug", post.slug);
+      return new Response(JSON.stringify({ ok: true, slug: post.slug, image_url: imageUrl }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
 
     // Settings
     const { data: settings } = await supa.from("blog_settings").select("*").eq("id", 1).maybeSingle();
